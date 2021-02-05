@@ -744,7 +744,7 @@
                         android:gravity="center"
                         android:text="Đinh Tỵ"
                         android:textColor="#4CAF50"
-                        android:textSize="10dp"
+                        android:textSize="9dp"
                         android:textStyle="bold" />
 
                     <TextView
@@ -756,7 +756,7 @@
                         android:gravity="center"
                         android:text="Giáp Thìn"
                         android:textColor="#4CAF50"
-                        android:textSize="10dp"
+                        android:textSize="9dp"
                         android:textStyle="bold" />
 
                     <TextView
@@ -768,7 +768,7 @@
                         android:gravity="center"
                         android:text="Tân Dậu"
                         android:textColor="#4CAF50"
-                        android:textSize="10dp"
+                        android:textSize="9dp"
                         android:textStyle="bold" />
 
                     <TextView
@@ -780,7 +780,7 @@
                         android:gravity="center"
                         android:text="Giáp Ngọ"
                         android:textColor="#4CAF50"
-                        android:textSize="10dp"
+                        android:textSize="9dp"
                         android:textStyle="bold" />
                 </LinearLayout>
 

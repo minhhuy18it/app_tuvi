@@ -48,7 +48,7 @@ public class AnsaoActivity extends AppCompatActivity {
     String giophutsinh;
     String namAm,s;
     Integer chigio = 0,chingay = 0,chithang = 0,chinam = 0,cansanhtu =0,namhientai = 0,tuoiam = 0;
-    String namduong ;
+    String namduong,menh;
     RecyclerView t1,t2,t3,t4,t5,t6,t7,t8,t9,t10,t11,t12;
     String[] arrNamSinh;
     ArrayList<AnCung> listAnCung;
@@ -1164,9 +1164,12 @@ public class AnsaoActivity extends AppCompatActivity {
         if (intent.hasExtra("ThongTin")) {
             ThongTin thongTin = (ThongTin) intent.getSerializableExtra("ThongTin");
 
+            String[] output = namsinh.split(" ");
+
             if (thongTin.thangam().equals("1")){
                 if(giophutsinh.equals("Tý")){
                     txttop1dan.setText("MỆNH");
+                    menh = "Dần";
                     txttop2dan.setText("THÂN");
                     txttop1mao.setText("PHỤ MẪU");
                     txttop1thin.setText("PHÚC ĐỨC");
@@ -1192,6 +1195,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1hoi.setText("PHU THÊ");
                     txttop1tyd.setText("HUYNH ĐỆ");
                     txttop1suu.setText("MỆNH");
+                    menh = "Sửu";
                     txttop2mao.setText("THÂN");
                 }else if (giophutsinh.equals("Dần")){
                     txttop1dan.setText("PHÚC ĐỨC");
@@ -1206,6 +1210,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1tuat.setText("PHU THÊ");
                     txttop1hoi.setText("HUYNH ĐỆ");
                     txttop1tyd.setText("MỆNH");
+                    menh = "Tý";
                     txttop1suu.setText("PHỤ MẪU");
                 }else if (giophutsinh.equals("Mẹo")){
                     txttop1dan.setText("ĐIỀN TRẠCH");
@@ -1219,6 +1224,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1dau.setText("PHU THÊ");
                     txttop1tuat.setText("HUYNH ĐỆ");
                     txttop1hoi.setText("MỆNH");
+                    menh = "Hợi";
                     txttop1tyd.setText("PHỤ MẪU");
                     txttop1suu.setText("PHÚC ĐỨC");
                 }else if (giophutsinh.equals("Thìn")){
@@ -1232,6 +1238,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1than.setText("PHU THÊ");
                     txttop1dau.setText("HUYNH ĐỆ");
                     txttop1tuat.setText("MỆNH");
+                    menh = "Tuất";
                     txttop1hoi.setText("PHỤ MẪU");
                     txttop1tyd.setText("PHÚC ĐỨC");
                     txttop1suu.setText("ĐIỀN TRẠCH");
@@ -1245,6 +1252,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop2mui.setText("THÂN");
                     txttop1than.setText("HUYNH ĐỆ");
                     txttop1dau.setText("MỆNH");
+                    menh = "Dậu";
                     txttop1tuat.setText("PHỤ MẪU");
                     txttop1hoi.setText("PHÚC ĐỨC");
                     txttop1tyd.setText("ĐIỀN TRẠCH");
@@ -1257,6 +1265,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1ngo.setText("PHU THÊ");
                     txttop1mui.setText("HUYNH ĐỆ");
                     txttop1than.setText("MỆNH");
+                    menh = "Thân";
                     txttop2than.setText("THÂN");
                     txttop1dau.setText("PHỤ MẪU");
                     txttop1tuat.setText("PHÚC ĐỨC");
@@ -1270,6 +1279,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1ty.setText("PHU THÊ");
                     txttop1ngo.setText("HUYNH ĐỆ");
                     txttop1mui.setText("MỆNH");
+                    menh = "Mùi";
                     txttop1than.setText("PHỤ MẪU");
                     txttop1dau.setText("PHÚC ĐỨC");
                     txttop2dau.setText("THÂN");
@@ -1283,6 +1293,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1thin.setText("PHU THÊ");
                     txttop1ty.setText("HUYNH ĐỆ");
                     txttop1ngo.setText("MỆNH");
+                    menh = "Ngọ";
                     txttop1mui.setText("PHỤ MẪU");
                     txttop1than.setText("PHÚC ĐỨC");
                     txttop1dau.setText("ĐIỀN TRẠCH");
@@ -1296,6 +1307,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1mao.setText("PHU THÊ");
                     txttop1thin.setText("HUYNH ĐỆ");
                     txttop1ty.setText("MỆNH");
+                    menh = "Tỵ";
                     txttop1ngo.setText("PHỤ MẪU");
                     txttop1mui.setText("PHÚC ĐỨC");
                     txttop1than.setText("ĐIỀN TRẠCH");
@@ -1309,6 +1321,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1dan.setText("PHU THÊ");
                     txttop1mao.setText("HUYNH ĐỆ");
                     txttop1thin.setText("MỆNH");
+                    menh = "Thìn";
                     txttop1ty.setText("PHỤ MẪU");
                     txttop1ngo.setText("PHÚC ĐỨC");
                     txttop1mui.setText("ĐIỀN TRẠCH");
@@ -1322,6 +1335,7 @@ public class AnsaoActivity extends AppCompatActivity {
                 }else if (giophutsinh.equals("Hợi")){
                     txttop1dan.setText("HUYNH ĐỆ");
                     txttop1mao.setText("MỆNH");
+                    menh = "Mẹo";
                     txttop1thin.setText("PHỤ MẪU");
                     txttop1ty.setText("PHÚC ĐỨC");
                     txttop1ngo.setText("ĐIỀN TRẠCH");
@@ -1339,6 +1353,7 @@ public class AnsaoActivity extends AppCompatActivity {
                 if(giophutsinh.equals("Tý")){
                     txttop1dan.setText("HUYNH ĐỆ");
                     txttop1mao.setText("MỆNH");
+                    menh = "Mẹo";
                     txttop2mao.setText("THÂN");
                     txttop1thin.setText("PHỤ MẪU");
                     txttop1ty.setText("PHÚC ĐỨC");
@@ -1352,6 +1367,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1suu.setText("PHU THÊ");
                 }else if (giophutsinh.equals("Sửu")){
                     txttop1dan.setText("MỆNH");
+                    menh = "Dần";
                     txttop1mao.setText("PHỤ MẪU");
                     txttop1thin.setText("PHÚC ĐỨC");
                     txttop2thin.setText("THÂN");
@@ -1378,6 +1394,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1hoi.setText("PHU THÊ");
                     txttop1tyd.setText("HUYNH ĐỆ");
                     txttop1suu.setText("MỆNH");
+                    menh = "Sửu";
                 }else if (giophutsinh.equals("Mẹo")){
                     txttop1dan.setText("PHÚC ĐỨC");
                     txttop1mao.setText("ĐIỀN TRẠCH");
@@ -1391,6 +1408,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1tuat.setText("PHU THÊ");
                     txttop1hoi.setText("HUYNH ĐỆ");
                     txttop1tyd.setText("MỆNH");
+                    menh = "Tý";
                     txttop1suu.setText("PHỤ MẪU");
                 }else if (giophutsinh.equals("Thìn")){
                     txttop1dan.setText("ĐIỀN TRẠCH");
@@ -1404,6 +1422,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1dau.setText("PHU THÊ");
                     txttop1tuat.setText("HUYNH ĐỆ");
                     txttop1hoi.setText("MỆNH");
+                    menh = "Hợi";
                     txttop1tyd.setText("PHỤ MẪU");
                     txttop1suu.setText("PHÚC ĐỨC");
                 }else if (giophutsinh.equals("Tỵ")){
@@ -1417,6 +1436,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop2than.setText("THÂN");
                     txttop1dau.setText("HUYNH ĐỆ");
                     txttop1tuat.setText("MỆNH");
+                    menh = "Tuất";
                     txttop1hoi.setText("PHỤ MẪU");
                     txttop1tyd.setText("PHÚC ĐỨC");
                     txttop1suu.setText("ĐIỀN TRẠCH");
@@ -1429,6 +1449,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1mui.setText("PHU THÊ");
                     txttop1than.setText("HUYNH ĐỆ");
                     txttop1dau.setText("MỆNH");
+                    menh = "Dậu";
                     txttop2dau.setText("THÂN");
                     txttop1tuat.setText("PHỤ MẪU");
                     txttop1hoi.setText("PHÚC ĐỨC");
@@ -1442,6 +1463,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1ngo.setText("PHU THÊ");
                     txttop1mui.setText("HUYNH ĐỆ");
                     txttop1than.setText("MỆNH");
+                    menh = "Thân";
                     txttop1dau.setText("PHỤ MẪU");
                     txttop1tuat.setText("PHÚC ĐỨC");
                     txttop2tuat.setText("THÂN");
@@ -1455,6 +1477,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1ty.setText("PHU THÊ");
                     txttop1ngo.setText("HUYNH ĐỆ");
                     txttop1mui.setText("MỆNH");
+                    menh = "Mùi";
                     txttop1than.setText("PHỤ MẪU");
                     txttop1dau.setText("PHÚC ĐỨC");
                     txttop1tuat.setText("ĐIỀN TRẠCH");
@@ -1468,6 +1491,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1thin.setText("PHU THÊ");
                     txttop1ty.setText("HUYNH ĐỆ");
                     txttop1ngo.setText("MỆNH");
+                    menh = "Ngọ";
                     txttop1mui.setText("PHỤ MẪU");
                     txttop1than.setText("PHÚC ĐỨC");
                     txttop1dau.setText("ĐIỀN TRẠCH");
@@ -1481,6 +1505,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1mao.setText("PHU THÊ");
                     txttop1thin.setText("HUYNH ĐỆ");
                     txttop1ty.setText("MỆNH");
+                    menh = "Tỵ";
                     txttop1ngo.setText("PHỤ MẪU");
                     txttop1mui.setText("PHÚC ĐỨC");
                     txttop1than.setText("ĐIỀN TRẠCH");
@@ -1495,6 +1520,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop2dan.setText("THÂN");
                     txttop1mao.setText("HUYNH ĐỆ");
                     txttop1thin.setText("MỆNH");
+                    menh = "Thìn";
                     txttop1ty.setText("PHỤ MẪU");
                     txttop1ngo.setText("PHÚC ĐỨC");
                     txttop1mui.setText("ĐIỀN TRẠCH");
@@ -1511,6 +1537,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1dan.setText("PHU THÊ");
                     txttop1mao.setText("HUYNH ĐỆ");
                     txttop1thin.setText("MỆNH");
+                    menh = "Thìn";
                     txttop2thin.setText("THÂN");
                     txttop1ty.setText("PHỤ MẪU");
                     txttop1ngo.setText("PHÚC ĐỨC");
@@ -1524,6 +1551,7 @@ public class AnsaoActivity extends AppCompatActivity {
                 }else if (giophutsinh.equals("Sửu")){
                     txttop1dan.setText("HUYNH ĐỆ");
                     txttop1mao.setText("MỆNH");
+                    menh = "Mẹo";
                     txttop1thin.setText("PHỤ MẪU");
                     txttop1ty.setText("PHÚC ĐỨC");
                     txttop2ty.setText("THÂN");
@@ -1537,6 +1565,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1suu.setText("PHU THÊ");
                 }else if (giophutsinh.equals("Dần")){
                     txttop1dan.setText("MỆNH");
+                    menh = "Dần";
                     txttop1mao.setText("PHỤ MẪU");
                     txttop1thin.setText("PHÚC ĐỨC");
                     txttop1ty.setText("ĐIỀN TRẠCH");
@@ -1563,6 +1592,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1hoi.setText("PHU THÊ");
                     txttop1tyd.setText("HUYNH ĐỆ");
                     txttop1suu.setText("MỆNH");
+                    menh = "Sửu";
                 }else if (giophutsinh.equals("Thìn")){
                     txttop1dan.setText("PHÚC ĐỨC");
                     txttop1mao.setText("ĐIỀN TRẠCH");
@@ -1576,6 +1606,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1tuat.setText("PHU THÊ");
                     txttop1hoi.setText("HUYNH ĐỆ");
                     txttop1tyd.setText("MỆNH");
+                    menh = "Tý";
                     txttop1suu.setText("PHỤ MẪU");
                 }else if (giophutsinh.equals("Tỵ")){
                     txttop1dan.setText("ĐIỀN TRẠCH");
@@ -1589,6 +1620,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop2dau.setText("THÂN");
                     txttop1tuat.setText("HUYNH ĐỆ");
                     txttop1hoi.setText("MỆNH");
+                    menh = "Hợi";
                     txttop1tyd.setText("PHỤ MẪU");
                     txttop1suu.setText("PHÚC ĐỨC");
                 }else if (giophutsinh.equals("Ngọ")){
@@ -1601,6 +1633,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1than.setText("PHU THÊ");
                     txttop1dau.setText("HUYNH ĐỆ");
                     txttop1tuat.setText("MỆNH");
+                    menh = "Tuất";
                     txttop2tuat.setText("THÂN");
                     txttop1hoi.setText("PHỤ MẪU");
                     txttop1tyd.setText("PHÚC ĐỨC");
@@ -1614,6 +1647,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1mui.setText("PHU THÊ");
                     txttop1than.setText("HUYNH ĐỆ");
                     txttop1dau.setText("MỆNH");
+                    menh = "Dậu";
                     txttop1tuat.setText("PHỤ MẪU");
                     txttop1hoi.setText("PHÚC ĐỨC");
                     txttop2hoi.setText("THÂN");
@@ -1627,6 +1661,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1ngo.setText("PHU THÊ");
                     txttop1mui.setText("HUYNH ĐỆ");
                     txttop1than.setText("MỆNH");
+                    menh = "Thân";
                     txttop1dau.setText("PHỤ MẪU");
                     txttop1tuat.setText("PHÚC ĐỨC");
                     txttop1hoi.setText("ĐIỀN TRẠCH");
@@ -1640,6 +1675,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1ty.setText("PHU THÊ");
                     txttop1ngo.setText("HUYNH ĐỆ");
                     txttop1mui.setText("MỆNH");
+                    menh = "Mùi";
                     txttop1than.setText("PHỤ MẪU");
                     txttop1dau.setText("PHÚC ĐỨC");
                     txttop1tuat.setText("ĐIỀN TRẠCH");
@@ -1654,6 +1690,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1thin.setText("PHU THÊ");
                     txttop1ty.setText("HUYNH ĐỆ");
                     txttop1ngo.setText("MỆNH");
+                    menh = "Ngọ";
                     txttop1mui.setText("PHỤ MẪU");
                     txttop1than.setText("PHÚC ĐỨC");
                     txttop1dau.setText("ĐIỀN TRẠCH");
@@ -1667,6 +1704,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop2mao.setText("THÂN");
                     txttop1thin.setText("HUYNH ĐỆ");
                     txttop1ty.setText("MỆNH");
+                    menh = "Tỵ";
                     txttop1ngo.setText("PHỤ MẪU");
                     txttop1mui.setText("PHÚC ĐỨC");
                     txttop1than.setText("ĐIỀN TRẠCH");
@@ -1683,6 +1721,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1mao.setText("PHU THÊ");
                     txttop1thin.setText("HUYNH ĐỆ");
                     txttop1ty.setText("MỆNH");
+                    menh = "Tỵ";
                     txttop2ty.setText("THÂN");
                     txttop1ngo.setText("PHỤ MẪU");
                     txttop1mui.setText("PHÚC ĐỨC");
@@ -1696,6 +1735,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1dan.setText("PHU THÊ");
                     txttop1mao.setText("HUYNH ĐỆ");
                     txttop1thin.setText("MỆNH");
+                    menh = "Thìn";
                     txttop1ty.setText("PHỤ MẪU");
                     txttop1ngo.setText("PHÚC ĐỨC");
                     txttop2ngo.setText("THÂN");
@@ -1709,6 +1749,7 @@ public class AnsaoActivity extends AppCompatActivity {
                 }else if (giophutsinh.equals("Dần")){
                     txttop1dan.setText("HUYNH ĐỆ");
                     txttop1mao.setText("MỆNH");
+                    menh = "Mẹo";
                     txttop1thin.setText("PHỤ MẪU");
                     txttop1ty.setText("PHÚC ĐỨC");
                     txttop1ngo.setText("ĐIỀN TRẠCH");
@@ -1722,6 +1763,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1suu.setText("PHU THÊ");
                 }else if (giophutsinh.equals("Mẹo")){
                     txttop1dan.setText("MỆNH");
+                    menh = "Dần";
                     txttop1mao.setText("PHỤ MẪU");
                     txttop1thin.setText("PHÚC ĐỨC");
                     txttop1ty.setText("ĐIỀN TRẠCH");
@@ -1748,6 +1790,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1hoi.setText("PHU THÊ");
                     txttop1tyd.setText("HUYNH ĐỆ");
                     txttop1suu.setText("MỆNH");
+                    menh = "Sửu";
                 }else if (giophutsinh.equals("Tỵ")){
                     txttop1dan.setText("PHÚC ĐỨC");
                     txttop1mao.setText("ĐIỀN TRẠCH");
@@ -1761,6 +1804,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop2tuat.setText("THÂN");
                     txttop1hoi.setText("HUYNH ĐỆ");
                     txttop1tyd.setText("MỆNH");
+                    menh = "Tý";
                     txttop1suu.setText("PHỤ MẪU");
                 }else if (giophutsinh.equals("Ngọ")){
                     txttop1dan.setText("ĐIỀN TRẠCH");
@@ -1773,6 +1817,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1dau.setText("PHU THÊ");
                     txttop1tuat.setText("HUYNH ĐỆ");
                     txttop1hoi.setText("MỆNH");
+                    menh = "Hợi";
                     txttop2hoi.setText("THÂN");
                     txttop1tyd.setText("PHỤ MẪU");
                     txttop1suu.setText("PHÚC ĐỨC");
@@ -1786,6 +1831,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1than.setText("PHU THÊ");
                     txttop1dau.setText("HUYNH ĐỆ");
                     txttop1tuat.setText("MỆNH");
+                    menh = "Tuất";
                     txttop1hoi.setText("PHỤ MẪU");
                     txttop1tyd.setText("PHÚC ĐỨC");
                     txttop2tyd.setText("THÂN");
@@ -1799,6 +1845,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1mui.setText("PHU THÊ");
                     txttop1than.setText("HUYNH ĐỆ");
                     txttop1dau.setText("MỆNH");
+                    menh = "Dậu";
                     txttop1tuat.setText("PHỤ MẪU");
                     txttop1hoi.setText("PHÚC ĐỨC");
                     txttop1tyd.setText("ĐIỀN TRẠCH");
@@ -1813,6 +1860,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1ngo.setText("PHU THÊ");
                     txttop1mui.setText("HUYNH ĐỆ");
                     txttop1than.setText("MỆNH");
+                    menh = "Thân";
                     txttop1dau.setText("PHỤ MẪU");
                     txttop1tuat.setText("PHÚC ĐỨC");
                     txttop1hoi.setText("ĐIỀN TRẠCH");
@@ -1826,6 +1874,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1ty.setText("PHU THÊ");
                     txttop1ngo.setText("HUYNH ĐỆ");
                     txttop1mui.setText("MỆNH");
+                    menh = "Mùi";
                     txttop1than.setText("PHỤ MẪU");
                     txttop1dau.setText("PHÚC ĐỨC");
                     txttop1tuat.setText("ĐIỀN TRẠCH");
@@ -1839,6 +1888,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop2thin.setText("THÂN");
                     txttop1ty.setText("HUYNH ĐỆ");
                     txttop1ngo.setText("MỆNH");
+                    menh = "Ngọ";
                     txttop1mui.setText("PHỤ MẪU");
                     txttop1than.setText("PHÚC ĐỨC");
                     txttop1dau.setText("ĐIỀN TRẠCH");
@@ -1855,6 +1905,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1thin.setText("PHU THÊ");
                     txttop1ty.setText("HUYNH ĐỆ");
                     txttop1ngo.setText("MỆNH");
+                    menh = "Ngọ";
                     txttop2ngo.setText("THÂN");
                     txttop1mui.setText("PHỤ MẪU");
                     txttop1than.setText("PHÚC ĐỨC");
@@ -1868,6 +1919,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1mao.setText("PHU THÊ");
                     txttop1thin.setText("HUYNH ĐỆ");
                     txttop1ty.setText("MỆNH");
+                    menh = "Tỵ";
                     txttop1ngo.setText("PHỤ MẪU");
                     txttop1mui.setText("PHÚC ĐỨC");
                     txttop2mui.setText("THÂN");
@@ -1881,6 +1933,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1dan.setText("PHU THÊ");
                     txttop1mao.setText("HUYNH ĐỆ");
                     txttop1thin.setText("MỆNH");
+                    menh = "Thìn";
                     txttop1ty.setText("PHỤ MẪU");
                     txttop1ngo.setText("PHÚC ĐỨC");
                     txttop1mui.setText("ĐIỀN TRẠCH");
@@ -1894,6 +1947,7 @@ public class AnsaoActivity extends AppCompatActivity {
                 }else if (giophutsinh.equals("Mẹo")){
                     txttop1dan.setText("HUYNH ĐỆ");
                     txttop1mao.setText("MỆNH");
+                    menh = "Mẹo";
                     txttop1thin.setText("PHỤ MẪU");
                     txttop1ty.setText("PHÚC ĐỨC");
                     txttop1ngo.setText("ĐIỀN TRẠCH");
@@ -1907,6 +1961,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1suu.setText("PHU THÊ");
                 }else if (giophutsinh.equals("Thìn")){
                     txttop1dan.setText("MỆNH");
+                    menh = "Dần";
                     txttop1mao.setText("PHỤ MẪU");
                     txttop1thin.setText("PHÚC ĐỨC");
                     txttop1ty.setText("ĐIỀN TRẠCH");
@@ -1933,6 +1988,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop2hoi.setText("THÂN");
                     txttop1tyd.setText("HUYNH ĐỆ");
                     txttop1suu.setText("MỆNH");
+                    menh = "Sửu";
                 }else if (giophutsinh.equals("Ngọ")){
                     txttop1dan.setText("PHÚC ĐỨC");
                     txttop1mao.setText("ĐIỀN TRẠCH");
@@ -1945,6 +2001,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1tuat.setText("PHU THÊ");
                     txttop1hoi.setText("HUYNH ĐỆ");
                     txttop1tyd.setText("MỆNH");
+                    menh = "Tý";
                     txttop2tyd.setText("THÂN");
                     txttop1suu.setText("PHỤ MẪU");
                 }else if (giophutsinh.equals("Mùi")){
@@ -1958,6 +2015,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1dau.setText("PHU THÊ");
                     txttop1tuat.setText("HUYNH ĐỆ");
                     txttop1hoi.setText("MỆNH");
+                    menh = "Hợi";
                     txttop1tyd.setText("PHỤ MẪU");
                     txttop1suu.setText("PHÚC ĐỨC");
                     txttop2suu.setText("THÂN");
@@ -1972,6 +2030,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1than.setText("PHU THÊ");
                     txttop1dau.setText("HUYNH ĐỆ");
                     txttop1tuat.setText("MỆNH");
+                    menh = "Tuất";
                     txttop1hoi.setText("PHỤ MẪU");
                     txttop1tyd.setText("PHÚC ĐỨC");
                     txttop1suu.setText("ĐIỀN TRẠCH");
@@ -1985,6 +2044,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1mui.setText("PHU THÊ");
                     txttop1than.setText("HUYNH ĐỆ");
                     txttop1dau.setText("MỆNH");
+                    menh = "Dậu";
                     txttop1tuat.setText("PHỤ MẪU");
                     txttop1hoi.setText("PHÚC ĐỨC");
                     txttop1tyd.setText("ĐIỀN TRẠCH");
@@ -1998,6 +2058,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1ngo.setText("PHU THÊ");
                     txttop1mui.setText("HUYNH ĐỆ");
                     txttop1than.setText("MỆNH");
+                    menh = "Thân";
                     txttop1dau.setText("PHỤ MẪU");
                     txttop1tuat.setText("PHÚC ĐỨC");
                     txttop1hoi.setText("ĐIỀN TRẠCH");
@@ -2011,6 +2072,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop2ty.setText("THÂN");
                     txttop1ngo.setText("HUYNH ĐỆ");
                     txttop1mui.setText("MỆNH");
+                    menh = "Mùi";
                     txttop1than.setText("PHỤ MẪU");
                     txttop1dau.setText("PHÚC ĐỨC");
                     txttop1tuat.setText("ĐIỀN TRẠCH");
@@ -2027,6 +2089,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1ty.setText("PHU THÊ");
                     txttop1ngo.setText("HUYNH ĐỆ");
                     txttop1mui.setText("MỆNH");
+                    menh = "Mùi";
                     txttop2mui.setText("THÂN");
                     txttop1than.setText("PHỤ MẪU");
                     txttop1dau.setText("PHÚC ĐỨC");
@@ -2040,6 +2103,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1thin.setText("PHU THÊ");
                     txttop1ty.setText("HUYNH ĐỆ");
                     txttop1ngo.setText("MỆNH");
+                    menh = "Ngọ";
                     txttop1mui.setText("PHỤ MẪU");
                     txttop1than.setText("PHÚC ĐỨC");
                     txttop2than.setText("THÂN");
@@ -2053,6 +2117,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1mao.setText("PHU THÊ");
                     txttop1thin.setText("HUYNH ĐỆ");
                     txttop1ty.setText("MỆNH");
+                    menh = "Tỵ";
                     txttop1ngo.setText("PHỤ MẪU");
                     txttop1mui.setText("PHÚC ĐỨC");
                     txttop1than.setText("ĐIỀN TRẠCH");
@@ -2066,6 +2131,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1dan.setText("PHU THÊ");
                     txttop1mao.setText("HUYNH ĐỆ");
                     txttop1thin.setText("MỆNH");
+                    menh = "Thìn";
                     txttop1ty.setText("PHỤ MẪU");
                     txttop1ngo.setText("PHÚC ĐỨC");
                     txttop1mui.setText("ĐIỀN TRẠCH");
@@ -2079,6 +2145,7 @@ public class AnsaoActivity extends AppCompatActivity {
                 }else if (giophutsinh.equals("Thìn")){
                     txttop1dan.setText("HUYNH ĐỆ");
                     txttop1mao.setText("MỆNH");
+                    menh = "Mẹo";
                     txttop1thin.setText("PHỤ MẪU");
                     txttop1ty.setText("PHÚC ĐỨC");
                     txttop1ngo.setText("ĐIỀN TRẠCH");
@@ -2092,6 +2159,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1suu.setText("PHU THÊ");
                 }else if (giophutsinh.equals("Tỵ")){
                     txttop1dan.setText("MỆNH");
+                    menh = "Dần";
                     txttop1mao.setText("PHỤ MẪU");
                     txttop1thin.setText("PHÚC ĐỨC");
                     txttop1ty.setText("ĐIỀN TRẠCH");
@@ -2117,6 +2185,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1hoi.setText("PHU THÊ");
                     txttop1tyd.setText("HUYNH ĐỆ");
                     txttop1suu.setText("MỆNH");
+                    menh = "Sửu";
                     txttop2suu.setText("THÂN");
                 }else if (giophutsinh.equals("Mùi")){
                     txttop1dan.setText("PHÚC ĐỨC");
@@ -2131,6 +2200,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1tuat.setText("PHU THÊ");
                     txttop1hoi.setText("HUYNH ĐỆ");
                     txttop1tyd.setText("MỆNH");
+                    menh = "Tý";
                     txttop1suu.setText("PHỤ MẪU");
                 }else if (giophutsinh.equals("Thân")){
                     txttop1dan.setText("ĐIỀN TRẠCH");
@@ -2144,6 +2214,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1dau.setText("PHU THÊ");
                     txttop1tuat.setText("HUYNH ĐỆ");
                     txttop1hoi.setText("MỆNH");
+                    menh = "Hợi";
                     txttop1tyd.setText("PHỤ MẪU");
                     txttop1suu.setText("PHÚC ĐỨC");
                 }else if (giophutsinh.equals("Dậu")){
@@ -2157,6 +2228,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1than.setText("PHU THÊ");
                     txttop1dau.setText("HUYNH ĐỆ");
                     txttop1tuat.setText("MỆNH");
+                    menh = "Tuất";
                     txttop1hoi.setText("PHỤ MẪU");
                     txttop1tyd.setText("PHÚC ĐỨC");
                     txttop1suu.setText("ĐIỀN TRẠCH");
@@ -2170,6 +2242,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1mui.setText("PHU THÊ");
                     txttop1than.setText("HUYNH ĐỆ");
                     txttop1dau.setText("MỆNH");
+                    menh = "Dậu";
                     txttop1tuat.setText("PHỤ MẪU");
                     txttop1hoi.setText("PHÚC ĐỨC");
                     txttop1tyd.setText("ĐIỀN TRẠCH");
@@ -2183,6 +2256,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop2ngo.setText("THÂN");
                     txttop1mui.setText("HUYNH ĐỆ");
                     txttop1than.setText("MỆNH");
+                    menh = "Thân";
                     txttop1dau.setText("PHỤ MẪU");
                     txttop1tuat.setText("PHÚC ĐỨC");
                     txttop1hoi.setText("ĐIỀN TRẠCH");
@@ -2199,6 +2273,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1ngo.setText("PHU THÊ");
                     txttop1mui.setText("HUYNH ĐỆ");
                     txttop1than.setText("MỆNH");
+                    menh = "Thân";
                     txttop2than.setText("THÂN");
                     txttop1dau.setText("PHỤ MẪU");
                     txttop1tuat.setText("PHÚC ĐỨC");
@@ -2212,6 +2287,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1ty.setText("PHU THÊ");
                     txttop1ngo.setText("HUYNH ĐỆ");
                     txttop1mui.setText("MỆNH");
+                    menh = "Mùi";
                     txttop1than.setText("PHỤ MẪU");
                     txttop1dau.setText("PHÚC ĐỨC");
                     txttop2dau.setText("THÂN");
@@ -2225,6 +2301,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1thin.setText("PHU THÊ");
                     txttop1ty.setText("HUYNH ĐỆ");
                     txttop1ngo.setText("MỆNH");
+                    menh = "Ngọ";
                     txttop1mui.setText("PHỤ MẪU");
                     txttop1than.setText("PHÚC ĐỨC");
                     txttop1dau.setText("ĐIỀN TRẠCH");
@@ -2238,6 +2315,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1mao.setText("PHU THÊ");
                     txttop1thin.setText("HUYNH ĐỆ");
                     txttop1ty.setText("MỆNH");
+                    menh = "Tỵ";
                     txttop1ngo.setText("PHỤ MẪU");
                     txttop1mui.setText("PHÚC ĐỨC");
                     txttop1than.setText("ĐIỀN TRẠCH");
@@ -2251,6 +2329,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1dan.setText("PHU THÊ");
                     txttop1mao.setText("HUYNH ĐỆ");
                     txttop1thin.setText("MỆNH");
+                    menh = "Thìn";
                     txttop1ty.setText("PHỤ MẪU");
                     txttop1ngo.setText("PHÚC ĐỨC");
                     txttop1mui.setText("ĐIỀN TRẠCH");
@@ -2264,6 +2343,7 @@ public class AnsaoActivity extends AppCompatActivity {
                 }else if (giophutsinh.equals("Tỵ")){
                     txttop1dan.setText("HUYNH ĐỆ");
                     txttop1mao.setText("MỆNH");
+                    menh = "Mẹo";
                     txttop1thin.setText("PHỤ MẪU");
                     txttop1ty.setText("PHÚC ĐỨC");
                     txttop1ngo.setText("ĐIỀN TRẠCH");
@@ -2277,6 +2357,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop2suu.setText("THÂN");
                 }else if (giophutsinh.equals("Ngọ")){
                     txttop1dan.setText("MỆNH");
+                    menh = "Dần";
                     txttop2dan.setText("THÂN");
                     txttop1mao.setText("PHỤ MẪU");
                     txttop1thin.setText("PHÚC ĐỨC");
@@ -2303,6 +2384,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1hoi.setText("PHU THÊ");
                     txttop1tyd.setText("HUYNH ĐỆ");
                     txttop1suu.setText("MỆNH");
+                    menh = "Sửu";
                 }else if (giophutsinh.equals("Thân")){
                     txttop1dan.setText("PHÚC ĐỨC");
                     txttop1mao.setText("ĐIỀN TRẠCH");
@@ -2316,6 +2398,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1tuat.setText("PHU THÊ");
                     txttop1hoi.setText("HUYNH ĐỆ");
                     txttop1tyd.setText("MỆNH");
+                    menh = "Tý";
                     txttop1suu.setText("PHỤ MẪU");
                 }else if (giophutsinh.equals("Dậu")){
                     txttop1dan.setText("ĐIỀN TRẠCH");
@@ -2329,6 +2412,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1dau.setText("PHU THÊ");
                     txttop1tuat.setText("HUYNH ĐỆ");
                     txttop1hoi.setText("MỆNH");
+                    menh = "Hợi";
                     txttop1tyd.setText("PHỤ MẪU");
                     txttop1suu.setText("PHÚC ĐỨC");
                 }else if (giophutsinh.equals("Tuất")){
@@ -2342,6 +2426,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1than.setText("PHU THÊ");
                     txttop1dau.setText("HUYNH ĐỆ");
                     txttop1tuat.setText("MỆNH");
+                    menh = "Tuất";
                     txttop1hoi.setText("PHỤ MẪU");
                     txttop1tyd.setText("PHÚC ĐỨC");
                     txttop1suu.setText("ĐIỀN TRẠCH");
@@ -2355,6 +2440,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop2mui.setText("THÂN");
                     txttop1than.setText("HUYNH ĐỆ");
                     txttop1dau.setText("MỆNH");
+                    menh = "Dậu";
                     txttop1tuat.setText("PHỤ MẪU");
                     txttop1hoi.setText("PHÚC ĐỨC");
                     txttop1tyd.setText("ĐIỀN TRẠCH");
@@ -2371,6 +2457,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1mui.setText("PHU THÊ");
                     txttop1than.setText("HUYNH ĐỆ");
                     txttop1dau.setText("MỆNH");
+                    menh = "Dậu";
                     txttop2dau.setText("THÂN");
                     txttop1tuat.setText("PHỤ MẪU");
                     txttop1hoi.setText("PHÚC ĐỨC");
@@ -2384,6 +2471,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1ngo.setText("PHU THÊ");
                     txttop1mui.setText("HUYNH ĐỆ");
                     txttop1than.setText("MỆNH");
+                    menh = "Thân";
                     txttop1dau.setText("PHỤ MẪU");
                     txttop1tuat.setText("PHÚC ĐỨC");
                     txttop2tuat.setText("THÂN");
@@ -2397,6 +2485,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1ty.setText("PHU THÊ");
                     txttop1ngo.setText("HUYNH ĐỆ");
                     txttop1mui.setText("MỆNH");
+                    menh = "Mùi";
                     txttop1than.setText("PHỤ MẪU");
                     txttop1dau.setText("PHÚC ĐỨC");
                     txttop1tuat.setText("ĐIỀN TRẠCH");
@@ -2410,6 +2499,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1thin.setText("PHU THÊ");
                     txttop1ty.setText("HUYNH ĐỆ");
                     txttop1ngo.setText("MỆNH");
+                    menh = "Ngọ";
                     txttop1mui.setText("PHỤ MẪU");
                     txttop1than.setText("PHÚC ĐỨC");
                     txttop1dau.setText("ĐIỀN TRẠCH");
@@ -2423,6 +2513,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1mao.setText("PHU THÊ");
                     txttop1thin.setText("HUYNH ĐỆ");
                     txttop1ty.setText("MỆNH");
+                    menh = "Tỵ";
                     txttop1ngo.setText("PHỤ MẪU");
                     txttop1mui.setText("PHÚC ĐỨC");
                     txttop1than.setText("ĐIỀN TRẠCH");
@@ -2437,6 +2528,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop2dan.setText("THÂN");
                     txttop1mao.setText("HUYNH ĐỆ");
                     txttop1thin.setText("MỆNH");
+                    menh = "Thìn";
                     txttop1ty.setText("PHỤ MẪU");
                     txttop1ngo.setText("PHÚC ĐỨC");
                     txttop1mui.setText("ĐIỀN TRẠCH");
@@ -2449,6 +2541,7 @@ public class AnsaoActivity extends AppCompatActivity {
                 }else if (giophutsinh.equals("Ngọ")){
                     txttop1dan.setText("HUYNH ĐỆ");
                     txttop1mao.setText("MỆNH");
+                    menh = "Mẹo";
                     txttop2mao.setText("THÂN");
                     txttop1thin.setText("PHỤ MẪU");
                     txttop1ty.setText("PHÚC ĐỨC");
@@ -2462,6 +2555,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1suu.setText("PHU THÊ");
                 }else if (giophutsinh.equals("Mùi")){
                     txttop1dan.setText("MỆNH");
+                    menh = "Dần";
                     txttop1mao.setText("PHỤ MẪU");
                     txttop1thin.setText("PHÚC ĐỨC");
                     txttop2thin.setText("THÂN");
@@ -2488,6 +2582,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1hoi.setText("PHU THÊ");
                     txttop1tyd.setText("HUYNH ĐỆ");
                     txttop1suu.setText("MỆNH");
+                    menh = "Sửu";
                 }else if (giophutsinh.equals("Dậu")){
                     txttop1dan.setText("PHÚC ĐỨC");
                     txttop1mao.setText("ĐIỀN TRẠCH");
@@ -2501,6 +2596,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1tuat.setText("PHU THÊ");
                     txttop1hoi.setText("HUYNH ĐỆ");
                     txttop1tyd.setText("MỆNH");
+                    menh = "Tý";
                     txttop1suu.setText("PHỤ MẪU");
                 }else if (giophutsinh.equals("Tuất")){
                     txttop1dan.setText("ĐIỀN TRẠCH");
@@ -2514,6 +2610,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1dau.setText("PHU THÊ");
                     txttop1tuat.setText("HUYNH ĐỆ");
                     txttop1hoi.setText("MỆNH");
+                    menh = "Hợi";
                     txttop1tyd.setText("PHỤ MẪU");
                     txttop1suu.setText("PHÚC ĐỨC");
                 }else if (giophutsinh.equals("Hợi")){
@@ -2527,6 +2624,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop2than.setText("THÂN");
                     txttop1dau.setText("HUYNH ĐỆ");
                     txttop1tuat.setText("MỆNH");
+                    menh = "Tuất";
                     txttop1hoi.setText("PHỤ MẪU");
                     txttop1tyd.setText("PHÚC ĐỨC");
                     txttop1suu.setText("ĐIỀN TRẠCH");
@@ -2543,6 +2641,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1than.setText("PHU THÊ");
                     txttop1dau.setText("HUYNH ĐỆ");
                     txttop1tuat.setText("MỆNH");
+                    menh = "Tuất";
                     txttop2tuat.setText("THÂN");
                     txttop1hoi.setText("PHỤ MẪU");
                     txttop1tyd.setText("PHÚC ĐỨC");
@@ -2556,6 +2655,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1mui.setText("PHU THÊ");
                     txttop1than.setText("HUYNH ĐỆ");
                     txttop1dau.setText("MỆNH");
+                    menh = "Dậu";
                     txttop1tuat.setText("PHỤ MẪU");
                     txttop1hoi.setText("PHÚC ĐỨC");
                     txttop2hoi.setText("THÂN");
@@ -2569,6 +2669,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1ngo.setText("PHU THÊ");
                     txttop1mui.setText("HUYNH ĐỆ");
                     txttop1than.setText("MỆNH");
+                    menh = "Thân";
                     txttop1dau.setText("PHỤ MẪU");
                     txttop1tuat.setText("PHÚC ĐỨC");
                     txttop1hoi.setText("ĐIỀN TRẠCH");
@@ -2582,6 +2683,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1ty.setText("PHU THÊ");
                     txttop1ngo.setText("HUYNH ĐỆ");
                     txttop1mui.setText("MỆNH");
+                    menh = "Mùi";
                     txttop1than.setText("PHỤ MẪU");
                     txttop1dau.setText("PHÚC ĐỨC");
                     txttop1tuat.setText("ĐIỀN TRẠCH");
@@ -2596,6 +2698,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1thin.setText("PHU THÊ");
                     txttop1ty.setText("HUYNH ĐỆ");
                     txttop1ngo.setText("MỆNH");
+                    menh = "Ngọ";
                     txttop1mui.setText("PHỤ MẪU");
                     txttop1than.setText("PHÚC ĐỨC");
                     txttop1dau.setText("ĐIỀN TRẠCH");
@@ -2609,6 +2712,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop2mao.setText("THÂN");
                     txttop1thin.setText("HUYNH ĐỆ");
                     txttop1ty.setText("MỆNH");
+                    menh = "Tỵ";
                     txttop1ngo.setText("PHỤ MẪU");
                     txttop1mui.setText("PHÚC ĐỨC");
                     txttop1than.setText("ĐIỀN TRẠCH");
@@ -2621,6 +2725,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1dan.setText("PHU THÊ");
                     txttop1mao.setText("HUYNH ĐỆ");
                     txttop1thin.setText("MỆNH");
+                    menh = "Thìn";
                     txttop2thin.setText("THÂN");
                     txttop1ty.setText("PHỤ MẪU");
                     txttop1ngo.setText("PHÚC ĐỨC");
@@ -2634,6 +2739,7 @@ public class AnsaoActivity extends AppCompatActivity {
                 }else if (giophutsinh.equals("Mùi")){
                     txttop1dan.setText("HUYNH ĐỆ");
                     txttop1mao.setText("MỆNH");
+                    menh = "Mẹo";
                     txttop1thin.setText("PHỤ MẪU");
                     txttop1ty.setText("PHÚC ĐỨC");
                     txttop2ty.setText("THÂN");
@@ -2647,6 +2753,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1suu.setText("PHU THÊ");
                 }else if (giophutsinh.equals("Thân")){
                     txttop1dan.setText("MỆNH");
+                    menh = "Dần";
                     txttop1mao.setText("PHỤ MẪU");
                     txttop1thin.setText("PHÚC ĐỨC");
                     txttop1ty.setText("ĐIỀN TRẠCH");
@@ -2673,6 +2780,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1hoi.setText("PHU THÊ");
                     txttop1tyd.setText("HUYNH ĐỆ");
                     txttop1suu.setText("MỆNH");
+                    menh = "Sửu";
                 }else if (giophutsinh.equals("Tuất")){
                     txttop1dan.setText("PHÚC ĐỨC");
                     txttop1mao.setText("ĐIỀN TRẠCH");
@@ -2686,6 +2794,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1tuat.setText("PHU THÊ");
                     txttop1hoi.setText("HUYNH ĐỆ");
                     txttop1tyd.setText("MỆNH");
+                    menh = "Tý";
                     txttop1suu.setText("PHỤ MẪU");
                 }else if (giophutsinh.equals("Hợi")){
                     txttop1dan.setText("ĐIỀN TRẠCH");
@@ -2699,6 +2808,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop2dau.setText("THÂN");
                     txttop1tuat.setText("HUYNH ĐỆ");
                     txttop1hoi.setText("MỆNH");
+                    menh = "Hợi";
                     txttop1tyd.setText("PHỤ MẪU");
                     txttop1suu.setText("PHÚC ĐỨC");
                 }
@@ -2715,6 +2825,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1dau.setText("PHU THÊ");
                     txttop1tuat.setText("HUYNH ĐỆ");
                     txttop1hoi.setText("MỆNH");
+                    menh = "Hợi";
                     txttop2hoi.setText("THÂN");
                     txttop1tyd.setText("PHỤ MẪU");
                     txttop1suu.setText("PHÚC ĐỨC");
@@ -2728,6 +2839,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1than.setText("PHU THÊ");
                     txttop1dau.setText("HUYNH ĐỆ");
                     txttop1tuat.setText("MỆNH");
+                    menh = "Tuất";
                     txttop1hoi.setText("PHỤ MẪU");
                     txttop1tyd.setText("PHÚC ĐỨC");
                     txttop2tyd.setText("THÂN");
@@ -2741,6 +2853,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1mui.setText("PHU THÊ");
                     txttop1than.setText("HUYNH ĐỆ");
                     txttop1dau.setText("MỆNH");
+                    menh = "Dậu";
                     txttop1tuat.setText("PHỤ MẪU");
                     txttop1hoi.setText("PHÚC ĐỨC");
                     txttop1tyd.setText("ĐIỀN TRẠCH");
@@ -2755,6 +2868,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1ngo.setText("PHU THÊ");
                     txttop1mui.setText("HUYNH ĐỆ");
                     txttop1than.setText("MỆNH");
+                    menh = "Thân";
                     txttop1dau.setText("PHỤ MẪU");
                     txttop1tuat.setText("PHÚC ĐỨC");
                     txttop1hoi.setText("ĐIỀN TRẠCH");
@@ -2768,6 +2882,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1ty.setText("PHU THÊ");
                     txttop1ngo.setText("HUYNH ĐỆ");
                     txttop1mui.setText("MỆNH");
+                    menh = "Mùi";
                     txttop1than.setText("PHỤ MẪU");
                     txttop1dau.setText("PHÚC ĐỨC");
                     txttop1tuat.setText("ĐIỀN TRẠCH");
@@ -2781,6 +2896,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop2thin.setText("THÂN");
                     txttop1ty.setText("HUYNH ĐỆ");
                     txttop1ngo.setText("MỆNH");
+                    menh = "Ngọ";
                     txttop1mui.setText("PHỤ MẪU");
                     txttop1than.setText("PHÚC ĐỨC");
                     txttop1dau.setText("ĐIỀN TRẠCH");
@@ -2793,6 +2909,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1mao.setText("PHU THÊ");
                     txttop1thin.setText("HUYNH ĐỆ");
                     txttop1ty.setText("MỆNH");
+                    menh = "Tỵ";
                     txttop2ty.setText("THÂN");
                     txttop1ngo.setText("PHỤ MẪU");
                     txttop1mui.setText("PHÚC ĐỨC");
@@ -2806,6 +2923,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1dan.setText("PHU THÊ");
                     txttop1mao.setText("HUYNH ĐỆ");
                     txttop1thin.setText("MỆNH");
+                    menh = "Thìn";
                     txttop1ty.setText("PHỤ MẪU");
                     txttop1ngo.setText("PHÚC ĐỨC");
                     txttop2ngo.setText("THÂN");
@@ -2819,6 +2937,7 @@ public class AnsaoActivity extends AppCompatActivity {
                 }else if (giophutsinh.equals("Thân")){
                     txttop1dan.setText("HUYNH ĐỆ");
                     txttop1mao.setText("MỆNH");
+                    menh = "Mẹo";
                     txttop1thin.setText("PHỤ MẪU");
                     txttop1ty.setText("PHÚC ĐỨC");
                     txttop1ngo.setText("ĐIỀN TRẠCH");
@@ -2832,6 +2951,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1suu.setText("PHU THÊ");
                 }else if (giophutsinh.equals("Dậu")){
                     txttop1dan.setText("MỆNH");
+                    menh = "Dần";
                     txttop1mao.setText("PHỤ MẪU");
                     txttop1thin.setText("PHÚC ĐỨC");
                     txttop1ty.setText("ĐIỀN TRẠCH");
@@ -2858,6 +2978,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1hoi.setText("PHU THÊ");
                     txttop1tyd.setText("HUYNH ĐỆ");
                     txttop1suu.setText("MỆNH");
+                    menh = "Sửu";
                 }else if (giophutsinh.equals("Hợi")){
                     txttop1dan.setText("PHÚC ĐỨC");
                     txttop1mao.setText("ĐIỀN TRẠCH");
@@ -2871,6 +2992,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop2tuat.setText("THÂN");
                     txttop1hoi.setText("HUYNH ĐỆ");
                     txttop1tyd.setText("MỆNH");
+                    menh = "Tý";
                     txttop1suu.setText("PHỤ MẪU");
                 }
             }
@@ -2887,6 +3009,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1tuat.setText("PHU THÊ");
                     txttop1hoi.setText("HUYNH ĐỆ");
                     txttop1tyd.setText("MỆNH");
+                    menh = "Tý";
                     txttop2tyd.setText("THÂN");
                     txttop1suu.setText("PHỤ MẪU");
 
@@ -2902,6 +3025,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1dau.setText("PHU THÊ");
                     txttop1tuat.setText("HUYNH ĐỆ");
                     txttop1hoi.setText("MỆNH");
+                    menh = "Hợi";
                     txttop1tyd.setText("PHỤ MẪU");
                     txttop1suu.setText("PHÚC ĐỨC");
                     txttop2suu.setText("THÂN");
@@ -2918,6 +3042,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1than.setText("PHU THÊ");
                     txttop1dau.setText("HUYNH ĐỆ");
                     txttop1tuat.setText("MỆNH");
+                    menh = "Tuất";
                     txttop1hoi.setText("PHỤ MẪU");
                     txttop1tyd.setText("PHÚC ĐỨC");
                     txttop1suu.setText("ĐIỀN TRẠCH");
@@ -2933,6 +3058,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1mui.setText("PHU THÊ");
                     txttop1than.setText("HUYNH ĐỆ");
                     txttop1dau.setText("MỆNH");
+                    menh = "Dậu";
                     txttop1tuat.setText("PHỤ MẪU");
                     txttop1hoi.setText("PHÚC ĐỨC");
                     txttop1tyd.setText("ĐIỀN TRẠCH");
@@ -2948,6 +3074,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1ngo.setText("PHU THÊ");
                     txttop1mui.setText("HUYNH ĐỆ");
                     txttop1than.setText("MỆNH");
+                    menh = "Thân";
                     txttop1dau.setText("PHỤ MẪU");
                     txttop1tuat.setText("PHÚC ĐỨC");
                     txttop1hoi.setText("ĐIỀN TRẠCH");
@@ -2963,6 +3090,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop2ty.setText("THÂN");
                     txttop1ngo.setText("HUYNH ĐỆ");
                     txttop1mui.setText("MỆNH");
+                    menh = "Mùi";
                     txttop1than.setText("PHỤ MẪU");
                     txttop1dau.setText("PHÚC ĐỨC");
                     txttop1tuat.setText("ĐIỀN TRẠCH");
@@ -2977,6 +3105,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1thin.setText("PHU THÊ");
                     txttop1ty.setText("HUYNH ĐỆ");
                     txttop1ngo.setText("MỆNH");
+                    menh = "Ngọ";
                     txttop2ngo.setText("THÂN");
                     txttop1mui.setText("PHỤ MẪU");
                     txttop1than.setText("PHÚC ĐỨC");
@@ -2992,6 +3121,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1mao.setText("PHU THÊ");
                     txttop1thin.setText("HUYNH ĐỆ");
                     txttop1ty.setText("MỆNH");
+                    menh = "Tỵ";
                     txttop1ngo.setText("PHỤ MẪU");
                     txttop1mui.setText("PHÚC ĐỨC");
                     txttop2mui.setText("THÂN");
@@ -3007,6 +3137,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1dan.setText("PHU THÊ");
                     txttop1mao.setText("HUYNH ĐỆ");
                     txttop1thin.setText("MỆNH");
+                    menh = "Thìn";
                     txttop1ty.setText("PHỤ MẪU");
                     txttop1ngo.setText("PHÚC ĐỨC");
                     txttop1mui.setText("ĐIỀN TRẠCH");
@@ -3022,6 +3153,7 @@ public class AnsaoActivity extends AppCompatActivity {
 
                     txttop1dan.setText("HUYNH ĐỆ");
                     txttop1mao.setText("MỆNH");
+                    menh = "Mẹo";
                     txttop1thin.setText("PHỤ MẪU");
                     txttop1ty.setText("PHÚC ĐỨC");
                     txttop1ngo.setText("ĐIỀN TRẠCH");
@@ -3036,6 +3168,7 @@ public class AnsaoActivity extends AppCompatActivity {
 
                 }else if (giophutsinh.equals("Tuất")){
                     txttop1dan.setText("MỆNH");
+                    menh = "Dần";
                     txttop1mao.setText("PHỤ MẪU");
                     txttop1thin.setText("PHÚC ĐỨC");
                     txttop1ty.setText("ĐIỀN TRẠCH");
@@ -3062,6 +3195,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop2hoi.setText("THÂN");
                     txttop1tyd.setText("HUYNH ĐỆ");
                     txttop1suu.setText("MỆNH");
+                    menh = "Sửu";
                 }
             }
             else if (thongTin.thangam().equals("12")){
@@ -3078,6 +3212,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1hoi.setText("PHU THÊ");
                     txttop1tyd.setText("HUYNH ĐỆ");
                     txttop1suu.setText("MỆNH");
+                    menh = "Sửu";
                     txttop2suu.setText("THÂN");
 
                 }else if (giophutsinh.equals("Sửu")){
@@ -3093,6 +3228,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1tuat.setText("PHU THÊ");
                     txttop1hoi.setText("HUYNH ĐỆ");
                     txttop1tyd.setText("MỆNH");
+                    menh = "Tý";
                     txttop1suu.setText("PHỤ MẪU");
 
                 }else if (giophutsinh.equals("Dần")){
@@ -3108,6 +3244,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1dau.setText("PHU THÊ");
                     txttop1tuat.setText("HUYNH ĐỆ");
                     txttop1hoi.setText("MỆNH");
+                    menh = "Hợi";
                     txttop1tyd.setText("PHỤ MẪU");
                     txttop1suu.setText("PHÚC ĐỨC");
 
@@ -3123,6 +3260,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1than.setText("PHU THÊ");
                     txttop1dau.setText("HUYNH ĐỆ");
                     txttop1tuat.setText("MỆNH");
+                    menh = "Tuất";
                     txttop1hoi.setText("PHỤ MẪU");
                     txttop1tyd.setText("PHÚC ĐỨC");
                     txttop1suu.setText("ĐIỀN TRẠCH");
@@ -3138,6 +3276,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1mui.setText("PHU THÊ");
                     txttop1than.setText("HUYNH ĐỆ");
                     txttop1dau.setText("MỆNH");
+                    menh = "Dậu";
                     txttop1tuat.setText("PHỤ MẪU");
                     txttop1hoi.setText("PHÚC ĐỨC");
                     txttop1tyd.setText("ĐIỀN TRẠCH");
@@ -3151,6 +3290,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop2ngo.setText("THÂN");
                     txttop1mui.setText("HUYNH ĐỆ");
                     txttop1than.setText("MỆNH");
+                    menh = "Thân";
                     txttop1dau.setText("PHỤ MẪU");
                     txttop1tuat.setText("PHÚC ĐỨC");
                     txttop1hoi.setText("ĐIỀN TRẠCH");
@@ -3163,6 +3303,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1ty.setText("PHU THÊ");
                     txttop1ngo.setText("HUYNH ĐỆ");
                     txttop1mui.setText("MỆNH");
+                    menh = "Mùi";
                     txttop2mui.setText("THÂN");
                     txttop1than.setText("PHỤ MẪU");
                     txttop1dau.setText("PHÚC ĐỨC");
@@ -3177,6 +3318,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1thin.setText("PHU THÊ");
                     txttop1ty.setText("HUYNH ĐỆ");
                     txttop1ngo.setText("MỆNH");
+                    menh = "Ngọ";
                     txttop1mui.setText("PHỤ MẪU");
                     txttop1than.setText("PHÚC ĐỨC");
                     txttop2than.setText("THÂN");
@@ -3191,6 +3333,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1mao.setText("PHU THÊ");
                     txttop1thin.setText("HUYNH ĐỆ");
                     txttop1ty.setText("MỆNH");
+                    menh = "Tỵ";
                     txttop1ngo.setText("PHỤ MẪU");
                     txttop1mui.setText("PHÚC ĐỨC");
                     txttop1than.setText("ĐIỀN TRẠCH");
@@ -3206,6 +3349,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1dan.setText("PHU THÊ");
                     txttop1mao.setText("HUYNH ĐỆ");
                     txttop1thin.setText("MỆNH");
+                    menh = "Thìn";
                     txttop1ty.setText("PHỤ MẪU");
                     txttop1ngo.setText("PHÚC ĐỨC");
                     txttop1mui.setText("ĐIỀN TRẠCH");
@@ -3219,6 +3363,7 @@ public class AnsaoActivity extends AppCompatActivity {
                 }else if (giophutsinh.equals("Tuất")){
                     txttop1dan.setText("HUYNH ĐỆ");
                     txttop1mao.setText("MỆNH");
+                    menh = "Mẹo";
                     txttop1thin.setText("PHỤ MẪU");
                     txttop1ty.setText("PHÚC ĐỨC");
                     txttop1ngo.setText("ĐIỀN TRẠCH");
@@ -3232,6 +3377,7 @@ public class AnsaoActivity extends AppCompatActivity {
                     txttop1suu.setText("PHU THÊ");
                 }else if (giophutsinh.equals("Hợi")){
                     txttop1dan.setText("MỆNH");
+                    menh = "Dần";
                     txttop1mao.setText("PHỤ MẪU");
                     txttop1thin.setText("PHÚC ĐỨC");
                     txttop1ty.setText("ĐIỀN TRẠCH");
@@ -3257,8 +3403,18 @@ public class AnsaoActivity extends AppCompatActivity {
             String[] output = namsinh.split(" ");
 
             if (output[0].equals("Giáp") || output[0].equals("Kỷ")){
+                if (menh.equals("Tý") || menh.equals("Sửu")){
+                    txtcuc.setText("Thủy 2 Cục");
+                }else if (menh.equals("Dần") || menh.equals("Mẹo") || menh.equals("Tuất") || menh.equals("Hợi")){
+                    txtcuc.setText("Hỏa 6 Cục");
+                }else if (menh.equals("Thìn") || menh.equals("Tỵ")){
+                    txtcuc.setText("Mộc 3 Cục");
+                }else if (menh.equals("Ngọ") || menh.equals("Mùi")){
+                    txtcuc.setText("Thổ 5 Cục");
+                }else if (menh.equals("Thân") || menh.equals("Dậu")){
+                    txtcuc.setText("Kim 4 Cục");
+                }
                 if (giophutsinh.equals("Tý") || giophutsinh.equals("Sửu")){
-                    txtcuc.setText("Thủy Nhị Cục");
                     if (thongTin.ngayam().equals("2") || thongTin.ngayam().equals("3") || thongTin.ngayam().equals("26") || thongTin.ngayam().equals("27")){
                         txttop3dan.setText("Tử Vi(D)");
                         txttop3suu.setText("Thiên Cơ(D)");
@@ -3466,7 +3622,6 @@ public class AnsaoActivity extends AppCompatActivity {
                     }
                 }
                 else if (giophutsinh.equals("Dần") || giophutsinh.equals("Mẹo") || giophutsinh.equals("Tuất") || giophutsinh.equals("Hợi")){
-                    txtcuc.setText("Hỏa Lục Cục");
                     if (thongTin.ngayam().equals("6") || thongTin.ngayam().equals("11") || thongTin.ngayam().equals("21")){
                         txttop3dan.setText("Tử Vi(D)");
                         txttop3suu.setText("Thiên Cơ(D)");
@@ -3673,7 +3828,6 @@ public class AnsaoActivity extends AppCompatActivity {
                     }
                 }
                 else if (giophutsinh.equals("Thìn") || giophutsinh.equals("Tỵ")){
-                    txtcuc.setText("Mộc Tam Cục");
                     if (thongTin.ngayam().equals("3") || thongTin.ngayam().equals("5")){
                         txttop3dan.setText("Tử Vi(D)");
                         txttop3suu.setText("Thiên Cơ(D)");
@@ -3880,7 +4034,6 @@ public class AnsaoActivity extends AppCompatActivity {
                     }
                 }
                 else if (giophutsinh.equals("Ngọ") || giophutsinh.equals("Mùi")){
-                    txtcuc.setText("Thổ Ngũ Cục");
                     if (thongTin.ngayam().equals("5") || thongTin.ngayam().equals("9") || thongTin.ngayam().equals("17")){
                         txttop3dan.setText("Tử Vi(D)");
                         txttop3suu.setText("Thiên Cơ(D)");
@@ -4088,7 +4241,6 @@ public class AnsaoActivity extends AppCompatActivity {
                     }
                 }
                 else if (giophutsinh.equals("Thân") || giophutsinh.equals("Dậu")){
-                    txtcuc.setText("Kim Tứ Cục");
                     if (thongTin.ngayam().equals("4") || thongTin.ngayam().equals("7") || thongTin.ngayam().equals("13")){
                         txttop3dan.setText("Tử Vi(D)");
                         txttop3suu.setText("Thiên Cơ(D)");
@@ -4297,8 +4449,18 @@ public class AnsaoActivity extends AppCompatActivity {
 
             }
             else if (output[0].equals("Ất") || output[0].equals("Canh")){
+                if (menh.equals("Tý") || menh.equals("Sửu")){
+                    txtcuc.setText("Hỏa 6 Cục");
+                }else if (menh.equals("Dần") || menh.equals("Mẹo") || menh.equals("Tuất") || menh.equals("Hợi")){
+                    txtcuc.setText("Thổ 5 Cục");
+                }else if (menh.equals("Thìn") || menh.equals("Tỵ")){
+                    txtcuc.setText("Kim 4 Cục");
+                }else if (menh.equals("Ngọ") || menh.equals("Mùi")){
+                    txtcuc.setText("Mộc 3 Cục");
+                }else if (menh.equals("Thân") || menh.equals("Dậu")){
+                    txtcuc.setText("Thủy 2 Cục");
+                }
                 if (giophutsinh.equals("Thân") || giophutsinh.equals("Dậu")){
-                    txtcuc.setText("Thủy Nhị Cục");
                     if (thongTin.ngayam().equals("2") || thongTin.ngayam().equals("3") || thongTin.ngayam().equals("26") || thongTin.ngayam().equals("27")){
                         txttop3dan.setText("Tử Vi(D)");
                         txttop3suu.setText("Thiên Cơ(D)");
@@ -4505,7 +4667,6 @@ public class AnsaoActivity extends AppCompatActivity {
                     }
                 }
                 else if (giophutsinh.equals("Tý") || giophutsinh.equals("Sửu")){
-                    txtcuc.setText("Hỏa Lục Cục");
                     if (thongTin.ngayam().equals("6") || thongTin.ngayam().equals("11") || thongTin.ngayam().equals("21")){
                         txttop3dan.setText("Tử Vi(D)");
                         txttop3suu.setText("Thiên Cơ(D)");
@@ -4712,7 +4873,6 @@ public class AnsaoActivity extends AppCompatActivity {
                     }
                 }
                 else if (giophutsinh.equals("Ngọ") || giophutsinh.equals("Mùi")){
-                    txtcuc.setText("Mộc Tam Cục");
                     if (thongTin.ngayam().equals("3") || thongTin.ngayam().equals("5")){
                         txttop3dan.setText("Tử Vi(D)");
                         txttop3suu.setText("Thiên Cơ(D)");
@@ -4919,7 +5079,6 @@ public class AnsaoActivity extends AppCompatActivity {
                     }
                 }
                 else if (giophutsinh.equals("Dần") || giophutsinh.equals("Mẹo") || giophutsinh.equals("Tuất") || giophutsinh.equals("Hợi")){
-                    txtcuc.setText("Thổ Ngũ Cục");
                     if (thongTin.ngayam().equals("5") || thongTin.ngayam().equals("9") || thongTin.ngayam().equals("17")){
                         txttop3dan.setText("Tử Vi(D)");
                         txttop3suu.setText("Thiên Cơ(D)");
@@ -5126,7 +5285,6 @@ public class AnsaoActivity extends AppCompatActivity {
                     }
                 }
                 else if (giophutsinh.equals("Thìn") || giophutsinh.equals("Tỵ")){
-                    txtcuc.setText("Kim Tứ Cục");
                     if (thongTin.ngayam().equals("4") || thongTin.ngayam().equals("7") || thongTin.ngayam().equals("13")){
                         txttop3dan.setText("Tử Vi(D)");
                         txttop3suu.setText("Thiên Cơ(D)");
@@ -5334,9 +5492,18 @@ public class AnsaoActivity extends AppCompatActivity {
                 }
             }
             else if (output[0].equals("Bính") || output[0].equals("Tân")){
-
+                if (menh.equals("Tý") || menh.equals("Sửu")){
+                    txtcuc.setText("Thổ 5 Cục");
+                }else if (menh.equals("Dần") || menh.equals("Mẹo") || menh.equals("Tuất") || menh.equals("Hợi")){
+                    txtcuc.setText("Mộc 3 Cục");
+                }else if (menh.equals("Thìn") || menh.equals("Tỵ")){
+                    txtcuc.setText("Thủy 2 Cục");
+                }else if (menh.equals("Ngọ") || menh.equals("Mùi")){
+                    txtcuc.setText("Kim 4 Cục");
+                }else if (menh.equals("Thân") || menh.equals("Dậu")){
+                    txtcuc.setText("Hỏa 6 Cục");
+                }
                 if (giophutsinh.equals("Thìn") || giophutsinh.equals("Tỵ")){
-                    txtcuc.setText("Thủy Nhị Cục");
                     if (thongTin.ngayam().equals("2") || thongTin.ngayam().equals("3") || thongTin.ngayam().equals("26") || thongTin.ngayam().equals("27")){
                         txttop3dan.setText("Tử Vi(D)");
                         txttop3suu.setText("Thiên Cơ(D)");
@@ -5543,7 +5710,6 @@ public class AnsaoActivity extends AppCompatActivity {
                     }
                 }
                 else if (giophutsinh.equals("Thân") || giophutsinh.equals("Dậu")){
-                    txtcuc.setText("Hỏa Lục Cục");
                     if (thongTin.ngayam().equals("6") || thongTin.ngayam().equals("11") || thongTin.ngayam().equals("21")){
                         txttop3dan.setText("Tử Vi(D)");
                         txttop3suu.setText("Thiên Cơ(D)");
@@ -5750,7 +5916,6 @@ public class AnsaoActivity extends AppCompatActivity {
                     }
                 }
                 else if (giophutsinh.equals("Dần") || giophutsinh.equals("Mẹo") || giophutsinh.equals("Tuất") || giophutsinh.equals("Hợi")){
-                    txtcuc.setText("Mộc Tam Cục");
                     if (thongTin.ngayam().equals("3") || thongTin.ngayam().equals("5")){
                         txttop3dan.setText("Tử Vi(D)");
                         txttop3suu.setText("Thiên Cơ(D)");
@@ -5957,7 +6122,6 @@ public class AnsaoActivity extends AppCompatActivity {
                     }
                 }
                 else if (giophutsinh.equals("Tý") || giophutsinh.equals("Sửu")){
-                    txtcuc.setText("Thổ Ngũ Cục");
                     if (thongTin.ngayam().equals("5") || thongTin.ngayam().equals("9") || thongTin.ngayam().equals("17")){
                         txttop3dan.setText("Tử Vi(D)");
                         txttop3suu.setText("Thiên Cơ(D)");
@@ -6164,7 +6328,6 @@ public class AnsaoActivity extends AppCompatActivity {
                     }
                 }
                 else if (giophutsinh.equals("Ngọ") || giophutsinh.equals("Mùi")){
-                    txtcuc.setText("Kim Tứ Cục");
                     if (thongTin.ngayam().equals("4") || thongTin.ngayam().equals("7") || thongTin.ngayam().equals("13")){
                         txttop3dan.setText("Tử Vi(D)");
                         txttop3suu.setText("Thiên Cơ(D)");
@@ -6372,9 +6535,18 @@ public class AnsaoActivity extends AppCompatActivity {
                 }
             }
             else if (output[0].equals("Đinh") || output[0].equals("Nhâm")){
-
+                if (menh.equals("Tý") || menh.equals("Sửu")){
+                    txtcuc.setText("Mộc 3 Cục");
+                }else if (menh.equals("Dần") || menh.equals("Mẹo") || menh.equals("Tuất") || menh.equals("Hợi")){
+                    txtcuc.setText("Kim 4 Cục");
+                }else if (menh.equals("Thìn") || menh.equals("Tỵ")){
+                    txtcuc.setText("Hỏa 6 Cục");
+                }else if (menh.equals("Ngọ") || menh.equals("Mùi")){
+                    txtcuc.setText("Thủy 2 Cục");
+                }else if (menh.equals("Thân") || menh.equals("Dậu")){
+                    txtcuc.setText("Thổ 5 Cục");
+                }
                 if (giophutsinh.equals("Ngọ") || giophutsinh.equals("Mùi")){
-                    txtcuc.setText("Thủy Nhị Cục");
                     if (thongTin.ngayam().equals("2") || thongTin.ngayam().equals("3") || thongTin.ngayam().equals("26") || thongTin.ngayam().equals("27")){
                         txttop3dan.setText("Tử Vi(D)");
                         txttop3suu.setText("Thiên Cơ(D)");
@@ -6581,7 +6753,6 @@ public class AnsaoActivity extends AppCompatActivity {
                     }
                 }
                 else if (giophutsinh.equals("Thìn") || giophutsinh.equals("Tỵ")){
-                    txtcuc.setText("Hỏa Lục Cục");
                     if (thongTin.ngayam().equals("6") || thongTin.ngayam().equals("11") || thongTin.ngayam().equals("21")){
                         txttop3dan.setText("Tử Vi(D)");
                         txttop3suu.setText("Thiên Cơ(D)");
@@ -6788,7 +6959,6 @@ public class AnsaoActivity extends AppCompatActivity {
                     }
                 }
                 else if (giophutsinh.equals("Tý") || giophutsinh.equals("Sửu")){
-                    txtcuc.setText("Mộc Tam Cục");
                     if (thongTin.ngayam().equals("3") || thongTin.ngayam().equals("5")){
                         txttop3dan.setText("Tử Vi(D)");
                         txttop3suu.setText("Thiên Cơ(D)");
@@ -6995,7 +7165,6 @@ public class AnsaoActivity extends AppCompatActivity {
                     }
                 }
                 else if (giophutsinh.equals("Thân") || giophutsinh.equals("Dậu")){
-                    txtcuc.setText("Thổ Ngũ Cục");
                     if (thongTin.ngayam().equals("5") || thongTin.ngayam().equals("9") || thongTin.ngayam().equals("17")){
                         txttop3dan.setText("Tử Vi(D)");
                         txttop3suu.setText("Thiên Cơ(D)");
@@ -7202,7 +7371,6 @@ public class AnsaoActivity extends AppCompatActivity {
                     }
                 }
                 else if (giophutsinh.equals("Dần") || giophutsinh.equals("Mẹo") || giophutsinh.equals("Tuất") || giophutsinh.equals("Hợi")){
-                    txtcuc.setText("Kim Tứ Cục");
                     if (thongTin.ngayam().equals("4") || thongTin.ngayam().equals("7") || thongTin.ngayam().equals("13")){
                         txttop3dan.setText("Tử Vi(D)");
                         txttop3suu.setText("Thiên Cơ(D)");
@@ -7410,9 +7578,18 @@ public class AnsaoActivity extends AppCompatActivity {
                 }
             }
             else if (output[0].equals("Mậu") || output[0].equals("Quý")){
-
+                if (menh.equals("Tý") || menh.equals("Sửu")){
+                    txtcuc.setText("Kim 4 Cục");
+                }else if (menh.equals("Dần") || menh.equals("Mẹo") || menh.equals("Tuất") || menh.equals("Hợi")){
+                    txtcuc.setText("Thủy 2 Cục");
+                }else if (menh.equals("Thìn") || menh.equals("Tỵ")){
+                    txtcuc.setText("Thổ 5 Cục");
+                }else if (menh.equals("Ngọ") || menh.equals("Mùi")){
+                    txtcuc.setText("Hỏa 6 Cục");
+                }else if (menh.equals("Thân") || menh.equals("Dậu")){
+                    txtcuc.setText("Mộc 3 Cục");
+                }
                 if (giophutsinh.equals("Dần") || giophutsinh.equals("Mẹo") || giophutsinh.equals("Tuất") || giophutsinh.equals("Hợi")){
-                    txtcuc.setText("Thủy Nhị Cục");
                     if (thongTin.ngayam().equals("2") || thongTin.ngayam().equals("3") || thongTin.ngayam().equals("26") || thongTin.ngayam().equals("27")){
                         txttop3dan.setText("Tử Vi(D)");
                         txttop3suu.setText("Thiên Cơ(D)");
@@ -7619,7 +7796,6 @@ public class AnsaoActivity extends AppCompatActivity {
                     }
                 }
                 else if (giophutsinh.equals("Ngọ") || giophutsinh.equals("Mùi")){
-                    txtcuc.setText("Hỏa Lục Cục");
                     if (thongTin.ngayam().equals("6") || thongTin.ngayam().equals("11") || thongTin.ngayam().equals("21")){
                         txttop3dan.setText("Tử Vi(D)");
                         txttop3suu.setText("Thiên Cơ(D)");
@@ -7826,7 +8002,6 @@ public class AnsaoActivity extends AppCompatActivity {
                     }
                 }
                 else if (giophutsinh.equals("Thân") || giophutsinh.equals("Dậu")){
-                    txtcuc.setText("Mộc Tam Cục");
                     if (thongTin.ngayam().equals("3") || thongTin.ngayam().equals("5")){
                         txttop3dan.setText("Tử Vi(D)");
                         txttop3suu.setText("Thiên Cơ(D)");
@@ -8033,7 +8208,6 @@ public class AnsaoActivity extends AppCompatActivity {
                     }
                 }
                 else if (giophutsinh.equals("Thìn") || giophutsinh.equals("Tỵ")){
-                    txtcuc.setText("Thổ Ngũ Cục");
                     if (thongTin.ngayam().equals("5") || thongTin.ngayam().equals("9") || thongTin.ngayam().equals("17")){
                         txttop3dan.setText("Tử Vi(D)");
                         txttop3suu.setText("Thiên Cơ(D)");
@@ -8240,7 +8414,6 @@ public class AnsaoActivity extends AppCompatActivity {
                     }
                 }
                 else if (giophutsinh.equals("Tý") || giophutsinh.equals("Sửu")){
-                    txtcuc.setText("Kim Tứ Cục");
                     if (thongTin.ngayam().equals("4") || thongTin.ngayam().equals("7") || thongTin.ngayam().equals("13")){
                         txttop3dan.setText("Tử Vi(D)");
                         txttop3suu.setText("Thiên Cơ(D)");

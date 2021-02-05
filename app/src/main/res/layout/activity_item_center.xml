@@ -200,7 +200,7 @@
             android:layout_gravity="center"
             android:gravity="center"
             android:textColor="#4CAF50"
-            android:textSize="20dp"
+            android:textSize="18dp"
             android:text="Đinh Tỵ"
             android:textStyle="bold" />
 
@@ -212,7 +212,7 @@
             android:layout_gravity="center"
             android:gravity="center"
             android:textColor="#4CAF50"
-            android:textSize="20dp"
+            android:textSize="18dp"
             android:text="Giáp Thìn"
             android:textStyle="bold" />
 
@@ -224,7 +224,7 @@
             android:layout_gravity="center"
             android:gravity="center"
             android:textColor="#4CAF50"
-            android:textSize="20dp"
+            android:textSize="18dp"
             android:text="Tân Dậu"
             android:textStyle="bold" />
 
@@ -236,7 +236,7 @@
             android:layout_gravity="center"
             android:gravity="center"
             android:textColor="#4CAF50"
-            android:textSize="20dp"
+            android:textSize="18dp"
             android:text="Giáp Ngọ"
             android:textStyle="bold" />
     </LinearLayout>
