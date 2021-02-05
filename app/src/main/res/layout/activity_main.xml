@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    tools:context=".activity.MainActivity">
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ten2" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Năm xem"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:textColor="#095A9A"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:layout_gravity="center"
+        android:background="@drawable/button" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ENTER THE DATE OF BIRTH"
+        android:layout_gravity="center"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="#C4FF5722"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_margin="1dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ngày"
+                android:textSize="15dp"
+                android:textColor="#095A9A"
+                />
+
+            <Spinner
+                android:id="@+id/txtNgay"
+                android:layout_width="55dp"
+                android:layout_height="40dp"
+                android:background="@drawable/edit"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_margin="1dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tháng"
+                android:textSize="15dp"
+                android:textColor="#095A9A"
+                />
+
+            <Spinner
+                android:id="@+id/spinnerthang"
+                android:layout_width="55dp"
+                android:layout_height="40dp"
+                android:background="@drawable/edit"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_margin="1dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Năm"
+                android:textSize="15dp"
+                android:textColor="#095A9A"
+                />
+
+            <EditText
+                android:id="@+id/txtNam"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:hint="Dương"
+                android:inputType="number"
+                android:background="@drawable/edit"
+                android:textSize="15dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_margin="1dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Giờ"
+                android:textSize="15dp"
+                android:textColor="#095A9A"
+                />
+
+            <Spinner
+                android:id="@+id/spinnergio"
+                android:layout_width="55dp"
+                android:layout_height="40dp"
+                android:background="@drawable/edit"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_margin="1dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phút"
+                android:textSize="15dp"
+                android:textColor="#095A9A"
+                />
+
+            <Spinner
+                android:id="@+id/spinnerphut"
+                android:layout_width="55dp"
+                android:layout_height="40dp"
+                android:background="@drawable/edit"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_margin="1dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Giới"
+                android:textSize="15dp"
+                android:textColor="#095A9A"
+                />
+
+            <Spinner
+                android:id="@+id/spinnergioi"
+                android:layout_width="55dp"
+                android:layout_height="40dp"
+                android:background="@drawable/edit"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnansao"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="2dp"
+            android:background="@drawable/button"
+            app:backgroundTint="#375FA3"
+            android:text="An Sao"
+            android:textColor="#fff"
+            android:textSize="14dp"
+            />
+
+        <Button
+            android:id="@+id/btnLuuSo"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="2dp"
+            android:background="@drawable/button"
+            app:backgroundTint="#375FA3"
+            android:text="Lưu Số"
+            android:textColor="#fff"
+            android:textSize="14dp"
+            />
+
+        <Button
+            android:id="@+id/btnDanhSach"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_margin="2dp"
+            android:background="@drawable/button"
+            app:backgroundTint="#375FA3"
+            android:text="Danh Sách"
+            android:textColor="#fff"
+            android:textSize="14dp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

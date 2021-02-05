@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">app tuvi</string>
+    <array name="arrThaiTue">
+        <item>Thái Tuế</item>
+        <item>Thiếu Dương</item>
+        <item>Tang Môn</item>
+        <item>Thiếu Âm</item>
+        <item>Quan Phù</item>
+        <item>Tử Phù</item>
+        <item>Tuế Phá</item>
+        <item>Long Đức</item>
+        <item>Bạch Hổ</item>
+        <item>Phúc Đức</item>
+        <item>Điếu Khách</item>
+        <item>Trực phù</item>
+    </array>
+
+    <array name="arrCan">
+        <item>Giáp</item>
+        <item>Ất</item>
+        <item>Bính</item>
+        <item>Đinh</item>
+        <item>Mậu</item>
+        <item>Kỷ</item>
+        <item>Canh</item>
+        <item>Tân</item>
+        <item>Nhâm</item>
+        <item>Quý</item>
+    </array>
+</resources>
