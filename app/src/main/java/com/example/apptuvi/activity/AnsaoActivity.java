@@ -438,7 +438,8 @@ public class AnsaoActivity extends AppCompatActivity {
         }
 
         cansanhtu = chigio + chingay + chithang + chinam;
-        txtcansanhtu.setText(String.valueOf(cansanhtu));
+        String x = String.valueOf(cansanhtu);
+        txtcansanhtu.setText(x.substring(0, 1) + "." + x.substring(1, x.length())+" lượng");
     }
 
     private void chumenh() {

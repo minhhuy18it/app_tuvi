@@ -1,6 +1,7 @@
 package com.example.apptuvi.adapter;
 
 import android.app.Activity;
+import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -35,6 +36,9 @@ public class TextAdapter extends RecyclerView.Adapter<TextAdapter.ViewHolder> {
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         String text = list.get(position);
         if (text.length() >= 10) holder.txtText.setTextSize(7);
+        if (position%2 == 0) holder.txtText.setTextColor(Color.BLUE);
+        if (position%2 != 0) holder.txtText.setTextColor(Color.RED);
+
         holder.txtText.setText(text);
     }
 
