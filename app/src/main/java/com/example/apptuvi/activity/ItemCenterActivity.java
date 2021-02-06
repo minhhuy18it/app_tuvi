@@ -25,7 +25,7 @@ public class ItemCenterActivity extends AppCompatActivity {
     TextView txtgioiam,txtcuc,txtnamduong,txtthangduong,txtngayduong,txtgioduong,txtmang,txtchumenh,txtchuthan;
     TextView txtnamam,txtthangam,txtngayam,txtgioam,txtcannamam,txtcanthangam,txtcanngayam,txtcangioam,txtcansanhtu,txtconnha;
     TextView txtconnhaphuquy,txtsaotrongnam,txttuoiam,txthantrongnam,txttamtai,txtnamhungnien,txtcannamxem,txthoangoc,txtkimlau;
-    TextView txtvannien,txtthaitue;
+    TextView txtvannien,txtthaitue,txthovaten;
     Spinner spnnamxem;
     ThongTin thongTin;
     ArrayList<String> listyear;
@@ -56,6 +56,7 @@ public class ItemCenterActivity extends AppCompatActivity {
         setKimLau();
         setVanNien();
         setThaitue();
+        txthovaten.setText(thongTin.getTen());
     }
 
     private void addEvents() {
@@ -1094,6 +1095,7 @@ public class ItemCenterActivity extends AppCompatActivity {
         txtkimlau = findViewById(R.id.txtkimlau);
         txtvannien = findViewById(R.id.txtvannien);
         txtthaitue = findViewById(R.id.txtthaitue);
+        txthovaten = findViewById(R.id.txthovaten);
         spnnamxem = findViewById(R.id.spnnamxem);
 
         listyear = new ArrayList<String>();

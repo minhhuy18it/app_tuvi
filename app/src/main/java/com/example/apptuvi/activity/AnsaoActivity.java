@@ -43,7 +43,7 @@ public class AnsaoActivity extends AppCompatActivity {
     TextView txtgioiam,txtcuc,txtnamduong,txtthangduong,txtngayduong,txtgioduong,txtmang,txtchumenh,txtchuthan;
     TextView txtnamam,txtthangam,txtngayam,txtgioam,txtcannamam,txtcanthangam,txtcanngayam,txtcangioam,txtcansanhtu,txtconnha;
     TextView txtconnhaphuquy,txtsaotrongnam,txttuoiam,txthantrongnam,txttamtai,txtnamhungnien,txtcannamxem,txthoangoc,txtkimlau;
-    TextView txtvannien,txtthaitue;
+    TextView txtvannien,txtthaitue,txthovaten;
     Spinner spnnamxem;
     String namsinh,gioiam;
     String giophutsinh;
@@ -84,6 +84,7 @@ public class AnsaoActivity extends AppCompatActivity {
         setKimLau();
         setVanNien();
         setThaitue();
+        txthovaten.setText(thongTin.getTen());
     }
 
     private void addEvents() {
@@ -93,6 +94,7 @@ public class AnsaoActivity extends AppCompatActivity {
                 namhientai = Integer.parseInt(listyear.get(position));
                 tuoiam = (namhientai - Integer.parseInt(thongTin.getNam())) + 1;
                 txttuoiam.setText(String.valueOf(tuoiam));
+                mang();
                 tamtai();
                 setCanChiNamDuong();
                 setHungNien();
@@ -611,221 +613,216 @@ public class AnsaoActivity extends AppCompatActivity {
     }
 
     private void mang() {
+        Calendar calendar = Calendar.getInstance();
+        namhientai = calendar.get(Calendar.YEAR);
+        tuoiam = (namhientai - Integer.parseInt(thongTin.getNam())) + 1;
+        txttuoiam.setText(String.valueOf(tuoiam));
 
-            Intent intent = getIntent();
-            if (intent.hasExtra("ThongTin")) {
-                ThongTin thongTin = (ThongTin) intent.getSerializableExtra("ThongTin");
-                Calendar calendar = Calendar.getInstance();
-                namhientai = calendar.get(Calendar.YEAR);
-                tuoiam = (namhientai - Integer.parseInt(thongTin.getNam())) + 1;
-                txttuoiam.setText(String.valueOf(tuoiam));
-
-                if (thongTin.getGioiTinh().equals("Nam")){
-                    if (tuoiam.equals(1) ||tuoiam.equals(10) ||tuoiam.equals(19) ||tuoiam.equals(28) ||tuoiam.equals(37) ||tuoiam.equals(46) ||tuoiam.equals(55) ||tuoiam.equals(64) ||tuoiam.equals(73) ||tuoiam.equals(82) ||tuoiam.equals(91) ||tuoiam.equals(100)){
-                        txtsaotrongnam.setText("La Hầu");
-                    }else if (tuoiam.equals(2) ||tuoiam.equals(11) ||tuoiam.equals(20) ||tuoiam.equals(29) ||tuoiam.equals(38) ||tuoiam.equals(47) ||tuoiam.equals(56) ||tuoiam.equals(65) ||tuoiam.equals(74) ||tuoiam.equals(83) ||tuoiam.equals(92) ||tuoiam.equals(101)){
-                        txtsaotrongnam.setText("Thổ Tú");
-                    }else if (tuoiam.equals(3) ||tuoiam.equals(12) ||tuoiam.equals(21) ||tuoiam.equals(30) ||tuoiam.equals(39) ||tuoiam.equals(48) ||tuoiam.equals(57) ||tuoiam.equals(66) ||tuoiam.equals(75) ||tuoiam.equals(84) ||tuoiam.equals(93) ||tuoiam.equals(102)){
-                        txtsaotrongnam.setText("Thủy Diệu");
-                    }else if (tuoiam.equals(4) ||tuoiam.equals(13) ||tuoiam.equals(22) ||tuoiam.equals(31) ||tuoiam.equals(40) ||tuoiam.equals(49) ||tuoiam.equals(58) ||tuoiam.equals(67) ||tuoiam.equals(76) ||tuoiam.equals(85) ||tuoiam.equals(94) ||tuoiam.equals(103)){
-                        txtsaotrongnam.setText("Thái Bạch");
-                    }else if (tuoiam.equals(5) ||tuoiam.equals(14) ||tuoiam.equals(23) ||tuoiam.equals(32) ||tuoiam.equals(41) ||tuoiam.equals(50) ||tuoiam.equals(59) ||tuoiam.equals(68) ||tuoiam.equals(77) ||tuoiam.equals(86) ||tuoiam.equals(95) ||tuoiam.equals(104)){
-                        txtsaotrongnam.setText("Thái Dương");
-                    }else if (tuoiam.equals(6) ||tuoiam.equals(15) ||tuoiam.equals(24) ||tuoiam.equals(33) ||tuoiam.equals(42) ||tuoiam.equals(51) ||tuoiam.equals(60) ||tuoiam.equals(69) ||tuoiam.equals(78) ||tuoiam.equals(87) ||tuoiam.equals(96) ||tuoiam.equals(105)){
-                        txtsaotrongnam.setText("Vân Hớn");
-                    }else if (tuoiam.equals(7) ||tuoiam.equals(16) ||tuoiam.equals(25) ||tuoiam.equals(34) ||tuoiam.equals(43) ||tuoiam.equals(52) ||tuoiam.equals(61) ||tuoiam.equals(70) ||tuoiam.equals(79) ||tuoiam.equals(88) ||tuoiam.equals(97) ||tuoiam.equals(106)){
-                        txtsaotrongnam.setText("Kế Đô");
-                    }else if (tuoiam.equals(8) ||tuoiam.equals(17) ||tuoiam.equals(26) ||tuoiam.equals(35) ||tuoiam.equals(44) ||tuoiam.equals(53) ||tuoiam.equals(62) ||tuoiam.equals(71) ||tuoiam.equals(80) ||tuoiam.equals(89) ||tuoiam.equals(98) ||tuoiam.equals(107)){
-                        txtsaotrongnam.setText("Thái Âm");
-                    }else if (tuoiam.equals(9) ||tuoiam.equals(18) ||tuoiam.equals(27) ||tuoiam.equals(36) ||tuoiam.equals(45) ||tuoiam.equals(54) ||tuoiam.equals(63) ||tuoiam.equals(72) ||tuoiam.equals(81) ||tuoiam.equals(90) ||tuoiam.equals(99) ||tuoiam.equals(108)){
-                        txtsaotrongnam.setText("Mộc Đức");
-                    }
-                }else {
-                    if (tuoiam.equals(1) ||tuoiam.equals(10) ||tuoiam.equals(19) ||tuoiam.equals(28) ||tuoiam.equals(37) ||tuoiam.equals(46) ||tuoiam.equals(55) ||tuoiam.equals(64) ||tuoiam.equals(73) ||tuoiam.equals(82) ||tuoiam.equals(91) ||tuoiam.equals(100)){
-                        txtsaotrongnam.setText("Kế Đô");
-                    }else if (tuoiam.equals(2) ||tuoiam.equals(11) ||tuoiam.equals(20) ||tuoiam.equals(29) ||tuoiam.equals(38) ||tuoiam.equals(47) ||tuoiam.equals(56) ||tuoiam.equals(65) ||tuoiam.equals(74) ||tuoiam.equals(83) ||tuoiam.equals(92) ||tuoiam.equals(101)){
-                        txtsaotrongnam.setText("Vân Hớn");
-                    }else if (tuoiam.equals(3) ||tuoiam.equals(12) ||tuoiam.equals(21) ||tuoiam.equals(30) ||tuoiam.equals(39) ||tuoiam.equals(48) ||tuoiam.equals(57) ||tuoiam.equals(66) ||tuoiam.equals(75) ||tuoiam.equals(84) ||tuoiam.equals(93) ||tuoiam.equals(102)){
-                        txtsaotrongnam.setText("Mộng Đức");
-                    }else if (tuoiam.equals(4) ||tuoiam.equals(13) ||tuoiam.equals(22) ||tuoiam.equals(31) ||tuoiam.equals(40) ||tuoiam.equals(49) ||tuoiam.equals(58) ||tuoiam.equals(67) ||tuoiam.equals(76) ||tuoiam.equals(85) ||tuoiam.equals(94) ||tuoiam.equals(103)){
-                        txtsaotrongnam.setText("Thái Âm");
-                    }else if (tuoiam.equals(5) ||tuoiam.equals(14) ||tuoiam.equals(23) ||tuoiam.equals(32) ||tuoiam.equals(41) ||tuoiam.equals(50) ||tuoiam.equals(59) ||tuoiam.equals(68) ||tuoiam.equals(77) ||tuoiam.equals(86) ||tuoiam.equals(95) ||tuoiam.equals(104)){
-                        txtsaotrongnam.setText("Thổ Tú");
-                    }else if (tuoiam.equals(6) ||tuoiam.equals(15) ||tuoiam.equals(24) ||tuoiam.equals(33) ||tuoiam.equals(42) ||tuoiam.equals(51) ||tuoiam.equals(60) ||tuoiam.equals(69) ||tuoiam.equals(78) ||tuoiam.equals(87) ||tuoiam.equals(96) ||tuoiam.equals(105)){
-                        txtsaotrongnam.setText("La Hầu");
-                    }else if (tuoiam.equals(7) ||tuoiam.equals(16) ||tuoiam.equals(25) ||tuoiam.equals(34) ||tuoiam.equals(43) ||tuoiam.equals(52) ||tuoiam.equals(61) ||tuoiam.equals(70) ||tuoiam.equals(79) ||tuoiam.equals(88) ||tuoiam.equals(97) ||tuoiam.equals(106)){
-                        txtsaotrongnam.setText("Thái Dương");
-                    }else if (tuoiam.equals(8) ||tuoiam.equals(17) ||tuoiam.equals(26) ||tuoiam.equals(35) ||tuoiam.equals(44) ||tuoiam.equals(53) ||tuoiam.equals(62) ||tuoiam.equals(71) ||tuoiam.equals(80) ||tuoiam.equals(89) ||tuoiam.equals(98) ||tuoiam.equals(107)){
-                        txtsaotrongnam.setText("Thái Bạch");
-                    }else if (tuoiam.equals(9) ||tuoiam.equals(18) ||tuoiam.equals(27) ||tuoiam.equals(36) ||tuoiam.equals(45) ||tuoiam.equals(54) ||tuoiam.equals(63) ||tuoiam.equals(72) ||tuoiam.equals(81) ||tuoiam.equals(90) ||tuoiam.equals(99) ||tuoiam.equals(108)){
-                        txtsaotrongnam.setText("Thủy Diệu");
-                    }
-                }
-
-                if (thongTin.getGioiTinh().equals("Nam")){
-                    if (tuoiam.equals(1) ||tuoiam.equals(9) ||tuoiam.equals(10) ||tuoiam.equals(18) ||tuoiam.equals(27) ||tuoiam.equals(36) ||tuoiam.equals(45) ||tuoiam.equals(54) ||tuoiam.equals(63) ||tuoiam.equals(72) ||tuoiam.equals(81) ||tuoiam.equals(89) ||tuoiam.equals(90) ||tuoiam.equals(98)){
-                        txthantrongnam.setText("Huỳnh Tuyền");
-                    }else if (tuoiam.equals(2) ||tuoiam.equals(11) ||tuoiam.equals(19) ||tuoiam.equals(20) ||tuoiam.equals(28) ||tuoiam.equals(37) ||tuoiam.equals(46) ||tuoiam.equals(55) ||tuoiam.equals(64) ||tuoiam.equals(73) ||tuoiam.equals(82) ||tuoiam.equals(91) ||tuoiam.equals(100) ||tuoiam.equals(99)){
-                        txthantrongnam.setText("Tam Kheo");
-                    }else if (tuoiam.equals(3) ||tuoiam.equals(12) ||tuoiam.equals(21) ||tuoiam.equals(29) ||tuoiam.equals(30) ||tuoiam.equals(38) ||tuoiam.equals(47) ||tuoiam.equals(56) ||tuoiam.equals(65) ||tuoiam.equals(74) ||tuoiam.equals(83) ||tuoiam.equals(92) ||tuoiam.equals(101)){
-                        txthantrongnam.setText("Ngũ Mộ");
-                    }else if (tuoiam.equals(4) ||tuoiam.equals(13) ||tuoiam.equals(22) ||tuoiam.equals(31) ||tuoiam.equals(39) ||tuoiam.equals(40) ||tuoiam.equals(48) ||tuoiam.equals(57) ||tuoiam.equals(66) ||tuoiam.equals(75) ||tuoiam.equals(84) ||tuoiam.equals(93) ||tuoiam.equals(102)){
-                        txthantrongnam.setText("Thiên Tinh");
-                    }else if (tuoiam.equals(5) ||tuoiam.equals(14) ||tuoiam.equals(23) ||tuoiam.equals(32) ||tuoiam.equals(41) ||tuoiam.equals(49) ||tuoiam.equals(50) ||tuoiam.equals(58) ||tuoiam.equals(67) ||tuoiam.equals(76) ||tuoiam.equals(85) ||tuoiam.equals(94) ||tuoiam.equals(103)){
-                        txthantrongnam.setText("Tán Tận");
-                    }else if (tuoiam.equals(6) ||tuoiam.equals(15) ||tuoiam.equals(24) ||tuoiam.equals(33) ||tuoiam.equals(42) ||tuoiam.equals(51) ||tuoiam.equals(59) ||tuoiam.equals(60) ||tuoiam.equals(68) ||tuoiam.equals(77) ||tuoiam.equals(86) ||tuoiam.equals(95) ||tuoiam.equals(104)){
-                        txthantrongnam.setText("Thiên La");
-                    }else if (tuoiam.equals(7) ||tuoiam.equals(16) ||tuoiam.equals(25) ||tuoiam.equals(34) ||tuoiam.equals(43) ||tuoiam.equals(52) ||tuoiam.equals(61) ||tuoiam.equals(69) ||tuoiam.equals(70) ||tuoiam.equals(78) ||tuoiam.equals(87) ||tuoiam.equals(96) ||tuoiam.equals(105)){
-                        txthantrongnam.setText("Địa Võng");
-                    }else if (tuoiam.equals(8) ||tuoiam.equals(17) ||tuoiam.equals(26) ||tuoiam.equals(35) ||tuoiam.equals(44) ||tuoiam.equals(53) ||tuoiam.equals(62) ||tuoiam.equals(71) ||tuoiam.equals(79) ||tuoiam.equals(80) ||tuoiam.equals(88) ||tuoiam.equals(97) ||tuoiam.equals(106)){
-                        txthantrongnam.setText("Diêm Vương");
-                    }
-                }else {
-                    if (tuoiam.equals(1) ||tuoiam.equals(9) ||tuoiam.equals(10) ||tuoiam.equals(18) ||tuoiam.equals(27) ||tuoiam.equals(36) ||tuoiam.equals(45) ||tuoiam.equals(54) ||tuoiam.equals(63) ||tuoiam.equals(72) ||tuoiam.equals(81) ||tuoiam.equals(89) ||tuoiam.equals(90) ||tuoiam.equals(98)){
-                        txthantrongnam.setText("Tán Tận");
-                    }else if (tuoiam.equals(2) ||tuoiam.equals(11) ||tuoiam.equals(19) ||tuoiam.equals(20) ||tuoiam.equals(28) ||tuoiam.equals(37) ||tuoiam.equals(46) ||tuoiam.equals(55) ||tuoiam.equals(64) ||tuoiam.equals(73) ||tuoiam.equals(82) ||tuoiam.equals(91) ||tuoiam.equals(100) ||tuoiam.equals(99)){
-                        txthantrongnam.setText("Thiên Tinh");
-                    }else if (tuoiam.equals(3) ||tuoiam.equals(12) ||tuoiam.equals(21) ||tuoiam.equals(29) ||tuoiam.equals(30) ||tuoiam.equals(38) ||tuoiam.equals(47) ||tuoiam.equals(56) ||tuoiam.equals(65) ||tuoiam.equals(74) ||tuoiam.equals(83) ||tuoiam.equals(92) ||tuoiam.equals(101)){
-                        txthantrongnam.setText("Ngũ Mộ");
-                    }else if (tuoiam.equals(4) ||tuoiam.equals(13) ||tuoiam.equals(22) ||tuoiam.equals(31) ||tuoiam.equals(39) ||tuoiam.equals(40) ||tuoiam.equals(48) ||tuoiam.equals(57) ||tuoiam.equals(66) ||tuoiam.equals(75) ||tuoiam.equals(84) ||tuoiam.equals(93) ||tuoiam.equals(102)){
-                        txthantrongnam.setText("Tam Kheo");
-                    }else if (tuoiam.equals(5) ||tuoiam.equals(14) ||tuoiam.equals(23) ||tuoiam.equals(32) ||tuoiam.equals(41) ||tuoiam.equals(49) ||tuoiam.equals(50) ||tuoiam.equals(58) ||tuoiam.equals(67) ||tuoiam.equals(76) ||tuoiam.equals(85) ||tuoiam.equals(94) ||tuoiam.equals(103)){
-                        txthantrongnam.setText("Huỳnh Tuyền");
-                    }else if (tuoiam.equals(6) ||tuoiam.equals(15) ||tuoiam.equals(24) ||tuoiam.equals(33) ||tuoiam.equals(42) ||tuoiam.equals(51) ||tuoiam.equals(59) ||tuoiam.equals(60) ||tuoiam.equals(68) ||tuoiam.equals(77) ||tuoiam.equals(86) ||tuoiam.equals(95) ||tuoiam.equals(104)){
-                        txthantrongnam.setText("Diêm Vương");
-                    }else if (tuoiam.equals(7) ||tuoiam.equals(16) ||tuoiam.equals(25) ||tuoiam.equals(34) ||tuoiam.equals(43) ||tuoiam.equals(52) ||tuoiam.equals(61) ||tuoiam.equals(69) ||tuoiam.equals(70) ||tuoiam.equals(78) ||tuoiam.equals(87) ||tuoiam.equals(96) ||tuoiam.equals(105)){
-                        txthantrongnam.setText("Địa Võng");
-                    }else if (tuoiam.equals(8) ||tuoiam.equals(17) ||tuoiam.equals(26) ||tuoiam.equals(35) ||tuoiam.equals(44) ||tuoiam.equals(53) ||tuoiam.equals(62) ||tuoiam.equals(71) ||tuoiam.equals(79) ||tuoiam.equals(80) ||tuoiam.equals(88) ||tuoiam.equals(97) ||tuoiam.equals(106)){
-                        txthantrongnam.setText("Thiên La");
-                    }
-                }
-
-                namAm = thongTin.namam();
-                Integer mang = Integer.parseInt(namAm)%60;
-
-                if (mang == 0 || mang == 1){
-                    txtmang.setText("Thạch Lựu Mộc");
-                    txtconnha.setText("Thanh Đế");
-                    txtconnhaphuquy.setText("(Cô Quạnh)");
-                }else if (mang == 2 || mang == 3){
-                    txtmang.setText("Đại Hải Thủy");
-                    txtconnhaphuquy.setText("(Quan Lộc,Tận Khổ)");
-                    txtconnha.setText("Hắc Đế");
-                }else if (mang == 4 || mang == 5){
-                    txtmang.setText("Hải Trung Kim");
-                    txtconnha.setText("Bạch Đế");
-                    txtconnhaphuquy.setText("(Phú Quý)");
-                }else if (mang == 6 || mang == 7){
-                    txtmang.setText("Lư Trung Hỏa");
-                    txtconnha.setText("Xích Đế");
-                    txtconnhaphuquy.setText("(Cô Quạnh)");
-                }else if (mang == 8 || mang == 9){
-                    txtmang.setText("Đại Lâm Mộc");
-                    txtconnha.setText("Thanh Đế");
-                    txtconnhaphuquy.setText("(Trường Mạng)");
-                }else if (mang == 10 || mang == 11){
-                    txtmang.setText("Lộ Bàng Thổ");
-                    txtconnha.setText("Huỳnh Đế");
-                    txtconnhaphuquy.setText("(Cô Quạnh)");
-                }else if (mang == 12 || mang == 13){
-                    txtmang.setText("Kiếm Phong Kim");
-                    txtconnha.setText("Bạch Đế");
-                    txtconnhaphuquy.setText("(Phú Quý)");
-                }else if (mang == 14 || mang == 15){
-                    txtmang.setText("Sơn Đầu Hỏa");
-                    txtconnha.setText("Xích Đế");
-                    txtconnhaphuquy.setText("(Cô Quạnh)");
-                }else if (mang == 16 || mang == 17){
-                    txtmang.setText("Giang Hạ Thủy");
-                    txtconnha.setText("Hắc Đế");
-                    txtconnhaphuquy.setText("(Cô Quạnh)");
-                }else if (mang == 18 || mang == 19){
-                    txtmang.setText("Thành Đầu Thổ");
-                    txtconnha.setText("Huỳnh Đế");
-                    txtconnhaphuquy.setText("(Phú Quý)");
-                }else if (mang == 20 || mang == 21){
-                    txtmang.setText("Bạch Lạp Kim");
-                    txtconnha.setText("Bạch Đế");
-                    txtconnhaphuquy.setText("(Trường Mạng)");
-                }else if (mang == 22 || mang == 23){
-                    txtmang.setText("Dương Liễu Mộc");
-                    txtconnha.setText("Thanh Đế");
-                    txtconnhaphuquy.setText("(Trường Mạng)");
-                }else if (mang == 24 || mang == 25){
-                    txtmang.setText("Tuyền Trung Thủy");
-                    txtconnha.setText("Hắc Đế");
-                    txtconnhaphuquy.setText("(Từ Tánh,Phú Quý)");
-                }else if (mang == 26 || mang == 27){
-                    txtmang.setText("Ốc Thượng Thổ");
-                    txtconnha.setText("Huỳnh Đế");
-                    txtconnhaphuquy.setText("(Phú Quý)");
-                }else if (mang == 28 || mang == 29){
-                    txtmang.setText("Thích Lịch Hỏa");
-                    txtconnha.setText("Xích Đế");
-                    txtconnhaphuquy.setText("(Phú Quý)");
-                }else if (mang == 30 || mang == 31){
-                    txtmang.setText("Tòng Bá Mộc");
-                    txtconnha.setText("Thanh Đế");
-                    txtconnhaphuquy.setText("(Trường Mạng)");
-                }else if (mang == 32 || mang == 33){
-                    txtmang.setText("Trường Lưu Thủy");
-                    txtconnha.setText("Hắc Đế");
-                    txtconnhaphuquy.setText("(Trường Mạng)");
-                }else if (mang == 34 || mang == 35){
-                    txtmang.setText("Sa Trung Kim");
-                    txtconnha.setText("Bạch Đế");
-                    txtconnhaphuquy.setText("(An Mạng,Phú Quý)");
-                }else if (mang == 36 || mang == 37){
-                    txtmang.setText("Sơn Hạ Hỏa");
-                    txtconnha.setText("Xích Đế");
-                    txtconnhaphuquy.setText("(Cô Quạnh)");
-                }else if (mang == 38 || mang == 39){
-                    txtmang.setText("Bình Địa Mộc");
-                    txtconnha.setText("Thanh Đế");
-                    txtconnhaphuquy.setText("(Phú Quý)");
-                }else if (mang == 40 || mang == 41){
-                    txtmang.setText("Bích Thượng Thổ");
-                    txtconnha.setText("Huỳnh Đế");
-                    txtconnhaphuquy.setText("(Quan Lộc,Cô Quạnh)");
-                }else if (mang == 42 || mang == 43){
-                    txtmang.setText("Kim Bạch Kim");
-                    txtconnha.setText("Bạch Đế");
-                    txtconnhaphuquy.setText("(Phú Quý)");
-                }else if (mang == 44 || mang == 45){
-                    txtmang.setText("Phúc Đăng Hoa");
-                    txtconnha.setText("Xích Đế");
-                    txtconnhaphuquy.setText("(Tận Khổ)");
-                }else if (mang == 46 || mang == 47){
-                    txtmang.setText("Thiên Hà Thủy");
-                    txtconnha.setText("Hắc Đế");
-                    txtconnhaphuquy.setText("(Tận Khổ)");
-                }else if (mang == 48 || mang == 49){
-                    txtmang.setText("Đại Trạch Thổ");
-                    txtconnha.setText("Huỳnh Đế");
-                    txtconnhaphuquy.setText("(Quan Lộc)");
-                }else if (mang == 50 || mang == 51){
-                    txtmang.setText("Xoa Xuyến Kim");
-                    txtconnha.setText("Bạch Đế");
-                    txtconnhaphuquy.setText("(Phú Quý)");
-                }else if (mang == 52 || mang == 53){
-                    txtmang.setText("Tang Đố Mộc");
-                    txtconnha.setText("Thanh Đế");
-                    txtconnhaphuquy.setText("(Quan Lộc,Tận Khổ)");
-                }else if (mang == 54 || mang == 55){
-                    txtmang.setText("Đại Khê Thủy");
-                    txtconnha.setText("Hắc Đế");
-                    txtconnhaphuquy.setText("(Phú Quý)");
-                }else if (mang == 56 || mang == 57){
-                    txtmang.setText("Sa Trung Thổ");
-                    txtconnha.setText("Huỳnh Đế");
-                    txtconnhaphuquy.setText("(Phú Quý)");
-                }else if (mang == 58 || mang == 59){
-                    txtmang.setText("Thiên Thượng Hỏa");
-                    txtconnha.setText("Xích Đế");
-                    txtconnhaphuquy.setText("(Cô Quạnh)");
-                }
+        if (thongTin.getGioiTinh().equals("Nam")){
+            if (tuoiam.equals(1) ||tuoiam.equals(10) ||tuoiam.equals(19) ||tuoiam.equals(28) ||tuoiam.equals(37) ||tuoiam.equals(46) ||tuoiam.equals(55) ||tuoiam.equals(64) ||tuoiam.equals(73) ||tuoiam.equals(82) ||tuoiam.equals(91) ||tuoiam.equals(100)){
+                txtsaotrongnam.setText("La Hầu");
+            }else if (tuoiam.equals(2) ||tuoiam.equals(11) ||tuoiam.equals(20) ||tuoiam.equals(29) ||tuoiam.equals(38) ||tuoiam.equals(47) ||tuoiam.equals(56) ||tuoiam.equals(65) ||tuoiam.equals(74) ||tuoiam.equals(83) ||tuoiam.equals(92) ||tuoiam.equals(101)){
+                txtsaotrongnam.setText("Thổ Tú");
+            }else if (tuoiam.equals(3) ||tuoiam.equals(12) ||tuoiam.equals(21) ||tuoiam.equals(30) ||tuoiam.equals(39) ||tuoiam.equals(48) ||tuoiam.equals(57) ||tuoiam.equals(66) ||tuoiam.equals(75) ||tuoiam.equals(84) ||tuoiam.equals(93) ||tuoiam.equals(102)){
+                txtsaotrongnam.setText("Thủy Diệu");
+            }else if (tuoiam.equals(4) ||tuoiam.equals(13) ||tuoiam.equals(22) ||tuoiam.equals(31) ||tuoiam.equals(40) ||tuoiam.equals(49) ||tuoiam.equals(58) ||tuoiam.equals(67) ||tuoiam.equals(76) ||tuoiam.equals(85) ||tuoiam.equals(94) ||tuoiam.equals(103)){
+                txtsaotrongnam.setText("Thái Bạch");
+            }else if (tuoiam.equals(5) ||tuoiam.equals(14) ||tuoiam.equals(23) ||tuoiam.equals(32) ||tuoiam.equals(41) ||tuoiam.equals(50) ||tuoiam.equals(59) ||tuoiam.equals(68) ||tuoiam.equals(77) ||tuoiam.equals(86) ||tuoiam.equals(95) ||tuoiam.equals(104)){
+                txtsaotrongnam.setText("Thái Dương");
+            }else if (tuoiam.equals(6) ||tuoiam.equals(15) ||tuoiam.equals(24) ||tuoiam.equals(33) ||tuoiam.equals(42) ||tuoiam.equals(51) ||tuoiam.equals(60) ||tuoiam.equals(69) ||tuoiam.equals(78) ||tuoiam.equals(87) ||tuoiam.equals(96) ||tuoiam.equals(105)){
+                txtsaotrongnam.setText("Vân Hớn");
+            }else if (tuoiam.equals(7) ||tuoiam.equals(16) ||tuoiam.equals(25) ||tuoiam.equals(34) ||tuoiam.equals(43) ||tuoiam.equals(52) ||tuoiam.equals(61) ||tuoiam.equals(70) ||tuoiam.equals(79) ||tuoiam.equals(88) ||tuoiam.equals(97) ||tuoiam.equals(106)){
+                txtsaotrongnam.setText("Kế Đô");
+            }else if (tuoiam.equals(8) ||tuoiam.equals(17) ||tuoiam.equals(26) ||tuoiam.equals(35) ||tuoiam.equals(44) ||tuoiam.equals(53) ||tuoiam.equals(62) ||tuoiam.equals(71) ||tuoiam.equals(80) ||tuoiam.equals(89) ||tuoiam.equals(98) ||tuoiam.equals(107)){
+                txtsaotrongnam.setText("Thái Âm");
+            }else if (tuoiam.equals(9) ||tuoiam.equals(18) ||tuoiam.equals(27) ||tuoiam.equals(36) ||tuoiam.equals(45) ||tuoiam.equals(54) ||tuoiam.equals(63) ||tuoiam.equals(72) ||tuoiam.equals(81) ||tuoiam.equals(90) ||tuoiam.equals(99) ||tuoiam.equals(108)){
+                txtsaotrongnam.setText("Mộc Đức");
+            }
+        }else {
+            if (tuoiam.equals(1) ||tuoiam.equals(10) ||tuoiam.equals(19) ||tuoiam.equals(28) ||tuoiam.equals(37) ||tuoiam.equals(46) ||tuoiam.equals(55) ||tuoiam.equals(64) ||tuoiam.equals(73) ||tuoiam.equals(82) ||tuoiam.equals(91) ||tuoiam.equals(100)){
+                txtsaotrongnam.setText("Kế Đô");
+            }else if (tuoiam.equals(2) ||tuoiam.equals(11) ||tuoiam.equals(20) ||tuoiam.equals(29) ||tuoiam.equals(38) ||tuoiam.equals(47) ||tuoiam.equals(56) ||tuoiam.equals(65) ||tuoiam.equals(74) ||tuoiam.equals(83) ||tuoiam.equals(92) ||tuoiam.equals(101)){
+                txtsaotrongnam.setText("Vân Hớn");
+            }else if (tuoiam.equals(3) ||tuoiam.equals(12) ||tuoiam.equals(21) ||tuoiam.equals(30) ||tuoiam.equals(39) ||tuoiam.equals(48) ||tuoiam.equals(57) ||tuoiam.equals(66) ||tuoiam.equals(75) ||tuoiam.equals(84) ||tuoiam.equals(93) ||tuoiam.equals(102)){
+                txtsaotrongnam.setText("Mộng Đức");
+            }else if (tuoiam.equals(4) ||tuoiam.equals(13) ||tuoiam.equals(22) ||tuoiam.equals(31) ||tuoiam.equals(40) ||tuoiam.equals(49) ||tuoiam.equals(58) ||tuoiam.equals(67) ||tuoiam.equals(76) ||tuoiam.equals(85) ||tuoiam.equals(94) ||tuoiam.equals(103)){
+                txtsaotrongnam.setText("Thái Âm");
+            }else if (tuoiam.equals(5) ||tuoiam.equals(14) ||tuoiam.equals(23) ||tuoiam.equals(32) ||tuoiam.equals(41) ||tuoiam.equals(50) ||tuoiam.equals(59) ||tuoiam.equals(68) ||tuoiam.equals(77) ||tuoiam.equals(86) ||tuoiam.equals(95) ||tuoiam.equals(104)){
+                txtsaotrongnam.setText("Thổ Tú");
+            }else if (tuoiam.equals(6) ||tuoiam.equals(15) ||tuoiam.equals(24) ||tuoiam.equals(33) ||tuoiam.equals(42) ||tuoiam.equals(51) ||tuoiam.equals(60) ||tuoiam.equals(69) ||tuoiam.equals(78) ||tuoiam.equals(87) ||tuoiam.equals(96) ||tuoiam.equals(105)){
+                txtsaotrongnam.setText("La Hầu");
+            }else if (tuoiam.equals(7) ||tuoiam.equals(16) ||tuoiam.equals(25) ||tuoiam.equals(34) ||tuoiam.equals(43) ||tuoiam.equals(52) ||tuoiam.equals(61) ||tuoiam.equals(70) ||tuoiam.equals(79) ||tuoiam.equals(88) ||tuoiam.equals(97) ||tuoiam.equals(106)){
+                txtsaotrongnam.setText("Thái Dương");
+            }else if (tuoiam.equals(8) ||tuoiam.equals(17) ||tuoiam.equals(26) ||tuoiam.equals(35) ||tuoiam.equals(44) ||tuoiam.equals(53) ||tuoiam.equals(62) ||tuoiam.equals(71) ||tuoiam.equals(80) ||tuoiam.equals(89) ||tuoiam.equals(98) ||tuoiam.equals(107)){
+                txtsaotrongnam.setText("Thái Bạch");
+            }else if (tuoiam.equals(9) ||tuoiam.equals(18) ||tuoiam.equals(27) ||tuoiam.equals(36) ||tuoiam.equals(45) ||tuoiam.equals(54) ||tuoiam.equals(63) ||tuoiam.equals(72) ||tuoiam.equals(81) ||tuoiam.equals(90) ||tuoiam.equals(99) ||tuoiam.equals(108)){
+                txtsaotrongnam.setText("Thủy Diệu");
             }
         }
+
+        if (thongTin.getGioiTinh().equals("Nam")){
+            if (tuoiam.equals(1) ||tuoiam.equals(9) ||tuoiam.equals(10) ||tuoiam.equals(18) ||tuoiam.equals(27) ||tuoiam.equals(36) ||tuoiam.equals(45) ||tuoiam.equals(54) ||tuoiam.equals(63) ||tuoiam.equals(72) ||tuoiam.equals(81) ||tuoiam.equals(89) ||tuoiam.equals(90) ||tuoiam.equals(98)){
+                txthantrongnam.setText("Huỳnh Tuyền");
+            }else if (tuoiam.equals(2) ||tuoiam.equals(11) ||tuoiam.equals(19) ||tuoiam.equals(20) ||tuoiam.equals(28) ||tuoiam.equals(37) ||tuoiam.equals(46) ||tuoiam.equals(55) ||tuoiam.equals(64) ||tuoiam.equals(73) ||tuoiam.equals(82) ||tuoiam.equals(91) ||tuoiam.equals(100) ||tuoiam.equals(99)){
+                txthantrongnam.setText("Tam Kheo");
+            }else if (tuoiam.equals(3) ||tuoiam.equals(12) ||tuoiam.equals(21) ||tuoiam.equals(29) ||tuoiam.equals(30) ||tuoiam.equals(38) ||tuoiam.equals(47) ||tuoiam.equals(56) ||tuoiam.equals(65) ||tuoiam.equals(74) ||tuoiam.equals(83) ||tuoiam.equals(92) ||tuoiam.equals(101)){
+                txthantrongnam.setText("Ngũ Mộ");
+            }else if (tuoiam.equals(4) ||tuoiam.equals(13) ||tuoiam.equals(22) ||tuoiam.equals(31) ||tuoiam.equals(39) ||tuoiam.equals(40) ||tuoiam.equals(48) ||tuoiam.equals(57) ||tuoiam.equals(66) ||tuoiam.equals(75) ||tuoiam.equals(84) ||tuoiam.equals(93) ||tuoiam.equals(102)){
+                txthantrongnam.setText("Thiên Tinh");
+            }else if (tuoiam.equals(5) ||tuoiam.equals(14) ||tuoiam.equals(23) ||tuoiam.equals(32) ||tuoiam.equals(41) ||tuoiam.equals(49) ||tuoiam.equals(50) ||tuoiam.equals(58) ||tuoiam.equals(67) ||tuoiam.equals(76) ||tuoiam.equals(85) ||tuoiam.equals(94) ||tuoiam.equals(103)){
+                txthantrongnam.setText("Tán Tận");
+            }else if (tuoiam.equals(6) ||tuoiam.equals(15) ||tuoiam.equals(24) ||tuoiam.equals(33) ||tuoiam.equals(42) ||tuoiam.equals(51) ||tuoiam.equals(59) ||tuoiam.equals(60) ||tuoiam.equals(68) ||tuoiam.equals(77) ||tuoiam.equals(86) ||tuoiam.equals(95) ||tuoiam.equals(104)){
+                txthantrongnam.setText("Thiên La");
+            }else if (tuoiam.equals(7) ||tuoiam.equals(16) ||tuoiam.equals(25) ||tuoiam.equals(34) ||tuoiam.equals(43) ||tuoiam.equals(52) ||tuoiam.equals(61) ||tuoiam.equals(69) ||tuoiam.equals(70) ||tuoiam.equals(78) ||tuoiam.equals(87) ||tuoiam.equals(96) ||tuoiam.equals(105)){
+                txthantrongnam.setText("Địa Võng");
+            }else if (tuoiam.equals(8) ||tuoiam.equals(17) ||tuoiam.equals(26) ||tuoiam.equals(35) ||tuoiam.equals(44) ||tuoiam.equals(53) ||tuoiam.equals(62) ||tuoiam.equals(71) ||tuoiam.equals(79) ||tuoiam.equals(80) ||tuoiam.equals(88) ||tuoiam.equals(97) ||tuoiam.equals(106)){
+                txthantrongnam.setText("Diêm Vương");
+            }
+        }else {
+            if (tuoiam.equals(1) ||tuoiam.equals(9) ||tuoiam.equals(10) ||tuoiam.equals(18) ||tuoiam.equals(27) ||tuoiam.equals(36) ||tuoiam.equals(45) ||tuoiam.equals(54) ||tuoiam.equals(63) ||tuoiam.equals(72) ||tuoiam.equals(81) ||tuoiam.equals(89) ||tuoiam.equals(90) ||tuoiam.equals(98)){
+                txthantrongnam.setText("Tán Tận");
+            }else if (tuoiam.equals(2) ||tuoiam.equals(11) ||tuoiam.equals(19) ||tuoiam.equals(20) ||tuoiam.equals(28) ||tuoiam.equals(37) ||tuoiam.equals(46) ||tuoiam.equals(55) ||tuoiam.equals(64) ||tuoiam.equals(73) ||tuoiam.equals(82) ||tuoiam.equals(91) ||tuoiam.equals(100) ||tuoiam.equals(99)){
+                txthantrongnam.setText("Thiên Tinh");
+            }else if (tuoiam.equals(3) ||tuoiam.equals(12) ||tuoiam.equals(21) ||tuoiam.equals(29) ||tuoiam.equals(30) ||tuoiam.equals(38) ||tuoiam.equals(47) ||tuoiam.equals(56) ||tuoiam.equals(65) ||tuoiam.equals(74) ||tuoiam.equals(83) ||tuoiam.equals(92) ||tuoiam.equals(101)){
+                txthantrongnam.setText("Ngũ Mộ");
+            }else if (tuoiam.equals(4) ||tuoiam.equals(13) ||tuoiam.equals(22) ||tuoiam.equals(31) ||tuoiam.equals(39) ||tuoiam.equals(40) ||tuoiam.equals(48) ||tuoiam.equals(57) ||tuoiam.equals(66) ||tuoiam.equals(75) ||tuoiam.equals(84) ||tuoiam.equals(93) ||tuoiam.equals(102)){
+                txthantrongnam.setText("Tam Kheo");
+            }else if (tuoiam.equals(5) ||tuoiam.equals(14) ||tuoiam.equals(23) ||tuoiam.equals(32) ||tuoiam.equals(41) ||tuoiam.equals(49) ||tuoiam.equals(50) ||tuoiam.equals(58) ||tuoiam.equals(67) ||tuoiam.equals(76) ||tuoiam.equals(85) ||tuoiam.equals(94) ||tuoiam.equals(103)){
+                txthantrongnam.setText("Huỳnh Tuyền");
+            }else if (tuoiam.equals(6) ||tuoiam.equals(15) ||tuoiam.equals(24) ||tuoiam.equals(33) ||tuoiam.equals(42) ||tuoiam.equals(51) ||tuoiam.equals(59) ||tuoiam.equals(60) ||tuoiam.equals(68) ||tuoiam.equals(77) ||tuoiam.equals(86) ||tuoiam.equals(95) ||tuoiam.equals(104)){
+                txthantrongnam.setText("Diêm Vương");
+            }else if (tuoiam.equals(7) ||tuoiam.equals(16) ||tuoiam.equals(25) ||tuoiam.equals(34) ||tuoiam.equals(43) ||tuoiam.equals(52) ||tuoiam.equals(61) ||tuoiam.equals(69) ||tuoiam.equals(70) ||tuoiam.equals(78) ||tuoiam.equals(87) ||tuoiam.equals(96) ||tuoiam.equals(105)){
+                txthantrongnam.setText("Địa Võng");
+            }else if (tuoiam.equals(8) ||tuoiam.equals(17) ||tuoiam.equals(26) ||tuoiam.equals(35) ||tuoiam.equals(44) ||tuoiam.equals(53) ||tuoiam.equals(62) ||tuoiam.equals(71) ||tuoiam.equals(79) ||tuoiam.equals(80) ||tuoiam.equals(88) ||tuoiam.equals(97) ||tuoiam.equals(106)){
+                txthantrongnam.setText("Thiên La");
+            }
+        }
+
+        namAm = thongTin.namam();
+        Integer mang = Integer.parseInt(namAm)%60;
+
+        if (mang == 0 || mang == 1){
+            txtmang.setText("Thạch Lựu Mộc");
+            txtconnha.setText("Thanh Đế");
+            txtconnhaphuquy.setText("(Cô Quạnh)");
+        }else if (mang == 2 || mang == 3){
+            txtmang.setText("Đại Hải Thủy");
+            txtconnhaphuquy.setText("(Quan Lộc,Tận Khổ)");
+            txtconnha.setText("Hắc Đế");
+        }else if (mang == 4 || mang == 5){
+            txtmang.setText("Hải Trung Kim");
+            txtconnha.setText("Bạch Đế");
+            txtconnhaphuquy.setText("(Phú Quý)");
+        }else if (mang == 6 || mang == 7){
+            txtmang.setText("Lư Trung Hỏa");
+            txtconnha.setText("Xích Đế");
+            txtconnhaphuquy.setText("(Cô Quạnh)");
+        }else if (mang == 8 || mang == 9){
+            txtmang.setText("Đại Lâm Mộc");
+            txtconnha.setText("Thanh Đế");
+            txtconnhaphuquy.setText("(Trường Mạng)");
+        }else if (mang == 10 || mang == 11){
+            txtmang.setText("Lộ Bàng Thổ");
+            txtconnha.setText("Huỳnh Đế");
+            txtconnhaphuquy.setText("(Cô Quạnh)");
+        }else if (mang == 12 || mang == 13){
+            txtmang.setText("Kiếm Phong Kim");
+            txtconnha.setText("Bạch Đế");
+            txtconnhaphuquy.setText("(Phú Quý)");
+        }else if (mang == 14 || mang == 15){
+            txtmang.setText("Sơn Đầu Hỏa");
+            txtconnha.setText("Xích Đế");
+            txtconnhaphuquy.setText("(Cô Quạnh)");
+        }else if (mang == 16 || mang == 17){
+            txtmang.setText("Giang Hạ Thủy");
+            txtconnha.setText("Hắc Đế");
+            txtconnhaphuquy.setText("(Cô Quạnh)");
+        }else if (mang == 18 || mang == 19){
+            txtmang.setText("Thành Đầu Thổ");
+            txtconnha.setText("Huỳnh Đế");
+            txtconnhaphuquy.setText("(Phú Quý)");
+        }else if (mang == 20 || mang == 21){
+            txtmang.setText("Bạch Lạp Kim");
+            txtconnha.setText("Bạch Đế");
+            txtconnhaphuquy.setText("(Trường Mạng)");
+        }else if (mang == 22 || mang == 23){
+            txtmang.setText("Dương Liễu Mộc");
+            txtconnha.setText("Thanh Đế");
+            txtconnhaphuquy.setText("(Trường Mạng)");
+        }else if (mang == 24 || mang == 25){
+            txtmang.setText("Tuyền Trung Thủy");
+            txtconnha.setText("Hắc Đế");
+            txtconnhaphuquy.setText("(Từ Tánh,Phú Quý)");
+        }else if (mang == 26 || mang == 27){
+            txtmang.setText("Ốc Thượng Thổ");
+            txtconnha.setText("Huỳnh Đế");
+            txtconnhaphuquy.setText("(Phú Quý)");
+        }else if (mang == 28 || mang == 29){
+            txtmang.setText("Thích Lịch Hỏa");
+            txtconnha.setText("Xích Đế");
+            txtconnhaphuquy.setText("(Phú Quý)");
+        }else if (mang == 30 || mang == 31){
+            txtmang.setText("Tòng Bá Mộc");
+            txtconnha.setText("Thanh Đế");
+            txtconnhaphuquy.setText("(Trường Mạng)");
+        }else if (mang == 32 || mang == 33){
+            txtmang.setText("Trường Lưu Thủy");
+            txtconnha.setText("Hắc Đế");
+            txtconnhaphuquy.setText("(Trường Mạng)");
+        }else if (mang == 34 || mang == 35){
+            txtmang.setText("Sa Trung Kim");
+            txtconnha.setText("Bạch Đế");
+            txtconnhaphuquy.setText("(An Mạng,Phú Quý)");
+        }else if (mang == 36 || mang == 37){
+            txtmang.setText("Sơn Hạ Hỏa");
+            txtconnha.setText("Xích Đế");
+            txtconnhaphuquy.setText("(Cô Quạnh)");
+        }else if (mang == 38 || mang == 39){
+            txtmang.setText("Bình Địa Mộc");
+            txtconnha.setText("Thanh Đế");
+            txtconnhaphuquy.setText("(Phú Quý)");
+        }else if (mang == 40 || mang == 41){
+            txtmang.setText("Bích Thượng Thổ");
+            txtconnha.setText("Huỳnh Đế");
+            txtconnhaphuquy.setText("(Quan Lộc,Cô Quạnh)");
+        }else if (mang == 42 || mang == 43){
+            txtmang.setText("Kim Bạch Kim");
+            txtconnha.setText("Bạch Đế");
+            txtconnhaphuquy.setText("(Phú Quý)");
+        }else if (mang == 44 || mang == 45){
+            txtmang.setText("Phúc Đăng Hoa");
+            txtconnha.setText("Xích Đế");
+            txtconnhaphuquy.setText("(Tận Khổ)");
+        }else if (mang == 46 || mang == 47){
+            txtmang.setText("Thiên Hà Thủy");
+            txtconnha.setText("Hắc Đế");
+            txtconnhaphuquy.setText("(Tận Khổ)");
+        }else if (mang == 48 || mang == 49){
+            txtmang.setText("Đại Trạch Thổ");
+            txtconnha.setText("Huỳnh Đế");
+            txtconnhaphuquy.setText("(Quan Lộc)");
+        }else if (mang == 50 || mang == 51){
+            txtmang.setText("Xoa Xuyến Kim");
+            txtconnha.setText("Bạch Đế");
+            txtconnhaphuquy.setText("(Phú Quý)");
+        }else if (mang == 52 || mang == 53){
+            txtmang.setText("Tang Đố Mộc");
+            txtconnha.setText("Thanh Đế");
+            txtconnhaphuquy.setText("(Quan Lộc,Tận Khổ)");
+        }else if (mang == 54 || mang == 55){
+            txtmang.setText("Đại Khê Thủy");
+            txtconnha.setText("Hắc Đế");
+            txtconnhaphuquy.setText("(Phú Quý)");
+        }else if (mang == 56 || mang == 57){
+            txtmang.setText("Sa Trung Thổ");
+            txtconnha.setText("Huỳnh Đế");
+            txtconnhaphuquy.setText("(Phú Quý)");
+        }else if (mang == 58 || mang == 59){
+            txtmang.setText("Thiên Thượng Hỏa");
+            txtconnha.setText("Xích Đế");
+            txtconnhaphuquy.setText("(Cô Quạnh)");
+        }
+    }
 
     private void addControls() {
 
@@ -8883,5 +8880,6 @@ public class AnsaoActivity extends AppCompatActivity {
         txtkimlau = findViewById(R.id.txtkimlau);
         txtvannien = findViewById(R.id.txtvannien);
         txtthaitue = findViewById(R.id.txtthaitue);
+        txthovaten = findViewById(R.id.txthovaten);
     }
 }
