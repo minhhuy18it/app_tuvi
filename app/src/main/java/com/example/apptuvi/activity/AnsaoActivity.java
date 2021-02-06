@@ -42,7 +42,7 @@ public class AnsaoActivity extends AppCompatActivity {
     TextView txttop4tuat,txttop4hoi,txttop4tyd,txttop4suu;
     TextView txtgioiam,txtcuc,txtnamduong,txtthangduong,txtngayduong,txtgioduong,txtmang,txtchumenh,txtchuthan;
     TextView txtnamam,txtthangam,txtngayam,txtgioam,txtcannamam,txtcanthangam,txtcanngayam,txtcangioam,txtcansanhtu,txtconnha;
-    TextView txtconnhaphuquy,txtsaotrongnam,txttuoiam,txthantrongnam,txttamtai,txtnamhungnien,txtcannamxem;
+    TextView txtconnhaphuquy,txtsaotrongnam,txttuoiam,txthantrongnam,txttamtai,txtnamhungnien,txtcannamxem,txthoangoc;
     Spinner spnnamxem;
     String namsinh,gioiam;
     String giophutsinh;
@@ -79,6 +79,7 @@ public class AnsaoActivity extends AppCompatActivity {
         addEvents();
         setCanChiNamDuong();
         setHungNien();
+        setOcHoang();
     }
 
     private void addEvents() {
@@ -91,6 +92,7 @@ public class AnsaoActivity extends AppCompatActivity {
                 tamtai();
                 setCanChiNamDuong();
                 setHungNien();
+                setOcHoang();
             }
 
             @Override
@@ -109,7 +111,15 @@ public class AnsaoActivity extends AppCompatActivity {
             }
         });
     }
-    // 6/2/2020 setCanChiNamDuong setHungNien
+
+    // 6/2/2020 setCanChiNamDuong setHungNien setOcHoang
+    private void setOcHoang(){
+        String[] arrOcHoang = getResources().getStringArray(R.array.arrOcHoang);
+        int tuoi = Integer.parseInt(txttuoiam.getText().toString());
+
+        txthoangoc.setText(arrOcHoang[tuoi-1]);
+    }
+
     private void setCanChiNamDuong() {
         String[] arrCan = getResources().getStringArray(R.array.arrCan);
         int namGoc = 2010;
@@ -8818,5 +8828,6 @@ public class AnsaoActivity extends AppCompatActivity {
         itemCenter = findViewById(R.id.itemCenter);
         txtnamhungnien = findViewById(R.id.txtnamhungnien);
         txtcannamxem = findViewById(R.id.txtcannamxem);
+        txthoangoc = findViewById(R.id.txthoangoc);
     }
 }
