@@ -42,7 +42,7 @@ public class AnsaoActivity extends AppCompatActivity {
     TextView txttop4tuat,txttop4hoi,txttop4tyd,txttop4suu;
     TextView txtgioiam,txtcuc,txtnamduong,txtthangduong,txtngayduong,txtgioduong,txtmang,txtchumenh,txtchuthan;
     TextView txtnamam,txtthangam,txtngayam,txtgioam,txtcannamam,txtcanthangam,txtcanngayam,txtcangioam,txtcansanhtu,txtconnha;
-    TextView txtconnhaphuquy,txtsaotrongnam,txttuoiam,txthantrongnam,txttamtai;
+    TextView txtconnhaphuquy,txtsaotrongnam,txttuoiam,txthantrongnam,txttamtai,txtnamhungnien,txtcannamxem;
     Spinner spnnamxem;
     String namsinh,gioiam;
     String giophutsinh;
@@ -52,11 +52,12 @@ public class AnsaoActivity extends AppCompatActivity {
     RecyclerView t1,t2,t3,t4,t5,t6,t7,t8,t9,t10,t11,t12;
     String[] arrNamSinh;
     ArrayList<AnCung> listAnCung;
-    String[] arrThangAm = {"Dần", "Mẹo" , "Thìn", "Tỵ", "Ngọ", "Mùi", "Thân", "Dậu", "Tuát", "Hợi", "Tý", "Sửu"};
+    String[] arrThangAm = {"Dần", "Mẹo" , "Thìn", "Tỵ", "Ngọ", "Mùi", "Thân", "Dậu", "Tuất", "Hợi", "Tý", "Sửu"};
     RecyclerView[] listRecyclerViews;
     ArrayList<String> listyear;
     LinearLayout itemCenter;
     ThongTin thongTin;
+    String canDuong,chiDuong;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -76,6 +77,8 @@ public class AnsaoActivity extends AppCompatActivity {
         setNgay();
         cangioam();
         addEvents();
+        setCanChiNamDuong();
+        setHungNien();
     }
 
     private void addEvents() {
@@ -86,6 +89,8 @@ public class AnsaoActivity extends AppCompatActivity {
                 tuoiam = (namhientai - Integer.parseInt(thongTin.getNam())) + 1;
                 txttuoiam.setText(String.valueOf(tuoiam));
                 tamtai();
+                setCanChiNamDuong();
+                setHungNien();
             }
 
             @Override
@@ -103,6 +108,67 @@ public class AnsaoActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+    }
+    // 6/2/2020 setCanChiNamDuong setHungNien
+    private void setCanChiNamDuong() {
+        String[] arrCan = getResources().getStringArray(R.array.arrCan);
+        int namGoc = 2010;
+        int namChon = Integer.parseInt(spnnamxem.getSelectedItem().toString());
+        int n = (int) Math.ceil((Math.abs(namChon - namGoc)*1.0/60));
+
+        if (namChon >= namGoc) {
+            namGoc = namGoc + 60*n;
+        }
+
+        int i = 12 - ((namGoc-namChon)%12);
+        if (i == 12) {
+            i = 0;
+        }
+        chiDuong = arrThangAm[i];
+
+        int can = namChon%10;
+        int j = (can >= 4) ? can-4 : can+6;
+        canDuong = arrCan[j];
+        txtcannamxem.setText(canDuong+" "+chiDuong);
+    }
+
+    private void setHungNien() {
+        String kq = "";
+        int n = linearSearch(arrThangAm,arrNamSinh[1]);
+        if (thongTin.getGioiTinh().equals("Nam")) {
+            int i = (n<=4) ? n+7 : n-5;
+            kq = arrThangAm[i];
+        } else {
+            int[] arr = {1,3,5,7,9,11};
+            if (n>=6) {
+                kq = arrThangAm[n-arr[n-6]];
+            } else {
+                int i = 0;
+                switch (n) {
+                    case 0:
+                        i = n+11;
+                        break;
+                    case 1:
+                        i = n+9;
+                        break;
+                    case 2:
+                        i = n+7;
+                        break;
+                    case 3:
+                        i = n+5;
+                        break;
+                    case 4:
+                        i = n+3;
+                        break;
+                    case 5:
+                        i = n+1;
+                        break;
+                }
+                kq = arrThangAm[i];
+            }
+        }
+
+        txtnamhungnien.setText(kq);
     }
 
     private void cangioam() {
@@ -8750,5 +8816,7 @@ public class AnsaoActivity extends AppCompatActivity {
         t12 = findViewById(R.id.t12);
 
         itemCenter = findViewById(R.id.itemCenter);
+        txtnamhungnien = findViewById(R.id.txtnamhungnien);
+        txtcannamxem = findViewById(R.id.txtcannamxem);
     }
 }
