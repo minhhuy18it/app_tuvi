@@ -2,6 +2,9 @@ package com.example.apptuvi.model;
 
 import java.io.Serializable;
 
+/**
+ *
+ */
 public class Code implements Serializable {
 
     private String idcode;

@@ -1,5 +1,8 @@
 package com.example.apptuvi.model;
 
+/**
+ *
+ */
 public class ChuyenDuongSangAm {
     public static final double PI = Math.PI;
     /**
