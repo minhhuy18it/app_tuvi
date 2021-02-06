@@ -42,7 +42,8 @@ public class AnsaoActivity extends AppCompatActivity {
     TextView txttop4tuat,txttop4hoi,txttop4tyd,txttop4suu;
     TextView txtgioiam,txtcuc,txtnamduong,txtthangduong,txtngayduong,txtgioduong,txtmang,txtchumenh,txtchuthan;
     TextView txtnamam,txtthangam,txtngayam,txtgioam,txtcannamam,txtcanthangam,txtcanngayam,txtcangioam,txtcansanhtu,txtconnha;
-    TextView txtconnhaphuquy,txtsaotrongnam,txttuoiam,txthantrongnam,txttamtai,txtnamhungnien,txtcannamxem,txthoangoc;
+    TextView txtconnhaphuquy,txtsaotrongnam,txttuoiam,txthantrongnam,txttamtai,txtnamhungnien,txtcannamxem,txthoangoc,txtkimlau;
+    TextView txtvannien,txtthaitue;
     Spinner spnnamxem;
     String namsinh,gioiam;
     String giophutsinh;
@@ -80,6 +81,9 @@ public class AnsaoActivity extends AppCompatActivity {
         setCanChiNamDuong();
         setHungNien();
         setOcHoang();
+        setKimLau();
+        setVanNien();
+        setThaitue();
     }
 
     private void addEvents() {
@@ -93,6 +97,9 @@ public class AnsaoActivity extends AppCompatActivity {
                 setCanChiNamDuong();
                 setHungNien();
                 setOcHoang();
+                setKimLau();
+                setVanNien();
+                setThaitue();
             }
 
             @Override
@@ -112,7 +119,52 @@ public class AnsaoActivity extends AppCompatActivity {
         });
     }
 
-    // 6/2/2020 setCanChiNamDuong setHungNien setOcHoang
+    // 6/2/2020 setCanChiNamDuong setHungNien setOcHoang setVanNien
+    private void setThaitue() {
+        String[] arrThaiTue = {"Trực", "Xung", "Hại", "Phá", "Hình"};
+        String thaiTue = "";
+        String[] arrThaiTueTheoChi = getResources().getStringArray(R.array.arrThaiTueCungLon);
+        int namSinh = linearSearch(arrThangAm,arrNamSinh[1]);
+        int namXem = linearSearch(arrThangAm,chiDuong);
+        int i = 0;
+        for (int j = namXem*5 ;  j <= (namXem*5)+4 ; j++) {
+            if (arrThangAm[namSinh].equals(arrThaiTueTheoChi[j])) thaiTue = thaiTue + arrThaiTue[i]+" ";
+            i++;
+        }
+        txtthaitue.setText(thaiTue.trim());
+    }
+
+    private void setVanNien(){
+        String[] arrVanNien = getResources().getStringArray(R.array.arrVanNien);
+        int namSinh = linearSearch(arrThangAm,arrNamSinh[1]);
+        int namXem = linearSearch(arrThangAm,chiDuong);
+        if (namXem == 0) namXem++;
+        int i = (namXem >= namSinh) ? namXem-namSinh : (namXem+11)-namSinh;
+        System.out.println(namSinh+" "+namXem+" "+i);
+        txtvannien.setText(arrVanNien[i]);
+    }
+
+    private void setKimLau(){
+        int tuoi = Integer.parseInt(txttuoiam.getText().toString());
+        String s = "";
+        switch (tuoi%9) {
+            case 1:
+                s = "Kim lâu Thân";
+                break;
+            case 3:
+                s = " Kim lâu Thê";
+                break;
+            case 6:
+                s = "Kim lâu Tử";
+                break;
+            case 8:
+                s = "Kim lâu Súc";
+                break;
+        }
+
+        txtkimlau.setText(s);
+    }
+
     private void setOcHoang(){
         String[] arrOcHoang = getResources().getStringArray(R.array.arrOcHoang);
         int tuoi = Integer.parseInt(txttuoiam.getText().toString());
@@ -335,7 +387,6 @@ public class AnsaoActivity extends AppCompatActivity {
         }
 
         int n = linearSearch(arrThangAm,arrNamSinh[1]);
-        System.out.println(n);
         addThaiTue(n);
         Log.d("TEXT", listAnCung.toString());
         int i = 0;
@@ -8829,5 +8880,8 @@ public class AnsaoActivity extends AppCompatActivity {
         txtnamhungnien = findViewById(R.id.txtnamhungnien);
         txtcannamxem = findViewById(R.id.txtcannamxem);
         txthoangoc = findViewById(R.id.txthoangoc);
+        txtkimlau = findViewById(R.id.txtkimlau);
+        txtvannien = findViewById(R.id.txtvannien);
+        txtthaitue = findViewById(R.id.txtthaitue);
     }
 }
