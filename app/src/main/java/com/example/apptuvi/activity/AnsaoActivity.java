@@ -21,13 +21,16 @@ import android.widget.Toast;
 
 import com.example.apptuvi.R;
 import com.example.apptuvi.adapter.TextAdapter;
+import com.example.apptuvi.adapter.ThaitueAdapter;
 import com.example.apptuvi.model.AnCung;
+import com.example.apptuvi.model.Anthaitue;
 import com.example.apptuvi.model.ThongTin;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.List;
 
 public class AnsaoActivity extends AppCompatActivity {
     TextView txtcanchity,txtcanchidau,txtcanchidan,txtcanchimao,txtcanchityd,txtcanchituat,txtcanchihoi;
@@ -51,7 +54,7 @@ public class AnsaoActivity extends AppCompatActivity {
     String namduong,menh;
     RecyclerView t1,t2,t3,t4,t5,t6,t7,t8,t9,t10,t11,t12;
     String[] arrNamSinh;
-    ArrayList<AnCung> listAnCung;
+    List<Anthaitue> th1,th2,th3,th4,th5,th6,th7,th8,th9,th10,th11,th12;
     String[] arrThangAm = {"Dần", "Mẹo" , "Thìn", "Tỵ", "Ngọ", "Mùi", "Thân", "Dậu", "Tuát", "Hợi", "Tý", "Sửu"};
     RecyclerView[] listRecyclerViews;
     ArrayList<String> listyear;
@@ -71,7 +74,7 @@ public class AnsaoActivity extends AppCompatActivity {
         chumenh();
         cansanhtu();
         tamtai();
-        textAnSao();
+//        textAnSao();
         Anvonglocton();
         setNgay();
         cangioam();
@@ -239,51 +242,194 @@ public class AnsaoActivity extends AppCompatActivity {
         Intent intent = getIntent();
         if (intent.hasExtra("ThongTin")) {
             ThongTin thongTin = (ThongTin) intent.getSerializableExtra("ThongTin");
-
+            th1 = new ArrayList<>();
+            th2 = new ArrayList<>();
+            th3 = new ArrayList<>();
+            th4 = new ArrayList<>();
+            th5 = new ArrayList<>();
+            th6 = new ArrayList<>();
+            th7 = new ArrayList<>();
+            th8 = new ArrayList<>();
+            th9 = new ArrayList<>();
+            th10 = new ArrayList<>();
+            th11 = new ArrayList<>();
+            th12 = new ArrayList<>();
             String[] output = namsinh.split(" ");
             if (gioiam.equals("Dương Nam") || gioiam.equals("Âm Nữ")){
                 if (output[0].equals("Giáp")){
-
+                    th1.add(new Anthaitue("Lộc Tồn"));
+                    th1.add(new Anthaitue("Bác Sỹ"));
+                    th2.add(new Anthaitue("Lực Sỹ"));
+                    th2.add(new Anthaitue("Kinh Dương"));
+                    th3.add(new Anthaitue("Thanh Long"));
+                    th4.add(new Anthaitue("Tiểu Hao"));
+                    th4.add(new Anthaitue("Thiên Trù"));
+                    th5.add(new Anthaitue("Tướng Quân"));
+                    th6.add(new Anthaitue("Tấu Thư"));
+                    th6.add(new Anthaitue("Đường Phù"));
+                    th6.add(new Anthaitue("Thiên Việt"));
+                    th6.add(new Anthaitue("Thiên Quang"));
+                    th7.add(new Anthaitue("Phi Liêm"));
+                    th8.add(new Anthaitue("Hỷ Thần"));
+                    th8.add(new Anthaitue("Thiên Phúc"));
+                    th8.add(new Anthaitue("Lưu Hà"));
+                    th9.add(new Anthaitue("Bệnh Phù"));
+                    th9.add(new Anthaitue("Quốc Ấn"));
+                    th10.add(new Anthaitue("Đại Hao"));
+                    th11.add(new Anthaitue("Phục Binh"));
+                    th12.add(new Anthaitue("Quan Phủ"));
+                    th12.add(new Anthaitue("Đà La"));
+                    th12.add(new Anthaitue("Thiên Khôi"));
+                }else if (output[0].equals("Ất")){
+                    th2.add(new Anthaitue("Lộc Tồn"));
+                    th2.add(new Anthaitue("Bác Sỹ"));
+                    th3.add(new Anthaitue("Lực Sỹ"));
+                    th3.add(new Anthaitue("Kinh Dương"));
+                    th4.add(new Anthaitue("Thanh Long"));
+                    th5.add(new Anthaitue("Tiểu Hao"));
+                    th5.add(new Anthaitue("Thiên Trù"));
+                    th6.add(new Anthaitue("Tướng Quân"));
+                    th7.add(new Anthaitue("Tấu Thư"));
+                    th7.add(new Anthaitue("Đường Phù"));
+                    th7.add(new Anthaitue("Thiên Việt"));
+                    th3.add(new Anthaitue("Thiên Quang"));
+                    th8.add(new Anthaitue("Phi Liêm"));
+                    th9.add(new Anthaitue("Hỷ Thần"));
+                    th7.add(new Anthaitue("Thiên Phúc"));
+                    th9.add(new Anthaitue("Lưu Hà"));
+                    th10.add(new Anthaitue("Bệnh Phù"));
+                    th10.add(new Anthaitue("Quốc Ấn"));
+                    th11.add(new Anthaitue("Đại Hao"));
+                    th12.add(new Anthaitue("Phục Binh"));
+                    th1.add(new Anthaitue("Quan Phủ"));
+                    th1.add(new Anthaitue("Đà La"));
+                    th11.add(new Anthaitue("Thiên Khôi"));
                 }
             }else {
-
+                if (output[0].equals("Giáp")){
+                    th1.add(new Anthaitue("Lộc Tồn"));
+                    th1.add(new Anthaitue("Bác Sỹ"));
+                    th12.add(new Anthaitue("Lực Sỹ"));
+                    th2.add(new Anthaitue("Kinh Dương"));
+                    th11.add(new Anthaitue("Thanh Long"));
+                    th10.add(new Anthaitue("Tiểu Hao"));
+                    th4.add(new Anthaitue("Thiên Trù"));
+                    th9.add(new Anthaitue("Tướng Quân"));
+                    th8.add(new Anthaitue("Tấu Thư"));
+                    th6.add(new Anthaitue("Đường Phù"));
+                    th6.add(new Anthaitue("Thiên Việt"));
+                    th6.add(new Anthaitue("Thiên Quang"));
+                    th7.add(new Anthaitue("Phi Liêm"));
+                    th6.add(new Anthaitue("Hỷ Thần"));
+                    th8.add(new Anthaitue("Thiên Phúc"));
+                    th8.add(new Anthaitue("Lưu Hà"));
+                    th5.add(new Anthaitue("Bệnh Phù"));
+                    th9.add(new Anthaitue("Quốc Ấn"));
+                    th4.add(new Anthaitue("Đại Hao"));
+                    th3.add(new Anthaitue("Phục Binh"));
+                    th2.add(new Anthaitue("Quan Phủ"));
+                    th12.add(new Anthaitue("Đà La"));
+                    th12.add(new Anthaitue("Thiên Khôi"));
+                }else if (output[0].equals("Ất")){
+                    th2.add(new Anthaitue("Lộc Tồn"));
+                    th2.add(new Anthaitue("Bác Sỹ"));
+                    th1.add(new Anthaitue("Lực Sỹ"));
+                    th3.add(new Anthaitue("Kinh Dương"));
+                    th12.add(new Anthaitue("Thanh Long"));
+                    th11.add(new Anthaitue("Tiểu Hao"));
+                    th5.add(new Anthaitue("Thiên Trù"));
+                    th10.add(new Anthaitue("Tướng Quân"));
+                    th9.add(new Anthaitue("Tấu Thư"));
+                    th7.add(new Anthaitue("Đường Phù"));
+                    th7.add(new Anthaitue("Thiên Việt"));
+                    th3.add(new Anthaitue("Thiên Quang"));
+                    th8.add(new Anthaitue("Phi Liêm"));
+                    th7.add(new Anthaitue("Hỷ Thần"));
+                    th7.add(new Anthaitue("Thiên Phúc"));
+                    th9.add(new Anthaitue("Lưu Hà"));
+                    th6.add(new Anthaitue("Bệnh Phù"));
+                    th10.add(new Anthaitue("Quốc Ấn"));
+                    th5.add(new Anthaitue("Đại Hao"));
+                    th4.add(new Anthaitue("Phục Binh"));
+                    th3.add(new Anthaitue("Quan Phủ"));
+                    th1.add(new Anthaitue("Đà La"));
+                    th11.add(new Anthaitue("Thiên Khôi"));
+                }
             }
+
+            ThaitueAdapter textAdapter1 = new ThaitueAdapter(th1, this);
+            ThaitueAdapter textAdapter2 = new ThaitueAdapter(th2, this);
+            ThaitueAdapter textAdapter3 = new ThaitueAdapter(th3, this);
+            ThaitueAdapter textAdapter4 = new ThaitueAdapter(th4, this);
+            ThaitueAdapter textAdapter5 = new ThaitueAdapter(th5, this);
+            ThaitueAdapter textAdapter6 = new ThaitueAdapter(th6, this);
+            ThaitueAdapter textAdapter7 = new ThaitueAdapter(th7, this);
+            ThaitueAdapter textAdapter8 = new ThaitueAdapter(th8, this);
+            ThaitueAdapter textAdapter9 = new ThaitueAdapter(th9, this);
+            ThaitueAdapter textAdapter10 = new ThaitueAdapter(th10, this);
+            ThaitueAdapter textAdapter11 = new ThaitueAdapter(th11, this);
+            ThaitueAdapter textAdapter12 = new ThaitueAdapter(th12, this);
+            t1.setLayoutManager(new GridLayoutManager(AnsaoActivity.this,2));
+            t2.setLayoutManager(new GridLayoutManager(AnsaoActivity.this,2));
+            t3.setLayoutManager(new GridLayoutManager(AnsaoActivity.this,2));
+            t4.setLayoutManager(new GridLayoutManager(AnsaoActivity.this,2));
+            t5.setLayoutManager(new GridLayoutManager(AnsaoActivity.this,2));
+            t6.setLayoutManager(new GridLayoutManager(AnsaoActivity.this,2));
+            t7.setLayoutManager(new GridLayoutManager(AnsaoActivity.this,2));
+            t8.setLayoutManager(new GridLayoutManager(AnsaoActivity.this,2));
+            t9.setLayoutManager(new GridLayoutManager(AnsaoActivity.this,2));
+            t10.setLayoutManager(new GridLayoutManager(AnsaoActivity.this,2));
+            t11.setLayoutManager(new GridLayoutManager(AnsaoActivity.this,2));
+            t12.setLayoutManager(new GridLayoutManager(AnsaoActivity.this,2));
+            t1.setAdapter(textAdapter1);
+            t2.setAdapter(textAdapter2);
+            t3.setAdapter(textAdapter3);
+            t4.setAdapter(textAdapter4);
+            t5.setAdapter(textAdapter5);
+            t6.setAdapter(textAdapter6);
+            t7.setAdapter(textAdapter7);
+            t8.setAdapter(textAdapter8);
+            t9.setAdapter(textAdapter9);
+            t10.setAdapter(textAdapter10);
+            t11.setAdapter(textAdapter11);
+            t12.setAdapter(textAdapter12);
+
         }
     }
 
-    private void textAnSao() {
-        listAnCung = new ArrayList<>();
-        for (int i = 0 ; i<=11 ; i++) {
-            ArrayList<String> arr = new ArrayList<>();
-            listAnCung.add(new AnCung(arr,"Tháng "+(i+1)));
-        }
+//    private void textAnSao() {
+//        listAnCung = new ArrayList<>();
+//        for (int i = 0 ; i<=11 ; i++) {
+//            ArrayList<String> arr = new ArrayList<>();
+//            listAnCung.add(new AnCung(arr,"Tháng "+(i+1)));
+//        }
+//
+//        int n = linearSearch(arrThangAm,arrNamSinh[1]);
+//        System.out.println(n);
+//        addThaiTue(n);
+//        Log.d("TEXT", listAnCung.toString());
+//        int i = 0;
+//        listRecyclerViews = new RecyclerView[] {t1,t2,t3,t4,t5,t6,t7,t8,t9,t10,t11,t12};
+//        for (AnCung anCung : listAnCung) {
+//            TextAdapter textAdapter = new TextAdapter(AnsaoActivity.this,anCung.getList());
+//            listRecyclerViews[i].setLayoutManager(new GridLayoutManager(AnsaoActivity.this,2));
+//            listRecyclerViews[i].setAdapter(textAdapter);
+//            i++;
+//        }
+//    }
 
-        int n = linearSearch(arrThangAm,arrNamSinh[1]);
-        System.out.println(n);
-        addThaiTue(n);
-        Log.d("TEXT", listAnCung.toString());
-        int i = 0;
-        listRecyclerViews = new RecyclerView[] {t1,t2,t3,t4,t5,t6,t7,t8,t9,t10,t11,t12};
-        for (AnCung anCung : listAnCung) {
-            TextAdapter textAdapter = new TextAdapter(AnsaoActivity.this,anCung.getList());
-            listRecyclerViews[i].setLayoutManager(new GridLayoutManager(AnsaoActivity.this,2));
-            listRecyclerViews[i].setAdapter(textAdapter);
-            i++;
-        }
-    }
-
-    public void addThaiTue(int n){
-        String[] arrThaiTue = getResources().getStringArray(R.array.arrThaiTue);
-        int a = n + 12;
-        int j = 0;
-        while (n < a) {
-            int i = (n<=11) ? n : n-12;
-            System.out.println(i);
-            listAnCung.get(i).getList().add(arrThaiTue[j]);
-            n++;
-            j++;
-        }
-    }
+//    public void addThaiTue(int n){
+//        String[] arrThaiTue = getResources().getStringArray(R.array.arrThaiTue);
+//        int a = n + 12;
+//        int j = 0;
+//        while (n < a) {
+//            int i = (n<=11) ? n : n-12;
+//            System.out.println(i);
+//            listAnCung.get(i).getList().add(arrThaiTue[j]);
+//            n++;
+//            j++;
+//        }
+//    }
 
     public static int linearSearch(String[] arr, String key){
         for(int i=0;i<arr.length;i++){
@@ -410,29 +556,29 @@ public class AnsaoActivity extends AppCompatActivity {
                 chithang = 8;
             }
 
-            if (namAm.equals("Giáp Tý") || namAm.equals("Canh Thìn") || namAm.equals("Tân Mẹo") || namAm.equals("Quý Mẹo") || namAm.equals("Mậu Thìn") || namAm.equals("Giáp Dần")){
+            if (namsinh.equals("Giáp Tý") || namsinh.equals("Canh Thìn") || namsinh.equals("Tân Mẹo") || namsinh.equals("Quý Mẹo") || namsinh.equals("Mậu Thìn") || namsinh.equals("Giáp Dần")){
                 chinam = 12;
-            }else if (namAm.equals("Ất Sửu") || namAm.equals("Tân Mùi") || namAm.equals("Quý Dậu") || namAm.equals("Đinh Sửu") || namAm.equals("Mậu Dần") || namAm.equals("Nhâm Ngọ") || namAm.equals("Kỷ Sửu") || namAm.equals("Bính Thìn") || namAm.equals("Ất Mẹo") || namAm.equals("Canh Thân") || namAm.equals("Giáp Thìn")){
+            }else if (namsinh.equals("Ất Sửu") || namsinh.equals("Tân Mùi") || namsinh.equals("Quý Dậu") || namsinh.equals("Đinh Sửu") || namsinh.equals("Mậu Dần") || namsinh.equals("Nhâm Ngọ") || namsinh.equals("Kỷ Sửu") || namsinh.equals("Bính Thìn") || namsinh.equals("Ất Mẹo") || namsinh.equals("Canh Thân") || namsinh.equals("Giáp Thìn")){
                 chinam = 8;
-            }else if (namAm.equals("Bính Dần") || namAm.equals("Tân Tỵ") || namAm.equals("Bính Tuất") || namAm.equals("Ất Mùi") || namAm.equals("Đinh Tỵ") || namAm.equals("Kỷ Mùi")){
+            }else if (namsinh.equals("Bính Dần") || namsinh.equals("Tân Tỵ") || namsinh.equals("Bính Tuất") || namsinh.equals("Ất Mùi") || namsinh.equals("Đinh Tỵ") || namsinh.equals("Kỷ Mùi")){
                 chinam = 6;
-            }else if (namAm.equals("Đinh Mẹo") || namAm.equals("Nhâm Thân") || namAm.equals("Quý Mùi") || namAm.equals("Quý Tỵ") || namAm.equals("Canh Tý") || namAm.equals("Tân Sửu") || namAm.equals("Ất Tỵ") || namAm.equals("Quý Hợi")){
+            }else if (namsinh.equals("Đinh Mẹo") || namsinh.equals("Nhâm Thân") || namsinh.equals("Quý Mùi") || namsinh.equals("Quý Tỵ") || namsinh.equals("Canh Tý") || namsinh.equals("Tân Sửu") || namsinh.equals("Ất Tỵ") || namsinh.equals("Quý Hợi")){
                 chinam = 7;
-            }else if (namAm.equals("Kỷ Tỵ") || namAm.equals("Giáp Thân") || namAm.equals("Bính Thân") || namAm.equals("Đinh Mùi") || namAm.equals("Kỷ Dậu") || namAm.equals("Canh Tuất") || namAm.equals("Nhâm Tý") ||namAm.equals("Quý Sửu")){
+            }else if (namsinh.equals("Kỷ Tỵ") || namsinh.equals("Giáp Thân") || namsinh.equals("Bính Thân") || namsinh.equals("Đinh Mùi") || namsinh.equals("Kỷ Dậu") || namsinh.equals("Canh Tuất") || namsinh.equals("Nhâm Tý") ||namsinh.equals("Quý Sửu")){
                 chinam = 5;
-            }else if (namAm.equals("Canh Ngọ") || namAm.equals("Ất Hợi") || namAm.equals("Canh Dần") || namAm.equals("Nhâm Dần")){
+            }else if (namsinh.equals("Canh Ngọ") || namsinh.equals("Ất Hợi") || namsinh.equals("Canh Dần") || namsinh.equals("Nhâm Dần")){
                 chinam = 9;
-            }else if (namAm.equals("Giáp Tuất") || namAm.equals("Ất Dậu") || namAm.equals("Mậu Tý") || namAm.equals("Giáp Ngọ")){
+            }else if (namsinh.equals("Giáp Tuất") || namsinh.equals("Ất Dậu") || namsinh.equals("Mậu Tý") || namsinh.equals("Giáp Ngọ")){
                 chinam = 15;
-            }else if (namAm.equals("Bính Tý") || namAm.equals("Đinh Hợi") || namAm.equals("Tân Dậu")){
+            }else if (namsinh.equals("Bính Tý") || namsinh.equals("Đinh Hợi") || namsinh.equals("Tân Dậu")){
                 chinam = 16;
-            }else if (namAm.equals("Kỷ Mẹo") || namAm.equals("Kỷ Hợi") || namAm.equals("Mậu Ngọ")){
+            }else if (namsinh.equals("Kỷ Mẹo") || namsinh.equals("Kỷ Hợi") || namsinh.equals("Mậu Ngọ")){
                 chinam = 19;
-            }else if (namAm.equals("Nhâm Thìn") || namAm.equals("Nhâm Tuất")){
+            }else if (namsinh.equals("Nhâm Thìn") || namsinh.equals("Nhâm Tuất")){
                 chinam = 10;
-            }else if (namAm.equals("Đinh Dậu") || namAm.equals("Mậu Tuất") || namAm.equals("Mậu Thân")){
+            }else if (namsinh.equals("Đinh Dậu") || namsinh.equals("Mậu Tuất") || namsinh.equals("Mậu Thân")){
                 chinam = 14;
-            }else if (namAm.equals("Bính Ngọ")){
+            }else if (namsinh.equals("Bính Ngọ")){
                 chinam = 13;
             }
         }
