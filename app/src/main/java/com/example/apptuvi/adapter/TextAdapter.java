@@ -15,6 +15,9 @@ import com.example.apptuvi.R;
 
 import java.util.ArrayList;
 
+/**
+ *
+ */
 public class TextAdapter extends RecyclerView.Adapter<TextAdapter.ViewHolder> {
     Activity context;
     ArrayList<String> list;
