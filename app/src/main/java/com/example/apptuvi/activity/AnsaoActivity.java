@@ -56,7 +56,7 @@ public class AnsaoActivity extends AppCompatActivity {
     String[] arrThangAm = {"Dần", "Mẹo" , "Thìn", "Tỵ", "Ngọ", "Mùi", "Thân", "Dậu", "Tuất", "Hợi", "Tý", "Sửu"};
     RecyclerView[] listRecyclerViews;
     ArrayList<String> listyear;
-    LinearLayout itemCenter;
+    LinearLayout itemCenter,lnlt1;
     ThongTin thongTin;
     String canDuong,chiDuong;
 
@@ -115,6 +115,15 @@ public class AnsaoActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(AnsaoActivity.this,ItemCenterActivity.class);
+                intent.putExtra("ThongTin",thongTin);
+                startActivity(intent);
+            }
+        });
+
+        lnlt1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(AnsaoActivity.this,BinhGiaiActivity.class);
                 intent.putExtra("ThongTin",thongTin);
                 startActivity(intent);
             }
@@ -8881,5 +8890,6 @@ public class AnsaoActivity extends AppCompatActivity {
         txtvannien = findViewById(R.id.txtvannien);
         txtthaitue = findViewById(R.id.txtthaitue);
         txthovaten = findViewById(R.id.txthovaten);
+        lnlt1 = findViewById(R.id.lnlt1);
     }
 }

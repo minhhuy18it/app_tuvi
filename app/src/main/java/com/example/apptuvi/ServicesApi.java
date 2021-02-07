@@ -23,5 +23,4 @@ public interface ServicesApi {
     @GET("/api_code.php/{code}")
     Call<ResponseBody> nhapcode(@Query("code") String code);
 
-
 }

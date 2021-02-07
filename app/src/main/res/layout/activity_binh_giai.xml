@@ -17,13 +17,15 @@
 
     <Button
         android:id="@+id/btnnhapcode"
-        android:layout_width="200dp"
-        android:layout_height="50dp"/>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nhập code" />
 
     <TextView
         android:id="@+id/txtbinhgiaicode"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="đâsdsadas"/>
+        android:text="đâsdsadas"
+        android:visibility="gone" />
 
 </LinearLayout>
