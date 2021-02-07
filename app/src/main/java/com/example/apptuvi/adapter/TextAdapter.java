@@ -12,6 +12,8 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.apptuvi.R;
+import com.example.apptuvi.activity.AnsaoActivity;
+import com.example.apptuvi.model.Anthaitue;
 
 import java.util.ArrayList;
 
@@ -45,11 +47,6 @@ public class TextAdapter extends RecyclerView.Adapter<TextAdapter.ViewHolder> {
         holder.txtText.setText(text);
     }
 
-    /**
-     * Returns the total number of items in the data set held by the adapter.
-     *
-     * @return The total number of items in this adapter.
-     */
     @Override
     public int getItemCount() {
         return list.size();
