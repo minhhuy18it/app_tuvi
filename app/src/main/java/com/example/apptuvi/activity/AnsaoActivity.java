@@ -53,11 +53,7 @@ public class AnsaoActivity extends AppCompatActivity {
     RecyclerView t1,t2,t3,t4,t5,t6,t7,t8,t9,t10,t11,t12;
     String[] arrNamSinh;
     ArrayList<AnCung> listAnCung;
-<<<<<<< HEAD
-    String[] arrThangAm = {"Dần", "Mẹo" , "Thìn", "Tỵ", "Ngọ", "Mùi", "Thân", "Dậu", "Tuát", "Hợi", "Tý", "Sửu"};
-=======
     String[] arrThangAm = {"Dần", "Mẹo" , "Thìn", "Tỵ", "Ngọ", "Mùi", "Thân", "Dậu", "Tuất", "Hợi", "Tý", "Sửu"};
->>>>>>> 2f9512027f00f90ceefe21ac15a8c7dd97572441
     RecyclerView[] listRecyclerViews;
     ArrayList<String> listyear;
     LinearLayout itemCenter,lnlt1;
