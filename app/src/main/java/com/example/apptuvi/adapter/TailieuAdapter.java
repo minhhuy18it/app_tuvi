@@ -14,6 +14,9 @@ import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
+/**
+ *
+ */
 public class TailieuAdapter extends BaseAdapter {
 
     List<tailieu> tailieuList;

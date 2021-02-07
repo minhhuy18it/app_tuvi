@@ -2,6 +2,9 @@ package com.example.apptuvi.model;
 
 import java.io.Serializable;
 
+/**
+ *
+ */
 public class tailieu implements Serializable {
     private int anhamduong;
     private String tenamduong;

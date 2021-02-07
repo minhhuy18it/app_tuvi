@@ -2,16 +2,29 @@ package com.example.apptuvi.model;
 
 import java.io.Serializable;
 
+/**
+ *
+ */
 public class Code implements Serializable {
 
     private String idcode;
     private String code;
     private String trangthai;
+    private int thang;
 
-    public Code(String idcode,String code, String trangthai) {
+    public Code(String idcode, String code, String trangthai, int thang) {
         this.idcode = idcode;
         this.code = code;
         this.trangthai = trangthai;
+        this.thang = thang;
+    }
+
+    public int getThang() {
+        return thang;
+    }
+
+    public void setThang(int thang) {
+        this.thang = thang;
     }
 
     public String getIdcode() {

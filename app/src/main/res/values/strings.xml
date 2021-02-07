@@ -27,4 +27,145 @@
         <item>Nhâm</item>
         <item>Quý</item>
     </array>
+
+    <array name="arrOcHoang">
+        <item>	Nhất Kiết	</item>
+        <item>	Nhị Nghi	</item>
+        <item>	Tam Địa sát	</item>
+        <item>	Tứ Tấn tài	</item>
+        <item>	Ngũ Thọ tử	</item>
+        <item>	Lục Hoang ốc	</item>
+        <item>	Nhất Kiết	</item>
+        <item>	Nhị Nghi	</item>
+        <item>	Tam Địa sát	</item>
+        <item>	Nhất Kiết	</item>
+        <item>	Nhị Nghi	</item>
+        <item>	Tam Địa sát	</item>
+        <item>	Tứ Tấn tài	</item>
+        <item>	Ngũ Thọ tử	</item>
+        <item>	Lục Hoang ốc	</item>
+        <item>	Nhất Kiết	</item>
+        <item>	Nhị Nghi	</item>
+        <item>	Tam Địa sát	</item>
+        <item>	Tứ Tấn tài	</item>
+        <item>	Nhị Nghi	</item>
+        <item>	Tam Địa sát	</item>
+        <item>	Tứ Tấn tài	</item>
+        <item>	Ngũ Thọ tử	</item>
+        <item>	Lục Hoang ốc	</item>
+        <item>	Nhất Kiết	</item>
+        <item>	Nhị Nghi	</item>
+        <item>	Tam Địa sát	</item>
+        <item>	Tứ Tấn tài	</item>
+        <item>	Ngũ Thọ tử	</item>
+        <item>	Tam Địa sát	</item>
+        <item>	Tứ Tấn tài	</item>
+        <item>	Ngũ Thọ tử	</item>
+        <item>	Lục Hoang ốc	</item>
+        <item>	Nhất Kiết	</item>
+        <item>	Nhị Nghi	</item>
+        <item>	Tam Địa sát	</item>
+        <item>	Tứ Tấn tài	</item>
+        <item>	Ngũ Thọ tử	</item>
+        <item>	Lục Hoang ốc	</item>
+        <item>	Tứ Tấn tài	</item>
+        <item>	Ngũ Thọ tử	</item>
+        <item>	Lục Hoang ốc	</item>
+        <item>	Nhất Kiết	</item>
+        <item>	Nhị Nghi	</item>
+        <item>	Tam Địa sát	</item>
+        <item>	Tứ Tấn tài	</item>
+        <item>	Ngũ Thọ tử	</item>
+        <item>	Lục Hoang ốc	</item>
+        <item>	Nhất Kiết	</item>
+        <item>	Ngũ Thọ tử	</item>
+        <item>	Lục Hoang ốc	</item>
+        <item>	Nhất Kiết	</item>
+        <item>	Nhị Nghi	</item>
+        <item>	Tam Địa sát	</item>
+        <item>	Tứ Tấn tài	</item>
+        <item>	Ngũ Thọ tử	</item>
+        <item>	Lục Hoang ốc	</item>
+        <item>	Nhất Kiết	</item>
+        <item>	Nhị Nghi	</item>
+        <item>	Lục Hoang ốc	</item>
+    </array>
+
+    <array name="arrVanNien">
+        <item>	Ngưu hồi sơn	</item>
+        <item>	Hổ nhập nội	</item>
+        <item>	Thố lộng nguyệt	</item>
+        <item>	Long đắc vũ	</item>
+        <item>	Xà hãm tỉnh	</item>
+        <item>	Mã bị đao	</item>
+        <item>	Dương thảo ngạn	</item>
+        <item>	Hầu thực quả	</item>
+        <item>	Kê hồi viên	</item>
+        <item>	Khuyển cuồng phong	</item>
+        <item>	Trư bị hỏa	</item>
+        <item>	Thử ngộ điền	</item>
+    </array>
+
+    <array name="arrThaiTueCungLon">
+        <item>	Dần	</item>
+        <item>	Thân	</item>
+        <item>	Tỵ	</item>
+        <item>	Hợi	</item>
+        <item>	Thân	</item>
+        <item>	Mẹo	</item>
+        <item>	Dậu	</item>
+        <item>	Thìn	</item>
+        <item>	Ngọ	</item>
+        <item>	Tý	</item>
+        <item>	Thìn	</item>
+        <item>	Tuất	</item>
+        <item>	Mẹo	</item>
+        <item>	Sửu	</item>
+        <item>	Thìn	</item>
+        <item>	Tỵ	</item>
+        <item>	Hợi	</item>
+        <item>	Dần	</item>
+        <item>	Thân	</item>
+        <item>	Thân	</item>
+        <item>	Ngọ	</item>
+        <item>	Tý	</item>
+        <item>	Sửu	</item>
+        <item>	Mẹo	</item>
+        <item>	Ngọ	</item>
+        <item>	Mùi	</item>
+        <item>	Sửu	</item>
+        <item>	Tý	</item>
+        <item>	Tuất	</item>
+        <item>	Sửu	</item>
+        <item>	Thân	</item>
+        <item>	Dần	</item>
+        <item>	Hợi	</item>
+        <item>	Tỵ	</item>
+        <item>	Dần	</item>
+        <item>	Dậu	</item>
+        <item>	Mẹo	</item>
+        <item>	Tuất	</item>
+        <item>	Tý	</item>
+        <item>	Dậu	</item>
+        <item>	Tuất	</item>
+        <item>	Thìn	</item>
+        <item>	Dậu	</item>
+        <item>	Mùi	</item>
+        <item>	Sửu	</item>
+        <item>	Hợi	</item>
+        <item>	Tỵ	</item>
+        <item>	Thân	</item>
+        <item>	Dần	</item>
+        <item>	Hợi	</item>
+        <item>	Tý	</item>
+        <item>	Ngọ	</item>
+        <item>	Mùi	</item>
+        <item>	Dậu	</item>
+        <item>	Mẹo	</item>
+        <item>	Sửu	</item>
+        <item>	Mùi	</item>
+        <item>	Ngọ	</item>
+        <item>	Thìn	</item>
+        <item>	Tuất	</item>
+    </array>
 </resources>

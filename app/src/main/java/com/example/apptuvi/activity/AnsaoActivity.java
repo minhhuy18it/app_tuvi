@@ -21,16 +21,13 @@ import android.widget.Toast;
 
 import com.example.apptuvi.R;
 import com.example.apptuvi.adapter.TextAdapter;
-import com.example.apptuvi.adapter.ThaitueAdapter;
 import com.example.apptuvi.model.AnCung;
-import com.example.apptuvi.model.Anthaitue;
 import com.example.apptuvi.model.ThongTin;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
-import java.util.List;
 
 public class AnsaoActivity extends AppCompatActivity {
     TextView txtcanchity,txtcanchidau,txtcanchidan,txtcanchimao,txtcanchityd,txtcanchituat,txtcanchihoi;
@@ -54,7 +51,7 @@ public class AnsaoActivity extends AppCompatActivity {
     String namduong,menh;
     RecyclerView t1,t2,t3,t4,t5,t6,t7,t8,t9,t10,t11,t12;
     String[] arrNamSinh;
-    List<AnCung> listAnCung;
+    ArrayList<AnCung> listAnCung;
     String[] arrThangAm = {"Dần", "Mẹo" , "Thìn", "Tỵ", "Ngọ", "Mùi", "Thân", "Dậu", "Tuát", "Hợi", "Tý", "Sửu"};
     RecyclerView[] listRecyclerViews;
     ArrayList<String> listyear;
@@ -75,6 +72,7 @@ public class AnsaoActivity extends AppCompatActivity {
         cansanhtu();
         tamtai();
         textAnSao();
+        Anvonglocton();
         setNgay();
         cangioam();
         addEvents();
@@ -237,6 +235,22 @@ public class AnsaoActivity extends AppCompatActivity {
         }
     }
 
+    private void Anvonglocton() {
+        Intent intent = getIntent();
+        if (intent.hasExtra("ThongTin")) {
+            ThongTin thongTin = (ThongTin) intent.getSerializableExtra("ThongTin");
+
+            String[] output = namsinh.split(" ");
+            if (gioiam.equals("Dương Nam") || gioiam.equals("Âm Nữ")){
+                if (output[0].equals("Giáp")){
+
+                }
+            }else {
+
+            }
+        }
+    }
+
     private void textAnSao() {
         listAnCung = new ArrayList<>();
         for (int i = 0 ; i<=11 ; i++) {
@@ -396,29 +410,29 @@ public class AnsaoActivity extends AppCompatActivity {
                 chithang = 8;
             }
 
-            if (namsinh.equals("Giáp Tý") || namsinh.equals("Canh Thìn") || namsinh.equals("Tân Mẹo") || namsinh.equals("Quý Mẹo") || namsinh.equals("Mậu Thìn") || namsinh.equals("Giáp Dần")){
+            if (namAm.equals("Giáp Tý") || namAm.equals("Canh Thìn") || namAm.equals("Tân Mẹo") || namAm.equals("Quý Mẹo") || namAm.equals("Mậu Thìn") || namAm.equals("Giáp Dần")){
                 chinam = 12;
-            }else if (namsinh.equals("Ất Sửu") || namsinh.equals("Tân Mùi") || namsinh.equals("Quý Dậu") || namsinh.equals("Đinh Sửu") || namsinh.equals("Mậu Dần") || namsinh.equals("Nhâm Ngọ") || namsinh.equals("Kỷ Sửu") || namsinh.equals("Bính Thìn") || namsinh.equals("Ất Mẹo") || namsinh.equals("Canh Thân") || namsinh.equals("Giáp Thìn")){
+            }else if (namAm.equals("Ất Sửu") || namAm.equals("Tân Mùi") || namAm.equals("Quý Dậu") || namAm.equals("Đinh Sửu") || namAm.equals("Mậu Dần") || namAm.equals("Nhâm Ngọ") || namAm.equals("Kỷ Sửu") || namAm.equals("Bính Thìn") || namAm.equals("Ất Mẹo") || namAm.equals("Canh Thân") || namAm.equals("Giáp Thìn")){
                 chinam = 8;
-            }else if (namsinh.equals("Bính Dần") || namsinh.equals("Tân Tỵ") || namsinh.equals("Bính Tuất") || namsinh.equals("Ất Mùi") || namsinh.equals("Đinh Tỵ") || namsinh.equals("Kỷ Mùi")){
+            }else if (namAm.equals("Bính Dần") || namAm.equals("Tân Tỵ") || namAm.equals("Bính Tuất") || namAm.equals("Ất Mùi") || namAm.equals("Đinh Tỵ") || namAm.equals("Kỷ Mùi")){
                 chinam = 6;
-            }else if (namsinh.equals("Đinh Mẹo") || namsinh.equals("Nhâm Thân") || namsinh.equals("Quý Mùi") || namsinh.equals("Quý Tỵ") || namsinh.equals("Canh Tý") || namsinh.equals("Tân Sửu") || namsinh.equals("Ất Tỵ") || namsinh.equals("Quý Hợi")){
+            }else if (namAm.equals("Đinh Mẹo") || namAm.equals("Nhâm Thân") || namAm.equals("Quý Mùi") || namAm.equals("Quý Tỵ") || namAm.equals("Canh Tý") || namAm.equals("Tân Sửu") || namAm.equals("Ất Tỵ") || namAm.equals("Quý Hợi")){
                 chinam = 7;
-            }else if (namsinh.equals("Kỷ Tỵ") || namsinh.equals("Giáp Thân") || namsinh.equals("Bính Thân") || namsinh.equals("Đinh Mùi") || namsinh.equals("Kỷ Dậu") || namsinh.equals("Canh Tuất") || namsinh.equals("Nhâm Tý") ||namsinh.equals("Quý Sửu")){
+            }else if (namAm.equals("Kỷ Tỵ") || namAm.equals("Giáp Thân") || namAm.equals("Bính Thân") || namAm.equals("Đinh Mùi") || namAm.equals("Kỷ Dậu") || namAm.equals("Canh Tuất") || namAm.equals("Nhâm Tý") ||namAm.equals("Quý Sửu")){
                 chinam = 5;
-            }else if (namsinh.equals("Canh Ngọ") || namsinh.equals("Ất Hợi") || namsinh.equals("Canh Dần") || namsinh.equals("Nhâm Dần")){
+            }else if (namAm.equals("Canh Ngọ") || namAm.equals("Ất Hợi") || namAm.equals("Canh Dần") || namAm.equals("Nhâm Dần")){
                 chinam = 9;
-            }else if (namsinh.equals("Giáp Tuất") || namsinh.equals("Ất Dậu") || namsinh.equals("Mậu Tý") || namsinh.equals("Giáp Ngọ")){
+            }else if (namAm.equals("Giáp Tuất") || namAm.equals("Ất Dậu") || namAm.equals("Mậu Tý") || namAm.equals("Giáp Ngọ")){
                 chinam = 15;
-            }else if (namsinh.equals("Bính Tý") || namsinh.equals("Đinh Hợi") || namsinh.equals("Tân Dậu")){
+            }else if (namAm.equals("Bính Tý") || namAm.equals("Đinh Hợi") || namAm.equals("Tân Dậu")){
                 chinam = 16;
-            }else if (namsinh.equals("Kỷ Mẹo") || namsinh.equals("Kỷ Hợi") || namsinh.equals("Mậu Ngọ")){
+            }else if (namAm.equals("Kỷ Mẹo") || namAm.equals("Kỷ Hợi") || namAm.equals("Mậu Ngọ")){
                 chinam = 19;
-            }else if (namsinh.equals("Nhâm Thìn") || namsinh.equals("Nhâm Tuất")){
+            }else if (namAm.equals("Nhâm Thìn") || namAm.equals("Nhâm Tuất")){
                 chinam = 10;
-            }else if (namsinh.equals("Đinh Dậu") || namsinh.equals("Mậu Tuất") || namsinh.equals("Mậu Thân")){
+            }else if (namAm.equals("Đinh Dậu") || namAm.equals("Mậu Tuất") || namAm.equals("Mậu Thân")){
                 chinam = 14;
-            }else if (namsinh.equals("Bính Ngọ")){
+            }else if (namAm.equals("Bính Ngọ")){
                 chinam = 13;
             }
         }
