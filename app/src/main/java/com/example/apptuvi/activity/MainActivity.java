@@ -26,6 +26,9 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 
+/**
+ *
+ */
 public class MainActivity extends AppCompatActivity {
 
     private Spinner spinner,spinnergioi,spinnergio,spinnerphut,spinnerthang;
