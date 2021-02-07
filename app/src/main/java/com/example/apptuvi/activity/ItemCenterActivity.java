@@ -31,7 +31,7 @@ public class ItemCenterActivity extends AppCompatActivity {
     ArrayList<String> listyear;
     String namAm;
     Integer chigio = 0,chingay = 0,chithang = 0,chinam = 0,cansanhtu =0,namhientai = 0,tuoiam = 0;
-    String namduong ;
+    String namduong,menh;
     String namsinh;
     String giophutsinh;
     String[] arrThangAm = {"Dần", "Mẹo" , "Thìn", "Tỵ", "Ngọ", "Mùi", "Thân", "Dậu", "Tuất", "Hợi", "Tý", "Sửu"};
@@ -46,6 +46,7 @@ public class ItemCenterActivity extends AppCompatActivity {
         addControls();
         mang();
         chumenh();
+        canchi();
         cansanhtu();
         tamtai();
         setNgay();
@@ -58,6 +59,558 @@ public class ItemCenterActivity extends AppCompatActivity {
         setThaitue();
         txthovaten.setText(thongTin.getTen());
     }
+
+    private void canchi() {
+        Intent intent = getIntent();
+        if (intent.hasExtra("ThongTin")) {
+            ThongTin thongTin = (ThongTin) intent.getSerializableExtra("ThongTin");
+
+            String[] output = namsinh.split(" ");
+
+            if (thongTin.thangam().equals("1")){
+                if(giophutsinh.equals("Tý")){
+                    menh = "Dần";
+                }else if (giophutsinh.equals("Sửu")){
+                    menh = "Sửu";
+                }else if (giophutsinh.equals("Dần")){
+                    menh = "Tý";
+                }else if (giophutsinh.equals("Mẹo")){
+                    menh = "Hợi";
+                }else if (giophutsinh.equals("Thìn")){
+                    menh = "Tuất";
+                }else if (giophutsinh.equals("Tỵ")){
+                    menh = "Dậu";
+                }else if (giophutsinh.equals("Ngọ")){
+                    menh = "Thân";
+                }else if (giophutsinh.equals("Mùi")){
+                    menh = "Mùi";
+                }else if (giophutsinh.equals("Thân")){
+                    menh = "Ngọ";
+                }else if (giophutsinh.equals("Dậu")){
+                    menh = "Tỵ";
+                }else if (giophutsinh.equals("Tuất")){
+                    menh = "Thìn";
+                }else if (giophutsinh.equals("Hợi")){
+                    menh = "Mẹo";
+                }
+            }
+            else if (thongTin.thangam().equals("2")){
+                if(giophutsinh.equals("Tý")){
+                    menh = "Mẹo";
+                }else if (giophutsinh.equals("Sửu")){
+                    
+                    menh = "Dần";
+                }else if (giophutsinh.equals("Dần")){
+                    menh = "Sửu";
+                }else if (giophutsinh.equals("Mẹo")){
+                    menh = "Tý";
+                }else if (giophutsinh.equals("Thìn")){
+                    menh = "Hợi";
+                }else if (giophutsinh.equals("Tỵ")){
+                    menh = "Tuất";
+                }else if (giophutsinh.equals("Ngọ")){
+                    menh = "Dậu";
+                }else if (giophutsinh.equals("Mùi")){
+                    menh = "Thân";
+                }else if (giophutsinh.equals("Thân")){
+                    menh = "Mùi";
+                }else if (giophutsinh.equals("Dậu")){
+                    menh = "Ngọ";
+                }else if (giophutsinh.equals("Tuất")){
+                    menh = "Tỵ";
+                }else if (giophutsinh.equals("Hợi")){
+                    menh = "Thìn";
+                }
+            }
+            else if (thongTin.thangam().equals("3")){
+                if(giophutsinh.equals("Tý")){
+                    menh = "Thìn";
+                }else if (giophutsinh.equals("Sửu")){
+                    menh = "Mẹo";
+                }else if (giophutsinh.equals("Dần")){
+                    
+                    menh = "Dần";
+                }else if (giophutsinh.equals("Mẹo")){
+                    menh = "Sửu";
+                }else if (giophutsinh.equals("Thìn")){
+                    menh = "Tý";
+                }else if (giophutsinh.equals("Tỵ")){
+                    menh = "Hợi";
+                }else if (giophutsinh.equals("Ngọ")){
+                    menh = "Tuất";
+                }else if (giophutsinh.equals("Mùi")){
+                    menh = "Dậu";
+                }else if (giophutsinh.equals("Thân")){
+                    menh = "Thân";
+                }else if (giophutsinh.equals("Dậu")){
+                    menh = "Mùi";
+                }else if (giophutsinh.equals("Tuất")){
+                    menh = "Ngọ";
+                }else if (giophutsinh.equals("Hợi")){
+                    menh = "Tỵ";
+                }
+            }
+            else if (thongTin.thangam().equals("4")){
+                if(giophutsinh.equals("Tý")){
+                    menh = "Tỵ";
+                }else if (giophutsinh.equals("Sửu")){
+                    menh = "Thìn";
+                }else if (giophutsinh.equals("Dần")){
+                    menh = "Mẹo";
+                }else if (giophutsinh.equals("Mẹo")){
+                    
+                    menh = "Dần";
+                }else if (giophutsinh.equals("Thìn")){
+                    menh = "Sửu";
+                }else if (giophutsinh.equals("Tỵ")){
+                    menh = "Tý";
+                }else if (giophutsinh.equals("Ngọ")){
+                    menh = "Hợi";
+                }else if (giophutsinh.equals("Mùi")){
+                    menh = "Tuất";
+                }else if (giophutsinh.equals("Thân")){
+                    menh = "Dậu";
+                }else if (giophutsinh.equals("Dậu")){
+                    menh = "Thân";
+                }else if (giophutsinh.equals("Tuất")){
+                    menh = "Mùi";
+                }else if (giophutsinh.equals("Hợi")){
+                    menh = "Ngọ";
+                }
+            }
+            else if (thongTin.thangam().equals("5")){
+                if(giophutsinh.equals("Tý")){
+                    menh = "Ngọ";
+                }else if (giophutsinh.equals("Sửu")){
+                    menh = "Tỵ";
+                }else if (giophutsinh.equals("Dần")){
+                    menh = "Thìn";
+                }else if (giophutsinh.equals("Mẹo")){
+                    menh = "Mẹo";
+                }else if (giophutsinh.equals("Thìn")){
+                    
+                    menh = "Dần";
+                }else if (giophutsinh.equals("Tỵ")){
+                    menh = "Sửu";
+                }else if (giophutsinh.equals("Ngọ")){
+                    menh = "Tý";
+                }else if (giophutsinh.equals("Mùi")){
+                    menh = "Hợi";
+                }else if (giophutsinh.equals("Thân")){
+                    menh = "Tuất";
+                }else if (giophutsinh.equals("Dậu")){
+                    menh = "Dậu";
+                }else if (giophutsinh.equals("Tuất")){
+                    menh = "Thân";
+                }else if (giophutsinh.equals("Hợi")){
+                    menh = "Mùi";
+                }
+            }
+            else if (thongTin.thangam().equals("6")){
+                if(giophutsinh.equals("Tý")){
+                    menh = "Mùi";
+                }else if (giophutsinh.equals("Sửu")){
+                    
+                    menh = "Ngọ";
+                }else if (giophutsinh.equals("Dần")){
+                    
+                    
+                    menh = "Tỵ";
+                }else if (giophutsinh.equals("Mẹo")){
+                    
+                    menh = "Thìn";
+                }else if (giophutsinh.equals("Thìn")){
+                    
+                    
+                    menh = "Mẹo";
+                }else if (giophutsinh.equals("Tỵ")){
+                    
+                    menh = "Dần";
+                }else if (giophutsinh.equals("Ngọ")){
+                    
+                    
+                    
+                    menh = "Sửu";
+                    
+                }else if (giophutsinh.equals("Mùi")){
+                    
+                    
+                    
+                    menh = "Tý";
+                }else if (giophutsinh.equals("Thân")){
+                    
+                    
+                    menh = "Hợi";
+                }else if (giophutsinh.equals("Dậu")){
+                    
+                    menh = "Tuất";
+                }else if (giophutsinh.equals("Tuất")){
+
+                    
+                    menh = "Dậu";
+                    
+                }else if (giophutsinh.equals("Hợi")){
+                    menh = "Thân";
+                }
+            }
+            else if (thongTin.thangam().equals("7")){
+                if(giophutsinh.equals("Tý")){
+                    
+                    
+                    menh = "Thân";
+                    
+                }else if (giophutsinh.equals("Sửu")){
+                    menh = "Mùi";
+                }else if (giophutsinh.equals("Dần")){
+                    
+                    
+                    
+                    
+                    menh = "Ngọ";
+                }else if (giophutsinh.equals("Mẹo")){
+                    menh = "Tỵ";
+                }else if (giophutsinh.equals("Thìn")){
+
+                    
+                    menh = "Thìn";
+
+                }else if (giophutsinh.equals("Tỵ")){
+                    menh = "Mẹo";
+                }else if (giophutsinh.equals("Ngọ")){
+                    menh = "Dần";
+                }else if (giophutsinh.equals("Mùi")){
+                    
+                    
+                    
+                    
+                    
+                    menh = "Sửu";
+                }else if (giophutsinh.equals("Thân")){
+                    
+                    menh = "Tý";
+                }else if (giophutsinh.equals("Dậu")){
+                    menh = "Hợi";
+                }else if (giophutsinh.equals("Tuất")){
+                    
+                    menh = "Tuất";
+                }else if (giophutsinh.equals("Hợi")){
+                    
+                    
+                    
+                    menh = "Dậu";
+                    
+                }
+            }
+            else if (thongTin.thangam().equals("8")){
+                if(giophutsinh.equals("Tý")){
+                    
+                    
+                    
+                    menh = "Dậu";
+                    
+                    
+                }else if (giophutsinh.equals("Sửu")){
+                    
+                    
+                    menh = "Thân";
+                    
+                    
+                    
+                    
+                    
+                    
+                }else if (giophutsinh.equals("Dần")){
+                    
+                    
+                    
+                    menh = "Mùi";
+                    
+                    
+                }else if (giophutsinh.equals("Mẹo")){
+                    
+                    
+                    menh = "Ngọ";
+                }else if (giophutsinh.equals("Thìn")){
+                    
+                    
+                    
+                    
+                    menh = "Tỵ";
+                }else if (giophutsinh.equals("Tỵ")){
+                    
+                    
+                    
+                    menh = "Thìn";
+                }else if (giophutsinh.equals("Ngọ")){
+                    
+                    
+                    menh = "Mẹo";
+                }else if (giophutsinh.equals("Mùi")){
+                    
+                    menh = "Dần";
+                }else if (giophutsinh.equals("Thân")){
+                    
+                    menh = "Sửu";
+                }else if (giophutsinh.equals("Dậu")){
+                    
+                    
+                    menh = "Tý";
+                }else if (giophutsinh.equals("Tuất")){
+                    
+                    menh = "Hợi";
+                }else if (giophutsinh.equals("Hợi")){
+                    
+                    
+                    menh = "Tuất";
+                }
+            }
+            else if (thongTin.thangam().equals("9")){
+                if(giophutsinh.equals("Tý")){
+                    
+                    menh = "Tuất";
+                }else if (giophutsinh.equals("Sửu")){
+                    
+                    menh = "Dậu";
+                    
+                }else if (giophutsinh.equals("Dần")){
+                    menh = "Thân";
+                    
+                }else if (giophutsinh.equals("Mẹo")){
+                    menh = "Mùi";
+                    
+                    
+                }else if (giophutsinh.equals("Thìn")){
+                    
+                    
+                    menh = "Ngọ";
+                }else if (giophutsinh.equals("Tỵ")){
+                    
+                    
+                    menh = "Tỵ";
+                }else if (giophutsinh.equals("Ngọ")){
+                    menh = "Thìn";
+                }else if (giophutsinh.equals("Mùi")){
+                    
+                    
+                    menh = "Mẹo";
+                }else if (giophutsinh.equals("Thân")){
+                    
+                    menh = "Dần";
+                }else if (giophutsinh.equals("Dậu")){
+                    menh = "Sửu";
+                }else if (giophutsinh.equals("Tuất")){
+                    
+                    
+                    menh = "Tý";
+                }else if (giophutsinh.equals("Hợi")){
+                    
+                    
+                    menh = "Hợi";
+                }
+            }
+            else if (thongTin.thangam().equals("10")){
+                if(giophutsinh.equals("Tý")){
+                    
+                    
+                    
+                    menh = "Hợi";
+                }else if (giophutsinh.equals("Sửu")){
+
+                    
+                    menh = "Tuất";
+                }else if (giophutsinh.equals("Dần")){
+                    
+
+                    
+                    menh = "Dậu";
+                    
+
+                    
+                }else if (giophutsinh.equals("Mẹo")){
+                    
+                    
+                    
+                    
+                    
+                    menh = "Thân";
+                    
+                    
+                    
+                    
+                    
+                }else if (giophutsinh.equals("Thìn")){
+                    
+                    
+                    menh = "Mùi";
+                    
+                    
+                    
+                    
+                }else if (giophutsinh.equals("Tỵ")){
+                    
+                    
+                    
+                    menh = "Ngọ";
+                }else if (giophutsinh.equals("Ngọ")){
+                    
+                    
+                    menh = "Tỵ";
+                }else if (giophutsinh.equals("Mùi")){
+                    menh = "Thìn";
+                }else if (giophutsinh.equals("Thân")){
+                    
+                    
+                    menh = "Mẹo";
+                }else if (giophutsinh.equals("Dậu")){
+                    
+                    menh = "Dần";
+                }else if (giophutsinh.equals("Tuất")){
+                    
+                    
+                    
+                    
+                    menh = "Sửu";
+                }else if (giophutsinh.equals("Hợi")){
+                    
+                    
+                    menh = "Tý";
+                }
+            }
+            else if (thongTin.thangam().equals("11")){
+                if(giophutsinh.equals("Tý")){
+                    
+                    menh = "Tý";
+
+                }else if (giophutsinh.equals("Sửu")){
+                    
+                    
+                    menh = "Hợi";
+
+                }else if (giophutsinh.equals("Dần")){
+
+                    
+                    
+                    menh = "Tuất";
+
+                }else if (giophutsinh.equals("Mẹo")){
+
+
+                    
+                    menh = "Dậu";
+                    
+
+                }else if (giophutsinh.equals("Thìn")){
+
+
+                    menh = "Thân";
+                    
+                    
+                    
+                    
+                    
+
+                }else if (giophutsinh.equals("Tỵ")){
+
+
+                    menh = "Mùi";
+
+                }else if (giophutsinh.equals("Ngọ")){
+                    
+                    menh = "Ngọ";
+                }else if (giophutsinh.equals("Mùi")){
+
+
+                    
+                    menh = "Tỵ";
+
+                }else if (giophutsinh.equals("Thân")){
+
+                    
+                    
+                    menh = "Thìn";
+
+                }else if (giophutsinh.equals("Dậu")){
+
+                    
+                    
+                    menh = "Mẹo";
+
+                }else if (giophutsinh.equals("Tuất")){
+                    
+                    menh = "Dần";
+                }else if (giophutsinh.equals("Hợi")){
+                    
+                    menh = "Sửu";
+                }
+            }
+            else if (thongTin.thangam().equals("12")){
+                if(giophutsinh.equals("Tý")){
+                    
+                    
+                    
+                    menh = "Sửu";
+                    
+
+                }else if (giophutsinh.equals("Sửu")){
+                    
+                    
+                    
+                    
+                    menh = "Tý";
+
+
+                }else if (giophutsinh.equals("Dần")){
+                    
+                    
+                    
+                    menh = "Hợi";
+                }else if (giophutsinh.equals("Mẹo")){
+
+                   
+
+                    menh = "Tuất";
+
+                }else if (giophutsinh.equals("Thìn")){
+                    
+                    
+                    menh = "Dậu";
+                }else if (giophutsinh.equals("Tỵ")){
+                    
+                    
+                    
+                    
+                    menh = "Thân";
+
+                    
+                }else if (giophutsinh.equals("Ngọ")){
+                    
+                    
+                    
+                    menh = "Mùi";
+                    
+
+                }else if (giophutsinh.equals("Mùi")){
+                    
+                    menh = "Ngọ";
+                }else if (giophutsinh.equals("Thân")){
+
+                    menh = "Tỵ";
+
+                }else if (giophutsinh.equals("Dậu")){
+                    
+                    menh = "Thìn";
+                }else if (giophutsinh.equals("Tuất")){
+                    
+                    
+                    menh = "Mẹo";
+                }else if (giophutsinh.equals("Hợi")){
+                    
+                    menh = "Dần";
+                }
+            }
+        }
+    }
+
 
     private void addEvents() {
         spnnamxem.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
@@ -73,6 +626,7 @@ public class ItemCenterActivity extends AppCompatActivity {
                 setKimLau();
                 setVanNien();
                 setThaitue();
+                vongtruongsinh();
             }
 
             @Override
@@ -1063,6 +1617,83 @@ public class ItemCenterActivity extends AppCompatActivity {
             }
         }
     }
+
+    private void vongtruongsinh() {
+        Intent intent = getIntent();
+        if (intent.hasExtra("ThongTin")){
+            ThongTin thongTin = (ThongTin) intent.getSerializableExtra("ThongTin");
+
+            String[] output = namsinh.split(" ");
+
+            if (output[0].equals("Giáp") || output[0].equals("Kỷ")){
+                if (menh.equals("Tý") || menh.equals("Sửu")){
+                    txtcuc.setText("Thủy 2 Cục");
+                }else if (menh.equals("Dần") || menh.equals("Mẹo") || menh.equals("Tuất") || menh.equals("Hợi")){
+                    txtcuc.setText("Hỏa 6 Cục");
+                }else if (menh.equals("Thìn") || menh.equals("Tỵ")){
+                    txtcuc.setText("Mộc 3 Cục");
+                }else if (menh.equals("Ngọ") || menh.equals("Mùi")){
+                    txtcuc.setText("Thổ 5 Cục");
+                }else if (menh.equals("Thân") || menh.equals("Dậu")){
+                    txtcuc.setText("Kim 4 Cục");
+                }
+            }
+            else if (output[0].equals("Ất") || output[0].equals("Canh")){
+                if (menh.equals("Tý") || menh.equals("Sửu")){
+                    txtcuc.setText("Hỏa 6 Cục");
+                }else if (menh.equals("Dần") || menh.equals("Mẹo") || menh.equals("Tuất") || menh.equals("Hợi")){
+                    txtcuc.setText("Thổ 5 Cục");
+                }else if (menh.equals("Thìn") || menh.equals("Tỵ")){
+                    txtcuc.setText("Kim 4 Cục");
+                }else if (menh.equals("Ngọ") || menh.equals("Mùi")){
+                    txtcuc.setText("Mộc 3 Cục");
+                }else if (menh.equals("Thân") || menh.equals("Dậu")){
+                    txtcuc.setText("Thủy 2 Cục");
+                }
+            }
+            else if (output[0].equals("Bính") || output[0].equals("Tân")){
+                if (menh.equals("Tý") || menh.equals("Sửu")){
+                    txtcuc.setText("Thổ 5 Cục");
+                }else if (menh.equals("Dần") || menh.equals("Mẹo") || menh.equals("Tuất") || menh.equals("Hợi")){
+                    txtcuc.setText("Mộc 3 Cục");
+                }else if (menh.equals("Thìn") || menh.equals("Tỵ")){
+                    txtcuc.setText("Thủy 2 Cục");
+                }else if (menh.equals("Ngọ") || menh.equals("Mùi")){
+                    txtcuc.setText("Kim 4 Cục");
+                }else if (menh.equals("Thân") || menh.equals("Dậu")){
+                    txtcuc.setText("Hỏa 6 Cục");
+                }
+            }
+            else if (output[0].equals("Đinh") || output[0].equals("Nhâm")){
+                if (menh.equals("Tý") || menh.equals("Sửu")){
+                    txtcuc.setText("Mộc 3 Cục");
+                }else if (menh.equals("Dần") || menh.equals("Mẹo") || menh.equals("Tuất") || menh.equals("Hợi")){
+                    txtcuc.setText("Kim 4 Cục");
+                }else if (menh.equals("Thìn") || menh.equals("Tỵ")){
+                    txtcuc.setText("Hỏa 6 Cục");
+                }else if (menh.equals("Ngọ") || menh.equals("Mùi")){
+                    txtcuc.setText("Thủy 2 Cục");
+                }else if (menh.equals("Thân") || menh.equals("Dậu")){
+                    txtcuc.setText("Thổ 5 Cục");
+                }
+            }
+            else if (output[0].equals("Mậu") || output[0].equals("Quý")){
+                if (menh.equals("Tý") || menh.equals("Sửu")){
+                    txtcuc.setText("Kim 4 Cục");
+                }else if (menh.equals("Dần") || menh.equals("Mẹo") || menh.equals("Tuất") || menh.equals("Hợi")){
+                    txtcuc.setText("Thủy 2 Cục");
+                }else if (menh.equals("Thìn") || menh.equals("Tỵ")){
+                    txtcuc.setText("Thổ 5 Cục");
+                }else if (menh.equals("Ngọ") || menh.equals("Mùi")){
+                    txtcuc.setText("Hỏa 6 Cục");
+                }else if (menh.equals("Thân") || menh.equals("Dậu")){
+                    txtcuc.setText("Mộc 3 Cục");
+                }
+            }
+
+        }
+    }
+
 
     private void anhxacode(){
         txtgioiam = findViewById(R.id.txtgioiam);
