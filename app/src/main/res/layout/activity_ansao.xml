@@ -14,7 +14,7 @@
         android:orientation="horizontal">
 
         <LinearLayout
-            android:id="@+id/lnlt1"
+            android:id="@+id/lnlt4"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="center"
@@ -101,6 +101,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/lnlt5"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -185,6 +186,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/lnlt6"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -270,6 +272,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/lnlt7"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -370,6 +373,7 @@
             android:orientation="vertical">
 
             <LinearLayout
+                android:id="@+id/lnlt3"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -452,6 +456,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/lnlt2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -1345,6 +1350,7 @@
             android:orientation="vertical">
 
             <LinearLayout
+                android:id="@+id/lnlt8"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -1430,6 +1436,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/lnlt9"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -1525,6 +1532,7 @@
         android:orientation="horizontal">
 
         <LinearLayout
+            android:id="@+id/lnlt1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -1609,6 +1617,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/lnlt12"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -1694,6 +1703,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/lnlt11"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -1779,6 +1789,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/lnlt10"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -1856,8 +1867,8 @@
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/t10"
-                    android:layout_width="331dp"
-                    android:layout_height="481dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:layout_weight="1" />
 
             </LinearLayout>

@@ -56,7 +56,7 @@ public class AnsaoActivity extends AppCompatActivity {
     String[] arrThangAm = {"Dần", "Mẹo" , "Thìn", "Tỵ", "Ngọ", "Mùi", "Thân", "Dậu", "Tuất", "Hợi", "Tý", "Sửu"};
     RecyclerView[] listRecyclerViews;
     ArrayList<String> listyear;
-    LinearLayout itemCenter,lnlt1;
+    LinearLayout itemCenter,lnlt1,lnlt2,lnlt3,lnlt4,lnlt5,lnlt6,lnlt7,lnlt8,lnlt9,lnlt10,lnlt11,lnlt12;
     ThongTin thongTin;
     String canDuong,chiDuong;
 
@@ -121,6 +121,105 @@ public class AnsaoActivity extends AppCompatActivity {
         });
 
         lnlt1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(AnsaoActivity.this,BinhGiaiActivity.class);
+                intent.putExtra("ThongTin",thongTin);
+                startActivity(intent);
+            }
+        });
+
+        lnlt2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(AnsaoActivity.this,BinhGiaiActivity.class);
+                intent.putExtra("ThongTin",thongTin);
+                startActivity(intent);
+            }
+        });
+
+        lnlt3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(AnsaoActivity.this,BinhGiaiActivity.class);
+                intent.putExtra("ThongTin",thongTin);
+                startActivity(intent);
+            }
+        });
+
+        lnlt4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(AnsaoActivity.this,BinhGiaiActivity.class);
+                intent.putExtra("ThongTin",thongTin);
+                startActivity(intent);
+            }
+        });
+
+        lnlt5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(AnsaoActivity.this,BinhGiaiActivity.class);
+                intent.putExtra("ThongTin",thongTin);
+                startActivity(intent);
+            }
+        });
+
+        lnlt6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(AnsaoActivity.this,BinhGiaiActivity.class);
+                intent.putExtra("ThongTin",thongTin);
+                startActivity(intent);
+            }
+        });
+
+        lnlt7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(AnsaoActivity.this,BinhGiaiActivity.class);
+                intent.putExtra("ThongTin",thongTin);
+                startActivity(intent);
+            }
+        });
+
+        lnlt8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(AnsaoActivity.this,BinhGiaiActivity.class);
+                intent.putExtra("ThongTin",thongTin);
+                startActivity(intent);
+            }
+        });
+
+        lnlt9.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(AnsaoActivity.this,BinhGiaiActivity.class);
+                intent.putExtra("ThongTin",thongTin);
+                startActivity(intent);
+            }
+        });
+
+        lnlt10.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(AnsaoActivity.this,BinhGiaiActivity.class);
+                intent.putExtra("ThongTin",thongTin);
+                startActivity(intent);
+            }
+        });
+
+        lnlt11.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(AnsaoActivity.this,BinhGiaiActivity.class);
+                intent.putExtra("ThongTin",thongTin);
+                startActivity(intent);
+            }
+        });
+
+        lnlt12.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(AnsaoActivity.this,BinhGiaiActivity.class);
@@ -3549,1034 +3648,1034 @@ public class AnsaoActivity extends AppCompatActivity {
                 }
                 if (giophutsinh.equals("Tý") || giophutsinh.equals("Sửu")){
                     if (thongTin.ngayam().equals("2") || thongTin.ngayam().equals("3") || thongTin.ngayam().equals("26") || thongTin.ngayam().equals("27")){
-                        txttop3dan.setText("Tử Vi(D)");
-                        txttop3suu.setText("Thiên Cơ(D)");
-                        txttop3hoi.setText("Thái Dương(H)");
-                        txttop3tuat.setText("Vũ Khúc(D)");
-                        txttop3dau.setText("Thiên Đồng(M)");
-                        txttop3ngo.setText("Liêm Trinh(H)");
+                        txttop3dan.setText("Tử Vi");
+                        txttop3suu.setText("Thiên Cơ");
+                        txttop3hoi.setText("Thái Dương");
+                        txttop3tuat.setText("Vũ Khúc");
+                        txttop3dau.setText("Thiên Đồng");
+                        txttop3ngo.setText("Liêm Trinh");
 
-                        txttop4dan.setText("Thiên Phủ(B)");
-                        txttop3mao.setText("Thái Âm(H)");
-                        txttop3thin.setText("Tham Lang(H)");
-                        txttop3ty.setText("Cự Môn(V)");
-                        txttop4ngo.setText("Thiên Tướng(D)");
-                        txttop3mui.setText("Thiên Lương(V)");
-                        txttop3than.setText("Thất Sát(H)");
-                        txttop3tyd.setText("Phá Quân(V)");
+                        txttop4dan.setText("Thiên Phủ");
+                        txttop3mao.setText("Thái Âm");
+                        txttop3thin.setText("Tham Lang");
+                        txttop3ty.setText("Cự Môn");
+                        txttop4ngo.setText("Thiên Tướng");
+                        txttop3mui.setText("Thiên Lương");
+                        txttop3than.setText("Thất Sát");
+                        txttop3tyd.setText("Phá Quân");
 
                     }
                     else if (thongTin.ngayam().equals("4") || thongTin.ngayam().equals("5") || thongTin.ngayam().equals("28") || thongTin.ngayam().equals("29")){
-                        txttop3mao.setText("Tử Vi(D)");
-                        txttop3dan.setText("Thiên Cơ(D)");
-                        txttop3tyd.setText("Thái Dương(H)");
-                        txttop3hoi.setText("Vũ Khúc(D)");
-                        txttop3tuat.setText("Thiên Đồng(M)");
-                        txttop3mui.setText("Liêm Trinh(H)");
+                        txttop3mao.setText("Tử Vi");
+                        txttop3dan.setText("Thiên Cơ");
+                        txttop3tyd.setText("Thái Dương");
+                        txttop3hoi.setText("Vũ Khúc");
+                        txttop3tuat.setText("Thiên Đồng");
+                        txttop3mui.setText("Liêm Trinh");
 
-                        txttop3suu.setText("Thiên Phủ(B)");
-                        txttop4dan.setText("Thái Âm(H)");
-                        txttop4mao.setText("Tham Lang(H)");
-                        txttop3thin.setText("Cự Môn(V)");
-                        txttop3ty.setText("Thiên Tướng(D)");
-                        txttop3ngo.setText("Thiên Lương(V)");
-                        txttop4mui.setText("Thất Sát(H)");
-                        txttop4hoi.setText("Phá Quân(V)");
+                        txttop3suu.setText("Thiên Phủ");
+                        txttop4dan.setText("Thái Âm");
+                        txttop4mao.setText("Tham Lang");
+                        txttop3thin.setText("Cự Môn");
+                        txttop3ty.setText("Thiên Tướng");
+                        txttop3ngo.setText("Thiên Lương");
+                        txttop4mui.setText("Thất Sát");
+                        txttop4hoi.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("6") || thongTin.ngayam().equals("7") || thongTin.ngayam().equals("30")){
-                        txttop3thin.setText("Tử Vi(D)");
-                        txttop3mao.setText("Thiên Cơ(D)");
-                        txttop3suu.setText("Thái Dương(H)");
-                        txttop3tyd.setText("Vũ Khúc(D)");
-                        txttop3hoi.setText("Thiên Đồng(M)");
-                        txttop3than.setText("Liêm Trinh(H)");
+                        txttop3thin.setText("Tử Vi");
+                        txttop3mao.setText("Thiên Cơ");
+                        txttop3suu.setText("Thái Dương");
+                        txttop3tyd.setText("Vũ Khúc");
+                        txttop3hoi.setText("Thiên Đồng");
+                        txttop3than.setText("Liêm Trinh");
 
-                        txttop4tyd.setText("Thiên Phủ(B)");
-                        txttop4suu.setText("Thái Âm(H)");
-                        txttop4dan.setText("Tham Lang(H)");
-                        txttop4mao.setText("Cự Môn(V)");
-                        txttop4thin.setText("Thiên Tướng(D)");
-                        txttop3ty.setText("Thiên Lương(V)");
-                        txttop3ngo.setText("Thất Sát(H)");
-                        txttop3tuat.setText("Phá Quân(V)");
+                        txttop4tyd.setText("Thiên Phủ");
+                        txttop4suu.setText("Thái Âm");
+                        txttop4dan.setText("Tham Lang");
+                        txttop4mao.setText("Cự Môn");
+                        txttop4thin.setText("Thiên Tướng");
+                        txttop3ty.setText("Thiên Lương");
+                        txttop3ngo.setText("Thất Sát");
+                        txttop3tuat.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("8") || thongTin.ngayam().equals("9")){
-                        txttop3ty.setText("Tử Vi(D)");
-                        txttop3thin.setText("Thiên Cơ(D)");
-                        txttop3dan.setText("Thái Dương(H)");
-                        txttop3suu.setText("Vũ Khúc(D)");
-                        txttop3tyd.setText("Thiên Đồng(M)");
-                        txttop3dau.setText("Liêm Trinh(H)");
+                        txttop3ty.setText("Tử Vi");
+                        txttop3thin.setText("Thiên Cơ");
+                        txttop3dan.setText("Thái Dương");
+                        txttop3suu.setText("Vũ Khúc");
+                        txttop3tyd.setText("Thiên Đồng");
+                        txttop3dau.setText("Liêm Trinh");
 
-                        txttop3hoi.setText("Thiên Phủ(B)");
-                        txttop4tyd.setText("Thái Âm(H)");
-                        txttop4suu.setText("Tham Lang(H)");
-                        txttop4dan.setText("Cự Môn(V)");
-                        txttop3mao.setText("Thiên Tướng(D)");
-                        txttop4thin.setText("Thiên Lương(V)");
-                        txttop4ty.setText("Thất Sát(H)");
-                        txttop4dau.setText("Phá Quân(V)");
+                        txttop3hoi.setText("Thiên Phủ");
+                        txttop4tyd.setText("Thái Âm");
+                        txttop4suu.setText("Tham Lang");
+                        txttop4dan.setText("Cự Môn");
+                        txttop3mao.setText("Thiên Tướng");
+                        txttop4thin.setText("Thiên Lương");
+                        txttop4ty.setText("Thất Sát");
+                        txttop4dau.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("10") || thongTin.ngayam().equals("11")){
-                        txttop3ngo.setText("Tử Vi(D)");
-                        txttop3ty.setText("Thiên Cơ(D)");
-                        txttop3dan.setText("Thái Dương(H)");
-                        txttop3suu.setText("Vũ Khúc(D)");
-                        txttop3tyd.setText("Thiên Đồng(M)");
-                        txttop3dau.setText("Liêm Trinh(H)");
+                        txttop3ngo.setText("Tử Vi");
+                        txttop3ty.setText("Thiên Cơ");
+                        txttop3dan.setText("Thái Dương");
+                        txttop3suu.setText("Vũ Khúc");
+                        txttop3tyd.setText("Thiên Đồng");
+                        txttop3dau.setText("Liêm Trinh");
 
-                        txttop3tuat.setText("Thiên Phủ(B)");
-                        txttop3hoi.setText("Thái Âm(H)");
-                        txttop4tyd.setText("Tham Lang(H)");
-                        txttop4suu.setText("Cự Môn(V)");
-                        txttop4dan.setText("Thiên Tướng(D)");
-                        txttop3mao.setText("Thiên Lương(V)");
-                        txttop3thin.setText("Thất Sát(H)");
-                        txttop3than.setText("Phá Quân(V)");
+                        txttop3tuat.setText("Thiên Phủ");
+                        txttop3hoi.setText("Thái Âm");
+                        txttop4tyd.setText("Tham Lang");
+                        txttop4suu.setText("Cự Môn");
+                        txttop4dan.setText("Thiên Tướng");
+                        txttop3mao.setText("Thiên Lương");
+                        txttop3thin.setText("Thất Sát");
+                        txttop3than.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("12") || thongTin.ngayam().equals("13")){
-                        txttop3mui.setText("Tử Vi(D)");
-                        txttop3ngo.setText("Thiên Cơ(D)");
-                        txttop3thin.setText("Thái Dương(H)");
-                        txttop3mao.setText("Vũ Khúc(D)");
-                        txttop3dan.setText("Thiên Đồng(M)");
-                        txttop3hoi.setText("Liêm Trinh(H)");
+                        txttop3mui.setText("Tử Vi");
+                        txttop3ngo.setText("Thiên Cơ");
+                        txttop3thin.setText("Thái Dương");
+                        txttop3mao.setText("Vũ Khúc");
+                        txttop3dan.setText("Thiên Đồng");
+                        txttop3hoi.setText("Liêm Trinh");
 
-                        txttop3dau.setText("Thiên Phủ(B)");
-                        txttop3tuat.setText("Thái Âm(H)");
-                        txttop4hoi.setText("Tham Lang(H)");
-                        txttop3tyd.setText("Cự Môn(V)");
-                        txttop3suu.setText("Thiên Tướng(D)");
-                        txttop4dan.setText("Thiên Lương(V)");
-                        txttop4mao.setText("Thất Sát(H)");
-                        txttop4mui.setText("Phá Quân(V)");
+                        txttop3dau.setText("Thiên Phủ");
+                        txttop3tuat.setText("Thái Âm");
+                        txttop4hoi.setText("Tham Lang");
+                        txttop3tyd.setText("Cự Môn");
+                        txttop3suu.setText("Thiên Tướng");
+                        txttop4dan.setText("Thiên Lương");
+                        txttop4mao.setText("Thất Sát");
+                        txttop4mui.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("14") || thongTin.ngayam().equals("15")){
-                        txttop3than.setText("Tử Vi(D)");
-                        txttop3mui.setText("Thiên Cơ(D)");
-                        txttop3ty.setText("Thái Dương(H)");
-                        txttop3thin.setText("Vũ Khúc(D)");
-                        txttop3mao.setText("Thiên Đồng(M)");
-                        txttop3tyd.setText("Liêm Trinh(H)");
+                        txttop3than.setText("Tử Vi");
+                        txttop3mui.setText("Thiên Cơ");
+                        txttop3ty.setText("Thái Dương");
+                        txttop3thin.setText("Vũ Khúc");
+                        txttop3mao.setText("Thiên Đồng");
+                        txttop3tyd.setText("Liêm Trinh");
 
-                        txttop4than.setText("Thiên Phủ(B)");
-                        txttop3dau.setText("Thái Âm(H)");
-                        txttop3tuat.setText("Tham Lang(H)");
-                        txttop3hoi.setText("Cự Môn(V)");
-                        txttop4tyd.setText("Thiên Tướng(D)");
-                        txttop3suu.setText("Thiên Lương(V)");
-                        txttop3dan.setText("Thất Sát(H)");
-                        txttop3ngo.setText("Phá Quân(V)");
+                        txttop4than.setText("Thiên Phủ");
+                        txttop3dau.setText("Thái Âm");
+                        txttop3tuat.setText("Tham Lang");
+                        txttop3hoi.setText("Cự Môn");
+                        txttop4tyd.setText("Thiên Tướng");
+                        txttop3suu.setText("Thiên Lương");
+                        txttop3dan.setText("Thất Sát");
+                        txttop3ngo.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("16") || thongTin.ngayam().equals("17")){
-                        txttop3dau.setText("Tử Vi(D)");
-                        txttop3than.setText("Thiên Cơ(D)");
-                        txttop3ngo.setText("Thái Dương(H)");
-                        txttop3ty.setText("Vũ Khúc(D)");
-                        txttop3thin.setText("Thiên Đồng(M)");
-                        txttop3suu.setText("Liêm Trinh(H)");
+                        txttop3dau.setText("Tử Vi");
+                        txttop3than.setText("Thiên Cơ");
+                        txttop3ngo.setText("Thái Dương");
+                        txttop3ty.setText("Vũ Khúc");
+                        txttop3thin.setText("Thiên Đồng");
+                        txttop3suu.setText("Liêm Trinh");
 
-                        txttop3mui.setText("Thiên Phủ(B)");
-                        txttop4than.setText("Thái Âm(H)");
-                        txttop4dau.setText("Tham Lang(H)");
-                        txttop3tuat.setText("Cự Môn(V)");
-                        txttop3hoi.setText("Thiên Tướng(D)");
-                        txttop3tyd.setText("Thiên Lương(V)");
-                        txttop4suu.setText("Thất Sát(H)");
-                        txttop4ty.setText("Phá Quân(V)");
+                        txttop3mui.setText("Thiên Phủ");
+                        txttop4than.setText("Thái Âm");
+                        txttop4dau.setText("Tham Lang");
+                        txttop3tuat.setText("Cự Môn");
+                        txttop3hoi.setText("Thiên Tướng");
+                        txttop3tyd.setText("Thiên Lương");
+                        txttop4suu.setText("Thất Sát");
+                        txttop4ty.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("18") || thongTin.ngayam().equals("19")){
-                        txttop3tuat.setText("Tử Vi(D)");
-                        txttop3dau.setText("Thiên Cơ(D)");
-                        txttop3mui.setText("Thái Dương(H)");
-                        txttop3ngo.setText("Vũ Khúc(D)");
-                        txttop3ty.setText("Thiên Đồng(M)");
-                        txttop3dan.setText("Liêm Trinh(H)");
+                        txttop3tuat.setText("Tử Vi");
+                        txttop3dau.setText("Thiên Cơ");
+                        txttop3mui.setText("Thái Dương");
+                        txttop3ngo.setText("Vũ Khúc");
+                        txttop3ty.setText("Thiên Đồng");
+                        txttop3dan.setText("Liêm Trinh");
 
-                        txttop4ngo.setText("Thiên Phủ(B)");
-                        txttop4mui.setText("Thái Âm(H)");
-                        txttop3than.setText("Tham Lang(H)");
-                        txttop4dau.setText("Cự Môn(V)");
-                        txttop4tuat.setText("Thiên Tướng(D)");
-                        txttop3hoi.setText("Thiên Lương(V)");
-                        txttop3tyd.setText("Thất Sát(H)");
-                        txttop3thin.setText("Phá Quân(V)");
+                        txttop4ngo.setText("Thiên Phủ");
+                        txttop4mui.setText("Thái Âm");
+                        txttop3than.setText("Tham Lang");
+                        txttop4dau.setText("Cự Môn");
+                        txttop4tuat.setText("Thiên Tướng");
+                        txttop3hoi.setText("Thiên Lương");
+                        txttop3tyd.setText("Thất Sát");
+                        txttop3thin.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("20") || thongTin.ngayam().equals("21")){
-                        txttop3hoi.setText("Tử Vi(D)");
-                        txttop3tuat.setText("Thiên Cơ(D)");
-                        txttop3than.setText("Thái Dương(H)");
-                        txttop3mui.setText("Vũ Khúc(D)");
-                        txttop3ngo.setText("Thiên Đồng(M)");
-                        txttop3mao.setText("Liêm Trinh(H)");
+                        txttop3hoi.setText("Tử Vi");
+                        txttop3tuat.setText("Thiên Cơ");
+                        txttop3than.setText("Thái Dương");
+                        txttop3mui.setText("Vũ Khúc");
+                        txttop3ngo.setText("Thiên Đồng");
+                        txttop3mao.setText("Liêm Trinh");
 
-                        txttop3ty.setText("Thiên Phủ(B)");
-                        txttop4ngo.setText("Thái Âm(H)");
-                        txttop4mui.setText("Tham Lang(H)");
-                        txttop4than.setText("Cự Môn(V)");
-                        txttop3dau.setText("Thiên Tướng(D)");
-                        txttop4tuat.setText("Thiên Lương(V)");
-                        txttop4hoi.setText("Thất Sát(H)");
-                        txttop4mao.setText("Phá Quân(V)");
+                        txttop3ty.setText("Thiên Phủ");
+                        txttop4ngo.setText("Thái Âm");
+                        txttop4mui.setText("Tham Lang");
+                        txttop4than.setText("Cự Môn");
+                        txttop3dau.setText("Thiên Tướng");
+                        txttop4tuat.setText("Thiên Lương");
+                        txttop4hoi.setText("Thất Sát");
+                        txttop4mao.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("22") || thongTin.ngayam().equals("23")){
-                        txttop3tyd.setText("Tử Vi(D)");
-                        txttop3hoi.setText("Thiên Cơ(D)");
-                        txttop3dau.setText("Thái Dương(H)");
-                        txttop3than.setText("Vũ Khúc(D)");
-                        txttop3mui.setText("Thiên Đồng(M)");
-                        txttop3thin.setText("Liêm Trinh(H)");
+                        txttop3tyd.setText("Tử Vi");
+                        txttop3hoi.setText("Thiên Cơ");
+                        txttop3dau.setText("Thái Dương");
+                        txttop3than.setText("Vũ Khúc");
+                        txttop3mui.setText("Thiên Đồng");
+                        txttop3thin.setText("Liêm Trinh");
 
-                        txttop4thin.setText("Thiên Phủ(B)");
-                        txttop3ty.setText("Thái Âm(H)");
-                        txttop3ngo.setText("Tham Lang(H)");
-                        txttop4mui.setText("Cự Môn(V)");
-                        txttop4than.setText("Thiên Tướng(D)");
-                        txttop4dau.setText("Thiên Lương(V)");
-                        txttop3tuat.setText("Thất Sát(H)");
-                        txttop3dan.setText("Phá Quân(V)");
+                        txttop4thin.setText("Thiên Phủ");
+                        txttop3ty.setText("Thái Âm");
+                        txttop3ngo.setText("Tham Lang");
+                        txttop4mui.setText("Cự Môn");
+                        txttop4than.setText("Thiên Tướng");
+                        txttop4dau.setText("Thiên Lương");
+                        txttop3tuat.setText("Thất Sát");
+                        txttop3dan.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("1") || thongTin.ngayam().equals("24") || thongTin.ngayam().equals("25")){
-                        txttop3suu.setText("Tử Vi(D)");
-                        txttop3tyd.setText("Thiên Cơ(D)");
-                        txttop3tuat.setText("Thái Dương(H)");
-                        txttop3dau.setText("Vũ Khúc(D)");
-                        txttop3than.setText("Thiên Đồng(M)");
-                        txttop3ty.setText("Liêm Trinh(H)");
+                        txttop3suu.setText("Tử Vi");
+                        txttop3tyd.setText("Thiên Cơ");
+                        txttop3tuat.setText("Thái Dương");
+                        txttop3dau.setText("Vũ Khúc");
+                        txttop3than.setText("Thiên Đồng");
+                        txttop3ty.setText("Liêm Trinh");
 
-                        txttop3mao.setText("Thiên Phủ(B)");
-                        txttop3thin.setText("Thái Âm(H)");
-                        txttop4ty.setText("Tham Lang(H)");
-                        txttop3ngo.setText("Cự Môn(V)");
-                        txttop3mui.setText("Thiên Tướng(D)");
-                        txttop4than.setText("Thiên Lương(V)");
-                        txttop4dau.setText("Thất Sát(H)");
-                        txttop4suu.setText("Phá Quân(V)");
+                        txttop3mao.setText("Thiên Phủ");
+                        txttop3thin.setText("Thái Âm");
+                        txttop4ty.setText("Tham Lang");
+                        txttop3ngo.setText("Cự Môn");
+                        txttop3mui.setText("Thiên Tướng");
+                        txttop4than.setText("Thiên Lương");
+                        txttop4dau.setText("Thất Sát");
+                        txttop4suu.setText("Phá Quân");
                     }
                 }
                 else if (giophutsinh.equals("Dần") || giophutsinh.equals("Mẹo") || giophutsinh.equals("Tuất") || giophutsinh.equals("Hợi")){
                     if (thongTin.ngayam().equals("6") || thongTin.ngayam().equals("11") || thongTin.ngayam().equals("21")){
-                        txttop3dan.setText("Tử Vi(D)");
-                        txttop3suu.setText("Thiên Cơ(D)");
-                        txttop3hoi.setText("Thái Dương(H)");
-                        txttop3tuat.setText("Vũ Khúc(D)");
-                        txttop3dau.setText("Thiên Đồng(M)");
-                        txttop3ngo.setText("Liêm Trinh(H)");
+                        txttop3dan.setText("Tử Vi");
+                        txttop3suu.setText("Thiên Cơ");
+                        txttop3hoi.setText("Thái Dương");
+                        txttop3tuat.setText("Vũ Khúc");
+                        txttop3dau.setText("Thiên Đồng");
+                        txttop3ngo.setText("Liêm Trinh");
 
-                        txttop4dan.setText("Thiên Phủ(B)");
-                        txttop3mao.setText("Thái Âm(H)");
-                        txttop3thin.setText("Tham Lang(H)");
-                        txttop3ty.setText("Cự Môn(V)");
-                        txttop4ngo.setText("Thiên Tướng(D)");
-                        txttop3mui.setText("Thiên Lương(V)");
-                        txttop3than.setText("Thất Sát(H)");
-                        txttop3tyd.setText("Phá Quân(V)");
+                        txttop4dan.setText("Thiên Phủ");
+                        txttop3mao.setText("Thái Âm");
+                        txttop3thin.setText("Tham Lang");
+                        txttop3ty.setText("Cự Môn");
+                        txttop4ngo.setText("Thiên Tướng");
+                        txttop3mui.setText("Thiên Lương");
+                        txttop3than.setText("Thất Sát");
+                        txttop3tyd.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("12") || thongTin.ngayam().equals("17") || thongTin.ngayam().equals("27")){
-                        txttop3mao.setText("Tử Vi(D)");
-                        txttop3dan.setText("Thiên Cơ(D)");
-                        txttop3tyd.setText("Thái Dương(H)");
-                        txttop3hoi.setText("Vũ Khúc(D)");
-                        txttop3tuat.setText("Thiên Đồng(M)");
-                        txttop3mui.setText("Liêm Trinh(H)");
+                        txttop3mao.setText("Tử Vi");
+                        txttop3dan.setText("Thiên Cơ");
+                        txttop3tyd.setText("Thái Dương");
+                        txttop3hoi.setText("Vũ Khúc");
+                        txttop3tuat.setText("Thiên Đồng");
+                        txttop3mui.setText("Liêm Trinh");
 
-                        txttop3suu.setText("Thiên Phủ(B)");
-                        txttop4dan.setText("Thái Âm(H)");
-                        txttop4mao.setText("Tham Lang(H)");
-                        txttop3thin.setText("Cự Môn(V)");
-                        txttop3ty.setText("Thiên Tướng(D)");
-                        txttop3ngo.setText("Thiên Lương(V)");
-                        txttop4mui.setText("Thất Sát(H)");
-                        txttop4hoi.setText("Phá Quân(V)");
+                        txttop3suu.setText("Thiên Phủ");
+                        txttop4dan.setText("Thái Âm");
+                        txttop4mao.setText("Tham Lang");
+                        txttop3thin.setText("Cự Môn");
+                        txttop3ty.setText("Thiên Tướng");
+                        txttop3ngo.setText("Thiên Lương");
+                        txttop4mui.setText("Thất Sát");
+                        txttop4hoi.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("4") || thongTin.ngayam().equals("18") || thongTin.ngayam().equals("23")){
-                        txttop3thin.setText("Tử Vi(D)");
-                        txttop3mao.setText("Thiên Cơ(D)");
-                        txttop3suu.setText("Thái Dương(H)");
-                        txttop3tyd.setText("Vũ Khúc(D)");
-                        txttop3hoi.setText("Thiên Đồng(M)");
-                        txttop3than.setText("Liêm Trinh(H)");
+                        txttop3thin.setText("Tử Vi");
+                        txttop3mao.setText("Thiên Cơ");
+                        txttop3suu.setText("Thái Dương");
+                        txttop3tyd.setText("Vũ Khúc");
+                        txttop3hoi.setText("Thiên Đồng");
+                        txttop3than.setText("Liêm Trinh");
 
-                        txttop4tyd.setText("Thiên Phủ(B)");
-                        txttop4suu.setText("Thái Âm(H)");
-                        txttop4dan.setText("Tham Lang(H)");
-                        txttop4mao.setText("Cự Môn(V)");
-                        txttop4thin.setText("Thiên Tướng(D)");
-                        txttop3ty.setText("Thiên Lương(V)");
-                        txttop3ngo.setText("Thất Sát(H)");
-                        txttop3tuat.setText("Phá Quân(V)");
+                        txttop4tyd.setText("Thiên Phủ");
+                        txttop4suu.setText("Thái Âm");
+                        txttop4dan.setText("Tham Lang");
+                        txttop4mao.setText("Cự Môn");
+                        txttop4thin.setText("Thiên Tướng");
+                        txttop3ty.setText("Thiên Lương");
+                        txttop3ngo.setText("Thất Sát");
+                        txttop3tuat.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("10") || thongTin.ngayam().equals("24") || thongTin.ngayam().equals("29")){
-                        txttop3ty.setText("Tử Vi(D)");
-                        txttop3thin.setText("Thiên Cơ(D)");
-                        txttop3dan.setText("Thái Dương(H)");
-                        txttop3suu.setText("Vũ Khúc(D)");
-                        txttop3tyd.setText("Thiên Đồng(M)");
-                        txttop3dau.setText("Liêm Trinh(H)");
+                        txttop3ty.setText("Tử Vi");
+                        txttop3thin.setText("Thiên Cơ");
+                        txttop3dan.setText("Thái Dương");
+                        txttop3suu.setText("Vũ Khúc");
+                        txttop3tyd.setText("Thiên Đồng");
+                        txttop3dau.setText("Liêm Trinh");
 
-                        txttop3hoi.setText("Thiên Phủ(B)");
-                        txttop4tyd.setText("Thái Âm(H)");
-                        txttop4suu.setText("Tham Lang(H)");
-                        txttop4dan.setText("Cự Môn(V)");
-                        txttop3mao.setText("Thiên Tướng(D)");
-                        txttop4thin.setText("Thiên Lương(V)");
-                        txttop4ty.setText("Thất Sát(H)");
-                        txttop4dau.setText("Phá Quân(V)");
+                        txttop3hoi.setText("Thiên Phủ");
+                        txttop4tyd.setText("Thái Âm");
+                        txttop4suu.setText("Tham Lang");
+                        txttop4dan.setText("Cự Môn");
+                        txttop3mao.setText("Thiên Tướng");
+                        txttop4thin.setText("Thiên Lương");
+                        txttop4ty.setText("Thất Sát");
+                        txttop4dau.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("2") || thongTin.ngayam().equals("16") || thongTin.ngayam().equals("30")){
-                        txttop3ngo.setText("Tử Vi(D)");
-                        txttop3ty.setText("Thiên Cơ(D)");
-                        txttop3dan.setText("Thái Dương(H)");
-                        txttop3suu.setText("Vũ Khúc(D)");
-                        txttop3tyd.setText("Thiên Đồng(M)");
-                        txttop3dau.setText("Liêm Trinh(H)");
+                        txttop3ngo.setText("Tử Vi");
+                        txttop3ty.setText("Thiên Cơ");
+                        txttop3dan.setText("Thái Dương");
+                        txttop3suu.setText("Vũ Khúc");
+                        txttop3tyd.setText("Thiên Đồng");
+                        txttop3dau.setText("Liêm Trinh");
 
-                        txttop3tuat.setText("Thiên Phủ(B)");
-                        txttop3hoi.setText("Thái Âm(H)");
-                        txttop4tyd.setText("Tham Lang(H)");
-                        txttop4suu.setText("Cự Môn(V)");
-                        txttop4dan.setText("Thiên Tướng(D)");
-                        txttop3mao.setText("Thiên Lương(V)");
-                        txttop3thin.setText("Thất Sát(H)");
-                        txttop3than.setText("Phá Quân(V)");
+                        txttop3tuat.setText("Thiên Phủ");
+                        txttop3hoi.setText("Thái Âm");
+                        txttop4tyd.setText("Tham Lang");
+                        txttop4suu.setText("Cự Môn");
+                        txttop4dan.setText("Thiên Tướng");
+                        txttop3mao.setText("Thiên Lương");
+                        txttop3thin.setText("Thất Sát");
+                        txttop3than.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("8") || thongTin.ngayam().equals("22")){
-                        txttop3mui.setText("Tử Vi(D)");
-                        txttop3ngo.setText("Thiên Cơ(D)");
-                        txttop3thin.setText("Thái Dương(H)");
-                        txttop3mao.setText("Vũ Khúc(D)");
-                        txttop3dan.setText("Thiên Đồng(M)");
-                        txttop3hoi.setText("Liêm Trinh(H)");
+                        txttop3mui.setText("Tử Vi");
+                        txttop3ngo.setText("Thiên Cơ");
+                        txttop3thin.setText("Thái Dương");
+                        txttop3mao.setText("Vũ Khúc");
+                        txttop3dan.setText("Thiên Đồng");
+                        txttop3hoi.setText("Liêm Trinh");
 
-                        txttop3dau.setText("Thiên Phủ(B)");
-                        txttop3tuat.setText("Thái Âm(H)");
-                        txttop4hoi.setText("Tham Lang(H)");
-                        txttop3tyd.setText("Cự Môn(V)");
-                        txttop3suu.setText("Thiên Tướng(D)");
-                        txttop4dan.setText("Thiên Lương(V)");
-                        txttop4mao.setText("Thất Sát(H)");
-                        txttop4mui.setText("Phá Quân(V)");
+                        txttop3dau.setText("Thiên Phủ");
+                        txttop3tuat.setText("Thái Âm");
+                        txttop4hoi.setText("Tham Lang");
+                        txttop3tyd.setText("Cự Môn");
+                        txttop3suu.setText("Thiên Tướng");
+                        txttop4dan.setText("Thiên Lương");
+                        txttop4mao.setText("Thất Sát");
+                        txttop4mui.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("14") || thongTin.ngayam().equals("28")){
-                        txttop3than.setText("Tử Vi(D)");
-                        txttop3mui.setText("Thiên Cơ(D)");
-                        txttop3ty.setText("Thái Dương(H)");
-                        txttop3thin.setText("Vũ Khúc(D)");
-                        txttop3mao.setText("Thiên Đồng(M)");
-                        txttop3tyd.setText("Liêm Trinh(H)");
+                        txttop3than.setText("Tử Vi");
+                        txttop3mui.setText("Thiên Cơ");
+                        txttop3ty.setText("Thái Dương");
+                        txttop3thin.setText("Vũ Khúc");
+                        txttop3mao.setText("Thiên Đồng");
+                        txttop3tyd.setText("Liêm Trinh");
 
-                        txttop4than.setText("Thiên Phủ(B)");
-                        txttop3dau.setText("Thái Âm(H)");
-                        txttop3tuat.setText("Tham Lang(H)");
-                        txttop3hoi.setText("Cự Môn(V)");
-                        txttop4tyd.setText("Thiên Tướng(D)");
-                        txttop3suu.setText("Thiên Lương(V)");
-                        txttop3dan.setText("Thất Sát(H)");
-                        txttop3ngo.setText("Phá Quân(V)");
+                        txttop4than.setText("Thiên Phủ");
+                        txttop3dau.setText("Thái Âm");
+                        txttop3tuat.setText("Tham Lang");
+                        txttop3hoi.setText("Cự Môn");
+                        txttop4tyd.setText("Thiên Tướng");
+                        txttop3suu.setText("Thiên Lương");
+                        txttop3dan.setText("Thất Sát");
+                        txttop3ngo.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("1") || thongTin.ngayam().equals("20")){
-                        txttop3dau.setText("Tử Vi(D)");
-                        txttop3than.setText("Thiên Cơ(D)");
-                        txttop3ngo.setText("Thái Dương(H)");
-                        txttop3ty.setText("Vũ Khúc(D)");
-                        txttop3thin.setText("Thiên Đồng(M)");
-                        txttop3suu.setText("Liêm Trinh(H)");
+                        txttop3dau.setText("Tử Vi");
+                        txttop3than.setText("Thiên Cơ");
+                        txttop3ngo.setText("Thái Dương");
+                        txttop3ty.setText("Vũ Khúc");
+                        txttop3thin.setText("Thiên Đồng");
+                        txttop3suu.setText("Liêm Trinh");
 
-                        txttop3mui.setText("Thiên Phủ(B)");
-                        txttop4than.setText("Thái Âm(H)");
-                        txttop4dau.setText("Tham Lang(H)");
-                        txttop3tuat.setText("Cự Môn(V)");
-                        txttop3hoi.setText("Thiên Tướng(D)");
-                        txttop3tyd.setText("Thiên Lương(V)");
-                        txttop4suu.setText("Thất Sát(H)");
-                        txttop4ty.setText("Phá Quân(V)");
+                        txttop3mui.setText("Thiên Phủ");
+                        txttop4than.setText("Thái Âm");
+                        txttop4dau.setText("Tham Lang");
+                        txttop3tuat.setText("Cự Môn");
+                        txttop3hoi.setText("Thiên Tướng");
+                        txttop3tyd.setText("Thiên Lương");
+                        txttop4suu.setText("Thất Sát");
+                        txttop4ty.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("7") || thongTin.ngayam().equals("26")){
-                        txttop3tuat.setText("Tử Vi(D)");
-                        txttop3dau.setText("Thiên Cơ(D)");
-                        txttop3mui.setText("Thái Dương(H)");
-                        txttop3ngo.setText("Vũ Khúc(D)");
-                        txttop3ty.setText("Thiên Đồng(M)");
-                        txttop3dan.setText("Liêm Trinh(H)");
+                        txttop3tuat.setText("Tử Vi");
+                        txttop3dau.setText("Thiên Cơ");
+                        txttop3mui.setText("Thái Dương");
+                        txttop3ngo.setText("Vũ Khúc");
+                        txttop3ty.setText("Thiên Đồng");
+                        txttop3dan.setText("Liêm Trinh");
 
-                        txttop4ngo.setText("Thiên Phủ(B)");
-                        txttop4mui.setText("Thái Âm(H)");
-                        txttop3than.setText("Tham Lang(H)");
-                        txttop4dau.setText("Cự Môn(V)");
-                        txttop4tuat.setText("Thiên Tướng(D)");
-                        txttop3hoi.setText("Thiên Lương(V)");
-                        txttop3tyd.setText("Thất Sát(H)");
-                        txttop3thin.setText("Phá Quân(V)");
+                        txttop4ngo.setText("Thiên Phủ");
+                        txttop4mui.setText("Thái Âm");
+                        txttop3than.setText("Tham Lang");
+                        txttop4dau.setText("Cự Môn");
+                        txttop4tuat.setText("Thiên Tướng");
+                        txttop3hoi.setText("Thiên Lương");
+                        txttop3tyd.setText("Thất Sát");
+                        txttop3thin.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("3") || thongTin.ngayam().equals("13")){
-                        txttop3hoi.setText("Tử Vi(D)");
-                        txttop3tuat.setText("Thiên Cơ(D)");
-                        txttop3than.setText("Thái Dương(H)");
-                        txttop3mui.setText("Vũ Khúc(D)");
-                        txttop3ngo.setText("Thiên Đồng(M)");
-                        txttop3mao.setText("Liêm Trinh(H)");
+                        txttop3hoi.setText("Tử Vi");
+                        txttop3tuat.setText("Thiên Cơ");
+                        txttop3than.setText("Thái Dương");
+                        txttop3mui.setText("Vũ Khúc");
+                        txttop3ngo.setText("Thiên Đồng");
+                        txttop3mao.setText("Liêm Trinh");
 
-                        txttop3ty.setText("Thiên Phủ(B)");
-                        txttop4ngo.setText("Thái Âm(H)");
-                        txttop4mui.setText("Tham Lang(H)");
-                        txttop4than.setText("Cự Môn(V)");
-                        txttop3dau.setText("Thiên Tướng(D)");
-                        txttop4tuat.setText("Thiên Lương(V)");
-                        txttop4hoi.setText("Thất Sát(H)");
-                        txttop4mao.setText("Phá Quân(V)");
+                        txttop3ty.setText("Thiên Phủ");
+                        txttop4ngo.setText("Thái Âm");
+                        txttop4mui.setText("Tham Lang");
+                        txttop4than.setText("Cự Môn");
+                        txttop3dau.setText("Thiên Tướng");
+                        txttop4tuat.setText("Thiên Lương");
+                        txttop4hoi.setText("Thất Sát");
+                        txttop4mao.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("9") || thongTin.ngayam().equals("19")){
-                        txttop3tyd.setText("Tử Vi(D)");
-                        txttop3hoi.setText("Thiên Cơ(D)");
-                        txttop3dau.setText("Thái Dương(H)");
-                        txttop3than.setText("Vũ Khúc(D)");
-                        txttop3mui.setText("Thiên Đồng(M)");
-                        txttop3thin.setText("Liêm Trinh(H)");
+                        txttop3tyd.setText("Tử Vi");
+                        txttop3hoi.setText("Thiên Cơ");
+                        txttop3dau.setText("Thái Dương");
+                        txttop3than.setText("Vũ Khúc");
+                        txttop3mui.setText("Thiên Đồng");
+                        txttop3thin.setText("Liêm Trinh");
 
-                        txttop4thin.setText("Thiên Phủ(B)");
-                        txttop3ty.setText("Thái Âm(H)");
-                        txttop3ngo.setText("Tham Lang(H)");
-                        txttop4mui.setText("Cự Môn(V)");
-                        txttop4than.setText("Thiên Tướng(D)");
-                        txttop4dau.setText("Thiên Lương(V)");
-                        txttop3tuat.setText("Thất Sát(H)");
-                        txttop3dan.setText("Phá Quân(V)");
+                        txttop4thin.setText("Thiên Phủ");
+                        txttop3ty.setText("Thái Âm");
+                        txttop3ngo.setText("Tham Lang");
+                        txttop4mui.setText("Cự Môn");
+                        txttop4than.setText("Thiên Tướng");
+                        txttop4dau.setText("Thiên Lương");
+                        txttop3tuat.setText("Thất Sát");
+                        txttop3dan.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("5") || thongTin.ngayam().equals("15") || thongTin.ngayam().equals("25")){
-                        txttop3suu.setText("Tử Vi(D)");
-                        txttop3tyd.setText("Thiên Cơ(D)");
-                        txttop3tuat.setText("Thái Dương(H)");
-                        txttop3dau.setText("Vũ Khúc(D)");
-                        txttop3than.setText("Thiên Đồng(M)");
-                        txttop3ty.setText("Liêm Trinh(H)");
+                        txttop3suu.setText("Tử Vi");
+                        txttop3tyd.setText("Thiên Cơ");
+                        txttop3tuat.setText("Thái Dương");
+                        txttop3dau.setText("Vũ Khúc");
+                        txttop3than.setText("Thiên Đồng");
+                        txttop3ty.setText("Liêm Trinh");
 
-                        txttop3mao.setText("Thiên Phủ(B)");
-                        txttop3thin.setText("Thái Âm(H)");
-                        txttop4ty.setText("Tham Lang(H)");
-                        txttop3ngo.setText("Cự Môn(V)");
-                        txttop3mui.setText("Thiên Tướng(D)");
-                        txttop4than.setText("Thiên Lương(V)");
-                        txttop4dau.setText("Thất Sát(H)");
-                        txttop4suu.setText("Phá Quân(V)");
+                        txttop3mao.setText("Thiên Phủ");
+                        txttop3thin.setText("Thái Âm");
+                        txttop4ty.setText("Tham Lang");
+                        txttop3ngo.setText("Cự Môn");
+                        txttop3mui.setText("Thiên Tướng");
+                        txttop4than.setText("Thiên Lương");
+                        txttop4dau.setText("Thất Sát");
+                        txttop4suu.setText("Phá Quân");
                     }
                 }
                 else if (giophutsinh.equals("Thìn") || giophutsinh.equals("Tỵ")){
                     if (thongTin.ngayam().equals("3") || thongTin.ngayam().equals("5")){
-                        txttop3dan.setText("Tử Vi(D)");
-                        txttop3suu.setText("Thiên Cơ(D)");
-                        txttop3hoi.setText("Thái Dương(H)");
-                        txttop3tuat.setText("Vũ Khúc(D)");
-                        txttop3dau.setText("Thiên Đồng(M)");
-                        txttop3ngo.setText("Liêm Trinh(H)");
+                        txttop3dan.setText("Tử Vi");
+                        txttop3suu.setText("Thiên Cơ");
+                        txttop3hoi.setText("Thái Dương");
+                        txttop3tuat.setText("Vũ Khúc");
+                        txttop3dau.setText("Thiên Đồng");
+                        txttop3ngo.setText("Liêm Trinh");
 
-                        txttop4dan.setText("Thiên Phủ(B)");
-                        txttop3mao.setText("Thái Âm(H)");
-                        txttop3thin.setText("Tham Lang(H)");
-                        txttop3ty.setText("Cự Môn(V)");
-                        txttop4ngo.setText("Thiên Tướng(D)");
-                        txttop3mui.setText("Thiên Lương(V)");
-                        txttop3than.setText("Thất Sát(H)");
-                        txttop3tyd.setText("Phá Quân(V)");
+                        txttop4dan.setText("Thiên Phủ");
+                        txttop3mao.setText("Thái Âm");
+                        txttop3thin.setText("Tham Lang");
+                        txttop3ty.setText("Cự Môn");
+                        txttop4ngo.setText("Thiên Tướng");
+                        txttop3mui.setText("Thiên Lương");
+                        txttop3than.setText("Thất Sát");
+                        txttop3tyd.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("6") || thongTin.ngayam().equals("8")){
-                        txttop3mao.setText("Tử Vi(D)");
-                        txttop3dan.setText("Thiên Cơ(D)");
-                        txttop3tyd.setText("Thái Dương(H)");
-                        txttop3hoi.setText("Vũ Khúc(D)");
-                        txttop3tuat.setText("Thiên Đồng(M)");
-                        txttop3mui.setText("Liêm Trinh(H)");
+                        txttop3mao.setText("Tử Vi");
+                        txttop3dan.setText("Thiên Cơ");
+                        txttop3tyd.setText("Thái Dương");
+                        txttop3hoi.setText("Vũ Khúc");
+                        txttop3tuat.setText("Thiên Đồng");
+                        txttop3mui.setText("Liêm Trinh");
 
-                        txttop3suu.setText("Thiên Phủ(B)");
-                        txttop4dan.setText("Thái Âm(H)");
-                        txttop4mao.setText("Tham Lang(H)");
-                        txttop3thin.setText("Cự Môn(V)");
-                        txttop3ty.setText("Thiên Tướng(D)");
-                        txttop3ngo.setText("Thiên Lương(V)");
-                        txttop4mui.setText("Thất Sát(H)");
-                        txttop4hoi.setText("Phá Quân(V)");
+                        txttop3suu.setText("Thiên Phủ");
+                        txttop4dan.setText("Thái Âm");
+                        txttop4mao.setText("Tham Lang");
+                        txttop3thin.setText("Cự Môn");
+                        txttop3ty.setText("Thiên Tướng");
+                        txttop3ngo.setText("Thiên Lương");
+                        txttop4mui.setText("Thất Sát");
+                        txttop4hoi.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("1") || thongTin.ngayam().equals("9") || thongTin.ngayam().equals("11")){
-                        txttop3thin.setText("Tử Vi(D)");
-                        txttop3mao.setText("Thiên Cơ(D)");
-                        txttop3suu.setText("Thái Dương(H)");
-                        txttop3tyd.setText("Vũ Khúc(D)");
-                        txttop3hoi.setText("Thiên Đồng(M)");
-                        txttop3than.setText("Liêm Trinh(H)");
+                        txttop3thin.setText("Tử Vi");
+                        txttop3mao.setText("Thiên Cơ");
+                        txttop3suu.setText("Thái Dương");
+                        txttop3tyd.setText("Vũ Khúc");
+                        txttop3hoi.setText("Thiên Đồng");
+                        txttop3than.setText("Liêm Trinh");
 
-                        txttop4tyd.setText("Thiên Phủ(B)");
-                        txttop4suu.setText("Thái Âm(H)");
-                        txttop4dan.setText("Tham Lang(H)");
-                        txttop4mao.setText("Cự Môn(V)");
-                        txttop4thin.setText("Thiên Tướng(D)");
-                        txttop3ty.setText("Thiên Lương(V)");
-                        txttop3ngo.setText("Thất Sát(H)");
-                        txttop3tuat.setText("Phá Quân(V)");
+                        txttop4tyd.setText("Thiên Phủ");
+                        txttop4suu.setText("Thái Âm");
+                        txttop4dan.setText("Tham Lang");
+                        txttop4mao.setText("Cự Môn");
+                        txttop4thin.setText("Thiên Tướng");
+                        txttop3ty.setText("Thiên Lương");
+                        txttop3ngo.setText("Thất Sát");
+                        txttop3tuat.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("4") || thongTin.ngayam().equals("12") || thongTin.ngayam().equals("14")){
-                        txttop3ty.setText("Tử Vi(D)");
-                        txttop3thin.setText("Thiên Cơ(D)");
-                        txttop3dan.setText("Thái Dương(H)");
-                        txttop3suu.setText("Vũ Khúc(D)");
-                        txttop3tyd.setText("Thiên Đồng(M)");
-                        txttop3dau.setText("Liêm Trinh(H)");
+                        txttop3ty.setText("Tử Vi");
+                        txttop3thin.setText("Thiên Cơ");
+                        txttop3dan.setText("Thái Dương");
+                        txttop3suu.setText("Vũ Khúc");
+                        txttop3tyd.setText("Thiên Đồng");
+                        txttop3dau.setText("Liêm Trinh");
 
-                        txttop3hoi.setText("Thiên Phủ(B)");
-                        txttop4tyd.setText("Thái Âm(H)");
-                        txttop4suu.setText("Tham Lang(H)");
-                        txttop4dan.setText("Cự Môn(V)");
-                        txttop3mao.setText("Thiên Tướng(D)");
-                        txttop4thin.setText("Thiên Lương(V)");
-                        txttop4ty.setText("Thất Sát(H)");
-                        txttop4dau.setText("Phá Quân(V)");
+                        txttop3hoi.setText("Thiên Phủ");
+                        txttop4tyd.setText("Thái Âm");
+                        txttop4suu.setText("Tham Lang");
+                        txttop4dan.setText("Cự Môn");
+                        txttop3mao.setText("Thiên Tướng");
+                        txttop4thin.setText("Thiên Lương");
+                        txttop4ty.setText("Thất Sát");
+                        txttop4dau.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("7") || thongTin.ngayam().equals("15") || thongTin.ngayam().equals("17")){
-                        txttop3ngo.setText("Tử Vi(D)");
-                        txttop3ty.setText("Thiên Cơ(D)");
-                        txttop3dan.setText("Thái Dương(H)");
-                        txttop3suu.setText("Vũ Khúc(D)");
-                        txttop3tyd.setText("Thiên Đồng(M)");
-                        txttop3dau.setText("Liêm Trinh(H)");
+                        txttop3ngo.setText("Tử Vi");
+                        txttop3ty.setText("Thiên Cơ");
+                        txttop3dan.setText("Thái Dương");
+                        txttop3suu.setText("Vũ Khúc");
+                        txttop3tyd.setText("Thiên Đồng");
+                        txttop3dau.setText("Liêm Trinh");
 
-                        txttop3tuat.setText("Thiên Phủ(B)");
-                        txttop3hoi.setText("Thái Âm(H)");
-                        txttop4tyd.setText("Tham Lang(H)");
-                        txttop4suu.setText("Cự Môn(V)");
-                        txttop4dan.setText("Thiên Tướng(D)");
-                        txttop3mao.setText("Thiên Lương(V)");
-                        txttop3thin.setText("Thất Sát(H)");
-                        txttop3than.setText("Phá Quân(V)");
+                        txttop3tuat.setText("Thiên Phủ");
+                        txttop3hoi.setText("Thái Âm");
+                        txttop4tyd.setText("Tham Lang");
+                        txttop4suu.setText("Cự Môn");
+                        txttop4dan.setText("Thiên Tướng");
+                        txttop3mao.setText("Thiên Lương");
+                        txttop3thin.setText("Thất Sát");
+                        txttop3than.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("10") || thongTin.ngayam().equals("18") || thongTin.ngayam().equals("20")){
-                        txttop3mui.setText("Tử Vi(D)");
-                        txttop3ngo.setText("Thiên Cơ(D)");
-                        txttop3thin.setText("Thái Dương(H)");
-                        txttop3mao.setText("Vũ Khúc(D)");
-                        txttop3dan.setText("Thiên Đồng(M)");
-                        txttop3hoi.setText("Liêm Trinh(H)");
+                        txttop3mui.setText("Tử Vi");
+                        txttop3ngo.setText("Thiên Cơ");
+                        txttop3thin.setText("Thái Dương");
+                        txttop3mao.setText("Vũ Khúc");
+                        txttop3dan.setText("Thiên Đồng");
+                        txttop3hoi.setText("Liêm Trinh");
 
-                        txttop3dau.setText("Thiên Phủ(B)");
-                        txttop3tuat.setText("Thái Âm(H)");
-                        txttop4hoi.setText("Tham Lang(H)");
-                        txttop3tyd.setText("Cự Môn(V)");
-                        txttop3suu.setText("Thiên Tướng(D)");
-                        txttop4dan.setText("Thiên Lương(V)");
-                        txttop4mao.setText("Thất Sát(H)");
-                        txttop4mui.setText("Phá Quân(V)");
+                        txttop3dau.setText("Thiên Phủ");
+                        txttop3tuat.setText("Thái Âm");
+                        txttop4hoi.setText("Tham Lang");
+                        txttop3tyd.setText("Cự Môn");
+                        txttop3suu.setText("Thiên Tướng");
+                        txttop4dan.setText("Thiên Lương");
+                        txttop4mao.setText("Thất Sát");
+                        txttop4mui.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("13") || thongTin.ngayam().equals("21") || thongTin.ngayam().equals("23")){
-                        txttop3than.setText("Tử Vi(D)");
-                        txttop3mui.setText("Thiên Cơ(D)");
-                        txttop3ty.setText("Thái Dương(H)");
-                        txttop3thin.setText("Vũ Khúc(D)");
-                        txttop3mao.setText("Thiên Đồng(M)");
-                        txttop3tyd.setText("Liêm Trinh(H)");
+                        txttop3than.setText("Tử Vi");
+                        txttop3mui.setText("Thiên Cơ");
+                        txttop3ty.setText("Thái Dương");
+                        txttop3thin.setText("Vũ Khúc");
+                        txttop3mao.setText("Thiên Đồng");
+                        txttop3tyd.setText("Liêm Trinh");
 
-                        txttop4than.setText("Thiên Phủ(B)");
-                        txttop3dau.setText("Thái Âm(H)");
-                        txttop3tuat.setText("Tham Lang(H)");
-                        txttop3hoi.setText("Cự Môn(V)");
-                        txttop4tyd.setText("Thiên Tướng(D)");
-                        txttop3suu.setText("Thiên Lương(V)");
-                        txttop3dan.setText("Thất Sát(H)");
-                        txttop3ngo.setText("Phá Quân(V)");
+                        txttop4than.setText("Thiên Phủ");
+                        txttop3dau.setText("Thái Âm");
+                        txttop3tuat.setText("Tham Lang");
+                        txttop3hoi.setText("Cự Môn");
+                        txttop4tyd.setText("Thiên Tướng");
+                        txttop3suu.setText("Thiên Lương");
+                        txttop3dan.setText("Thất Sát");
+                        txttop3ngo.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("16") || thongTin.ngayam().equals("24") || thongTin.ngayam().equals("26")){
-                        txttop3dau.setText("Tử Vi(D)");
-                        txttop3than.setText("Thiên Cơ(D)");
-                        txttop3ngo.setText("Thái Dương(H)");
-                        txttop3ty.setText("Vũ Khúc(D)");
-                        txttop3thin.setText("Thiên Đồng(M)");
-                        txttop3suu.setText("Liêm Trinh(H)");
+                        txttop3dau.setText("Tử Vi");
+                        txttop3than.setText("Thiên Cơ");
+                        txttop3ngo.setText("Thái Dương");
+                        txttop3ty.setText("Vũ Khúc");
+                        txttop3thin.setText("Thiên Đồng");
+                        txttop3suu.setText("Liêm Trinh");
 
-                        txttop3mui.setText("Thiên Phủ(B)");
-                        txttop4than.setText("Thái Âm(H)");
-                        txttop4dau.setText("Tham Lang(H)");
-                        txttop3tuat.setText("Cự Môn(V)");
-                        txttop3hoi.setText("Thiên Tướng(D)");
-                        txttop3tyd.setText("Thiên Lương(V)");
-                        txttop4suu.setText("Thất Sát(H)");
-                        txttop4ty.setText("Phá Quân(V)");
+                        txttop3mui.setText("Thiên Phủ");
+                        txttop4than.setText("Thái Âm");
+                        txttop4dau.setText("Tham Lang");
+                        txttop3tuat.setText("Cự Môn");
+                        txttop3hoi.setText("Thiên Tướng");
+                        txttop3tyd.setText("Thiên Lương");
+                        txttop4suu.setText("Thất Sát");
+                        txttop4ty.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("19") || thongTin.ngayam().equals("27") || thongTin.ngayam().equals("29")){
-                        txttop3tuat.setText("Tử Vi(D)");
-                        txttop3dau.setText("Thiên Cơ(D)");
-                        txttop3mui.setText("Thái Dương(H)");
-                        txttop3ngo.setText("Vũ Khúc(D)");
-                        txttop3ty.setText("Thiên Đồng(M)");
-                        txttop3dan.setText("Liêm Trinh(H)");
+                        txttop3tuat.setText("Tử Vi");
+                        txttop3dau.setText("Thiên Cơ");
+                        txttop3mui.setText("Thái Dương");
+                        txttop3ngo.setText("Vũ Khúc");
+                        txttop3ty.setText("Thiên Đồng");
+                        txttop3dan.setText("Liêm Trinh");
 
-                        txttop4ngo.setText("Thiên Phủ(B)");
-                        txttop4mui.setText("Thái Âm(H)");
-                        txttop3than.setText("Tham Lang(H)");
-                        txttop4dau.setText("Cự Môn(V)");
-                        txttop4tuat.setText("Thiên Tướng(D)");
-                        txttop3hoi.setText("Thiên Lương(V)");
-                        txttop3tyd.setText("Thất Sát(H)");
-                        txttop3thin.setText("Phá Quân(V)");
+                        txttop4ngo.setText("Thiên Phủ");
+                        txttop4mui.setText("Thái Âm");
+                        txttop3than.setText("Tham Lang");
+                        txttop4dau.setText("Cự Môn");
+                        txttop4tuat.setText("Thiên Tướng");
+                        txttop3hoi.setText("Thiên Lương");
+                        txttop3tyd.setText("Thất Sát");
+                        txttop3thin.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("28") || thongTin.ngayam().equals("30")){
-                        txttop3hoi.setText("Tử Vi(D)");
-                        txttop3tuat.setText("Thiên Cơ(D)");
-                        txttop3than.setText("Thái Dương(H)");
-                        txttop3mui.setText("Vũ Khúc(D)");
-                        txttop3ngo.setText("Thiên Đồng(M)");
-                        txttop3mao.setText("Liêm Trinh(H)");
+                        txttop3hoi.setText("Tử Vi");
+                        txttop3tuat.setText("Thiên Cơ");
+                        txttop3than.setText("Thái Dương");
+                        txttop3mui.setText("Vũ Khúc");
+                        txttop3ngo.setText("Thiên Đồng");
+                        txttop3mao.setText("Liêm Trinh");
 
-                        txttop3ty.setText("Thiên Phủ(B)");
-                        txttop4ngo.setText("Thái Âm(H)");
-                        txttop4mui.setText("Tham Lang(H)");
-                        txttop4than.setText("Cự Môn(V)");
-                        txttop3dau.setText("Thiên Tướng(D)");
-                        txttop4tuat.setText("Thiên Lương(V)");
-                        txttop4hoi.setText("Thất Sát(H)");
-                        txttop4mao.setText("Phá Quân(V)");
+                        txttop3ty.setText("Thiên Phủ");
+                        txttop4ngo.setText("Thái Âm");
+                        txttop4mui.setText("Tham Lang");
+                        txttop4than.setText("Cự Môn");
+                        txttop3dau.setText("Thiên Tướng");
+                        txttop4tuat.setText("Thiên Lương");
+                        txttop4hoi.setText("Thất Sát");
+                        txttop4mao.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("25")){
-                        txttop3tyd.setText("Tử Vi(D)");
-                        txttop3hoi.setText("Thiên Cơ(D)");
-                        txttop3dau.setText("Thái Dương(H)");
-                        txttop3than.setText("Vũ Khúc(D)");
-                        txttop3mui.setText("Thiên Đồng(M)");
-                        txttop3thin.setText("Liêm Trinh(H)");
+                        txttop3tyd.setText("Tử Vi");
+                        txttop3hoi.setText("Thiên Cơ");
+                        txttop3dau.setText("Thái Dương");
+                        txttop3than.setText("Vũ Khúc");
+                        txttop3mui.setText("Thiên Đồng");
+                        txttop3thin.setText("Liêm Trinh");
 
-                        txttop4thin.setText("Thiên Phủ(B)");
-                        txttop3ty.setText("Thái Âm(H)");
-                        txttop3ngo.setText("Tham Lang(H)");
-                        txttop4mui.setText("Cự Môn(V)");
-                        txttop4than.setText("Thiên Tướng(D)");
-                        txttop4dau.setText("Thiên Lương(V)");
-                        txttop3tuat.setText("Thất Sát(H)");
-                        txttop3dan.setText("Phá Quân(V)");
+                        txttop4thin.setText("Thiên Phủ");
+                        txttop3ty.setText("Thái Âm");
+                        txttop3ngo.setText("Tham Lang");
+                        txttop4mui.setText("Cự Môn");
+                        txttop4than.setText("Thiên Tướng");
+                        txttop4dau.setText("Thiên Lương");
+                        txttop3tuat.setText("Thất Sát");
+                        txttop3dan.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("2")){
-                        txttop3suu.setText("Tử Vi(D)");
-                        txttop3tyd.setText("Thiên Cơ(D)");
-                        txttop3tuat.setText("Thái Dương(H)");
-                        txttop3dau.setText("Vũ Khúc(D)");
-                        txttop3than.setText("Thiên Đồng(M)");
-                        txttop3ty.setText("Liêm Trinh(H)");
+                        txttop3suu.setText("Tử Vi");
+                        txttop3tyd.setText("Thiên Cơ");
+                        txttop3tuat.setText("Thái Dương");
+                        txttop3dau.setText("Vũ Khúc");
+                        txttop3than.setText("Thiên Đồng");
+                        txttop3ty.setText("Liêm Trinh");
 
-                        txttop3mao.setText("Thiên Phủ(B)");
-                        txttop3thin.setText("Thái Âm(H)");
-                        txttop4ty.setText("Tham Lang(H)");
-                        txttop3ngo.setText("Cự Môn(V)");
-                        txttop3mui.setText("Thiên Tướng(D)");
-                        txttop4than.setText("Thiên Lương(V)");
-                        txttop4dau.setText("Thất Sát(H)");
-                        txttop4suu.setText("Phá Quân(V)");
+                        txttop3mao.setText("Thiên Phủ");
+                        txttop3thin.setText("Thái Âm");
+                        txttop4ty.setText("Tham Lang");
+                        txttop3ngo.setText("Cự Môn");
+                        txttop3mui.setText("Thiên Tướng");
+                        txttop4than.setText("Thiên Lương");
+                        txttop4dau.setText("Thất Sát");
+                        txttop4suu.setText("Phá Quân");
                     }
                 }
                 else if (giophutsinh.equals("Ngọ") || giophutsinh.equals("Mùi")){
                     if (thongTin.ngayam().equals("5") || thongTin.ngayam().equals("9") || thongTin.ngayam().equals("17")){
-                        txttop3dan.setText("Tử Vi(D)");
-                        txttop3suu.setText("Thiên Cơ(D)");
-                        txttop3hoi.setText("Thái Dương(H)");
-                        txttop3tuat.setText("Vũ Khúc(D)");
-                        txttop3dau.setText("Thiên Đồng(M)");
-                        txttop3ngo.setText("Liêm Trinh(H)");
+                        txttop3dan.setText("Tử Vi");
+                        txttop3suu.setText("Thiên Cơ");
+                        txttop3hoi.setText("Thái Dương");
+                        txttop3tuat.setText("Vũ Khúc");
+                        txttop3dau.setText("Thiên Đồng");
+                        txttop3ngo.setText("Liêm Trinh");
 
-                        txttop4dan.setText("Thiên Phủ(B)");
-                        txttop3mao.setText("Thái Âm(H)");
-                        txttop3thin.setText("Tham Lang(H)");
-                        txttop3ty.setText("Cự Môn(V)");
-                        txttop4ngo.setText("Thiên Tướng(D)");
-                        txttop3mui.setText("Thiên Lương(V)");
-                        txttop3than.setText("Thất Sát(H)");
-                        txttop3tyd.setText("Phá Quân(V)");
+                        txttop4dan.setText("Thiên Phủ");
+                        txttop3mao.setText("Thái Âm");
+                        txttop3thin.setText("Tham Lang");
+                        txttop3ty.setText("Cự Môn");
+                        txttop4ngo.setText("Thiên Tướng");
+                        txttop3mui.setText("Thiên Lương");
+                        txttop3than.setText("Thất Sát");
+                        txttop3tyd.setText("Phá Quân");
 
                     }
                     else if (thongTin.ngayam().equals("10") || thongTin.ngayam().equals("14") || thongTin.ngayam().equals("22")){
-                        txttop3mao.setText("Tử Vi(D)");
-                        txttop3dan.setText("Thiên Cơ(D)");
-                        txttop3tyd.setText("Thái Dương(H)");
-                        txttop3hoi.setText("Vũ Khúc(D)");
-                        txttop3tuat.setText("Thiên Đồng(M)");
-                        txttop3mui.setText("Liêm Trinh(H)");
+                        txttop3mao.setText("Tử Vi");
+                        txttop3dan.setText("Thiên Cơ");
+                        txttop3tyd.setText("Thái Dương");
+                        txttop3hoi.setText("Vũ Khúc");
+                        txttop3tuat.setText("Thiên Đồng");
+                        txttop3mui.setText("Liêm Trinh");
 
-                        txttop3suu.setText("Thiên Phủ(B)");
-                        txttop4dan.setText("Thái Âm(H)");
-                        txttop4mao.setText("Tham Lang(H)");
-                        txttop3thin.setText("Cự Môn(V)");
-                        txttop3ty.setText("Thiên Tướng(D)");
-                        txttop3ngo.setText("Thiên Lương(V)");
-                        txttop4mui.setText("Thất Sát(H)");
-                        txttop4hoi.setText("Phá Quân(V)");
+                        txttop3suu.setText("Thiên Phủ");
+                        txttop4dan.setText("Thái Âm");
+                        txttop4mao.setText("Tham Lang");
+                        txttop3thin.setText("Cự Môn");
+                        txttop3ty.setText("Thiên Tướng");
+                        txttop3ngo.setText("Thiên Lương");
+                        txttop4mui.setText("Thất Sát");
+                        txttop4hoi.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("3") || thongTin.ngayam().equals("15") || thongTin.ngayam().equals("19") || thongTin.ngayam().equals("27")){
-                        txttop3thin.setText("Tử Vi(D)");
-                        txttop3mao.setText("Thiên Cơ(D)");
-                        txttop3suu.setText("Thái Dương(H)");
-                        txttop3tyd.setText("Vũ Khúc(D)");
-                        txttop3hoi.setText("Thiên Đồng(M)");
-                        txttop3than.setText("Liêm Trinh(H)");
+                        txttop3thin.setText("Tử Vi");
+                        txttop3mao.setText("Thiên Cơ");
+                        txttop3suu.setText("Thái Dương");
+                        txttop3tyd.setText("Vũ Khúc");
+                        txttop3hoi.setText("Thiên Đồng");
+                        txttop3than.setText("Liêm Trinh");
 
-                        txttop4tyd.setText("Thiên Phủ(B)");
-                        txttop4suu.setText("Thái Âm(H)");
-                        txttop4dan.setText("Tham Lang(H)");
-                        txttop4mao.setText("Cự Môn(V)");
-                        txttop4thin.setText("Thiên Tướng(D)");
-                        txttop3ty.setText("Thiên Lương(V)");
-                        txttop3ngo.setText("Thất Sát(H)");
-                        txttop3tuat.setText("Phá Quân(V)");
+                        txttop4tyd.setText("Thiên Phủ");
+                        txttop4suu.setText("Thái Âm");
+                        txttop4dan.setText("Tham Lang");
+                        txttop4mao.setText("Cự Môn");
+                        txttop4thin.setText("Thiên Tướng");
+                        txttop3ty.setText("Thiên Lương");
+                        txttop3ngo.setText("Thất Sát");
+                        txttop3tuat.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("8") || thongTin.ngayam().equals("20") || thongTin.ngayam().equals("24")){
-                        txttop3ty.setText("Tử Vi(D)");
-                        txttop3thin.setText("Thiên Cơ(D)");
-                        txttop3dan.setText("Thái Dương(H)");
-                        txttop3suu.setText("Vũ Khúc(D)");
-                        txttop3tyd.setText("Thiên Đồng(M)");
-                        txttop3dau.setText("Liêm Trinh(H)");
+                        txttop3ty.setText("Tử Vi");
+                        txttop3thin.setText("Thiên Cơ");
+                        txttop3dan.setText("Thái Dương");
+                        txttop3suu.setText("Vũ Khúc");
+                        txttop3tyd.setText("Thiên Đồng");
+                        txttop3dau.setText("Liêm Trinh");
 
-                        txttop3hoi.setText("Thiên Phủ(B)");
-                        txttop4tyd.setText("Thái Âm(H)");
-                        txttop4suu.setText("Tham Lang(H)");
-                        txttop4dan.setText("Cự Môn(V)");
-                        txttop3mao.setText("Thiên Tướng(D)");
-                        txttop4thin.setText("Thiên Lương(V)");
-                        txttop4ty.setText("Thất Sát(H)");
-                        txttop4dau.setText("Phá Quân(V)");
+                        txttop3hoi.setText("Thiên Phủ");
+                        txttop4tyd.setText("Thái Âm");
+                        txttop4suu.setText("Tham Lang");
+                        txttop4dan.setText("Cự Môn");
+                        txttop3mao.setText("Thiên Tướng");
+                        txttop4thin.setText("Thiên Lương");
+                        txttop4ty.setText("Thất Sát");
+                        txttop4dau.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("1") || thongTin.ngayam().equals("13") || thongTin.ngayam().equals("25") || thongTin.ngayam().equals("29")){
-                        txttop3ngo.setText("Tử Vi(D)");
-                        txttop3ty.setText("Thiên Cơ(D)");
-                        txttop3dan.setText("Thái Dương(H)");
-                        txttop3suu.setText("Vũ Khúc(D)");
-                        txttop3tyd.setText("Thiên Đồng(M)");
-                        txttop3dau.setText("Liêm Trinh(H)");
+                        txttop3ngo.setText("Tử Vi");
+                        txttop3ty.setText("Thiên Cơ");
+                        txttop3dan.setText("Thái Dương");
+                        txttop3suu.setText("Vũ Khúc");
+                        txttop3tyd.setText("Thiên Đồng");
+                        txttop3dau.setText("Liêm Trinh");
 
-                        txttop3tuat.setText("Thiên Phủ(B)");
-                        txttop3hoi.setText("Thái Âm(H)");
-                        txttop4tyd.setText("Tham Lang(H)");
-                        txttop4suu.setText("Cự Môn(V)");
-                        txttop4dan.setText("Thiên Tướng(D)");
-                        txttop3mao.setText("Thiên Lương(V)");
-                        txttop3thin.setText("Thất Sát(H)");
-                        txttop3than.setText("Phá Quân(V)");
+                        txttop3tuat.setText("Thiên Phủ");
+                        txttop3hoi.setText("Thái Âm");
+                        txttop4tyd.setText("Tham Lang");
+                        txttop4suu.setText("Cự Môn");
+                        txttop4dan.setText("Thiên Tướng");
+                        txttop3mao.setText("Thiên Lương");
+                        txttop3thin.setText("Thất Sát");
+                        txttop3than.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("6") || thongTin.ngayam().equals("18") || thongTin.ngayam().equals("30")){
-                        txttop3mui.setText("Tử Vi(D)");
-                        txttop3ngo.setText("Thiên Cơ(D)");
-                        txttop3thin.setText("Thái Dương(H)");
-                        txttop3mao.setText("Vũ Khúc(D)");
-                        txttop3dan.setText("Thiên Đồng(M)");
-                        txttop3hoi.setText("Liêm Trinh(H)");
+                        txttop3mui.setText("Tử Vi");
+                        txttop3ngo.setText("Thiên Cơ");
+                        txttop3thin.setText("Thái Dương");
+                        txttop3mao.setText("Vũ Khúc");
+                        txttop3dan.setText("Thiên Đồng");
+                        txttop3hoi.setText("Liêm Trinh");
 
-                        txttop3dau.setText("Thiên Phủ(B)");
-                        txttop3tuat.setText("Thái Âm(H)");
-                        txttop4hoi.setText("Tham Lang(H)");
-                        txttop3tyd.setText("Cự Môn(V)");
-                        txttop3suu.setText("Thiên Tướng(D)");
-                        txttop4dan.setText("Thiên Lương(V)");
-                        txttop4mao.setText("Thất Sát(H)");
-                        txttop4mui.setText("Phá Quân(V)");
+                        txttop3dau.setText("Thiên Phủ");
+                        txttop3tuat.setText("Thái Âm");
+                        txttop4hoi.setText("Tham Lang");
+                        txttop3tyd.setText("Cự Môn");
+                        txttop3suu.setText("Thiên Tướng");
+                        txttop4dan.setText("Thiên Lương");
+                        txttop4mao.setText("Thất Sát");
+                        txttop4mui.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("11") || thongTin.ngayam().equals("23")){
-                        txttop3than.setText("Tử Vi(D)");
-                        txttop3mui.setText("Thiên Cơ(D)");
-                        txttop3ty.setText("Thái Dương(H)");
-                        txttop3thin.setText("Vũ Khúc(D)");
-                        txttop3mao.setText("Thiên Đồng(M)");
-                        txttop3tyd.setText("Liêm Trinh(H)");
+                        txttop3than.setText("Tử Vi");
+                        txttop3mui.setText("Thiên Cơ");
+                        txttop3ty.setText("Thái Dương");
+                        txttop3thin.setText("Vũ Khúc");
+                        txttop3mao.setText("Thiên Đồng");
+                        txttop3tyd.setText("Liêm Trinh");
 
-                        txttop4than.setText("Thiên Phủ(B)");
-                        txttop3dau.setText("Thái Âm(H)");
-                        txttop3tuat.setText("Tham Lang(H)");
-                        txttop3hoi.setText("Cự Môn(V)");
-                        txttop4tyd.setText("Thiên Tướng(D)");
-                        txttop3suu.setText("Thiên Lương(V)");
-                        txttop3dan.setText("Thất Sát(H)");
-                        txttop3ngo.setText("Phá Quân(V)");
+                        txttop4than.setText("Thiên Phủ");
+                        txttop3dau.setText("Thái Âm");
+                        txttop3tuat.setText("Tham Lang");
+                        txttop3hoi.setText("Cự Môn");
+                        txttop4tyd.setText("Thiên Tướng");
+                        txttop3suu.setText("Thiên Lương");
+                        txttop3dan.setText("Thất Sát");
+                        txttop3ngo.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("16") || thongTin.ngayam().equals("28")){
-                        txttop3dau.setText("Tử Vi(D)");
-                        txttop3than.setText("Thiên Cơ(D)");
-                        txttop3ngo.setText("Thái Dương(H)");
-                        txttop3ty.setText("Vũ Khúc(D)");
-                        txttop3thin.setText("Thiên Đồng(M)");
-                        txttop3suu.setText("Liêm Trinh(H)");
+                        txttop3dau.setText("Tử Vi");
+                        txttop3than.setText("Thiên Cơ");
+                        txttop3ngo.setText("Thái Dương");
+                        txttop3ty.setText("Vũ Khúc");
+                        txttop3thin.setText("Thiên Đồng");
+                        txttop3suu.setText("Liêm Trinh");
 
-                        txttop3mui.setText("Thiên Phủ(B)");
-                        txttop4than.setText("Thái Âm(H)");
-                        txttop4dau.setText("Tham Lang(H)");
-                        txttop3tuat.setText("Cự Môn(V)");
-                        txttop3hoi.setText("Thiên Tướng(D)");
-                        txttop3tyd.setText("Thiên Lương(V)");
-                        txttop4suu.setText("Thất Sát(H)");
-                        txttop4ty.setText("Phá Quân(V)");
+                        txttop3mui.setText("Thiên Phủ");
+                        txttop4than.setText("Thái Âm");
+                        txttop4dau.setText("Tham Lang");
+                        txttop3tuat.setText("Cự Môn");
+                        txttop3hoi.setText("Thiên Tướng");
+                        txttop3tyd.setText("Thiên Lương");
+                        txttop4suu.setText("Thất Sát");
+                        txttop4ty.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("21")){
-                        txttop3tuat.setText("Tử Vi(D)");
-                        txttop3dau.setText("Thiên Cơ(D)");
-                        txttop3mui.setText("Thái Dương(H)");
-                        txttop3ngo.setText("Vũ Khúc(D)");
-                        txttop3ty.setText("Thiên Đồng(M)");
-                        txttop3dan.setText("Liêm Trinh(H)");
+                        txttop3tuat.setText("Tử Vi");
+                        txttop3dau.setText("Thiên Cơ");
+                        txttop3mui.setText("Thái Dương");
+                        txttop3ngo.setText("Vũ Khúc");
+                        txttop3ty.setText("Thiên Đồng");
+                        txttop3dan.setText("Liêm Trinh");
 
-                        txttop4ngo.setText("Thiên Phủ(B)");
-                        txttop4mui.setText("Thái Âm(H)");
-                        txttop3than.setText("Tham Lang(H)");
-                        txttop4dau.setText("Cự Môn(V)");
-                        txttop4tuat.setText("Thiên Tướng(D)");
-                        txttop3hoi.setText("Thiên Lương(V)");
-                        txttop3tyd.setText("Thất Sát(H)");
-                        txttop3thin.setText("Phá Quân(V)");
+                        txttop4ngo.setText("Thiên Phủ");
+                        txttop4mui.setText("Thái Âm");
+                        txttop3than.setText("Tham Lang");
+                        txttop4dau.setText("Cự Môn");
+                        txttop4tuat.setText("Thiên Tướng");
+                        txttop3hoi.setText("Thiên Lương");
+                        txttop3tyd.setText("Thất Sát");
+                        txttop3thin.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("2") || thongTin.ngayam().equals("26")){
-                        txttop3hoi.setText("Tử Vi(D)");
-                        txttop3tuat.setText("Thiên Cơ(D)");
-                        txttop3than.setText("Thái Dương(H)");
-                        txttop3mui.setText("Vũ Khúc(D)");
-                        txttop3ngo.setText("Thiên Đồng(M)");
-                        txttop3mao.setText("Liêm Trinh(H)");
+                        txttop3hoi.setText("Tử Vi");
+                        txttop3tuat.setText("Thiên Cơ");
+                        txttop3than.setText("Thái Dương");
+                        txttop3mui.setText("Vũ Khúc");
+                        txttop3ngo.setText("Thiên Đồng");
+                        txttop3mao.setText("Liêm Trinh");
 
-                        txttop3ty.setText("Thiên Phủ(B)");
-                        txttop4ngo.setText("Thái Âm(H)");
-                        txttop4mui.setText("Tham Lang(H)");
-                        txttop4than.setText("Cự Môn(V)");
-                        txttop3dau.setText("Thiên Tướng(D)");
-                        txttop4tuat.setText("Thiên Lương(V)");
-                        txttop4hoi.setText("Thất Sát(H)");
-                        txttop4mao.setText("Phá Quân(V)");
+                        txttop3ty.setText("Thiên Phủ");
+                        txttop4ngo.setText("Thái Âm");
+                        txttop4mui.setText("Tham Lang");
+                        txttop4than.setText("Cự Môn");
+                        txttop3dau.setText("Thiên Tướng");
+                        txttop4tuat.setText("Thiên Lương");
+                        txttop4hoi.setText("Thất Sát");
+                        txttop4mao.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("7")){
-                        txttop3tyd.setText("Tử Vi(D)");
-                        txttop3hoi.setText("Thiên Cơ(D)");
-                        txttop3dau.setText("Thái Dương(H)");
-                        txttop3than.setText("Vũ Khúc(D)");
-                        txttop3mui.setText("Thiên Đồng(M)");
-                        txttop3thin.setText("Liêm Trinh(H)");
+                        txttop3tyd.setText("Tử Vi");
+                        txttop3hoi.setText("Thiên Cơ");
+                        txttop3dau.setText("Thái Dương");
+                        txttop3than.setText("Vũ Khúc");
+                        txttop3mui.setText("Thiên Đồng");
+                        txttop3thin.setText("Liêm Trinh");
 
-                        txttop4thin.setText("Thiên Phủ(B)");
-                        txttop3ty.setText("Thái Âm(H)");
-                        txttop3ngo.setText("Tham Lang(H)");
-                        txttop4mui.setText("Cự Môn(V)");
-                        txttop4than.setText("Thiên Tướng(D)");
-                        txttop4dau.setText("Thiên Lương(V)");
-                        txttop3tuat.setText("Thất Sát(H)");
-                        txttop3dan.setText("Phá Quân(V)");
+                        txttop4thin.setText("Thiên Phủ");
+                        txttop3ty.setText("Thái Âm");
+                        txttop3ngo.setText("Tham Lang");
+                        txttop4mui.setText("Cự Môn");
+                        txttop4than.setText("Thiên Tướng");
+                        txttop4dau.setText("Thiên Lương");
+                        txttop3tuat.setText("Thất Sát");
+                        txttop3dan.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("4") || thongTin.ngayam().equals("12")){
-                        txttop3suu.setText("Tử Vi(D)");
-                        txttop3tyd.setText("Thiên Cơ(D)");
-                        txttop3tuat.setText("Thái Dương(H)");
-                        txttop3dau.setText("Vũ Khúc(D)");
-                        txttop3than.setText("Thiên Đồng(M)");
-                        txttop3ty.setText("Liêm Trinh(H)");
+                        txttop3suu.setText("Tử Vi");
+                        txttop3tyd.setText("Thiên Cơ");
+                        txttop3tuat.setText("Thái Dương");
+                        txttop3dau.setText("Vũ Khúc");
+                        txttop3than.setText("Thiên Đồng");
+                        txttop3ty.setText("Liêm Trinh");
 
-                        txttop3mao.setText("Thiên Phủ(B)");
-                        txttop3thin.setText("Thái Âm(H)");
-                        txttop4ty.setText("Tham Lang(H)");
-                        txttop3ngo.setText("Cự Môn(V)");
-                        txttop3mui.setText("Thiên Tướng(D)");
-                        txttop4than.setText("Thiên Lương(V)");
-                        txttop4dau.setText("Thất Sát(H)");
-                        txttop4suu.setText("Phá Quân(V)");
+                        txttop3mao.setText("Thiên Phủ");
+                        txttop3thin.setText("Thái Âm");
+                        txttop4ty.setText("Tham Lang");
+                        txttop3ngo.setText("Cự Môn");
+                        txttop3mui.setText("Thiên Tướng");
+                        txttop4than.setText("Thiên Lương");
+                        txttop4dau.setText("Thất Sát");
+                        txttop4suu.setText("Phá Quân");
                     }
                 }
                 else if (giophutsinh.equals("Thân") || giophutsinh.equals("Dậu")){
                     if (thongTin.ngayam().equals("4") || thongTin.ngayam().equals("7") || thongTin.ngayam().equals("13")){
-                        txttop3dan.setText("Tử Vi(D)");
-                        txttop3suu.setText("Thiên Cơ(D)");
-                        txttop3hoi.setText("Thái Dương(H)");
-                        txttop3tuat.setText("Vũ Khúc(D)");
-                        txttop3dau.setText("Thiên Đồng(M)");
-                        txttop3ngo.setText("Liêm Trinh(H)");
+                        txttop3dan.setText("Tử Vi");
+                        txttop3suu.setText("Thiên Cơ");
+                        txttop3hoi.setText("Thái Dương");
+                        txttop3tuat.setText("Vũ Khúc");
+                        txttop3dau.setText("Thiên Đồng");
+                        txttop3ngo.setText("Liêm Trinh");
 
-                        txttop4dan.setText("Thiên Phủ(B)");
-                        txttop3mao.setText("Thái Âm(H)");
-                        txttop3thin.setText("Tham Lang(H)");
-                        txttop3ty.setText("Cự Môn(V)");
-                        txttop4ngo.setText("Thiên Tướng(D)");
-                        txttop3mui.setText("Thiên Lương(V)");
-                        txttop3than.setText("Thất Sát(H)");
-                        txttop3tyd.setText("Phá Quân(V)");
+                        txttop4dan.setText("Thiên Phủ");
+                        txttop3mao.setText("Thái Âm");
+                        txttop3thin.setText("Tham Lang");
+                        txttop3ty.setText("Cự Môn");
+                        txttop4ngo.setText("Thiên Tướng");
+                        txttop3mui.setText("Thiên Lương");
+                        txttop3than.setText("Thất Sát");
+                        txttop3tyd.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("8") || thongTin.ngayam().equals("11") || thongTin.ngayam().equals("17")){
-                        txttop3mao.setText("Tử Vi(D)");
-                        txttop3dan.setText("Thiên Cơ(D)");
-                        txttop3tyd.setText("Thái Dương(H)");
-                        txttop3hoi.setText("Vũ Khúc(D)");
-                        txttop3tuat.setText("Thiên Đồng(M)");
-                        txttop3mui.setText("Liêm Trinh(H)");
+                        txttop3mao.setText("Tử Vi");
+                        txttop3dan.setText("Thiên Cơ");
+                        txttop3tyd.setText("Thái Dương");
+                        txttop3hoi.setText("Vũ Khúc");
+                        txttop3tuat.setText("Thiên Đồng");
+                        txttop3mui.setText("Liêm Trinh");
 
-                        txttop3suu.setText("Thiên Phủ(B)");
-                        txttop4dan.setText("Thái Âm(H)");
-                        txttop4mao.setText("Tham Lang(H)");
-                        txttop3thin.setText("Cự Môn(V)");
-                        txttop3ty.setText("Thiên Tướng(D)");
-                        txttop3ngo.setText("Thiên Lương(V)");
-                        txttop4mui.setText("Thất Sát(H)");
-                        txttop4hoi.setText("Phá Quân(V)");
+                        txttop3suu.setText("Thiên Phủ");
+                        txttop4dan.setText("Thái Âm");
+                        txttop4mao.setText("Tham Lang");
+                        txttop3thin.setText("Cự Môn");
+                        txttop3ty.setText("Thiên Tướng");
+                        txttop3ngo.setText("Thiên Lương");
+                        txttop4mui.setText("Thất Sát");
+                        txttop4hoi.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("2") || thongTin.ngayam().equals("12") || thongTin.ngayam().equals("15") || thongTin.ngayam().equals("21")){
-                        txttop3thin.setText("Tử Vi(D)");
-                        txttop3mao.setText("Thiên Cơ(D)");
-                        txttop3suu.setText("Thái Dương(H)");
-                        txttop3tyd.setText("Vũ Khúc(D)");
-                        txttop3hoi.setText("Thiên Đồng(M)");
-                        txttop3than.setText("Liêm Trinh(H)");
+                        txttop3thin.setText("Tử Vi");
+                        txttop3mao.setText("Thiên Cơ");
+                        txttop3suu.setText("Thái Dương");
+                        txttop3tyd.setText("Vũ Khúc");
+                        txttop3hoi.setText("Thiên Đồng");
+                        txttop3than.setText("Liêm Trinh");
 
-                        txttop4tyd.setText("Thiên Phủ(B)");
-                        txttop4suu.setText("Thái Âm(H)");
-                        txttop4dan.setText("Tham Lang(H)");
-                        txttop4mao.setText("Cự Môn(V)");
-                        txttop4thin.setText("Thiên Tướng(D)");
-                        txttop3ty.setText("Thiên Lương(V)");
-                        txttop3ngo.setText("Thất Sát(H)");
-                        txttop3tuat.setText("Phá Quân(V)");
+                        txttop4tyd.setText("Thiên Phủ");
+                        txttop4suu.setText("Thái Âm");
+                        txttop4dan.setText("Tham Lang");
+                        txttop4mao.setText("Cự Môn");
+                        txttop4thin.setText("Thiên Tướng");
+                        txttop3ty.setText("Thiên Lương");
+                        txttop3ngo.setText("Thất Sát");
+                        txttop3tuat.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("6") || thongTin.ngayam().equals("16") || thongTin.ngayam().equals("19") || thongTin.ngayam().equals("25")){
-                        txttop3ty.setText("Tử Vi(D)");
-                        txttop3thin.setText("Thiên Cơ(D)");
-                        txttop3dan.setText("Thái Dương(H)");
-                        txttop3suu.setText("Vũ Khúc(D)");
-                        txttop3tyd.setText("Thiên Đồng(M)");
-                        txttop3dau.setText("Liêm Trinh(H)");
+                        txttop3ty.setText("Tử Vi");
+                        txttop3thin.setText("Thiên Cơ");
+                        txttop3dan.setText("Thái Dương");
+                        txttop3suu.setText("Vũ Khúc");
+                        txttop3tyd.setText("Thiên Đồng");
+                        txttop3dau.setText("Liêm Trinh");
 
-                        txttop3hoi.setText("Thiên Phủ(B)");
-                        txttop4tyd.setText("Thái Âm(H)");
-                        txttop4suu.setText("Tham Lang(H)");
-                        txttop4dan.setText("Cự Môn(V)");
-                        txttop3mao.setText("Thiên Tướng(D)");
-                        txttop4thin.setText("Thiên Lương(V)");
-                        txttop4ty.setText("Thất Sát(H)");
-                        txttop4dau.setText("Phá Quân(V)");
+                        txttop3hoi.setText("Thiên Phủ");
+                        txttop4tyd.setText("Thái Âm");
+                        txttop4suu.setText("Tham Lang");
+                        txttop4dan.setText("Cự Môn");
+                        txttop3mao.setText("Thiên Tướng");
+                        txttop4thin.setText("Thiên Lương");
+                        txttop4ty.setText("Thất Sát");
+                        txttop4dau.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("10") || thongTin.ngayam().equals("20") || thongTin.ngayam().equals("23") || thongTin.ngayam().equals("29")){
-                        txttop3ngo.setText("Tử Vi(D)");
-                        txttop3ty.setText("Thiên Cơ(D)");
-                        txttop3dan.setText("Thái Dương(H)");
-                        txttop3suu.setText("Vũ Khúc(D)");
-                        txttop3tyd.setText("Thiên Đồng(M)");
-                        txttop3dau.setText("Liêm Trinh(H)");
+                        txttop3ngo.setText("Tử Vi");
+                        txttop3ty.setText("Thiên Cơ");
+                        txttop3dan.setText("Thái Dương");
+                        txttop3suu.setText("Vũ Khúc");
+                        txttop3tyd.setText("Thiên Đồng");
+                        txttop3dau.setText("Liêm Trinh");
 
-                        txttop3tuat.setText("Thiên Phủ(B)");
-                        txttop3hoi.setText("Thái Âm(H)");
-                        txttop4tyd.setText("Tham Lang(H)");
-                        txttop4suu.setText("Cự Môn(V)");
-                        txttop4dan.setText("Thiên Tướng(D)");
-                        txttop3mao.setText("Thiên Lương(V)");
-                        txttop3thin.setText("Thất Sát(H)");
-                        txttop3than.setText("Phá Quân(V)");
+                        txttop3tuat.setText("Thiên Phủ");
+                        txttop3hoi.setText("Thái Âm");
+                        txttop4tyd.setText("Tham Lang");
+                        txttop4suu.setText("Cự Môn");
+                        txttop4dan.setText("Thiên Tướng");
+                        txttop3mao.setText("Thiên Lương");
+                        txttop3thin.setText("Thất Sát");
+                        txttop3than.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("14") || thongTin.ngayam().equals("24") || thongTin.ngayam().equals("27")){
-                        txttop3mui.setText("Tử Vi(D)");
-                        txttop3ngo.setText("Thiên Cơ(D)");
-                        txttop3thin.setText("Thái Dương(H)");
-                        txttop3mao.setText("Vũ Khúc(D)");
-                        txttop3dan.setText("Thiên Đồng(M)");
-                        txttop3hoi.setText("Liêm Trinh(H)");
+                        txttop3mui.setText("Tử Vi");
+                        txttop3ngo.setText("Thiên Cơ");
+                        txttop3thin.setText("Thái Dương");
+                        txttop3mao.setText("Vũ Khúc");
+                        txttop3dan.setText("Thiên Đồng");
+                        txttop3hoi.setText("Liêm Trinh");
 
-                        txttop3dau.setText("Thiên Phủ(B)");
-                        txttop3tuat.setText("Thái Âm(H)");
-                        txttop4hoi.setText("Tham Lang(H)");
-                        txttop3tyd.setText("Cự Môn(V)");
-                        txttop3suu.setText("Thiên Tướng(D)");
-                        txttop4dan.setText("Thiên Lương(V)");
-                        txttop4mao.setText("Thất Sát(H)");
-                        txttop4mui.setText("Phá Quân(V)");
+                        txttop3dau.setText("Thiên Phủ");
+                        txttop3tuat.setText("Thái Âm");
+                        txttop4hoi.setText("Tham Lang");
+                        txttop3tyd.setText("Cự Môn");
+                        txttop3suu.setText("Thiên Tướng");
+                        txttop4dan.setText("Thiên Lương");
+                        txttop4mao.setText("Thất Sát");
+                        txttop4mui.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("18") || thongTin.ngayam().equals("28")){
-                        txttop3than.setText("Tử Vi(D)");
-                        txttop3mui.setText("Thiên Cơ(D)");
-                        txttop3ty.setText("Thái Dương(H)");
-                        txttop3thin.setText("Vũ Khúc(D)");
-                        txttop3mao.setText("Thiên Đồng(M)");
-                        txttop3tyd.setText("Liêm Trinh(H)");
+                        txttop3than.setText("Tử Vi");
+                        txttop3mui.setText("Thiên Cơ");
+                        txttop3ty.setText("Thái Dương");
+                        txttop3thin.setText("Vũ Khúc");
+                        txttop3mao.setText("Thiên Đồng");
+                        txttop3tyd.setText("Liêm Trinh");
 
-                        txttop4than.setText("Thiên Phủ(B)");
-                        txttop3dau.setText("Thái Âm(H)");
-                        txttop3tuat.setText("Tham Lang(H)");
-                        txttop3hoi.setText("Cự Môn(V)");
-                        txttop4tyd.setText("Thiên Tướng(D)");
-                        txttop3suu.setText("Thiên Lương(V)");
-                        txttop3dan.setText("Thất Sát(H)");
-                        txttop3ngo.setText("Phá Quân(V)");
+                        txttop4than.setText("Thiên Phủ");
+                        txttop3dau.setText("Thái Âm");
+                        txttop3tuat.setText("Tham Lang");
+                        txttop3hoi.setText("Cự Môn");
+                        txttop4tyd.setText("Thiên Tướng");
+                        txttop3suu.setText("Thiên Lương");
+                        txttop3dan.setText("Thất Sát");
+                        txttop3ngo.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("22")){
-                        txttop3dau.setText("Tử Vi(D)");
-                        txttop3than.setText("Thiên Cơ(D)");
-                        txttop3ngo.setText("Thái Dương(H)");
-                        txttop3ty.setText("Vũ Khúc(D)");
-                        txttop3thin.setText("Thiên Đồng(M)");
-                        txttop3suu.setText("Liêm Trinh(H)");
+                        txttop3dau.setText("Tử Vi");
+                        txttop3than.setText("Thiên Cơ");
+                        txttop3ngo.setText("Thái Dương");
+                        txttop3ty.setText("Vũ Khúc");
+                        txttop3thin.setText("Thiên Đồng");
+                        txttop3suu.setText("Liêm Trinh");
 
-                        txttop3mui.setText("Thiên Phủ(B)");
-                        txttop4than.setText("Thái Âm(H)");
-                        txttop4dau.setText("Tham Lang(H)");
-                        txttop3tuat.setText("Cự Môn(V)");
-                        txttop3hoi.setText("Thiên Tướng(D)");
-                        txttop3tyd.setText("Thiên Lương(V)");
-                        txttop4suu.setText("Thất Sát(H)");
-                        txttop4ty.setText("Phá Quân(V)");
+                        txttop3mui.setText("Thiên Phủ");
+                        txttop4than.setText("Thái Âm");
+                        txttop4dau.setText("Tham Lang");
+                        txttop3tuat.setText("Cự Môn");
+                        txttop3hoi.setText("Thiên Tướng");
+                        txttop3tyd.setText("Thiên Lương");
+                        txttop4suu.setText("Thất Sát");
+                        txttop4ty.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("26")){
-                        txttop3tuat.setText("Tử Vi(D)");
-                        txttop3dau.setText("Thiên Cơ(D)");
-                        txttop3mui.setText("Thái Dương(H)");
-                        txttop3ngo.setText("Vũ Khúc(D)");
-                        txttop3ty.setText("Thiên Đồng(M)");
-                        txttop3dan.setText("Liêm Trinh(H)");
+                        txttop3tuat.setText("Tử Vi");
+                        txttop3dau.setText("Thiên Cơ");
+                        txttop3mui.setText("Thái Dương");
+                        txttop3ngo.setText("Vũ Khúc");
+                        txttop3ty.setText("Thiên Đồng");
+                        txttop3dan.setText("Liêm Trinh");
 
-                        txttop4ngo.setText("Thiên Phủ(B)");
-                        txttop4mui.setText("Thái Âm(H)");
-                        txttop3than.setText("Tham Lang(H)");
-                        txttop4dau.setText("Cự Môn(V)");
-                        txttop4tuat.setText("Thiên Tướng(D)");
-                        txttop3hoi.setText("Thiên Lương(V)");
-                        txttop3tyd.setText("Thất Sát(H)");
-                        txttop3thin.setText("Phá Quân(V)");
+                        txttop4ngo.setText("Thiên Phủ");
+                        txttop4mui.setText("Thái Âm");
+                        txttop3than.setText("Tham Lang");
+                        txttop4dau.setText("Cự Môn");
+                        txttop4tuat.setText("Thiên Tướng");
+                        txttop3hoi.setText("Thiên Lương");
+                        txttop3tyd.setText("Thất Sát");
+                        txttop3thin.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("1") || thongTin.ngayam().equals("30")){
-                        txttop3hoi.setText("Tử Vi(D)");
-                        txttop3tuat.setText("Thiên Cơ(D)");
-                        txttop3than.setText("Thái Dương(H)");
-                        txttop3mui.setText("Vũ Khúc(D)");
-                        txttop3ngo.setText("Thiên Đồng(M)");
-                        txttop3mao.setText("Liêm Trinh(H)");
+                        txttop3hoi.setText("Tử Vi");
+                        txttop3tuat.setText("Thiên Cơ");
+                        txttop3than.setText("Thái Dương");
+                        txttop3mui.setText("Vũ Khúc");
+                        txttop3ngo.setText("Thiên Đồng");
+                        txttop3mao.setText("Liêm Trinh");
 
-                        txttop3ty.setText("Thiên Phủ(B)");
-                        txttop4ngo.setText("Thái Âm(H)");
-                        txttop4mui.setText("Tham Lang(H)");
-                        txttop4than.setText("Cự Môn(V)");
-                        txttop3dau.setText("Thiên Tướng(D)");
-                        txttop4tuat.setText("Thiên Lương(V)");
-                        txttop4hoi.setText("Thất Sát(H)");
-                        txttop4mao.setText("Phá Quân(V)");
+                        txttop3ty.setText("Thiên Phủ");
+                        txttop4ngo.setText("Thái Âm");
+                        txttop4mui.setText("Tham Lang");
+                        txttop4than.setText("Cự Môn");
+                        txttop3dau.setText("Thiên Tướng");
+                        txttop4tuat.setText("Thiên Lương");
+                        txttop4hoi.setText("Thất Sát");
+                        txttop4mao.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("5")){
-                        txttop3tyd.setText("Tử Vi(D)");
-                        txttop3hoi.setText("Thiên Cơ(D)");
-                        txttop3dau.setText("Thái Dương(H)");
-                        txttop3than.setText("Vũ Khúc(D)");
-                        txttop3mui.setText("Thiên Đồng(M)");
-                        txttop3thin.setText("Liêm Trinh(H)");
+                        txttop3tyd.setText("Tử Vi");
+                        txttop3hoi.setText("Thiên Cơ");
+                        txttop3dau.setText("Thái Dương");
+                        txttop3than.setText("Vũ Khúc");
+                        txttop3mui.setText("Thiên Đồng");
+                        txttop3thin.setText("Liêm Trinh");
 
-                        txttop4thin.setText("Thiên Phủ(B)");
-                        txttop3ty.setText("Thái Âm(H)");
-                        txttop3ngo.setText("Tham Lang(H)");
-                        txttop4mui.setText("Cự Môn(V)");
-                        txttop4than.setText("Thiên Tướng(D)");
-                        txttop4dau.setText("Thiên Lương(V)");
-                        txttop3tuat.setText("Thất Sát(H)");
-                        txttop3dan.setText("Phá Quân(V)");
+                        txttop4thin.setText("Thiên Phủ");
+                        txttop3ty.setText("Thái Âm");
+                        txttop3ngo.setText("Tham Lang");
+                        txttop4mui.setText("Cự Môn");
+                        txttop4than.setText("Thiên Tướng");
+                        txttop4dau.setText("Thiên Lương");
+                        txttop3tuat.setText("Thất Sát");
+                        txttop3dan.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("3") || thongTin.ngayam().equals("9")){
-                        txttop3suu.setText("Tử Vi(D)");
-                        txttop3tyd.setText("Thiên Cơ(D)");
-                        txttop3tuat.setText("Thái Dương(H)");
-                        txttop3dau.setText("Vũ Khúc(D)");
-                        txttop3than.setText("Thiên Đồng(M)");
-                        txttop3ty.setText("Liêm Trinh(H)");
+                        txttop3suu.setText("Tử Vi");
+                        txttop3tyd.setText("Thiên Cơ");
+                        txttop3tuat.setText("Thái Dương");
+                        txttop3dau.setText("Vũ Khúc");
+                        txttop3than.setText("Thiên Đồng");
+                        txttop3ty.setText("Liêm Trinh");
 
-                        txttop3mao.setText("Thiên Phủ(B)");
-                        txttop3thin.setText("Thái Âm(H)");
-                        txttop4ty.setText("Tham Lang(H)");
-                        txttop3ngo.setText("Cự Môn(V)");
-                        txttop3mui.setText("Thiên Tướng(D)");
-                        txttop4than.setText("Thiên Lương(V)");
-                        txttop4dau.setText("Thất Sát(H)");
-                        txttop4suu.setText("Phá Quân(V)");
+                        txttop3mao.setText("Thiên Phủ");
+                        txttop3thin.setText("Thái Âm");
+                        txttop4ty.setText("Tham Lang");
+                        txttop3ngo.setText("Cự Môn");
+                        txttop3mui.setText("Thiên Tướng");
+                        txttop4than.setText("Thiên Lương");
+                        txttop4dau.setText("Thất Sát");
+                        txttop4suu.setText("Phá Quân");
                     }
                 }
 
@@ -4595,1032 +4694,1032 @@ public class AnsaoActivity extends AppCompatActivity {
                 }
                 if (giophutsinh.equals("Thân") || giophutsinh.equals("Dậu")){
                     if (thongTin.ngayam().equals("2") || thongTin.ngayam().equals("3") || thongTin.ngayam().equals("26") || thongTin.ngayam().equals("27")){
-                        txttop3dan.setText("Tử Vi(D)");
-                        txttop3suu.setText("Thiên Cơ(D)");
-                        txttop3hoi.setText("Thái Dương(H)");
-                        txttop3tuat.setText("Vũ Khúc(D)");
-                        txttop3dau.setText("Thiên Đồng(M)");
-                        txttop3ngo.setText("Liêm Trinh(H)");
+                        txttop3dan.setText("Tử Vi");
+                        txttop3suu.setText("Thiên Cơ");
+                        txttop3hoi.setText("Thái Dương");
+                        txttop3tuat.setText("Vũ Khúc");
+                        txttop3dau.setText("Thiên Đồng");
+                        txttop3ngo.setText("Liêm Trinh");
 
-                        txttop4dan.setText("Thiên Phủ(B)");
-                        txttop3mao.setText("Thái Âm(H)");
-                        txttop3thin.setText("Tham Lang(H)");
-                        txttop3ty.setText("Cự Môn(V)");
-                        txttop4ngo.setText("Thiên Tướng(D)");
-                        txttop3mui.setText("Thiên Lương(V)");
-                        txttop3than.setText("Thất Sát(H)");
-                        txttop3tyd.setText("Phá Quân(V)");
+                        txttop4dan.setText("Thiên Phủ");
+                        txttop3mao.setText("Thái Âm");
+                        txttop3thin.setText("Tham Lang");
+                        txttop3ty.setText("Cự Môn");
+                        txttop4ngo.setText("Thiên Tướng");
+                        txttop3mui.setText("Thiên Lương");
+                        txttop3than.setText("Thất Sát");
+                        txttop3tyd.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("4") || thongTin.ngayam().equals("5") || thongTin.ngayam().equals("28") || thongTin.ngayam().equals("29")){
-                        txttop3mao.setText("Tử Vi(D)");
-                        txttop3dan.setText("Thiên Cơ(D)");
-                        txttop3tyd.setText("Thái Dương(H)");
-                        txttop3hoi.setText("Vũ Khúc(D)");
-                        txttop3tuat.setText("Thiên Đồng(M)");
-                        txttop3mui.setText("Liêm Trinh(H)");
+                        txttop3mao.setText("Tử Vi");
+                        txttop3dan.setText("Thiên Cơ");
+                        txttop3tyd.setText("Thái Dương");
+                        txttop3hoi.setText("Vũ Khúc");
+                        txttop3tuat.setText("Thiên Đồng");
+                        txttop3mui.setText("Liêm Trinh");
 
-                        txttop3suu.setText("Thiên Phủ(B)");
-                        txttop4dan.setText("Thái Âm(H)");
-                        txttop4mao.setText("Tham Lang(H)");
-                        txttop3thin.setText("Cự Môn(V)");
-                        txttop3ty.setText("Thiên Tướng(D)");
-                        txttop3ngo.setText("Thiên Lương(V)");
-                        txttop4mui.setText("Thất Sát(H)");
-                        txttop4hoi.setText("Phá Quân(V)");
+                        txttop3suu.setText("Thiên Phủ");
+                        txttop4dan.setText("Thái Âm");
+                        txttop4mao.setText("Tham Lang");
+                        txttop3thin.setText("Cự Môn");
+                        txttop3ty.setText("Thiên Tướng");
+                        txttop3ngo.setText("Thiên Lương");
+                        txttop4mui.setText("Thất Sát");
+                        txttop4hoi.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("6") || thongTin.ngayam().equals("7") || thongTin.ngayam().equals("30")){
-                        txttop3thin.setText("Tử Vi(D)");
-                        txttop3mao.setText("Thiên Cơ(D)");
-                        txttop3suu.setText("Thái Dương(H)");
-                        txttop3tyd.setText("Vũ Khúc(D)");
-                        txttop3hoi.setText("Thiên Đồng(M)");
-                        txttop3than.setText("Liêm Trinh(H)");
+                        txttop3thin.setText("Tử Vi");
+                        txttop3mao.setText("Thiên Cơ");
+                        txttop3suu.setText("Thái Dương");
+                        txttop3tyd.setText("Vũ Khúc");
+                        txttop3hoi.setText("Thiên Đồng");
+                        txttop3than.setText("Liêm Trinh");
 
-                        txttop4tyd.setText("Thiên Phủ(B)");
-                        txttop4suu.setText("Thái Âm(H)");
-                        txttop4dan.setText("Tham Lang(H)");
-                        txttop4mao.setText("Cự Môn(V)");
-                        txttop4thin.setText("Thiên Tướng(D)");
-                        txttop3ty.setText("Thiên Lương(V)");
-                        txttop3ngo.setText("Thất Sát(H)");
-                        txttop3tuat.setText("Phá Quân(V)");
+                        txttop4tyd.setText("Thiên Phủ");
+                        txttop4suu.setText("Thái Âm");
+                        txttop4dan.setText("Tham Lang");
+                        txttop4mao.setText("Cự Môn");
+                        txttop4thin.setText("Thiên Tướng");
+                        txttop3ty.setText("Thiên Lương");
+                        txttop3ngo.setText("Thất Sát");
+                        txttop3tuat.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("8") || thongTin.ngayam().equals("9")){
-                        txttop3ty.setText("Tử Vi(D)");
-                        txttop3thin.setText("Thiên Cơ(D)");
-                        txttop3dan.setText("Thái Dương(H)");
-                        txttop3suu.setText("Vũ Khúc(D)");
-                        txttop3tyd.setText("Thiên Đồng(M)");
-                        txttop3dau.setText("Liêm Trinh(H)");
+                        txttop3ty.setText("Tử Vi");
+                        txttop3thin.setText("Thiên Cơ");
+                        txttop3dan.setText("Thái Dương");
+                        txttop3suu.setText("Vũ Khúc");
+                        txttop3tyd.setText("Thiên Đồng");
+                        txttop3dau.setText("Liêm Trinh");
 
-                        txttop3hoi.setText("Thiên Phủ(B)");
-                        txttop4tyd.setText("Thái Âm(H)");
-                        txttop4suu.setText("Tham Lang(H)");
-                        txttop4dan.setText("Cự Môn(V)");
-                        txttop3mao.setText("Thiên Tướng(D)");
-                        txttop4thin.setText("Thiên Lương(V)");
-                        txttop4ty.setText("Thất Sát(H)");
-                        txttop4dau.setText("Phá Quân(V)");
+                        txttop3hoi.setText("Thiên Phủ");
+                        txttop4tyd.setText("Thái Âm");
+                        txttop4suu.setText("Tham Lang");
+                        txttop4dan.setText("Cự Môn");
+                        txttop3mao.setText("Thiên Tướng");
+                        txttop4thin.setText("Thiên Lương");
+                        txttop4ty.setText("Thất Sát");
+                        txttop4dau.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("10") || thongTin.ngayam().equals("11")){
-                        txttop3ngo.setText("Tử Vi(D)");
-                        txttop3ty.setText("Thiên Cơ(D)");
-                        txttop3dan.setText("Thái Dương(H)");
-                        txttop3suu.setText("Vũ Khúc(D)");
-                        txttop3tyd.setText("Thiên Đồng(M)");
-                        txttop3dau.setText("Liêm Trinh(H)");
+                        txttop3ngo.setText("Tử Vi");
+                        txttop3ty.setText("Thiên Cơ");
+                        txttop3dan.setText("Thái Dương");
+                        txttop3suu.setText("Vũ Khúc");
+                        txttop3tyd.setText("Thiên Đồng");
+                        txttop3dau.setText("Liêm Trinh");
 
-                        txttop3tuat.setText("Thiên Phủ(B)");
-                        txttop3hoi.setText("Thái Âm(H)");
-                        txttop4tyd.setText("Tham Lang(H)");
-                        txttop4suu.setText("Cự Môn(V)");
-                        txttop4dan.setText("Thiên Tướng(D)");
-                        txttop3mao.setText("Thiên Lương(V)");
-                        txttop3thin.setText("Thất Sát(H)");
-                        txttop3than.setText("Phá Quân(V)");
+                        txttop3tuat.setText("Thiên Phủ");
+                        txttop3hoi.setText("Thái Âm");
+                        txttop4tyd.setText("Tham Lang");
+                        txttop4suu.setText("Cự Môn");
+                        txttop4dan.setText("Thiên Tướng");
+                        txttop3mao.setText("Thiên Lương");
+                        txttop3thin.setText("Thất Sát");
+                        txttop3than.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("12") || thongTin.ngayam().equals("13")){
-                        txttop3mui.setText("Tử Vi(D)");
-                        txttop3ngo.setText("Thiên Cơ(D)");
-                        txttop3thin.setText("Thái Dương(H)");
-                        txttop3mao.setText("Vũ Khúc(D)");
-                        txttop3dan.setText("Thiên Đồng(M)");
-                        txttop3hoi.setText("Liêm Trinh(H)");
+                        txttop3mui.setText("Tử Vi");
+                        txttop3ngo.setText("Thiên Cơ");
+                        txttop3thin.setText("Thái Dương");
+                        txttop3mao.setText("Vũ Khúc");
+                        txttop3dan.setText("Thiên Đồng");
+                        txttop3hoi.setText("Liêm Trinh");
 
-                        txttop3dau.setText("Thiên Phủ(B)");
-                        txttop3tuat.setText("Thái Âm(H)");
-                        txttop4hoi.setText("Tham Lang(H)");
-                        txttop3tyd.setText("Cự Môn(V)");
-                        txttop3suu.setText("Thiên Tướng(D)");
-                        txttop4dan.setText("Thiên Lương(V)");
-                        txttop4mao.setText("Thất Sát(H)");
-                        txttop4mui.setText("Phá Quân(V)");
+                        txttop3dau.setText("Thiên Phủ");
+                        txttop3tuat.setText("Thái Âm");
+                        txttop4hoi.setText("Tham Lang");
+                        txttop3tyd.setText("Cự Môn");
+                        txttop3suu.setText("Thiên Tướng");
+                        txttop4dan.setText("Thiên Lương");
+                        txttop4mao.setText("Thất Sát");
+                        txttop4mui.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("14") || thongTin.ngayam().equals("15")){
-                        txttop3than.setText("Tử Vi(D)");
-                        txttop3mui.setText("Thiên Cơ(D)");
-                        txttop3ty.setText("Thái Dương(H)");
-                        txttop3thin.setText("Vũ Khúc(D)");
-                        txttop3mao.setText("Thiên Đồng(M)");
-                        txttop3tyd.setText("Liêm Trinh(H)");
+                        txttop3than.setText("Tử Vi");
+                        txttop3mui.setText("Thiên Cơ");
+                        txttop3ty.setText("Thái Dương");
+                        txttop3thin.setText("Vũ Khúc");
+                        txttop3mao.setText("Thiên Đồng");
+                        txttop3tyd.setText("Liêm Trinh");
 
-                        txttop4than.setText("Thiên Phủ(B)");
-                        txttop3dau.setText("Thái Âm(H)");
-                        txttop3tuat.setText("Tham Lang(H)");
-                        txttop3hoi.setText("Cự Môn(V)");
-                        txttop4tyd.setText("Thiên Tướng(D)");
-                        txttop3suu.setText("Thiên Lương(V)");
-                        txttop3dan.setText("Thất Sát(H)");
-                        txttop3ngo.setText("Phá Quân(V)");
+                        txttop4than.setText("Thiên Phủ");
+                        txttop3dau.setText("Thái Âm");
+                        txttop3tuat.setText("Tham Lang");
+                        txttop3hoi.setText("Cự Môn");
+                        txttop4tyd.setText("Thiên Tướng");
+                        txttop3suu.setText("Thiên Lương");
+                        txttop3dan.setText("Thất Sát");
+                        txttop3ngo.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("16") || thongTin.ngayam().equals("17")){
-                        txttop3dau.setText("Tử Vi(D)");
-                        txttop3than.setText("Thiên Cơ(D)");
-                        txttop3ngo.setText("Thái Dương(H)");
-                        txttop3ty.setText("Vũ Khúc(D)");
-                        txttop3thin.setText("Thiên Đồng(M)");
-                        txttop3suu.setText("Liêm Trinh(H)");
+                        txttop3dau.setText("Tử Vi");
+                        txttop3than.setText("Thiên Cơ");
+                        txttop3ngo.setText("Thái Dương");
+                        txttop3ty.setText("Vũ Khúc");
+                        txttop3thin.setText("Thiên Đồng");
+                        txttop3suu.setText("Liêm Trinh");
 
-                        txttop3mui.setText("Thiên Phủ(B)");
-                        txttop4than.setText("Thái Âm(H)");
-                        txttop4dau.setText("Tham Lang(H)");
-                        txttop3tuat.setText("Cự Môn(V)");
-                        txttop3hoi.setText("Thiên Tướng(D)");
-                        txttop3tyd.setText("Thiên Lương(V)");
-                        txttop4suu.setText("Thất Sát(H)");
-                        txttop4ty.setText("Phá Quân(V)");
+                        txttop3mui.setText("Thiên Phủ");
+                        txttop4than.setText("Thái Âm");
+                        txttop4dau.setText("Tham Lang");
+                        txttop3tuat.setText("Cự Môn");
+                        txttop3hoi.setText("Thiên Tướng");
+                        txttop3tyd.setText("Thiên Lương");
+                        txttop4suu.setText("Thất Sát");
+                        txttop4ty.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("18") || thongTin.ngayam().equals("19")){
-                        txttop3tuat.setText("Tử Vi(D)");
-                        txttop3dau.setText("Thiên Cơ(D)");
-                        txttop3mui.setText("Thái Dương(H)");
-                        txttop3ngo.setText("Vũ Khúc(D)");
-                        txttop3ty.setText("Thiên Đồng(M)");
-                        txttop3dan.setText("Liêm Trinh(H)");
+                        txttop3tuat.setText("Tử Vi");
+                        txttop3dau.setText("Thiên Cơ");
+                        txttop3mui.setText("Thái Dương");
+                        txttop3ngo.setText("Vũ Khúc");
+                        txttop3ty.setText("Thiên Đồng");
+                        txttop3dan.setText("Liêm Trinh");
 
-                        txttop4ngo.setText("Thiên Phủ(B)");
-                        txttop4mui.setText("Thái Âm(H)");
-                        txttop3than.setText("Tham Lang(H)");
-                        txttop4dau.setText("Cự Môn(V)");
-                        txttop4tuat.setText("Thiên Tướng(D)");
-                        txttop3hoi.setText("Thiên Lương(V)");
-                        txttop3tyd.setText("Thất Sát(H)");
-                        txttop3thin.setText("Phá Quân(V)");
+                        txttop4ngo.setText("Thiên Phủ");
+                        txttop4mui.setText("Thái Âm");
+                        txttop3than.setText("Tham Lang");
+                        txttop4dau.setText("Cự Môn");
+                        txttop4tuat.setText("Thiên Tướng");
+                        txttop3hoi.setText("Thiên Lương");
+                        txttop3tyd.setText("Thất Sát");
+                        txttop3thin.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("20") || thongTin.ngayam().equals("21")){
-                        txttop3hoi.setText("Tử Vi(D)");
-                        txttop3tuat.setText("Thiên Cơ(D)");
-                        txttop3than.setText("Thái Dương(H)");
-                        txttop3mui.setText("Vũ Khúc(D)");
-                        txttop3ngo.setText("Thiên Đồng(M)");
-                        txttop3mao.setText("Liêm Trinh(H)");
+                        txttop3hoi.setText("Tử Vi");
+                        txttop3tuat.setText("Thiên Cơ");
+                        txttop3than.setText("Thái Dương");
+                        txttop3mui.setText("Vũ Khúc");
+                        txttop3ngo.setText("Thiên Đồng");
+                        txttop3mao.setText("Liêm Trinh");
 
-                        txttop3ty.setText("Thiên Phủ(B)");
-                        txttop4ngo.setText("Thái Âm(H)");
-                        txttop4mui.setText("Tham Lang(H)");
-                        txttop4than.setText("Cự Môn(V)");
-                        txttop3dau.setText("Thiên Tướng(D)");
-                        txttop4tuat.setText("Thiên Lương(V)");
-                        txttop4hoi.setText("Thất Sát(H)");
-                        txttop4mao.setText("Phá Quân(V)");
+                        txttop3ty.setText("Thiên Phủ");
+                        txttop4ngo.setText("Thái Âm");
+                        txttop4mui.setText("Tham Lang");
+                        txttop4than.setText("Cự Môn");
+                        txttop3dau.setText("Thiên Tướng");
+                        txttop4tuat.setText("Thiên Lương");
+                        txttop4hoi.setText("Thất Sát");
+                        txttop4mao.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("22") || thongTin.ngayam().equals("23")){
-                        txttop3tyd.setText("Tử Vi(D)");
-                        txttop3hoi.setText("Thiên Cơ(D)");
-                        txttop3dau.setText("Thái Dương(H)");
-                        txttop3than.setText("Vũ Khúc(D)");
-                        txttop3mui.setText("Thiên Đồng(M)");
-                        txttop3thin.setText("Liêm Trinh(H)");
+                        txttop3tyd.setText("Tử Vi");
+                        txttop3hoi.setText("Thiên Cơ");
+                        txttop3dau.setText("Thái Dương");
+                        txttop3than.setText("Vũ Khúc");
+                        txttop3mui.setText("Thiên Đồng");
+                        txttop3thin.setText("Liêm Trinh");
 
-                        txttop4thin.setText("Thiên Phủ(B)");
-                        txttop3ty.setText("Thái Âm(H)");
-                        txttop3ngo.setText("Tham Lang(H)");
-                        txttop4mui.setText("Cự Môn(V)");
-                        txttop4than.setText("Thiên Tướng(D)");
-                        txttop4dau.setText("Thiên Lương(V)");
-                        txttop3tuat.setText("Thất Sát(H)");
-                        txttop3dan.setText("Phá Quân(V)");
+                        txttop4thin.setText("Thiên Phủ");
+                        txttop3ty.setText("Thái Âm");
+                        txttop3ngo.setText("Tham Lang");
+                        txttop4mui.setText("Cự Môn");
+                        txttop4than.setText("Thiên Tướng");
+                        txttop4dau.setText("Thiên Lương");
+                        txttop3tuat.setText("Thất Sát");
+                        txttop3dan.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("1") || thongTin.ngayam().equals("24") || thongTin.ngayam().equals("25")){
-                        txttop3suu.setText("Tử Vi(D)");
-                        txttop3tyd.setText("Thiên Cơ(D)");
-                        txttop3tuat.setText("Thái Dương(H)");
-                        txttop3dau.setText("Vũ Khúc(D)");
-                        txttop3than.setText("Thiên Đồng(M)");
-                        txttop3ty.setText("Liêm Trinh(H)");
+                        txttop3suu.setText("Tử Vi");
+                        txttop3tyd.setText("Thiên Cơ");
+                        txttop3tuat.setText("Thái Dương");
+                        txttop3dau.setText("Vũ Khúc");
+                        txttop3than.setText("Thiên Đồng");
+                        txttop3ty.setText("Liêm Trinh");
 
-                        txttop3mao.setText("Thiên Phủ(B)");
-                        txttop3thin.setText("Thái Âm(H)");
-                        txttop4ty.setText("Tham Lang(H)");
-                        txttop3ngo.setText("Cự Môn(V)");
-                        txttop3mui.setText("Thiên Tướng(D)");
-                        txttop4than.setText("Thiên Lương(V)");
-                        txttop4dau.setText("Thất Sát(H)");
-                        txttop4suu.setText("Phá Quân(V)");
+                        txttop3mao.setText("Thiên Phủ");
+                        txttop3thin.setText("Thái Âm");
+                        txttop4ty.setText("Tham Lang");
+                        txttop3ngo.setText("Cự Môn");
+                        txttop3mui.setText("Thiên Tướng");
+                        txttop4than.setText("Thiên Lương");
+                        txttop4dau.setText("Thất Sát");
+                        txttop4suu.setText("Phá Quân");
                     }
                 }
                 else if (giophutsinh.equals("Tý") || giophutsinh.equals("Sửu")){
                     if (thongTin.ngayam().equals("6") || thongTin.ngayam().equals("11") || thongTin.ngayam().equals("21")){
-                        txttop3dan.setText("Tử Vi(D)");
-                        txttop3suu.setText("Thiên Cơ(D)");
-                        txttop3hoi.setText("Thái Dương(H)");
-                        txttop3tuat.setText("Vũ Khúc(D)");
-                        txttop3dau.setText("Thiên Đồng(M)");
-                        txttop3ngo.setText("Liêm Trinh(H)");
+                        txttop3dan.setText("Tử Vi");
+                        txttop3suu.setText("Thiên Cơ");
+                        txttop3hoi.setText("Thái Dương");
+                        txttop3tuat.setText("Vũ Khúc");
+                        txttop3dau.setText("Thiên Đồng");
+                        txttop3ngo.setText("Liêm Trinh");
 
-                        txttop4dan.setText("Thiên Phủ(B)");
-                        txttop3mao.setText("Thái Âm(H)");
-                        txttop3thin.setText("Tham Lang(H)");
-                        txttop3ty.setText("Cự Môn(V)");
-                        txttop4ngo.setText("Thiên Tướng(D)");
-                        txttop3mui.setText("Thiên Lương(V)");
-                        txttop3than.setText("Thất Sát(H)");
-                        txttop3tyd.setText("Phá Quân(V)");
+                        txttop4dan.setText("Thiên Phủ");
+                        txttop3mao.setText("Thái Âm");
+                        txttop3thin.setText("Tham Lang");
+                        txttop3ty.setText("Cự Môn");
+                        txttop4ngo.setText("Thiên Tướng");
+                        txttop3mui.setText("Thiên Lương");
+                        txttop3than.setText("Thất Sát");
+                        txttop3tyd.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("12") || thongTin.ngayam().equals("17") || thongTin.ngayam().equals("27")){
-                        txttop3mao.setText("Tử Vi(D)");
-                        txttop3dan.setText("Thiên Cơ(D)");
-                        txttop3tyd.setText("Thái Dương(H)");
-                        txttop3hoi.setText("Vũ Khúc(D)");
-                        txttop3tuat.setText("Thiên Đồng(M)");
-                        txttop3mui.setText("Liêm Trinh(H)");
+                        txttop3mao.setText("Tử Vi");
+                        txttop3dan.setText("Thiên Cơ");
+                        txttop3tyd.setText("Thái Dương");
+                        txttop3hoi.setText("Vũ Khúc");
+                        txttop3tuat.setText("Thiên Đồng");
+                        txttop3mui.setText("Liêm Trinh");
 
-                        txttop3suu.setText("Thiên Phủ(B)");
-                        txttop4dan.setText("Thái Âm(H)");
-                        txttop4mao.setText("Tham Lang(H)");
-                        txttop3thin.setText("Cự Môn(V)");
-                        txttop3ty.setText("Thiên Tướng(D)");
-                        txttop3ngo.setText("Thiên Lương(V)");
-                        txttop4mui.setText("Thất Sát(H)");
-                        txttop4hoi.setText("Phá Quân(V)");
+                        txttop3suu.setText("Thiên Phủ");
+                        txttop4dan.setText("Thái Âm");
+                        txttop4mao.setText("Tham Lang");
+                        txttop3thin.setText("Cự Môn");
+                        txttop3ty.setText("Thiên Tướng");
+                        txttop3ngo.setText("Thiên Lương");
+                        txttop4mui.setText("Thất Sát");
+                        txttop4hoi.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("4") || thongTin.ngayam().equals("18") || thongTin.ngayam().equals("23")){
-                        txttop3thin.setText("Tử Vi(D)");
-                        txttop3mao.setText("Thiên Cơ(D)");
-                        txttop3suu.setText("Thái Dương(H)");
-                        txttop3tyd.setText("Vũ Khúc(D)");
-                        txttop3hoi.setText("Thiên Đồng(M)");
-                        txttop3than.setText("Liêm Trinh(H)");
+                        txttop3thin.setText("Tử Vi");
+                        txttop3mao.setText("Thiên Cơ");
+                        txttop3suu.setText("Thái Dương");
+                        txttop3tyd.setText("Vũ Khúc");
+                        txttop3hoi.setText("Thiên Đồng");
+                        txttop3than.setText("Liêm Trinh");
 
-                        txttop4tyd.setText("Thiên Phủ(B)");
-                        txttop4suu.setText("Thái Âm(H)");
-                        txttop4dan.setText("Tham Lang(H)");
-                        txttop4mao.setText("Cự Môn(V)");
-                        txttop4thin.setText("Thiên Tướng(D)");
-                        txttop3ty.setText("Thiên Lương(V)");
-                        txttop3ngo.setText("Thất Sát(H)");
-                        txttop3tuat.setText("Phá Quân(V)");
+                        txttop4tyd.setText("Thiên Phủ");
+                        txttop4suu.setText("Thái Âm");
+                        txttop4dan.setText("Tham Lang");
+                        txttop4mao.setText("Cự Môn");
+                        txttop4thin.setText("Thiên Tướng");
+                        txttop3ty.setText("Thiên Lương");
+                        txttop3ngo.setText("Thất Sát");
+                        txttop3tuat.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("10") || thongTin.ngayam().equals("24") || thongTin.ngayam().equals("29")){
-                        txttop3ty.setText("Tử Vi(D)");
-                        txttop3thin.setText("Thiên Cơ(D)");
-                        txttop3dan.setText("Thái Dương(H)");
-                        txttop3suu.setText("Vũ Khúc(D)");
-                        txttop3tyd.setText("Thiên Đồng(M)");
-                        txttop3dau.setText("Liêm Trinh(H)");
+                        txttop3ty.setText("Tử Vi");
+                        txttop3thin.setText("Thiên Cơ");
+                        txttop3dan.setText("Thái Dương");
+                        txttop3suu.setText("Vũ Khúc");
+                        txttop3tyd.setText("Thiên Đồng");
+                        txttop3dau.setText("Liêm Trinh");
 
-                        txttop3hoi.setText("Thiên Phủ(B)");
-                        txttop4tyd.setText("Thái Âm(H)");
-                        txttop4suu.setText("Tham Lang(H)");
-                        txttop4dan.setText("Cự Môn(V)");
-                        txttop3mao.setText("Thiên Tướng(D)");
-                        txttop4thin.setText("Thiên Lương(V)");
-                        txttop4ty.setText("Thất Sát(H)");
-                        txttop4dau.setText("Phá Quân(V)");
+                        txttop3hoi.setText("Thiên Phủ");
+                        txttop4tyd.setText("Thái Âm");
+                        txttop4suu.setText("Tham Lang");
+                        txttop4dan.setText("Cự Môn");
+                        txttop3mao.setText("Thiên Tướng");
+                        txttop4thin.setText("Thiên Lương");
+                        txttop4ty.setText("Thất Sát");
+                        txttop4dau.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("2") || thongTin.ngayam().equals("16") || thongTin.ngayam().equals("30")){
-                        txttop3ngo.setText("Tử Vi(D)");
-                        txttop3ty.setText("Thiên Cơ(D)");
-                        txttop3dan.setText("Thái Dương(H)");
-                        txttop3suu.setText("Vũ Khúc(D)");
-                        txttop3tyd.setText("Thiên Đồng(M)");
-                        txttop3dau.setText("Liêm Trinh(H)");
+                        txttop3ngo.setText("Tử Vi");
+                        txttop3ty.setText("Thiên Cơ");
+                        txttop3dan.setText("Thái Dương");
+                        txttop3suu.setText("Vũ Khúc");
+                        txttop3tyd.setText("Thiên Đồng");
+                        txttop3dau.setText("Liêm Trinh");
 
-                        txttop3tuat.setText("Thiên Phủ(B)");
-                        txttop3hoi.setText("Thái Âm(H)");
-                        txttop4tyd.setText("Tham Lang(H)");
-                        txttop4suu.setText("Cự Môn(V)");
-                        txttop4dan.setText("Thiên Tướng(D)");
-                        txttop3mao.setText("Thiên Lương(V)");
-                        txttop3thin.setText("Thất Sát(H)");
-                        txttop3than.setText("Phá Quân(V)");
+                        txttop3tuat.setText("Thiên Phủ");
+                        txttop3hoi.setText("Thái Âm");
+                        txttop4tyd.setText("Tham Lang");
+                        txttop4suu.setText("Cự Môn");
+                        txttop4dan.setText("Thiên Tướng");
+                        txttop3mao.setText("Thiên Lương");
+                        txttop3thin.setText("Thất Sát");
+                        txttop3than.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("8") || thongTin.ngayam().equals("22")){
-                        txttop3mui.setText("Tử Vi(D)");
-                        txttop3ngo.setText("Thiên Cơ(D)");
-                        txttop3thin.setText("Thái Dương(H)");
-                        txttop3mao.setText("Vũ Khúc(D)");
-                        txttop3dan.setText("Thiên Đồng(M)");
-                        txttop3hoi.setText("Liêm Trinh(H)");
+                        txttop3mui.setText("Tử Vi");
+                        txttop3ngo.setText("Thiên Cơ");
+                        txttop3thin.setText("Thái Dương");
+                        txttop3mao.setText("Vũ Khúc");
+                        txttop3dan.setText("Thiên Đồng");
+                        txttop3hoi.setText("Liêm Trinh");
 
-                        txttop3dau.setText("Thiên Phủ(B)");
-                        txttop3tuat.setText("Thái Âm(H)");
-                        txttop4hoi.setText("Tham Lang(H)");
-                        txttop3tyd.setText("Cự Môn(V)");
-                        txttop3suu.setText("Thiên Tướng(D)");
-                        txttop4dan.setText("Thiên Lương(V)");
-                        txttop4mao.setText("Thất Sát(H)");
-                        txttop4mui.setText("Phá Quân(V)");
+                        txttop3dau.setText("Thiên Phủ");
+                        txttop3tuat.setText("Thái Âm");
+                        txttop4hoi.setText("Tham Lang");
+                        txttop3tyd.setText("Cự Môn");
+                        txttop3suu.setText("Thiên Tướng");
+                        txttop4dan.setText("Thiên Lương");
+                        txttop4mao.setText("Thất Sát");
+                        txttop4mui.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("14") || thongTin.ngayam().equals("28")){
-                        txttop3than.setText("Tử Vi(D)");
-                        txttop3mui.setText("Thiên Cơ(D)");
-                        txttop3ty.setText("Thái Dương(H)");
-                        txttop3thin.setText("Vũ Khúc(D)");
-                        txttop3mao.setText("Thiên Đồng(M)");
-                        txttop3tyd.setText("Liêm Trinh(H)");
+                        txttop3than.setText("Tử Vi");
+                        txttop3mui.setText("Thiên Cơ");
+                        txttop3ty.setText("Thái Dương");
+                        txttop3thin.setText("Vũ Khúc");
+                        txttop3mao.setText("Thiên Đồng");
+                        txttop3tyd.setText("Liêm Trinh");
 
-                        txttop4than.setText("Thiên Phủ(B)");
-                        txttop3dau.setText("Thái Âm(H)");
-                        txttop3tuat.setText("Tham Lang(H)");
-                        txttop3hoi.setText("Cự Môn(V)");
-                        txttop4tyd.setText("Thiên Tướng(D)");
-                        txttop3suu.setText("Thiên Lương(V)");
-                        txttop3dan.setText("Thất Sát(H)");
-                        txttop3ngo.setText("Phá Quân(V)");
+                        txttop4than.setText("Thiên Phủ");
+                        txttop3dau.setText("Thái Âm");
+                        txttop3tuat.setText("Tham Lang");
+                        txttop3hoi.setText("Cự Môn");
+                        txttop4tyd.setText("Thiên Tướng");
+                        txttop3suu.setText("Thiên Lương");
+                        txttop3dan.setText("Thất Sát");
+                        txttop3ngo.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("1") || thongTin.ngayam().equals("20")){
-                        txttop3dau.setText("Tử Vi(D)");
-                        txttop3than.setText("Thiên Cơ(D)");
-                        txttop3ngo.setText("Thái Dương(H)");
-                        txttop3ty.setText("Vũ Khúc(D)");
-                        txttop3thin.setText("Thiên Đồng(M)");
-                        txttop3suu.setText("Liêm Trinh(H)");
+                        txttop3dau.setText("Tử Vi");
+                        txttop3than.setText("Thiên Cơ");
+                        txttop3ngo.setText("Thái Dương");
+                        txttop3ty.setText("Vũ Khúc");
+                        txttop3thin.setText("Thiên Đồng");
+                        txttop3suu.setText("Liêm Trinh");
 
-                        txttop3mui.setText("Thiên Phủ(B)");
-                        txttop4than.setText("Thái Âm(H)");
-                        txttop4dau.setText("Tham Lang(H)");
-                        txttop3tuat.setText("Cự Môn(V)");
-                        txttop3hoi.setText("Thiên Tướng(D)");
-                        txttop3tyd.setText("Thiên Lương(V)");
-                        txttop4suu.setText("Thất Sát(H)");
-                        txttop4ty.setText("Phá Quân(V)");
+                        txttop3mui.setText("Thiên Phủ");
+                        txttop4than.setText("Thái Âm");
+                        txttop4dau.setText("Tham Lang");
+                        txttop3tuat.setText("Cự Môn");
+                        txttop3hoi.setText("Thiên Tướng");
+                        txttop3tyd.setText("Thiên Lương");
+                        txttop4suu.setText("Thất Sát");
+                        txttop4ty.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("7") || thongTin.ngayam().equals("26")){
-                        txttop3tuat.setText("Tử Vi(D)");
-                        txttop3dau.setText("Thiên Cơ(D)");
-                        txttop3mui.setText("Thái Dương(H)");
-                        txttop3ngo.setText("Vũ Khúc(D)");
-                        txttop3ty.setText("Thiên Đồng(M)");
-                        txttop3dan.setText("Liêm Trinh(H)");
+                        txttop3tuat.setText("Tử Vi");
+                        txttop3dau.setText("Thiên Cơ");
+                        txttop3mui.setText("Thái Dương");
+                        txttop3ngo.setText("Vũ Khúc");
+                        txttop3ty.setText("Thiên Đồng");
+                        txttop3dan.setText("Liêm Trinh");
 
-                        txttop4ngo.setText("Thiên Phủ(B)");
-                        txttop4mui.setText("Thái Âm(H)");
-                        txttop3than.setText("Tham Lang(H)");
-                        txttop4dau.setText("Cự Môn(V)");
-                        txttop4tuat.setText("Thiên Tướng(D)");
-                        txttop3hoi.setText("Thiên Lương(V)");
-                        txttop3tyd.setText("Thất Sát(H)");
-                        txttop3thin.setText("Phá Quân(V)");
+                        txttop4ngo.setText("Thiên Phủ");
+                        txttop4mui.setText("Thái Âm");
+                        txttop3than.setText("Tham Lang");
+                        txttop4dau.setText("Cự Môn");
+                        txttop4tuat.setText("Thiên Tướng");
+                        txttop3hoi.setText("Thiên Lương");
+                        txttop3tyd.setText("Thất Sát");
+                        txttop3thin.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("3") || thongTin.ngayam().equals("13")){
-                        txttop3hoi.setText("Tử Vi(D)");
-                        txttop3tuat.setText("Thiên Cơ(D)");
-                        txttop3than.setText("Thái Dương(H)");
-                        txttop3mui.setText("Vũ Khúc(D)");
-                        txttop3ngo.setText("Thiên Đồng(M)");
-                        txttop3mao.setText("Liêm Trinh(H)");
+                        txttop3hoi.setText("Tử Vi");
+                        txttop3tuat.setText("Thiên Cơ");
+                        txttop3than.setText("Thái Dương");
+                        txttop3mui.setText("Vũ Khúc");
+                        txttop3ngo.setText("Thiên Đồng");
+                        txttop3mao.setText("Liêm Trinh");
 
-                        txttop3ty.setText("Thiên Phủ(B)");
-                        txttop4ngo.setText("Thái Âm(H)");
-                        txttop4mui.setText("Tham Lang(H)");
-                        txttop4than.setText("Cự Môn(V)");
-                        txttop3dau.setText("Thiên Tướng(D)");
-                        txttop4tuat.setText("Thiên Lương(V)");
-                        txttop4hoi.setText("Thất Sát(H)");
-                        txttop4mao.setText("Phá Quân(V)");
+                        txttop3ty.setText("Thiên Phủ");
+                        txttop4ngo.setText("Thái Âm");
+                        txttop4mui.setText("Tham Lang");
+                        txttop4than.setText("Cự Môn");
+                        txttop3dau.setText("Thiên Tướng");
+                        txttop4tuat.setText("Thiên Lương");
+                        txttop4hoi.setText("Thất Sát");
+                        txttop4mao.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("9") || thongTin.ngayam().equals("19")){
-                        txttop3tyd.setText("Tử Vi(D)");
-                        txttop3hoi.setText("Thiên Cơ(D)");
-                        txttop3dau.setText("Thái Dương(H)");
-                        txttop3than.setText("Vũ Khúc(D)");
-                        txttop3mui.setText("Thiên Đồng(M)");
-                        txttop3thin.setText("Liêm Trinh(H)");
+                        txttop3tyd.setText("Tử Vi");
+                        txttop3hoi.setText("Thiên Cơ");
+                        txttop3dau.setText("Thái Dương");
+                        txttop3than.setText("Vũ Khúc");
+                        txttop3mui.setText("Thiên Đồng");
+                        txttop3thin.setText("Liêm Trinh");
 
-                        txttop4thin.setText("Thiên Phủ(B)");
-                        txttop3ty.setText("Thái Âm(H)");
-                        txttop3ngo.setText("Tham Lang(H)");
-                        txttop4mui.setText("Cự Môn(V)");
-                        txttop4than.setText("Thiên Tướng(D)");
-                        txttop4dau.setText("Thiên Lương(V)");
-                        txttop3tuat.setText("Thất Sát(H)");
-                        txttop3dan.setText("Phá Quân(V)");
+                        txttop4thin.setText("Thiên Phủ");
+                        txttop3ty.setText("Thái Âm");
+                        txttop3ngo.setText("Tham Lang");
+                        txttop4mui.setText("Cự Môn");
+                        txttop4than.setText("Thiên Tướng");
+                        txttop4dau.setText("Thiên Lương");
+                        txttop3tuat.setText("Thất Sát");
+                        txttop3dan.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("5") || thongTin.ngayam().equals("15") || thongTin.ngayam().equals("25")){
-                        txttop3suu.setText("Tử Vi(D)");
-                        txttop3tyd.setText("Thiên Cơ(D)");
-                        txttop3tuat.setText("Thái Dương(H)");
-                        txttop3dau.setText("Vũ Khúc(D)");
-                        txttop3than.setText("Thiên Đồng(M)");
-                        txttop3ty.setText("Liêm Trinh(H)");
+                        txttop3suu.setText("Tử Vi");
+                        txttop3tyd.setText("Thiên Cơ");
+                        txttop3tuat.setText("Thái Dương");
+                        txttop3dau.setText("Vũ Khúc");
+                        txttop3than.setText("Thiên Đồng");
+                        txttop3ty.setText("Liêm Trinh");
 
-                        txttop3mao.setText("Thiên Phủ(B)");
-                        txttop3thin.setText("Thái Âm(H)");
-                        txttop4ty.setText("Tham Lang(H)");
-                        txttop3ngo.setText("Cự Môn(V)");
-                        txttop3mui.setText("Thiên Tướng(D)");
-                        txttop4than.setText("Thiên Lương(V)");
-                        txttop4dau.setText("Thất Sát(H)");
-                        txttop4suu.setText("Phá Quân(V)");
+                        txttop3mao.setText("Thiên Phủ");
+                        txttop3thin.setText("Thái Âm");
+                        txttop4ty.setText("Tham Lang");
+                        txttop3ngo.setText("Cự Môn");
+                        txttop3mui.setText("Thiên Tướng");
+                        txttop4than.setText("Thiên Lương");
+                        txttop4dau.setText("Thất Sát");
+                        txttop4suu.setText("Phá Quân");
                     }
                 }
                 else if (giophutsinh.equals("Ngọ") || giophutsinh.equals("Mùi")){
                     if (thongTin.ngayam().equals("3") || thongTin.ngayam().equals("5")){
-                        txttop3dan.setText("Tử Vi(D)");
-                        txttop3suu.setText("Thiên Cơ(D)");
-                        txttop3hoi.setText("Thái Dương(H)");
-                        txttop3tuat.setText("Vũ Khúc(D)");
-                        txttop3dau.setText("Thiên Đồng(M)");
-                        txttop3ngo.setText("Liêm Trinh(H)");
+                        txttop3dan.setText("Tử Vi");
+                        txttop3suu.setText("Thiên Cơ");
+                        txttop3hoi.setText("Thái Dương");
+                        txttop3tuat.setText("Vũ Khúc");
+                        txttop3dau.setText("Thiên Đồng");
+                        txttop3ngo.setText("Liêm Trinh");
 
-                        txttop4dan.setText("Thiên Phủ(B)");
-                        txttop3mao.setText("Thái Âm(H)");
-                        txttop3thin.setText("Tham Lang(H)");
-                        txttop3ty.setText("Cự Môn(V)");
-                        txttop4ngo.setText("Thiên Tướng(D)");
-                        txttop3mui.setText("Thiên Lương(V)");
-                        txttop3than.setText("Thất Sát(H)");
-                        txttop3tyd.setText("Phá Quân(V)");
+                        txttop4dan.setText("Thiên Phủ");
+                        txttop3mao.setText("Thái Âm");
+                        txttop3thin.setText("Tham Lang");
+                        txttop3ty.setText("Cự Môn");
+                        txttop4ngo.setText("Thiên Tướng");
+                        txttop3mui.setText("Thiên Lương");
+                        txttop3than.setText("Thất Sát");
+                        txttop3tyd.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("6") || thongTin.ngayam().equals("8")){
-                        txttop3mao.setText("Tử Vi(D)");
-                        txttop3dan.setText("Thiên Cơ(D)");
-                        txttop3tyd.setText("Thái Dương(H)");
-                        txttop3hoi.setText("Vũ Khúc(D)");
-                        txttop3tuat.setText("Thiên Đồng(M)");
-                        txttop3mui.setText("Liêm Trinh(H)");
+                        txttop3mao.setText("Tử Vi");
+                        txttop3dan.setText("Thiên Cơ");
+                        txttop3tyd.setText("Thái Dương");
+                        txttop3hoi.setText("Vũ Khúc");
+                        txttop3tuat.setText("Thiên Đồng");
+                        txttop3mui.setText("Liêm Trinh");
 
-                        txttop3suu.setText("Thiên Phủ(B)");
-                        txttop4dan.setText("Thái Âm(H)");
-                        txttop4mao.setText("Tham Lang(H)");
-                        txttop3thin.setText("Cự Môn(V)");
-                        txttop3ty.setText("Thiên Tướng(D)");
-                        txttop3ngo.setText("Thiên Lương(V)");
-                        txttop4mui.setText("Thất Sát(H)");
-                        txttop4hoi.setText("Phá Quân(V)");
+                        txttop3suu.setText("Thiên Phủ");
+                        txttop4dan.setText("Thái Âm");
+                        txttop4mao.setText("Tham Lang");
+                        txttop3thin.setText("Cự Môn");
+                        txttop3ty.setText("Thiên Tướng");
+                        txttop3ngo.setText("Thiên Lương");
+                        txttop4mui.setText("Thất Sát");
+                        txttop4hoi.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("1") || thongTin.ngayam().equals("9") || thongTin.ngayam().equals("11")){
-                        txttop3thin.setText("Tử Vi(D)");
-                        txttop3mao.setText("Thiên Cơ(D)");
-                        txttop3suu.setText("Thái Dương(H)");
-                        txttop3tyd.setText("Vũ Khúc(D)");
-                        txttop3hoi.setText("Thiên Đồng(M)");
-                        txttop3than.setText("Liêm Trinh(H)");
+                        txttop3thin.setText("Tử Vi");
+                        txttop3mao.setText("Thiên Cơ");
+                        txttop3suu.setText("Thái Dương");
+                        txttop3tyd.setText("Vũ Khúc");
+                        txttop3hoi.setText("Thiên Đồng");
+                        txttop3than.setText("Liêm Trinh");
 
-                        txttop4tyd.setText("Thiên Phủ(B)");
-                        txttop4suu.setText("Thái Âm(H)");
-                        txttop4dan.setText("Tham Lang(H)");
-                        txttop4mao.setText("Cự Môn(V)");
-                        txttop4thin.setText("Thiên Tướng(D)");
-                        txttop3ty.setText("Thiên Lương(V)");
-                        txttop3ngo.setText("Thất Sát(H)");
-                        txttop3tuat.setText("Phá Quân(V)");
+                        txttop4tyd.setText("Thiên Phủ");
+                        txttop4suu.setText("Thái Âm");
+                        txttop4dan.setText("Tham Lang");
+                        txttop4mao.setText("Cự Môn");
+                        txttop4thin.setText("Thiên Tướng");
+                        txttop3ty.setText("Thiên Lương");
+                        txttop3ngo.setText("Thất Sát");
+                        txttop3tuat.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("4") || thongTin.ngayam().equals("12") || thongTin.ngayam().equals("14")){
-                        txttop3ty.setText("Tử Vi(D)");
-                        txttop3thin.setText("Thiên Cơ(D)");
-                        txttop3dan.setText("Thái Dương(H)");
-                        txttop3suu.setText("Vũ Khúc(D)");
-                        txttop3tyd.setText("Thiên Đồng(M)");
-                        txttop3dau.setText("Liêm Trinh(H)");
+                        txttop3ty.setText("Tử Vi");
+                        txttop3thin.setText("Thiên Cơ");
+                        txttop3dan.setText("Thái Dương");
+                        txttop3suu.setText("Vũ Khúc");
+                        txttop3tyd.setText("Thiên Đồng");
+                        txttop3dau.setText("Liêm Trinh");
 
-                        txttop3hoi.setText("Thiên Phủ(B)");
-                        txttop4tyd.setText("Thái Âm(H)");
-                        txttop4suu.setText("Tham Lang(H)");
-                        txttop4dan.setText("Cự Môn(V)");
-                        txttop3mao.setText("Thiên Tướng(D)");
-                        txttop4thin.setText("Thiên Lương(V)");
-                        txttop4ty.setText("Thất Sát(H)");
-                        txttop4dau.setText("Phá Quân(V)");
+                        txttop3hoi.setText("Thiên Phủ");
+                        txttop4tyd.setText("Thái Âm");
+                        txttop4suu.setText("Tham Lang");
+                        txttop4dan.setText("Cự Môn");
+                        txttop3mao.setText("Thiên Tướng");
+                        txttop4thin.setText("Thiên Lương");
+                        txttop4ty.setText("Thất Sát");
+                        txttop4dau.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("7") || thongTin.ngayam().equals("15") || thongTin.ngayam().equals("17")){
-                        txttop3ngo.setText("Tử Vi(D)");
-                        txttop3ty.setText("Thiên Cơ(D)");
-                        txttop3dan.setText("Thái Dương(H)");
-                        txttop3suu.setText("Vũ Khúc(D)");
-                        txttop3tyd.setText("Thiên Đồng(M)");
-                        txttop3dau.setText("Liêm Trinh(H)");
+                        txttop3ngo.setText("Tử Vi");
+                        txttop3ty.setText("Thiên Cơ");
+                        txttop3dan.setText("Thái Dương");
+                        txttop3suu.setText("Vũ Khúc");
+                        txttop3tyd.setText("Thiên Đồng");
+                        txttop3dau.setText("Liêm Trinh");
 
-                        txttop3tuat.setText("Thiên Phủ(B)");
-                        txttop3hoi.setText("Thái Âm(H)");
-                        txttop4tyd.setText("Tham Lang(H)");
-                        txttop4suu.setText("Cự Môn(V)");
-                        txttop4dan.setText("Thiên Tướng(D)");
-                        txttop3mao.setText("Thiên Lương(V)");
-                        txttop3thin.setText("Thất Sát(H)");
-                        txttop3than.setText("Phá Quân(V)");
+                        txttop3tuat.setText("Thiên Phủ");
+                        txttop3hoi.setText("Thái Âm");
+                        txttop4tyd.setText("Tham Lang");
+                        txttop4suu.setText("Cự Môn");
+                        txttop4dan.setText("Thiên Tướng");
+                        txttop3mao.setText("Thiên Lương");
+                        txttop3thin.setText("Thất Sát");
+                        txttop3than.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("10") || thongTin.ngayam().equals("18") || thongTin.ngayam().equals("20")){
-                        txttop3mui.setText("Tử Vi(D)");
-                        txttop3ngo.setText("Thiên Cơ(D)");
-                        txttop3thin.setText("Thái Dương(H)");
-                        txttop3mao.setText("Vũ Khúc(D)");
-                        txttop3dan.setText("Thiên Đồng(M)");
-                        txttop3hoi.setText("Liêm Trinh(H)");
+                        txttop3mui.setText("Tử Vi");
+                        txttop3ngo.setText("Thiên Cơ");
+                        txttop3thin.setText("Thái Dương");
+                        txttop3mao.setText("Vũ Khúc");
+                        txttop3dan.setText("Thiên Đồng");
+                        txttop3hoi.setText("Liêm Trinh");
 
-                        txttop3dau.setText("Thiên Phủ(B)");
-                        txttop3tuat.setText("Thái Âm(H)");
-                        txttop4hoi.setText("Tham Lang(H)");
-                        txttop3tyd.setText("Cự Môn(V)");
-                        txttop3suu.setText("Thiên Tướng(D)");
-                        txttop4dan.setText("Thiên Lương(V)");
-                        txttop4mao.setText("Thất Sát(H)");
-                        txttop4mui.setText("Phá Quân(V)");
+                        txttop3dau.setText("Thiên Phủ");
+                        txttop3tuat.setText("Thái Âm");
+                        txttop4hoi.setText("Tham Lang");
+                        txttop3tyd.setText("Cự Môn");
+                        txttop3suu.setText("Thiên Tướng");
+                        txttop4dan.setText("Thiên Lương");
+                        txttop4mao.setText("Thất Sát");
+                        txttop4mui.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("13") || thongTin.ngayam().equals("21") || thongTin.ngayam().equals("23")){
-                        txttop3than.setText("Tử Vi(D)");
-                        txttop3mui.setText("Thiên Cơ(D)");
-                        txttop3ty.setText("Thái Dương(H)");
-                        txttop3thin.setText("Vũ Khúc(D)");
-                        txttop3mao.setText("Thiên Đồng(M)");
-                        txttop3tyd.setText("Liêm Trinh(H)");
+                        txttop3than.setText("Tử Vi");
+                        txttop3mui.setText("Thiên Cơ");
+                        txttop3ty.setText("Thái Dương");
+                        txttop3thin.setText("Vũ Khúc");
+                        txttop3mao.setText("Thiên Đồng");
+                        txttop3tyd.setText("Liêm Trinh");
 
-                        txttop4than.setText("Thiên Phủ(B)");
-                        txttop3dau.setText("Thái Âm(H)");
-                        txttop3tuat.setText("Tham Lang(H)");
-                        txttop3hoi.setText("Cự Môn(V)");
-                        txttop4tyd.setText("Thiên Tướng(D)");
-                        txttop3suu.setText("Thiên Lương(V)");
-                        txttop3dan.setText("Thất Sát(H)");
-                        txttop3ngo.setText("Phá Quân(V)");
+                        txttop4than.setText("Thiên Phủ");
+                        txttop3dau.setText("Thái Âm");
+                        txttop3tuat.setText("Tham Lang");
+                        txttop3hoi.setText("Cự Môn");
+                        txttop4tyd.setText("Thiên Tướng");
+                        txttop3suu.setText("Thiên Lương");
+                        txttop3dan.setText("Thất Sát");
+                        txttop3ngo.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("16") || thongTin.ngayam().equals("24") || thongTin.ngayam().equals("26")){
-                        txttop3dau.setText("Tử Vi(D)");
-                        txttop3than.setText("Thiên Cơ(D)");
-                        txttop3ngo.setText("Thái Dương(H)");
-                        txttop3ty.setText("Vũ Khúc(D)");
-                        txttop3thin.setText("Thiên Đồng(M)");
-                        txttop3suu.setText("Liêm Trinh(H)");
+                        txttop3dau.setText("Tử Vi");
+                        txttop3than.setText("Thiên Cơ");
+                        txttop3ngo.setText("Thái Dương");
+                        txttop3ty.setText("Vũ Khúc");
+                        txttop3thin.setText("Thiên Đồng");
+                        txttop3suu.setText("Liêm Trinh");
 
-                        txttop3mui.setText("Thiên Phủ(B)");
-                        txttop4than.setText("Thái Âm(H)");
-                        txttop4dau.setText("Tham Lang(H)");
-                        txttop3tuat.setText("Cự Môn(V)");
-                        txttop3hoi.setText("Thiên Tướng(D)");
-                        txttop3tyd.setText("Thiên Lương(V)");
-                        txttop4suu.setText("Thất Sát(H)");
-                        txttop4ty.setText("Phá Quân(V)");
+                        txttop3mui.setText("Thiên Phủ");
+                        txttop4than.setText("Thái Âm");
+                        txttop4dau.setText("Tham Lang");
+                        txttop3tuat.setText("Cự Môn");
+                        txttop3hoi.setText("Thiên Tướng");
+                        txttop3tyd.setText("Thiên Lương");
+                        txttop4suu.setText("Thất Sát");
+                        txttop4ty.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("19") || thongTin.ngayam().equals("27") || thongTin.ngayam().equals("29")){
-                        txttop3tuat.setText("Tử Vi(D)");
-                        txttop3dau.setText("Thiên Cơ(D)");
-                        txttop3mui.setText("Thái Dương(H)");
-                        txttop3ngo.setText("Vũ Khúc(D)");
-                        txttop3ty.setText("Thiên Đồng(M)");
-                        txttop3dan.setText("Liêm Trinh(H)");
+                        txttop3tuat.setText("Tử Vi");
+                        txttop3dau.setText("Thiên Cơ");
+                        txttop3mui.setText("Thái Dương");
+                        txttop3ngo.setText("Vũ Khúc");
+                        txttop3ty.setText("Thiên Đồng");
+                        txttop3dan.setText("Liêm Trinh");
 
-                        txttop4ngo.setText("Thiên Phủ(B)");
-                        txttop4mui.setText("Thái Âm(H)");
-                        txttop3than.setText("Tham Lang(H)");
-                        txttop4dau.setText("Cự Môn(V)");
-                        txttop4tuat.setText("Thiên Tướng(D)");
-                        txttop3hoi.setText("Thiên Lương(V)");
-                        txttop3tyd.setText("Thất Sát(H)");
-                        txttop3thin.setText("Phá Quân(V)");
+                        txttop4ngo.setText("Thiên Phủ");
+                        txttop4mui.setText("Thái Âm");
+                        txttop3than.setText("Tham Lang");
+                        txttop4dau.setText("Cự Môn");
+                        txttop4tuat.setText("Thiên Tướng");
+                        txttop3hoi.setText("Thiên Lương");
+                        txttop3tyd.setText("Thất Sát");
+                        txttop3thin.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("28") || thongTin.ngayam().equals("30")){
-                        txttop3hoi.setText("Tử Vi(D)");
-                        txttop3tuat.setText("Thiên Cơ(D)");
-                        txttop3than.setText("Thái Dương(H)");
-                        txttop3mui.setText("Vũ Khúc(D)");
-                        txttop3ngo.setText("Thiên Đồng(M)");
-                        txttop3mao.setText("Liêm Trinh(H)");
+                        txttop3hoi.setText("Tử Vi");
+                        txttop3tuat.setText("Thiên Cơ");
+                        txttop3than.setText("Thái Dương");
+                        txttop3mui.setText("Vũ Khúc");
+                        txttop3ngo.setText("Thiên Đồng");
+                        txttop3mao.setText("Liêm Trinh");
 
-                        txttop3ty.setText("Thiên Phủ(B)");
-                        txttop4ngo.setText("Thái Âm(H)");
-                        txttop4mui.setText("Tham Lang(H)");
-                        txttop4than.setText("Cự Môn(V)");
-                        txttop3dau.setText("Thiên Tướng(D)");
-                        txttop4tuat.setText("Thiên Lương(V)");
-                        txttop4hoi.setText("Thất Sát(H)");
-                        txttop4mao.setText("Phá Quân(V)");
+                        txttop3ty.setText("Thiên Phủ");
+                        txttop4ngo.setText("Thái Âm");
+                        txttop4mui.setText("Tham Lang");
+                        txttop4than.setText("Cự Môn");
+                        txttop3dau.setText("Thiên Tướng");
+                        txttop4tuat.setText("Thiên Lương");
+                        txttop4hoi.setText("Thất Sát");
+                        txttop4mao.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("25")){
-                        txttop3tyd.setText("Tử Vi(D)");
-                        txttop3hoi.setText("Thiên Cơ(D)");
-                        txttop3dau.setText("Thái Dương(H)");
-                        txttop3than.setText("Vũ Khúc(D)");
-                        txttop3mui.setText("Thiên Đồng(M)");
-                        txttop3thin.setText("Liêm Trinh(H)");
+                        txttop3tyd.setText("Tử Vi");
+                        txttop3hoi.setText("Thiên Cơ");
+                        txttop3dau.setText("Thái Dương");
+                        txttop3than.setText("Vũ Khúc");
+                        txttop3mui.setText("Thiên Đồng");
+                        txttop3thin.setText("Liêm Trinh");
 
-                        txttop4thin.setText("Thiên Phủ(B)");
-                        txttop3ty.setText("Thái Âm(H)");
-                        txttop3ngo.setText("Tham Lang(H)");
-                        txttop4mui.setText("Cự Môn(V)");
-                        txttop4than.setText("Thiên Tướng(D)");
-                        txttop4dau.setText("Thiên Lương(V)");
-                        txttop3tuat.setText("Thất Sát(H)");
-                        txttop3dan.setText("Phá Quân(V)");
+                        txttop4thin.setText("Thiên Phủ");
+                        txttop3ty.setText("Thái Âm");
+                        txttop3ngo.setText("Tham Lang");
+                        txttop4mui.setText("Cự Môn");
+                        txttop4than.setText("Thiên Tướng");
+                        txttop4dau.setText("Thiên Lương");
+                        txttop3tuat.setText("Thất Sát");
+                        txttop3dan.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("2")){
-                        txttop3suu.setText("Tử Vi(D)");
-                        txttop3tyd.setText("Thiên Cơ(D)");
-                        txttop3tuat.setText("Thái Dương(H)");
-                        txttop3dau.setText("Vũ Khúc(D)");
-                        txttop3than.setText("Thiên Đồng(M)");
-                        txttop3ty.setText("Liêm Trinh(H)");
+                        txttop3suu.setText("Tử Vi");
+                        txttop3tyd.setText("Thiên Cơ");
+                        txttop3tuat.setText("Thái Dương");
+                        txttop3dau.setText("Vũ Khúc");
+                        txttop3than.setText("Thiên Đồng");
+                        txttop3ty.setText("Liêm Trinh");
 
-                        txttop3mao.setText("Thiên Phủ(B)");
-                        txttop3thin.setText("Thái Âm(H)");
-                        txttop4ty.setText("Tham Lang(H)");
-                        txttop3ngo.setText("Cự Môn(V)");
-                        txttop3mui.setText("Thiên Tướng(D)");
-                        txttop4than.setText("Thiên Lương(V)");
-                        txttop4dau.setText("Thất Sát(H)");
-                        txttop4suu.setText("Phá Quân(V)");
+                        txttop3mao.setText("Thiên Phủ");
+                        txttop3thin.setText("Thái Âm");
+                        txttop4ty.setText("Tham Lang");
+                        txttop3ngo.setText("Cự Môn");
+                        txttop3mui.setText("Thiên Tướng");
+                        txttop4than.setText("Thiên Lương");
+                        txttop4dau.setText("Thất Sát");
+                        txttop4suu.setText("Phá Quân");
                     }
                 }
                 else if (giophutsinh.equals("Dần") || giophutsinh.equals("Mẹo") || giophutsinh.equals("Tuất") || giophutsinh.equals("Hợi")){
                     if (thongTin.ngayam().equals("5") || thongTin.ngayam().equals("9") || thongTin.ngayam().equals("17")){
-                        txttop3dan.setText("Tử Vi(D)");
-                        txttop3suu.setText("Thiên Cơ(D)");
-                        txttop3hoi.setText("Thái Dương(H)");
-                        txttop3tuat.setText("Vũ Khúc(D)");
-                        txttop3dau.setText("Thiên Đồng(M)");
-                        txttop3ngo.setText("Liêm Trinh(H)");
+                        txttop3dan.setText("Tử Vi");
+                        txttop3suu.setText("Thiên Cơ");
+                        txttop3hoi.setText("Thái Dương");
+                        txttop3tuat.setText("Vũ Khúc");
+                        txttop3dau.setText("Thiên Đồng");
+                        txttop3ngo.setText("Liêm Trinh");
 
-                        txttop4dan.setText("Thiên Phủ(B)");
-                        txttop3mao.setText("Thái Âm(H)");
-                        txttop3thin.setText("Tham Lang(H)");
-                        txttop3ty.setText("Cự Môn(V)");
-                        txttop4ngo.setText("Thiên Tướng(D)");
-                        txttop3mui.setText("Thiên Lương(V)");
-                        txttop3than.setText("Thất Sát(H)");
-                        txttop3tyd.setText("Phá Quân(V)");
+                        txttop4dan.setText("Thiên Phủ");
+                        txttop3mao.setText("Thái Âm");
+                        txttop3thin.setText("Tham Lang");
+                        txttop3ty.setText("Cự Môn");
+                        txttop4ngo.setText("Thiên Tướng");
+                        txttop3mui.setText("Thiên Lương");
+                        txttop3than.setText("Thất Sát");
+                        txttop3tyd.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("10") || thongTin.ngayam().equals("14") || thongTin.ngayam().equals("22")){
-                        txttop3mao.setText("Tử Vi(D)");
-                        txttop3dan.setText("Thiên Cơ(D)");
-                        txttop3tyd.setText("Thái Dương(H)");
-                        txttop3hoi.setText("Vũ Khúc(D)");
-                        txttop3tuat.setText("Thiên Đồng(M)");
-                        txttop3mui.setText("Liêm Trinh(H)");
+                        txttop3mao.setText("Tử Vi");
+                        txttop3dan.setText("Thiên Cơ");
+                        txttop3tyd.setText("Thái Dương");
+                        txttop3hoi.setText("Vũ Khúc");
+                        txttop3tuat.setText("Thiên Đồng");
+                        txttop3mui.setText("Liêm Trinh");
 
-                        txttop3suu.setText("Thiên Phủ(B)");
-                        txttop4dan.setText("Thái Âm(H)");
-                        txttop4mao.setText("Tham Lang(H)");
-                        txttop3thin.setText("Cự Môn(V)");
-                        txttop3ty.setText("Thiên Tướng(D)");
-                        txttop3ngo.setText("Thiên Lương(V)");
-                        txttop4mui.setText("Thất Sát(H)");
-                        txttop4hoi.setText("Phá Quân(V)");
+                        txttop3suu.setText("Thiên Phủ");
+                        txttop4dan.setText("Thái Âm");
+                        txttop4mao.setText("Tham Lang");
+                        txttop3thin.setText("Cự Môn");
+                        txttop3ty.setText("Thiên Tướng");
+                        txttop3ngo.setText("Thiên Lương");
+                        txttop4mui.setText("Thất Sát");
+                        txttop4hoi.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("3") || thongTin.ngayam().equals("15") || thongTin.ngayam().equals("19") || thongTin.ngayam().equals("27")){
-                        txttop3thin.setText("Tử Vi(D)");
-                        txttop3mao.setText("Thiên Cơ(D)");
-                        txttop3suu.setText("Thái Dương(H)");
-                        txttop3tyd.setText("Vũ Khúc(D)");
-                        txttop3hoi.setText("Thiên Đồng(M)");
-                        txttop3than.setText("Liêm Trinh(H)");
+                        txttop3thin.setText("Tử Vi");
+                        txttop3mao.setText("Thiên Cơ");
+                        txttop3suu.setText("Thái Dương");
+                        txttop3tyd.setText("Vũ Khúc");
+                        txttop3hoi.setText("Thiên Đồng");
+                        txttop3than.setText("Liêm Trinh");
 
-                        txttop4tyd.setText("Thiên Phủ(B)");
-                        txttop4suu.setText("Thái Âm(H)");
-                        txttop4dan.setText("Tham Lang(H)");
-                        txttop4mao.setText("Cự Môn(V)");
-                        txttop4thin.setText("Thiên Tướng(D)");
-                        txttop3ty.setText("Thiên Lương(V)");
-                        txttop3ngo.setText("Thất Sát(H)");
-                        txttop3tuat.setText("Phá Quân(V)");
+                        txttop4tyd.setText("Thiên Phủ");
+                        txttop4suu.setText("Thái Âm");
+                        txttop4dan.setText("Tham Lang");
+                        txttop4mao.setText("Cự Môn");
+                        txttop4thin.setText("Thiên Tướng");
+                        txttop3ty.setText("Thiên Lương");
+                        txttop3ngo.setText("Thất Sát");
+                        txttop3tuat.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("8") || thongTin.ngayam().equals("20") || thongTin.ngayam().equals("24")){
-                        txttop3ty.setText("Tử Vi(D)");
-                        txttop3thin.setText("Thiên Cơ(D)");
-                        txttop3dan.setText("Thái Dương(H)");
-                        txttop3suu.setText("Vũ Khúc(D)");
-                        txttop3tyd.setText("Thiên Đồng(M)");
-                        txttop3dau.setText("Liêm Trinh(H)");
+                        txttop3ty.setText("Tử Vi");
+                        txttop3thin.setText("Thiên Cơ");
+                        txttop3dan.setText("Thái Dương");
+                        txttop3suu.setText("Vũ Khúc");
+                        txttop3tyd.setText("Thiên Đồng");
+                        txttop3dau.setText("Liêm Trinh");
 
-                        txttop3hoi.setText("Thiên Phủ(B)");
-                        txttop4tyd.setText("Thái Âm(H)");
-                        txttop4suu.setText("Tham Lang(H)");
-                        txttop4dan.setText("Cự Môn(V)");
-                        txttop3mao.setText("Thiên Tướng(D)");
-                        txttop4thin.setText("Thiên Lương(V)");
-                        txttop4ty.setText("Thất Sát(H)");
-                        txttop4dau.setText("Phá Quân(V)");
+                        txttop3hoi.setText("Thiên Phủ");
+                        txttop4tyd.setText("Thái Âm");
+                        txttop4suu.setText("Tham Lang");
+                        txttop4dan.setText("Cự Môn");
+                        txttop3mao.setText("Thiên Tướng");
+                        txttop4thin.setText("Thiên Lương");
+                        txttop4ty.setText("Thất Sát");
+                        txttop4dau.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("1") || thongTin.ngayam().equals("13") || thongTin.ngayam().equals("25") || thongTin.ngayam().equals("29")){
-                        txttop3ngo.setText("Tử Vi(D)");
-                        txttop3ty.setText("Thiên Cơ(D)");
-                        txttop3dan.setText("Thái Dương(H)");
-                        txttop3suu.setText("Vũ Khúc(D)");
-                        txttop3tyd.setText("Thiên Đồng(M)");
-                        txttop3dau.setText("Liêm Trinh(H)");
+                        txttop3ngo.setText("Tử Vi");
+                        txttop3ty.setText("Thiên Cơ");
+                        txttop3dan.setText("Thái Dương");
+                        txttop3suu.setText("Vũ Khúc");
+                        txttop3tyd.setText("Thiên Đồng");
+                        txttop3dau.setText("Liêm Trinh");
 
-                        txttop3tuat.setText("Thiên Phủ(B)");
-                        txttop3hoi.setText("Thái Âm(H)");
-                        txttop4tyd.setText("Tham Lang(H)");
-                        txttop4suu.setText("Cự Môn(V)");
-                        txttop4dan.setText("Thiên Tướng(D)");
-                        txttop3mao.setText("Thiên Lương(V)");
-                        txttop3thin.setText("Thất Sát(H)");
-                        txttop3than.setText("Phá Quân(V)");
+                        txttop3tuat.setText("Thiên Phủ");
+                        txttop3hoi.setText("Thái Âm");
+                        txttop4tyd.setText("Tham Lang");
+                        txttop4suu.setText("Cự Môn");
+                        txttop4dan.setText("Thiên Tướng");
+                        txttop3mao.setText("Thiên Lương");
+                        txttop3thin.setText("Thất Sát");
+                        txttop3than.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("6") || thongTin.ngayam().equals("18") || thongTin.ngayam().equals("30")){
-                        txttop3mui.setText("Tử Vi(D)");
-                        txttop3ngo.setText("Thiên Cơ(D)");
-                        txttop3thin.setText("Thái Dương(H)");
-                        txttop3mao.setText("Vũ Khúc(D)");
-                        txttop3dan.setText("Thiên Đồng(M)");
-                        txttop3hoi.setText("Liêm Trinh(H)");
+                        txttop3mui.setText("Tử Vi");
+                        txttop3ngo.setText("Thiên Cơ");
+                        txttop3thin.setText("Thái Dương");
+                        txttop3mao.setText("Vũ Khúc");
+                        txttop3dan.setText("Thiên Đồng");
+                        txttop3hoi.setText("Liêm Trinh");
 
-                        txttop3dau.setText("Thiên Phủ(B)");
-                        txttop3tuat.setText("Thái Âm(H)");
-                        txttop4hoi.setText("Tham Lang(H)");
-                        txttop3tyd.setText("Cự Môn(V)");
-                        txttop3suu.setText("Thiên Tướng(D)");
-                        txttop4dan.setText("Thiên Lương(V)");
-                        txttop4mao.setText("Thất Sát(H)");
-                        txttop4mui.setText("Phá Quân(V)");
+                        txttop3dau.setText("Thiên Phủ");
+                        txttop3tuat.setText("Thái Âm");
+                        txttop4hoi.setText("Tham Lang");
+                        txttop3tyd.setText("Cự Môn");
+                        txttop3suu.setText("Thiên Tướng");
+                        txttop4dan.setText("Thiên Lương");
+                        txttop4mao.setText("Thất Sát");
+                        txttop4mui.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("11") || thongTin.ngayam().equals("23")){
-                        txttop3than.setText("Tử Vi(D)");
-                        txttop3mui.setText("Thiên Cơ(D)");
-                        txttop3ty.setText("Thái Dương(H)");
-                        txttop3thin.setText("Vũ Khúc(D)");
-                        txttop3mao.setText("Thiên Đồng(M)");
-                        txttop3tyd.setText("Liêm Trinh(H)");
+                        txttop3than.setText("Tử Vi");
+                        txttop3mui.setText("Thiên Cơ");
+                        txttop3ty.setText("Thái Dương");
+                        txttop3thin.setText("Vũ Khúc");
+                        txttop3mao.setText("Thiên Đồng");
+                        txttop3tyd.setText("Liêm Trinh");
 
-                        txttop4than.setText("Thiên Phủ(B)");
-                        txttop3dau.setText("Thái Âm(H)");
-                        txttop3tuat.setText("Tham Lang(H)");
-                        txttop3hoi.setText("Cự Môn(V)");
-                        txttop4tyd.setText("Thiên Tướng(D)");
-                        txttop3suu.setText("Thiên Lương(V)");
-                        txttop3dan.setText("Thất Sát(H)");
-                        txttop3ngo.setText("Phá Quân(V)");
+                        txttop4than.setText("Thiên Phủ");
+                        txttop3dau.setText("Thái Âm");
+                        txttop3tuat.setText("Tham Lang");
+                        txttop3hoi.setText("Cự Môn");
+                        txttop4tyd.setText("Thiên Tướng");
+                        txttop3suu.setText("Thiên Lương");
+                        txttop3dan.setText("Thất Sát");
+                        txttop3ngo.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("16") || thongTin.ngayam().equals("28")){
-                        txttop3dau.setText("Tử Vi(D)");
-                        txttop3than.setText("Thiên Cơ(D)");
-                        txttop3ngo.setText("Thái Dương(H)");
-                        txttop3ty.setText("Vũ Khúc(D)");
-                        txttop3thin.setText("Thiên Đồng(M)");
-                        txttop3suu.setText("Liêm Trinh(H)");
+                        txttop3dau.setText("Tử Vi");
+                        txttop3than.setText("Thiên Cơ");
+                        txttop3ngo.setText("Thái Dương");
+                        txttop3ty.setText("Vũ Khúc");
+                        txttop3thin.setText("Thiên Đồng");
+                        txttop3suu.setText("Liêm Trinh");
 
-                        txttop3mui.setText("Thiên Phủ(B)");
-                        txttop4than.setText("Thái Âm(H)");
-                        txttop4dau.setText("Tham Lang(H)");
-                        txttop3tuat.setText("Cự Môn(V)");
-                        txttop3hoi.setText("Thiên Tướng(D)");
-                        txttop3tyd.setText("Thiên Lương(V)");
-                        txttop4suu.setText("Thất Sát(H)");
-                        txttop4ty.setText("Phá Quân(V)");
+                        txttop3mui.setText("Thiên Phủ");
+                        txttop4than.setText("Thái Âm");
+                        txttop4dau.setText("Tham Lang");
+                        txttop3tuat.setText("Cự Môn");
+                        txttop3hoi.setText("Thiên Tướng");
+                        txttop3tyd.setText("Thiên Lương");
+                        txttop4suu.setText("Thất Sát");
+                        txttop4ty.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("21")){
-                        txttop3tuat.setText("Tử Vi(D)");
-                        txttop3dau.setText("Thiên Cơ(D)");
-                        txttop3mui.setText("Thái Dương(H)");
-                        txttop3ngo.setText("Vũ Khúc(D)");
-                        txttop3ty.setText("Thiên Đồng(M)");
-                        txttop3dan.setText("Liêm Trinh(H)");
+                        txttop3tuat.setText("Tử Vi");
+                        txttop3dau.setText("Thiên Cơ");
+                        txttop3mui.setText("Thái Dương");
+                        txttop3ngo.setText("Vũ Khúc");
+                        txttop3ty.setText("Thiên Đồng");
+                        txttop3dan.setText("Liêm Trinh");
 
-                        txttop4ngo.setText("Thiên Phủ(B)");
-                        txttop4mui.setText("Thái Âm(H)");
-                        txttop3than.setText("Tham Lang(H)");
-                        txttop4dau.setText("Cự Môn(V)");
-                        txttop4tuat.setText("Thiên Tướng(D)");
-                        txttop3hoi.setText("Thiên Lương(V)");
-                        txttop3tyd.setText("Thất Sát(H)");
-                        txttop3thin.setText("Phá Quân(V)");
+                        txttop4ngo.setText("Thiên Phủ");
+                        txttop4mui.setText("Thái Âm");
+                        txttop3than.setText("Tham Lang");
+                        txttop4dau.setText("Cự Môn");
+                        txttop4tuat.setText("Thiên Tướng");
+                        txttop3hoi.setText("Thiên Lương");
+                        txttop3tyd.setText("Thất Sát");
+                        txttop3thin.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("2") || thongTin.ngayam().equals("26")){
-                        txttop3hoi.setText("Tử Vi(D)");
-                        txttop3tuat.setText("Thiên Cơ(D)");
-                        txttop3than.setText("Thái Dương(H)");
-                        txttop3mui.setText("Vũ Khúc(D)");
-                        txttop3ngo.setText("Thiên Đồng(M)");
-                        txttop3mao.setText("Liêm Trinh(H)");
+                        txttop3hoi.setText("Tử Vi");
+                        txttop3tuat.setText("Thiên Cơ");
+                        txttop3than.setText("Thái Dương");
+                        txttop3mui.setText("Vũ Khúc");
+                        txttop3ngo.setText("Thiên Đồng");
+                        txttop3mao.setText("Liêm Trinh");
 
-                        txttop3ty.setText("Thiên Phủ(B)");
-                        txttop4ngo.setText("Thái Âm(H)");
-                        txttop4mui.setText("Tham Lang(H)");
-                        txttop4than.setText("Cự Môn(V)");
-                        txttop3dau.setText("Thiên Tướng(D)");
-                        txttop4tuat.setText("Thiên Lương(V)");
-                        txttop4hoi.setText("Thất Sát(H)");
-                        txttop4mao.setText("Phá Quân(V)");
+                        txttop3ty.setText("Thiên Phủ");
+                        txttop4ngo.setText("Thái Âm");
+                        txttop4mui.setText("Tham Lang");
+                        txttop4than.setText("Cự Môn");
+                        txttop3dau.setText("Thiên Tướng");
+                        txttop4tuat.setText("Thiên Lương");
+                        txttop4hoi.setText("Thất Sát");
+                        txttop4mao.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("7")){
-                        txttop3tyd.setText("Tử Vi(D)");
-                        txttop3hoi.setText("Thiên Cơ(D)");
-                        txttop3dau.setText("Thái Dương(H)");
-                        txttop3than.setText("Vũ Khúc(D)");
-                        txttop3mui.setText("Thiên Đồng(M)");
-                        txttop3thin.setText("Liêm Trinh(H)");
+                        txttop3tyd.setText("Tử Vi");
+                        txttop3hoi.setText("Thiên Cơ");
+                        txttop3dau.setText("Thái Dương");
+                        txttop3than.setText("Vũ Khúc");
+                        txttop3mui.setText("Thiên Đồng");
+                        txttop3thin.setText("Liêm Trinh");
 
-                        txttop4thin.setText("Thiên Phủ(B)");
-                        txttop3ty.setText("Thái Âm(H)");
-                        txttop3ngo.setText("Tham Lang(H)");
-                        txttop4mui.setText("Cự Môn(V)");
-                        txttop4than.setText("Thiên Tướng(D)");
-                        txttop4dau.setText("Thiên Lương(V)");
-                        txttop3tuat.setText("Thất Sát(H)");
-                        txttop3dan.setText("Phá Quân(V)");
+                        txttop4thin.setText("Thiên Phủ");
+                        txttop3ty.setText("Thái Âm");
+                        txttop3ngo.setText("Tham Lang");
+                        txttop4mui.setText("Cự Môn");
+                        txttop4than.setText("Thiên Tướng");
+                        txttop4dau.setText("Thiên Lương");
+                        txttop3tuat.setText("Thất Sát");
+                        txttop3dan.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("4") || thongTin.ngayam().equals("12")){
-                        txttop3suu.setText("Tử Vi(D)");
-                        txttop3tyd.setText("Thiên Cơ(D)");
-                        txttop3tuat.setText("Thái Dương(H)");
-                        txttop3dau.setText("Vũ Khúc(D)");
-                        txttop3than.setText("Thiên Đồng(M)");
-                        txttop3ty.setText("Liêm Trinh(H)");
+                        txttop3suu.setText("Tử Vi");
+                        txttop3tyd.setText("Thiên Cơ");
+                        txttop3tuat.setText("Thái Dương");
+                        txttop3dau.setText("Vũ Khúc");
+                        txttop3than.setText("Thiên Đồng");
+                        txttop3ty.setText("Liêm Trinh");
 
-                        txttop3mao.setText("Thiên Phủ(B)");
-                        txttop3thin.setText("Thái Âm(H)");
-                        txttop4ty.setText("Tham Lang(H)");
-                        txttop3ngo.setText("Cự Môn(V)");
-                        txttop3mui.setText("Thiên Tướng(D)");
-                        txttop4than.setText("Thiên Lương(V)");
-                        txttop4dau.setText("Thất Sát(H)");
-                        txttop4suu.setText("Phá Quân(V)");
+                        txttop3mao.setText("Thiên Phủ");
+                        txttop3thin.setText("Thái Âm");
+                        txttop4ty.setText("Tham Lang");
+                        txttop3ngo.setText("Cự Môn");
+                        txttop3mui.setText("Thiên Tướng");
+                        txttop4than.setText("Thiên Lương");
+                        txttop4dau.setText("Thất Sát");
+                        txttop4suu.setText("Phá Quân");
                     }
                 }
                 else if (giophutsinh.equals("Thìn") || giophutsinh.equals("Tỵ")){
                     if (thongTin.ngayam().equals("4") || thongTin.ngayam().equals("7") || thongTin.ngayam().equals("13")){
-                        txttop3dan.setText("Tử Vi(D)");
-                        txttop3suu.setText("Thiên Cơ(D)");
-                        txttop3hoi.setText("Thái Dương(H)");
-                        txttop3tuat.setText("Vũ Khúc(D)");
-                        txttop3dau.setText("Thiên Đồng(M)");
-                        txttop3ngo.setText("Liêm Trinh(H)");
+                        txttop3dan.setText("Tử Vi");
+                        txttop3suu.setText("Thiên Cơ");
+                        txttop3hoi.setText("Thái Dương");
+                        txttop3tuat.setText("Vũ Khúc");
+                        txttop3dau.setText("Thiên Đồng");
+                        txttop3ngo.setText("Liêm Trinh");
 
-                        txttop4dan.setText("Thiên Phủ(B)");
-                        txttop3mao.setText("Thái Âm(H)");
-                        txttop3thin.setText("Tham Lang(H)");
-                        txttop3ty.setText("Cự Môn(V)");
-                        txttop4ngo.setText("Thiên Tướng(D)");
-                        txttop3mui.setText("Thiên Lương(V)");
-                        txttop3than.setText("Thất Sát(H)");
-                        txttop3tyd.setText("Phá Quân(V)");
+                        txttop4dan.setText("Thiên Phủ");
+                        txttop3mao.setText("Thái Âm");
+                        txttop3thin.setText("Tham Lang");
+                        txttop3ty.setText("Cự Môn");
+                        txttop4ngo.setText("Thiên Tướng");
+                        txttop3mui.setText("Thiên Lương");
+                        txttop3than.setText("Thất Sát");
+                        txttop3tyd.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("8") || thongTin.ngayam().equals("11") || thongTin.ngayam().equals("17")){
-                        txttop3mao.setText("Tử Vi(D)");
-                        txttop3dan.setText("Thiên Cơ(D)");
-                        txttop3tyd.setText("Thái Dương(H)");
-                        txttop3hoi.setText("Vũ Khúc(D)");
-                        txttop3tuat.setText("Thiên Đồng(M)");
-                        txttop3mui.setText("Liêm Trinh(H)");
+                        txttop3mao.setText("Tử Vi");
+                        txttop3dan.setText("Thiên Cơ");
+                        txttop3tyd.setText("Thái Dương");
+                        txttop3hoi.setText("Vũ Khúc");
+                        txttop3tuat.setText("Thiên Đồng");
+                        txttop3mui.setText("Liêm Trinh");
 
-                        txttop3suu.setText("Thiên Phủ(B)");
-                        txttop4dan.setText("Thái Âm(H)");
-                        txttop4mao.setText("Tham Lang(H)");
-                        txttop3thin.setText("Cự Môn(V)");
-                        txttop3ty.setText("Thiên Tướng(D)");
-                        txttop3ngo.setText("Thiên Lương(V)");
-                        txttop4mui.setText("Thất Sát(H)");
-                        txttop4hoi.setText("Phá Quân(V)");
+                        txttop3suu.setText("Thiên Phủ");
+                        txttop4dan.setText("Thái Âm");
+                        txttop4mao.setText("Tham Lang");
+                        txttop3thin.setText("Cự Môn");
+                        txttop3ty.setText("Thiên Tướng");
+                        txttop3ngo.setText("Thiên Lương");
+                        txttop4mui.setText("Thất Sát");
+                        txttop4hoi.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("2") || thongTin.ngayam().equals("12") || thongTin.ngayam().equals("15") || thongTin.ngayam().equals("21")){
-                        txttop3thin.setText("Tử Vi(D)");
-                        txttop3mao.setText("Thiên Cơ(D)");
-                        txttop3suu.setText("Thái Dương(H)");
-                        txttop3tyd.setText("Vũ Khúc(D)");
-                        txttop3hoi.setText("Thiên Đồng(M)");
-                        txttop3than.setText("Liêm Trinh(H)");
+                        txttop3thin.setText("Tử Vi");
+                        txttop3mao.setText("Thiên Cơ");
+                        txttop3suu.setText("Thái Dương");
+                        txttop3tyd.setText("Vũ Khúc");
+                        txttop3hoi.setText("Thiên Đồng");
+                        txttop3than.setText("Liêm Trinh");
 
-                        txttop4tyd.setText("Thiên Phủ(B)");
-                        txttop4suu.setText("Thái Âm(H)");
-                        txttop4dan.setText("Tham Lang(H)");
-                        txttop4mao.setText("Cự Môn(V)");
-                        txttop4thin.setText("Thiên Tướng(D)");
-                        txttop3ty.setText("Thiên Lương(V)");
-                        txttop3ngo.setText("Thất Sát(H)");
-                        txttop3tuat.setText("Phá Quân(V)");
+                        txttop4tyd.setText("Thiên Phủ");
+                        txttop4suu.setText("Thái Âm");
+                        txttop4dan.setText("Tham Lang");
+                        txttop4mao.setText("Cự Môn");
+                        txttop4thin.setText("Thiên Tướng");
+                        txttop3ty.setText("Thiên Lương");
+                        txttop3ngo.setText("Thất Sát");
+                        txttop3tuat.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("6") || thongTin.ngayam().equals("16") || thongTin.ngayam().equals("19") || thongTin.ngayam().equals("25")){
-                        txttop3ty.setText("Tử Vi(D)");
-                        txttop3thin.setText("Thiên Cơ(D)");
-                        txttop3dan.setText("Thái Dương(H)");
-                        txttop3suu.setText("Vũ Khúc(D)");
-                        txttop3tyd.setText("Thiên Đồng(M)");
-                        txttop3dau.setText("Liêm Trinh(H)");
+                        txttop3ty.setText("Tử Vi");
+                        txttop3thin.setText("Thiên Cơ");
+                        txttop3dan.setText("Thái Dương");
+                        txttop3suu.setText("Vũ Khúc");
+                        txttop3tyd.setText("Thiên Đồng");
+                        txttop3dau.setText("Liêm Trinh");
 
-                        txttop3hoi.setText("Thiên Phủ(B)");
-                        txttop4tyd.setText("Thái Âm(H)");
-                        txttop4suu.setText("Tham Lang(H)");
-                        txttop4dan.setText("Cự Môn(V)");
-                        txttop3mao.setText("Thiên Tướng(D)");
-                        txttop4thin.setText("Thiên Lương(V)");
-                        txttop4ty.setText("Thất Sát(H)");
-                        txttop4dau.setText("Phá Quân(V)");
+                        txttop3hoi.setText("Thiên Phủ");
+                        txttop4tyd.setText("Thái Âm");
+                        txttop4suu.setText("Tham Lang");
+                        txttop4dan.setText("Cự Môn");
+                        txttop3mao.setText("Thiên Tướng");
+                        txttop4thin.setText("Thiên Lương");
+                        txttop4ty.setText("Thất Sát");
+                        txttop4dau.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("10") || thongTin.ngayam().equals("20") || thongTin.ngayam().equals("23") || thongTin.ngayam().equals("29")){
-                        txttop3ngo.setText("Tử Vi(D)");
-                        txttop3ty.setText("Thiên Cơ(D)");
-                        txttop3dan.setText("Thái Dương(H)");
-                        txttop3suu.setText("Vũ Khúc(D)");
-                        txttop3tyd.setText("Thiên Đồng(M)");
-                        txttop3dau.setText("Liêm Trinh(H)");
+                        txttop3ngo.setText("Tử Vi");
+                        txttop3ty.setText("Thiên Cơ");
+                        txttop3dan.setText("Thái Dương");
+                        txttop3suu.setText("Vũ Khúc");
+                        txttop3tyd.setText("Thiên Đồng");
+                        txttop3dau.setText("Liêm Trinh");
 
-                        txttop3tuat.setText("Thiên Phủ(B)");
-                        txttop3hoi.setText("Thái Âm(H)");
-                        txttop4tyd.setText("Tham Lang(H)");
-                        txttop4suu.setText("Cự Môn(V)");
-                        txttop4dan.setText("Thiên Tướng(D)");
-                        txttop3mao.setText("Thiên Lương(V)");
-                        txttop3thin.setText("Thất Sát(H)");
-                        txttop3than.setText("Phá Quân(V)");
+                        txttop3tuat.setText("Thiên Phủ");
+                        txttop3hoi.setText("Thái Âm");
+                        txttop4tyd.setText("Tham Lang");
+                        txttop4suu.setText("Cự Môn");
+                        txttop4dan.setText("Thiên Tướng");
+                        txttop3mao.setText("Thiên Lương");
+                        txttop3thin.setText("Thất Sát");
+                        txttop3than.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("14") || thongTin.ngayam().equals("24") || thongTin.ngayam().equals("27")){
-                        txttop3mui.setText("Tử Vi(D)");
-                        txttop3ngo.setText("Thiên Cơ(D)");
-                        txttop3thin.setText("Thái Dương(H)");
-                        txttop3mao.setText("Vũ Khúc(D)");
-                        txttop3dan.setText("Thiên Đồng(M)");
-                        txttop3hoi.setText("Liêm Trinh(H)");
+                        txttop3mui.setText("Tử Vi");
+                        txttop3ngo.setText("Thiên Cơ");
+                        txttop3thin.setText("Thái Dương");
+                        txttop3mao.setText("Vũ Khúc");
+                        txttop3dan.setText("Thiên Đồng");
+                        txttop3hoi.setText("Liêm Trinh");
 
-                        txttop3dau.setText("Thiên Phủ(B)");
-                        txttop3tuat.setText("Thái Âm(H)");
-                        txttop4hoi.setText("Tham Lang(H)");
-                        txttop3tyd.setText("Cự Môn(V)");
-                        txttop3suu.setText("Thiên Tướng(D)");
-                        txttop4dan.setText("Thiên Lương(V)");
-                        txttop4mao.setText("Thất Sát(H)");
-                        txttop4mui.setText("Phá Quân(V)");
+                        txttop3dau.setText("Thiên Phủ");
+                        txttop3tuat.setText("Thái Âm");
+                        txttop4hoi.setText("Tham Lang");
+                        txttop3tyd.setText("Cự Môn");
+                        txttop3suu.setText("Thiên Tướng");
+                        txttop4dan.setText("Thiên Lương");
+                        txttop4mao.setText("Thất Sát");
+                        txttop4mui.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("18") || thongTin.ngayam().equals("28")){
-                        txttop3than.setText("Tử Vi(D)");
-                        txttop3mui.setText("Thiên Cơ(D)");
-                        txttop3ty.setText("Thái Dương(H)");
-                        txttop3thin.setText("Vũ Khúc(D)");
-                        txttop3mao.setText("Thiên Đồng(M)");
-                        txttop3tyd.setText("Liêm Trinh(H)");
+                        txttop3than.setText("Tử Vi");
+                        txttop3mui.setText("Thiên Cơ");
+                        txttop3ty.setText("Thái Dương");
+                        txttop3thin.setText("Vũ Khúc");
+                        txttop3mao.setText("Thiên Đồng");
+                        txttop3tyd.setText("Liêm Trinh");
 
-                        txttop4than.setText("Thiên Phủ(B)");
-                        txttop3dau.setText("Thái Âm(H)");
-                        txttop3tuat.setText("Tham Lang(H)");
-                        txttop3hoi.setText("Cự Môn(V)");
-                        txttop4tyd.setText("Thiên Tướng(D)");
-                        txttop3suu.setText("Thiên Lương(V)");
-                        txttop3dan.setText("Thất Sát(H)");
-                        txttop3ngo.setText("Phá Quân(V)");
+                        txttop4than.setText("Thiên Phủ");
+                        txttop3dau.setText("Thái Âm");
+                        txttop3tuat.setText("Tham Lang");
+                        txttop3hoi.setText("Cự Môn");
+                        txttop4tyd.setText("Thiên Tướng");
+                        txttop3suu.setText("Thiên Lương");
+                        txttop3dan.setText("Thất Sát");
+                        txttop3ngo.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("22")){
-                        txttop3dau.setText("Tử Vi(D)");
-                        txttop3than.setText("Thiên Cơ(D)");
-                        txttop3ngo.setText("Thái Dương(H)");
-                        txttop3ty.setText("Vũ Khúc(D)");
-                        txttop3thin.setText("Thiên Đồng(M)");
-                        txttop3suu.setText("Liêm Trinh(H)");
+                        txttop3dau.setText("Tử Vi");
+                        txttop3than.setText("Thiên Cơ");
+                        txttop3ngo.setText("Thái Dương");
+                        txttop3ty.setText("Vũ Khúc");
+                        txttop3thin.setText("Thiên Đồng");
+                        txttop3suu.setText("Liêm Trinh");
 
-                        txttop3mui.setText("Thiên Phủ(B)");
-                        txttop4than.setText("Thái Âm(H)");
-                        txttop4dau.setText("Tham Lang(H)");
-                        txttop3tuat.setText("Cự Môn(V)");
-                        txttop3hoi.setText("Thiên Tướng(D)");
-                        txttop3tyd.setText("Thiên Lương(V)");
-                        txttop4suu.setText("Thất Sát(H)");
-                        txttop4ty.setText("Phá Quân(V)");
+                        txttop3mui.setText("Thiên Phủ");
+                        txttop4than.setText("Thái Âm");
+                        txttop4dau.setText("Tham Lang");
+                        txttop3tuat.setText("Cự Môn");
+                        txttop3hoi.setText("Thiên Tướng");
+                        txttop3tyd.setText("Thiên Lương");
+                        txttop4suu.setText("Thất Sát");
+                        txttop4ty.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("26")){
-                        txttop3tuat.setText("Tử Vi(D)");
-                        txttop3dau.setText("Thiên Cơ(D)");
-                        txttop3mui.setText("Thái Dương(H)");
-                        txttop3ngo.setText("Vũ Khúc(D)");
-                        txttop3ty.setText("Thiên Đồng(M)");
-                        txttop3dan.setText("Liêm Trinh(H)");
+                        txttop3tuat.setText("Tử Vi");
+                        txttop3dau.setText("Thiên Cơ");
+                        txttop3mui.setText("Thái Dương");
+                        txttop3ngo.setText("Vũ Khúc");
+                        txttop3ty.setText("Thiên Đồng");
+                        txttop3dan.setText("Liêm Trinh");
 
-                        txttop4ngo.setText("Thiên Phủ(B)");
-                        txttop4mui.setText("Thái Âm(H)");
-                        txttop3than.setText("Tham Lang(H)");
-                        txttop4dau.setText("Cự Môn(V)");
-                        txttop4tuat.setText("Thiên Tướng(D)");
-                        txttop3hoi.setText("Thiên Lương(V)");
-                        txttop3tyd.setText("Thất Sát(H)");
-                        txttop3thin.setText("Phá Quân(V)");
+                        txttop4ngo.setText("Thiên Phủ");
+                        txttop4mui.setText("Thái Âm");
+                        txttop3than.setText("Tham Lang");
+                        txttop4dau.setText("Cự Môn");
+                        txttop4tuat.setText("Thiên Tướng");
+                        txttop3hoi.setText("Thiên Lương");
+                        txttop3tyd.setText("Thất Sát");
+                        txttop3thin.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("1") || thongTin.ngayam().equals("30")){
-                        txttop3hoi.setText("Tử Vi(D)");
-                        txttop3tuat.setText("Thiên Cơ(D)");
-                        txttop3than.setText("Thái Dương(H)");
-                        txttop3mui.setText("Vũ Khúc(D)");
-                        txttop3ngo.setText("Thiên Đồng(M)");
-                        txttop3mao.setText("Liêm Trinh(H)");
+                        txttop3hoi.setText("Tử Vi");
+                        txttop3tuat.setText("Thiên Cơ");
+                        txttop3than.setText("Thái Dương");
+                        txttop3mui.setText("Vũ Khúc");
+                        txttop3ngo.setText("Thiên Đồng");
+                        txttop3mao.setText("Liêm Trinh");
 
-                        txttop3ty.setText("Thiên Phủ(B)");
-                        txttop4ngo.setText("Thái Âm(H)");
-                        txttop4mui.setText("Tham Lang(H)");
-                        txttop4than.setText("Cự Môn(V)");
-                        txttop3dau.setText("Thiên Tướng(D)");
-                        txttop4tuat.setText("Thiên Lương(V)");
-                        txttop4hoi.setText("Thất Sát(H)");
-                        txttop4mao.setText("Phá Quân(V)");
+                        txttop3ty.setText("Thiên Phủ");
+                        txttop4ngo.setText("Thái Âm");
+                        txttop4mui.setText("Tham Lang");
+                        txttop4than.setText("Cự Môn");
+                        txttop3dau.setText("Thiên Tướng");
+                        txttop4tuat.setText("Thiên Lương");
+                        txttop4hoi.setText("Thất Sát");
+                        txttop4mao.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("5")){
-                        txttop3tyd.setText("Tử Vi(D)");
-                        txttop3hoi.setText("Thiên Cơ(D)");
-                        txttop3dau.setText("Thái Dương(H)");
-                        txttop3than.setText("Vũ Khúc(D)");
-                        txttop3mui.setText("Thiên Đồng(M)");
-                        txttop3thin.setText("Liêm Trinh(H)");
+                        txttop3tyd.setText("Tử Vi");
+                        txttop3hoi.setText("Thiên Cơ");
+                        txttop3dau.setText("Thái Dương");
+                        txttop3than.setText("Vũ Khúc");
+                        txttop3mui.setText("Thiên Đồng");
+                        txttop3thin.setText("Liêm Trinh");
 
-                        txttop4thin.setText("Thiên Phủ(B)");
-                        txttop3ty.setText("Thái Âm(H)");
-                        txttop3ngo.setText("Tham Lang(H)");
-                        txttop4mui.setText("Cự Môn(V)");
-                        txttop4than.setText("Thiên Tướng(D)");
-                        txttop4dau.setText("Thiên Lương(V)");
-                        txttop3tuat.setText("Thất Sát(H)");
-                        txttop3dan.setText("Phá Quân(V)");
+                        txttop4thin.setText("Thiên Phủ");
+                        txttop3ty.setText("Thái Âm");
+                        txttop3ngo.setText("Tham Lang");
+                        txttop4mui.setText("Cự Môn");
+                        txttop4than.setText("Thiên Tướng");
+                        txttop4dau.setText("Thiên Lương");
+                        txttop3tuat.setText("Thất Sát");
+                        txttop3dan.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("3") || thongTin.ngayam().equals("9")){
-                        txttop3suu.setText("Tử Vi(D)");
-                        txttop3tyd.setText("Thiên Cơ(D)");
-                        txttop3tuat.setText("Thái Dương(H)");
-                        txttop3dau.setText("Vũ Khúc(D)");
-                        txttop3than.setText("Thiên Đồng(M)");
-                        txttop3ty.setText("Liêm Trinh(H)");
+                        txttop3suu.setText("Tử Vi");
+                        txttop3tyd.setText("Thiên Cơ");
+                        txttop3tuat.setText("Thái Dương");
+                        txttop3dau.setText("Vũ Khúc");
+                        txttop3than.setText("Thiên Đồng");
+                        txttop3ty.setText("Liêm Trinh");
 
-                        txttop3mao.setText("Thiên Phủ(B)");
-                        txttop3thin.setText("Thái Âm(H)");
-                        txttop4ty.setText("Tham Lang(H)");
-                        txttop3ngo.setText("Cự Môn(V)");
-                        txttop3mui.setText("Thiên Tướng(D)");
-                        txttop4than.setText("Thiên Lương(V)");
-                        txttop4dau.setText("Thất Sát(H)");
-                        txttop4suu.setText("Phá Quân(V)");
+                        txttop3mao.setText("Thiên Phủ");
+                        txttop3thin.setText("Thái Âm");
+                        txttop4ty.setText("Tham Lang");
+                        txttop3ngo.setText("Cự Môn");
+                        txttop3mui.setText("Thiên Tướng");
+                        txttop4than.setText("Thiên Lương");
+                        txttop4dau.setText("Thất Sát");
+                        txttop4suu.setText("Phá Quân");
                     }
                 }
             }
@@ -5638,1032 +5737,1032 @@ public class AnsaoActivity extends AppCompatActivity {
                 }
                 if (giophutsinh.equals("Thìn") || giophutsinh.equals("Tỵ")){
                     if (thongTin.ngayam().equals("2") || thongTin.ngayam().equals("3") || thongTin.ngayam().equals("26") || thongTin.ngayam().equals("27")){
-                        txttop3dan.setText("Tử Vi(D)");
-                        txttop3suu.setText("Thiên Cơ(D)");
-                        txttop3hoi.setText("Thái Dương(H)");
-                        txttop3tuat.setText("Vũ Khúc(D)");
-                        txttop3dau.setText("Thiên Đồng(M)");
-                        txttop3ngo.setText("Liêm Trinh(H)");
+                        txttop3dan.setText("Tử Vi");
+                        txttop3suu.setText("Thiên Cơ");
+                        txttop3hoi.setText("Thái Dương");
+                        txttop3tuat.setText("Vũ Khúc");
+                        txttop3dau.setText("Thiên Đồng");
+                        txttop3ngo.setText("Liêm Trinh");
 
-                        txttop4dan.setText("Thiên Phủ(B)");
-                        txttop3mao.setText("Thái Âm(H)");
-                        txttop3thin.setText("Tham Lang(H)");
-                        txttop3ty.setText("Cự Môn(V)");
-                        txttop4ngo.setText("Thiên Tướng(D)");
-                        txttop3mui.setText("Thiên Lương(V)");
-                        txttop3than.setText("Thất Sát(H)");
-                        txttop3tyd.setText("Phá Quân(V)");
+                        txttop4dan.setText("Thiên Phủ");
+                        txttop3mao.setText("Thái Âm");
+                        txttop3thin.setText("Tham Lang");
+                        txttop3ty.setText("Cự Môn");
+                        txttop4ngo.setText("Thiên Tướng");
+                        txttop3mui.setText("Thiên Lương");
+                        txttop3than.setText("Thất Sát");
+                        txttop3tyd.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("4") || thongTin.ngayam().equals("5") || thongTin.ngayam().equals("28") || thongTin.ngayam().equals("29")){
-                        txttop3mao.setText("Tử Vi(D)");
-                        txttop3dan.setText("Thiên Cơ(D)");
-                        txttop3tyd.setText("Thái Dương(H)");
-                        txttop3hoi.setText("Vũ Khúc(D)");
-                        txttop3tuat.setText("Thiên Đồng(M)");
-                        txttop3mui.setText("Liêm Trinh(H)");
+                        txttop3mao.setText("Tử Vi");
+                        txttop3dan.setText("Thiên Cơ");
+                        txttop3tyd.setText("Thái Dương");
+                        txttop3hoi.setText("Vũ Khúc");
+                        txttop3tuat.setText("Thiên Đồng");
+                        txttop3mui.setText("Liêm Trinh");
 
-                        txttop3suu.setText("Thiên Phủ(B)");
-                        txttop4dan.setText("Thái Âm(H)");
-                        txttop4mao.setText("Tham Lang(H)");
-                        txttop3thin.setText("Cự Môn(V)");
-                        txttop3ty.setText("Thiên Tướng(D)");
-                        txttop3ngo.setText("Thiên Lương(V)");
-                        txttop4mui.setText("Thất Sát(H)");
-                        txttop4hoi.setText("Phá Quân(V)");
+                        txttop3suu.setText("Thiên Phủ");
+                        txttop4dan.setText("Thái Âm");
+                        txttop4mao.setText("Tham Lang");
+                        txttop3thin.setText("Cự Môn");
+                        txttop3ty.setText("Thiên Tướng");
+                        txttop3ngo.setText("Thiên Lương");
+                        txttop4mui.setText("Thất Sát");
+                        txttop4hoi.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("6") || thongTin.ngayam().equals("7") || thongTin.ngayam().equals("30")){
-                        txttop3thin.setText("Tử Vi(D)");
-                        txttop3mao.setText("Thiên Cơ(D)");
-                        txttop3suu.setText("Thái Dương(H)");
-                        txttop3tyd.setText("Vũ Khúc(D)");
-                        txttop3hoi.setText("Thiên Đồng(M)");
-                        txttop3than.setText("Liêm Trinh(H)");
+                        txttop3thin.setText("Tử Vi");
+                        txttop3mao.setText("Thiên Cơ");
+                        txttop3suu.setText("Thái Dương");
+                        txttop3tyd.setText("Vũ Khúc");
+                        txttop3hoi.setText("Thiên Đồng");
+                        txttop3than.setText("Liêm Trinh");
 
-                        txttop4tyd.setText("Thiên Phủ(B)");
-                        txttop4suu.setText("Thái Âm(H)");
-                        txttop4dan.setText("Tham Lang(H)");
-                        txttop4mao.setText("Cự Môn(V)");
-                        txttop4thin.setText("Thiên Tướng(D)");
-                        txttop3ty.setText("Thiên Lương(V)");
-                        txttop3ngo.setText("Thất Sát(H)");
-                        txttop3tuat.setText("Phá Quân(V)");
+                        txttop4tyd.setText("Thiên Phủ");
+                        txttop4suu.setText("Thái Âm");
+                        txttop4dan.setText("Tham Lang");
+                        txttop4mao.setText("Cự Môn");
+                        txttop4thin.setText("Thiên Tướng");
+                        txttop3ty.setText("Thiên Lương");
+                        txttop3ngo.setText("Thất Sát");
+                        txttop3tuat.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("8") || thongTin.ngayam().equals("9")){
-                        txttop3ty.setText("Tử Vi(D)");
-                        txttop3thin.setText("Thiên Cơ(D)");
-                        txttop3dan.setText("Thái Dương(H)");
-                        txttop3suu.setText("Vũ Khúc(D)");
-                        txttop3tyd.setText("Thiên Đồng(M)");
-                        txttop3dau.setText("Liêm Trinh(H)");
+                        txttop3ty.setText("Tử Vi");
+                        txttop3thin.setText("Thiên Cơ");
+                        txttop3dan.setText("Thái Dương");
+                        txttop3suu.setText("Vũ Khúc");
+                        txttop3tyd.setText("Thiên Đồng");
+                        txttop3dau.setText("Liêm Trinh");
 
-                        txttop3hoi.setText("Thiên Phủ(B)");
-                        txttop4tyd.setText("Thái Âm(H)");
-                        txttop4suu.setText("Tham Lang(H)");
-                        txttop4dan.setText("Cự Môn(V)");
-                        txttop3mao.setText("Thiên Tướng(D)");
-                        txttop4thin.setText("Thiên Lương(V)");
-                        txttop4ty.setText("Thất Sát(H)");
-                        txttop4dau.setText("Phá Quân(V)");
+                        txttop3hoi.setText("Thiên Phủ");
+                        txttop4tyd.setText("Thái Âm");
+                        txttop4suu.setText("Tham Lang");
+                        txttop4dan.setText("Cự Môn");
+                        txttop3mao.setText("Thiên Tướng");
+                        txttop4thin.setText("Thiên Lương");
+                        txttop4ty.setText("Thất Sát");
+                        txttop4dau.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("10") || thongTin.ngayam().equals("11")){
-                        txttop3ngo.setText("Tử Vi(D)");
-                        txttop3ty.setText("Thiên Cơ(D)");
-                        txttop3dan.setText("Thái Dương(H)");
-                        txttop3suu.setText("Vũ Khúc(D)");
-                        txttop3tyd.setText("Thiên Đồng(M)");
-                        txttop3dau.setText("Liêm Trinh(H)");
+                        txttop3ngo.setText("Tử Vi");
+                        txttop3ty.setText("Thiên Cơ");
+                        txttop3dan.setText("Thái Dương");
+                        txttop3suu.setText("Vũ Khúc");
+                        txttop3tyd.setText("Thiên Đồng");
+                        txttop3dau.setText("Liêm Trinh");
 
-                        txttop3tuat.setText("Thiên Phủ(B)");
-                        txttop3hoi.setText("Thái Âm(H)");
-                        txttop4tyd.setText("Tham Lang(H)");
-                        txttop4suu.setText("Cự Môn(V)");
-                        txttop4dan.setText("Thiên Tướng(D)");
-                        txttop3mao.setText("Thiên Lương(V)");
-                        txttop3thin.setText("Thất Sát(H)");
-                        txttop3than.setText("Phá Quân(V)");
+                        txttop3tuat.setText("Thiên Phủ");
+                        txttop3hoi.setText("Thái Âm");
+                        txttop4tyd.setText("Tham Lang");
+                        txttop4suu.setText("Cự Môn");
+                        txttop4dan.setText("Thiên Tướng");
+                        txttop3mao.setText("Thiên Lương");
+                        txttop3thin.setText("Thất Sát");
+                        txttop3than.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("12") || thongTin.ngayam().equals("13")){
-                        txttop3mui.setText("Tử Vi(D)");
-                        txttop3ngo.setText("Thiên Cơ(D)");
-                        txttop3thin.setText("Thái Dương(H)");
-                        txttop3mao.setText("Vũ Khúc(D)");
-                        txttop3dan.setText("Thiên Đồng(M)");
-                        txttop3hoi.setText("Liêm Trinh(H)");
+                        txttop3mui.setText("Tử Vi");
+                        txttop3ngo.setText("Thiên Cơ");
+                        txttop3thin.setText("Thái Dương");
+                        txttop3mao.setText("Vũ Khúc");
+                        txttop3dan.setText("Thiên Đồng");
+                        txttop3hoi.setText("Liêm Trinh");
 
-                        txttop3dau.setText("Thiên Phủ(B)");
-                        txttop3tuat.setText("Thái Âm(H)");
-                        txttop4hoi.setText("Tham Lang(H)");
-                        txttop3tyd.setText("Cự Môn(V)");
-                        txttop3suu.setText("Thiên Tướng(D)");
-                        txttop4dan.setText("Thiên Lương(V)");
-                        txttop4mao.setText("Thất Sát(H)");
-                        txttop4mui.setText("Phá Quân(V)");
+                        txttop3dau.setText("Thiên Phủ");
+                        txttop3tuat.setText("Thái Âm");
+                        txttop4hoi.setText("Tham Lang");
+                        txttop3tyd.setText("Cự Môn");
+                        txttop3suu.setText("Thiên Tướng");
+                        txttop4dan.setText("Thiên Lương");
+                        txttop4mao.setText("Thất Sát");
+                        txttop4mui.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("14") || thongTin.ngayam().equals("15")){
-                        txttop3than.setText("Tử Vi(D)");
-                        txttop3mui.setText("Thiên Cơ(D)");
-                        txttop3ty.setText("Thái Dương(H)");
-                        txttop3thin.setText("Vũ Khúc(D)");
-                        txttop3mao.setText("Thiên Đồng(M)");
-                        txttop3tyd.setText("Liêm Trinh(H)");
+                        txttop3than.setText("Tử Vi");
+                        txttop3mui.setText("Thiên Cơ");
+                        txttop3ty.setText("Thái Dương");
+                        txttop3thin.setText("Vũ Khúc");
+                        txttop3mao.setText("Thiên Đồng");
+                        txttop3tyd.setText("Liêm Trinh");
 
-                        txttop4than.setText("Thiên Phủ(B)");
-                        txttop3dau.setText("Thái Âm(H)");
-                        txttop3tuat.setText("Tham Lang(H)");
-                        txttop3hoi.setText("Cự Môn(V)");
-                        txttop4tyd.setText("Thiên Tướng(D)");
-                        txttop3suu.setText("Thiên Lương(V)");
-                        txttop3dan.setText("Thất Sát(H)");
-                        txttop3ngo.setText("Phá Quân(V)");
+                        txttop4than.setText("Thiên Phủ");
+                        txttop3dau.setText("Thái Âm");
+                        txttop3tuat.setText("Tham Lang");
+                        txttop3hoi.setText("Cự Môn");
+                        txttop4tyd.setText("Thiên Tướng");
+                        txttop3suu.setText("Thiên Lương");
+                        txttop3dan.setText("Thất Sát");
+                        txttop3ngo.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("16") || thongTin.ngayam().equals("17")){
-                        txttop3dau.setText("Tử Vi(D)");
-                        txttop3than.setText("Thiên Cơ(D)");
-                        txttop3ngo.setText("Thái Dương(H)");
-                        txttop3ty.setText("Vũ Khúc(D)");
-                        txttop3thin.setText("Thiên Đồng(M)");
-                        txttop3suu.setText("Liêm Trinh(H)");
+                        txttop3dau.setText("Tử Vi");
+                        txttop3than.setText("Thiên Cơ");
+                        txttop3ngo.setText("Thái Dương");
+                        txttop3ty.setText("Vũ Khúc");
+                        txttop3thin.setText("Thiên Đồng");
+                        txttop3suu.setText("Liêm Trinh");
 
-                        txttop3mui.setText("Thiên Phủ(B)");
-                        txttop4than.setText("Thái Âm(H)");
-                        txttop4dau.setText("Tham Lang(H)");
-                        txttop3tuat.setText("Cự Môn(V)");
-                        txttop3hoi.setText("Thiên Tướng(D)");
-                        txttop3tyd.setText("Thiên Lương(V)");
-                        txttop4suu.setText("Thất Sát(H)");
-                        txttop4ty.setText("Phá Quân(V)");
+                        txttop3mui.setText("Thiên Phủ");
+                        txttop4than.setText("Thái Âm");
+                        txttop4dau.setText("Tham Lang");
+                        txttop3tuat.setText("Cự Môn");
+                        txttop3hoi.setText("Thiên Tướng");
+                        txttop3tyd.setText("Thiên Lương");
+                        txttop4suu.setText("Thất Sát");
+                        txttop4ty.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("18") || thongTin.ngayam().equals("19")){
-                        txttop3tuat.setText("Tử Vi(D)");
-                        txttop3dau.setText("Thiên Cơ(D)");
-                        txttop3mui.setText("Thái Dương(H)");
-                        txttop3ngo.setText("Vũ Khúc(D)");
-                        txttop3ty.setText("Thiên Đồng(M)");
-                        txttop3dan.setText("Liêm Trinh(H)");
+                        txttop3tuat.setText("Tử Vi");
+                        txttop3dau.setText("Thiên Cơ");
+                        txttop3mui.setText("Thái Dương");
+                        txttop3ngo.setText("Vũ Khúc");
+                        txttop3ty.setText("Thiên Đồng");
+                        txttop3dan.setText("Liêm Trinh");
 
-                        txttop4ngo.setText("Thiên Phủ(B)");
-                        txttop4mui.setText("Thái Âm(H)");
-                        txttop3than.setText("Tham Lang(H)");
-                        txttop4dau.setText("Cự Môn(V)");
-                        txttop4tuat.setText("Thiên Tướng(D)");
-                        txttop3hoi.setText("Thiên Lương(V)");
-                        txttop3tyd.setText("Thất Sát(H)");
-                        txttop3thin.setText("Phá Quân(V)");
+                        txttop4ngo.setText("Thiên Phủ");
+                        txttop4mui.setText("Thái Âm");
+                        txttop3than.setText("Tham Lang");
+                        txttop4dau.setText("Cự Môn");
+                        txttop4tuat.setText("Thiên Tướng");
+                        txttop3hoi.setText("Thiên Lương");
+                        txttop3tyd.setText("Thất Sát");
+                        txttop3thin.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("20") || thongTin.ngayam().equals("21")){
-                        txttop3hoi.setText("Tử Vi(D)");
-                        txttop3tuat.setText("Thiên Cơ(D)");
-                        txttop3than.setText("Thái Dương(H)");
-                        txttop3mui.setText("Vũ Khúc(D)");
-                        txttop3ngo.setText("Thiên Đồng(M)");
-                        txttop3mao.setText("Liêm Trinh(H)");
+                        txttop3hoi.setText("Tử Vi");
+                        txttop3tuat.setText("Thiên Cơ");
+                        txttop3than.setText("Thái Dương");
+                        txttop3mui.setText("Vũ Khúc");
+                        txttop3ngo.setText("Thiên Đồng");
+                        txttop3mao.setText("Liêm Trinh");
 
-                        txttop3ty.setText("Thiên Phủ(B)");
-                        txttop4ngo.setText("Thái Âm(H)");
-                        txttop4mui.setText("Tham Lang(H)");
-                        txttop4than.setText("Cự Môn(V)");
-                        txttop3dau.setText("Thiên Tướng(D)");
-                        txttop4tuat.setText("Thiên Lương(V)");
-                        txttop4hoi.setText("Thất Sát(H)");
-                        txttop4mao.setText("Phá Quân(V)");
+                        txttop3ty.setText("Thiên Phủ");
+                        txttop4ngo.setText("Thái Âm");
+                        txttop4mui.setText("Tham Lang");
+                        txttop4than.setText("Cự Môn");
+                        txttop3dau.setText("Thiên Tướng");
+                        txttop4tuat.setText("Thiên Lương");
+                        txttop4hoi.setText("Thất Sát");
+                        txttop4mao.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("22") || thongTin.ngayam().equals("23")){
-                        txttop3tyd.setText("Tử Vi(D)");
-                        txttop3hoi.setText("Thiên Cơ(D)");
-                        txttop3dau.setText("Thái Dương(H)");
-                        txttop3than.setText("Vũ Khúc(D)");
-                        txttop3mui.setText("Thiên Đồng(M)");
-                        txttop3thin.setText("Liêm Trinh(H)");
+                        txttop3tyd.setText("Tử Vi");
+                        txttop3hoi.setText("Thiên Cơ");
+                        txttop3dau.setText("Thái Dương");
+                        txttop3than.setText("Vũ Khúc");
+                        txttop3mui.setText("Thiên Đồng");
+                        txttop3thin.setText("Liêm Trinh");
 
-                        txttop4thin.setText("Thiên Phủ(B)");
-                        txttop3ty.setText("Thái Âm(H)");
-                        txttop3ngo.setText("Tham Lang(H)");
-                        txttop4mui.setText("Cự Môn(V)");
-                        txttop4than.setText("Thiên Tướng(D)");
-                        txttop4dau.setText("Thiên Lương(V)");
-                        txttop3tuat.setText("Thất Sát(H)");
-                        txttop3dan.setText("Phá Quân(V)");
+                        txttop4thin.setText("Thiên Phủ");
+                        txttop3ty.setText("Thái Âm");
+                        txttop3ngo.setText("Tham Lang");
+                        txttop4mui.setText("Cự Môn");
+                        txttop4than.setText("Thiên Tướng");
+                        txttop4dau.setText("Thiên Lương");
+                        txttop3tuat.setText("Thất Sát");
+                        txttop3dan.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("1") || thongTin.ngayam().equals("24") || thongTin.ngayam().equals("25")){
-                        txttop3suu.setText("Tử Vi(D)");
-                        txttop3tyd.setText("Thiên Cơ(D)");
-                        txttop3tuat.setText("Thái Dương(H)");
-                        txttop3dau.setText("Vũ Khúc(D)");
-                        txttop3than.setText("Thiên Đồng(M)");
-                        txttop3ty.setText("Liêm Trinh(H)");
+                        txttop3suu.setText("Tử Vi");
+                        txttop3tyd.setText("Thiên Cơ");
+                        txttop3tuat.setText("Thái Dương");
+                        txttop3dau.setText("Vũ Khúc");
+                        txttop3than.setText("Thiên Đồng");
+                        txttop3ty.setText("Liêm Trinh");
 
-                        txttop3mao.setText("Thiên Phủ(B)");
-                        txttop3thin.setText("Thái Âm(H)");
-                        txttop4ty.setText("Tham Lang(H)");
-                        txttop3ngo.setText("Cự Môn(V)");
-                        txttop3mui.setText("Thiên Tướng(D)");
-                        txttop4than.setText("Thiên Lương(V)");
-                        txttop4dau.setText("Thất Sát(H)");
-                        txttop4suu.setText("Phá Quân(V)");
+                        txttop3mao.setText("Thiên Phủ");
+                        txttop3thin.setText("Thái Âm");
+                        txttop4ty.setText("Tham Lang");
+                        txttop3ngo.setText("Cự Môn");
+                        txttop3mui.setText("Thiên Tướng");
+                        txttop4than.setText("Thiên Lương");
+                        txttop4dau.setText("Thất Sát");
+                        txttop4suu.setText("Phá Quân");
                     }
                 }
                 else if (giophutsinh.equals("Thân") || giophutsinh.equals("Dậu")){
                     if (thongTin.ngayam().equals("6") || thongTin.ngayam().equals("11") || thongTin.ngayam().equals("21")){
-                        txttop3dan.setText("Tử Vi(D)");
-                        txttop3suu.setText("Thiên Cơ(D)");
-                        txttop3hoi.setText("Thái Dương(H)");
-                        txttop3tuat.setText("Vũ Khúc(D)");
-                        txttop3dau.setText("Thiên Đồng(M)");
-                        txttop3ngo.setText("Liêm Trinh(H)");
+                        txttop3dan.setText("Tử Vi");
+                        txttop3suu.setText("Thiên Cơ");
+                        txttop3hoi.setText("Thái Dương");
+                        txttop3tuat.setText("Vũ Khúc");
+                        txttop3dau.setText("Thiên Đồng");
+                        txttop3ngo.setText("Liêm Trinh");
 
-                        txttop4dan.setText("Thiên Phủ(B)");
-                        txttop3mao.setText("Thái Âm(H)");
-                        txttop3thin.setText("Tham Lang(H)");
-                        txttop3ty.setText("Cự Môn(V)");
-                        txttop4ngo.setText("Thiên Tướng(D)");
-                        txttop3mui.setText("Thiên Lương(V)");
-                        txttop3than.setText("Thất Sát(H)");
-                        txttop3tyd.setText("Phá Quân(V)");
+                        txttop4dan.setText("Thiên Phủ");
+                        txttop3mao.setText("Thái Âm");
+                        txttop3thin.setText("Tham Lang");
+                        txttop3ty.setText("Cự Môn");
+                        txttop4ngo.setText("Thiên Tướng");
+                        txttop3mui.setText("Thiên Lương");
+                        txttop3than.setText("Thất Sát");
+                        txttop3tyd.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("12") || thongTin.ngayam().equals("17") || thongTin.ngayam().equals("27")){
-                        txttop3mao.setText("Tử Vi(D)");
-                        txttop3dan.setText("Thiên Cơ(D)");
-                        txttop3tyd.setText("Thái Dương(H)");
-                        txttop3hoi.setText("Vũ Khúc(D)");
-                        txttop3tuat.setText("Thiên Đồng(M)");
-                        txttop3mui.setText("Liêm Trinh(H)");
+                        txttop3mao.setText("Tử Vi");
+                        txttop3dan.setText("Thiên Cơ");
+                        txttop3tyd.setText("Thái Dương");
+                        txttop3hoi.setText("Vũ Khúc");
+                        txttop3tuat.setText("Thiên Đồng");
+                        txttop3mui.setText("Liêm Trinh");
 
-                        txttop3suu.setText("Thiên Phủ(B)");
-                        txttop4dan.setText("Thái Âm(H)");
-                        txttop4mao.setText("Tham Lang(H)");
-                        txttop3thin.setText("Cự Môn(V)");
-                        txttop3ty.setText("Thiên Tướng(D)");
-                        txttop3ngo.setText("Thiên Lương(V)");
-                        txttop4mui.setText("Thất Sát(H)");
-                        txttop4hoi.setText("Phá Quân(V)");
+                        txttop3suu.setText("Thiên Phủ");
+                        txttop4dan.setText("Thái Âm");
+                        txttop4mao.setText("Tham Lang");
+                        txttop3thin.setText("Cự Môn");
+                        txttop3ty.setText("Thiên Tướng");
+                        txttop3ngo.setText("Thiên Lương");
+                        txttop4mui.setText("Thất Sát");
+                        txttop4hoi.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("4") || thongTin.ngayam().equals("18") || thongTin.ngayam().equals("23")){
-                        txttop3thin.setText("Tử Vi(D)");
-                        txttop3mao.setText("Thiên Cơ(D)");
-                        txttop3suu.setText("Thái Dương(H)");
-                        txttop3tyd.setText("Vũ Khúc(D)");
-                        txttop3hoi.setText("Thiên Đồng(M)");
-                        txttop3than.setText("Liêm Trinh(H)");
+                        txttop3thin.setText("Tử Vi");
+                        txttop3mao.setText("Thiên Cơ");
+                        txttop3suu.setText("Thái Dương");
+                        txttop3tyd.setText("Vũ Khúc");
+                        txttop3hoi.setText("Thiên Đồng");
+                        txttop3than.setText("Liêm Trinh");
 
-                        txttop4tyd.setText("Thiên Phủ(B)");
-                        txttop4suu.setText("Thái Âm(H)");
-                        txttop4dan.setText("Tham Lang(H)");
-                        txttop4mao.setText("Cự Môn(V)");
-                        txttop4thin.setText("Thiên Tướng(D)");
-                        txttop3ty.setText("Thiên Lương(V)");
-                        txttop3ngo.setText("Thất Sát(H)");
-                        txttop3tuat.setText("Phá Quân(V)");
+                        txttop4tyd.setText("Thiên Phủ");
+                        txttop4suu.setText("Thái Âm");
+                        txttop4dan.setText("Tham Lang");
+                        txttop4mao.setText("Cự Môn");
+                        txttop4thin.setText("Thiên Tướng");
+                        txttop3ty.setText("Thiên Lương");
+                        txttop3ngo.setText("Thất Sát");
+                        txttop3tuat.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("10") || thongTin.ngayam().equals("24") || thongTin.ngayam().equals("29")){
-                        txttop3ty.setText("Tử Vi(D)");
-                        txttop3thin.setText("Thiên Cơ(D)");
-                        txttop3dan.setText("Thái Dương(H)");
-                        txttop3suu.setText("Vũ Khúc(D)");
-                        txttop3tyd.setText("Thiên Đồng(M)");
-                        txttop3dau.setText("Liêm Trinh(H)");
+                        txttop3ty.setText("Tử Vi");
+                        txttop3thin.setText("Thiên Cơ");
+                        txttop3dan.setText("Thái Dương");
+                        txttop3suu.setText("Vũ Khúc");
+                        txttop3tyd.setText("Thiên Đồng");
+                        txttop3dau.setText("Liêm Trinh");
 
-                        txttop3hoi.setText("Thiên Phủ(B)");
-                        txttop4tyd.setText("Thái Âm(H)");
-                        txttop4suu.setText("Tham Lang(H)");
-                        txttop4dan.setText("Cự Môn(V)");
-                        txttop3mao.setText("Thiên Tướng(D)");
-                        txttop4thin.setText("Thiên Lương(V)");
-                        txttop4ty.setText("Thất Sát(H)");
-                        txttop4dau.setText("Phá Quân(V)");
+                        txttop3hoi.setText("Thiên Phủ");
+                        txttop4tyd.setText("Thái Âm");
+                        txttop4suu.setText("Tham Lang");
+                        txttop4dan.setText("Cự Môn");
+                        txttop3mao.setText("Thiên Tướng");
+                        txttop4thin.setText("Thiên Lương");
+                        txttop4ty.setText("Thất Sát");
+                        txttop4dau.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("2") || thongTin.ngayam().equals("16") || thongTin.ngayam().equals("30")){
-                        txttop3ngo.setText("Tử Vi(D)");
-                        txttop3ty.setText("Thiên Cơ(D)");
-                        txttop3dan.setText("Thái Dương(H)");
-                        txttop3suu.setText("Vũ Khúc(D)");
-                        txttop3tyd.setText("Thiên Đồng(M)");
-                        txttop3dau.setText("Liêm Trinh(H)");
+                        txttop3ngo.setText("Tử Vi");
+                        txttop3ty.setText("Thiên Cơ");
+                        txttop3dan.setText("Thái Dương");
+                        txttop3suu.setText("Vũ Khúc");
+                        txttop3tyd.setText("Thiên Đồng");
+                        txttop3dau.setText("Liêm Trinh");
 
-                        txttop3tuat.setText("Thiên Phủ(B)");
-                        txttop3hoi.setText("Thái Âm(H)");
-                        txttop4tyd.setText("Tham Lang(H)");
-                        txttop4suu.setText("Cự Môn(V)");
-                        txttop4dan.setText("Thiên Tướng(D)");
-                        txttop3mao.setText("Thiên Lương(V)");
-                        txttop3thin.setText("Thất Sát(H)");
-                        txttop3than.setText("Phá Quân(V)");
+                        txttop3tuat.setText("Thiên Phủ");
+                        txttop3hoi.setText("Thái Âm");
+                        txttop4tyd.setText("Tham Lang");
+                        txttop4suu.setText("Cự Môn");
+                        txttop4dan.setText("Thiên Tướng");
+                        txttop3mao.setText("Thiên Lương");
+                        txttop3thin.setText("Thất Sát");
+                        txttop3than.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("8") || thongTin.ngayam().equals("22")){
-                        txttop3mui.setText("Tử Vi(D)");
-                        txttop3ngo.setText("Thiên Cơ(D)");
-                        txttop3thin.setText("Thái Dương(H)");
-                        txttop3mao.setText("Vũ Khúc(D)");
-                        txttop3dan.setText("Thiên Đồng(M)");
-                        txttop3hoi.setText("Liêm Trinh(H)");
+                        txttop3mui.setText("Tử Vi");
+                        txttop3ngo.setText("Thiên Cơ");
+                        txttop3thin.setText("Thái Dương");
+                        txttop3mao.setText("Vũ Khúc");
+                        txttop3dan.setText("Thiên Đồng");
+                        txttop3hoi.setText("Liêm Trinh");
 
-                        txttop3dau.setText("Thiên Phủ(B)");
-                        txttop3tuat.setText("Thái Âm(H)");
-                        txttop4hoi.setText("Tham Lang(H)");
-                        txttop3tyd.setText("Cự Môn(V)");
-                        txttop3suu.setText("Thiên Tướng(D)");
-                        txttop4dan.setText("Thiên Lương(V)");
-                        txttop4mao.setText("Thất Sát(H)");
-                        txttop4mui.setText("Phá Quân(V)");
+                        txttop3dau.setText("Thiên Phủ");
+                        txttop3tuat.setText("Thái Âm");
+                        txttop4hoi.setText("Tham Lang");
+                        txttop3tyd.setText("Cự Môn");
+                        txttop3suu.setText("Thiên Tướng");
+                        txttop4dan.setText("Thiên Lương");
+                        txttop4mao.setText("Thất Sát");
+                        txttop4mui.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("14") || thongTin.ngayam().equals("28")){
-                        txttop3than.setText("Tử Vi(D)");
-                        txttop3mui.setText("Thiên Cơ(D)");
-                        txttop3ty.setText("Thái Dương(H)");
-                        txttop3thin.setText("Vũ Khúc(D)");
-                        txttop3mao.setText("Thiên Đồng(M)");
-                        txttop3tyd.setText("Liêm Trinh(H)");
+                        txttop3than.setText("Tử Vi");
+                        txttop3mui.setText("Thiên Cơ");
+                        txttop3ty.setText("Thái Dương");
+                        txttop3thin.setText("Vũ Khúc");
+                        txttop3mao.setText("Thiên Đồng");
+                        txttop3tyd.setText("Liêm Trinh");
 
-                        txttop4than.setText("Thiên Phủ(B)");
-                        txttop3dau.setText("Thái Âm(H)");
-                        txttop3tuat.setText("Tham Lang(H)");
-                        txttop3hoi.setText("Cự Môn(V)");
-                        txttop4tyd.setText("Thiên Tướng(D)");
-                        txttop3suu.setText("Thiên Lương(V)");
-                        txttop3dan.setText("Thất Sát(H)");
-                        txttop3ngo.setText("Phá Quân(V)");
+                        txttop4than.setText("Thiên Phủ");
+                        txttop3dau.setText("Thái Âm");
+                        txttop3tuat.setText("Tham Lang");
+                        txttop3hoi.setText("Cự Môn");
+                        txttop4tyd.setText("Thiên Tướng");
+                        txttop3suu.setText("Thiên Lương");
+                        txttop3dan.setText("Thất Sát");
+                        txttop3ngo.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("1") || thongTin.ngayam().equals("20")){
-                        txttop3dau.setText("Tử Vi(D)");
-                        txttop3than.setText("Thiên Cơ(D)");
-                        txttop3ngo.setText("Thái Dương(H)");
-                        txttop3ty.setText("Vũ Khúc(D)");
-                        txttop3thin.setText("Thiên Đồng(M)");
-                        txttop3suu.setText("Liêm Trinh(H)");
+                        txttop3dau.setText("Tử Vi");
+                        txttop3than.setText("Thiên Cơ");
+                        txttop3ngo.setText("Thái Dương");
+                        txttop3ty.setText("Vũ Khúc");
+                        txttop3thin.setText("Thiên Đồng");
+                        txttop3suu.setText("Liêm Trinh");
 
-                        txttop3mui.setText("Thiên Phủ(B)");
-                        txttop4than.setText("Thái Âm(H)");
-                        txttop4dau.setText("Tham Lang(H)");
-                        txttop3tuat.setText("Cự Môn(V)");
-                        txttop3hoi.setText("Thiên Tướng(D)");
-                        txttop3tyd.setText("Thiên Lương(V)");
-                        txttop4suu.setText("Thất Sát(H)");
-                        txttop4ty.setText("Phá Quân(V)");
+                        txttop3mui.setText("Thiên Phủ");
+                        txttop4than.setText("Thái Âm");
+                        txttop4dau.setText("Tham Lang");
+                        txttop3tuat.setText("Cự Môn");
+                        txttop3hoi.setText("Thiên Tướng");
+                        txttop3tyd.setText("Thiên Lương");
+                        txttop4suu.setText("Thất Sát");
+                        txttop4ty.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("7") || thongTin.ngayam().equals("26")){
-                        txttop3tuat.setText("Tử Vi(D)");
-                        txttop3dau.setText("Thiên Cơ(D)");
-                        txttop3mui.setText("Thái Dương(H)");
-                        txttop3ngo.setText("Vũ Khúc(D)");
-                        txttop3ty.setText("Thiên Đồng(M)");
-                        txttop3dan.setText("Liêm Trinh(H)");
+                        txttop3tuat.setText("Tử Vi");
+                        txttop3dau.setText("Thiên Cơ");
+                        txttop3mui.setText("Thái Dương");
+                        txttop3ngo.setText("Vũ Khúc");
+                        txttop3ty.setText("Thiên Đồng");
+                        txttop3dan.setText("Liêm Trinh");
 
-                        txttop4ngo.setText("Thiên Phủ(B)");
-                        txttop4mui.setText("Thái Âm(H)");
-                        txttop3than.setText("Tham Lang(H)");
-                        txttop4dau.setText("Cự Môn(V)");
-                        txttop4tuat.setText("Thiên Tướng(D)");
-                        txttop3hoi.setText("Thiên Lương(V)");
-                        txttop3tyd.setText("Thất Sát(H)");
-                        txttop3thin.setText("Phá Quân(V)");
+                        txttop4ngo.setText("Thiên Phủ");
+                        txttop4mui.setText("Thái Âm");
+                        txttop3than.setText("Tham Lang");
+                        txttop4dau.setText("Cự Môn");
+                        txttop4tuat.setText("Thiên Tướng");
+                        txttop3hoi.setText("Thiên Lương");
+                        txttop3tyd.setText("Thất Sát");
+                        txttop3thin.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("3") || thongTin.ngayam().equals("13")){
-                        txttop3hoi.setText("Tử Vi(D)");
-                        txttop3tuat.setText("Thiên Cơ(D)");
-                        txttop3than.setText("Thái Dương(H)");
-                        txttop3mui.setText("Vũ Khúc(D)");
-                        txttop3ngo.setText("Thiên Đồng(M)");
-                        txttop3mao.setText("Liêm Trinh(H)");
+                        txttop3hoi.setText("Tử Vi");
+                        txttop3tuat.setText("Thiên Cơ");
+                        txttop3than.setText("Thái Dương");
+                        txttop3mui.setText("Vũ Khúc");
+                        txttop3ngo.setText("Thiên Đồng");
+                        txttop3mao.setText("Liêm Trinh");
 
-                        txttop3ty.setText("Thiên Phủ(B)");
-                        txttop4ngo.setText("Thái Âm(H)");
-                        txttop4mui.setText("Tham Lang(H)");
-                        txttop4than.setText("Cự Môn(V)");
-                        txttop3dau.setText("Thiên Tướng(D)");
-                        txttop4tuat.setText("Thiên Lương(V)");
-                        txttop4hoi.setText("Thất Sát(H)");
-                        txttop4mao.setText("Phá Quân(V)");
+                        txttop3ty.setText("Thiên Phủ");
+                        txttop4ngo.setText("Thái Âm");
+                        txttop4mui.setText("Tham Lang");
+                        txttop4than.setText("Cự Môn");
+                        txttop3dau.setText("Thiên Tướng");
+                        txttop4tuat.setText("Thiên Lương");
+                        txttop4hoi.setText("Thất Sát");
+                        txttop4mao.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("9") || thongTin.ngayam().equals("19")){
-                        txttop3tyd.setText("Tử Vi(D)");
-                        txttop3hoi.setText("Thiên Cơ(D)");
-                        txttop3dau.setText("Thái Dương(H)");
-                        txttop3than.setText("Vũ Khúc(D)");
-                        txttop3mui.setText("Thiên Đồng(M)");
-                        txttop3thin.setText("Liêm Trinh(H)");
+                        txttop3tyd.setText("Tử Vi");
+                        txttop3hoi.setText("Thiên Cơ");
+                        txttop3dau.setText("Thái Dương");
+                        txttop3than.setText("Vũ Khúc");
+                        txttop3mui.setText("Thiên Đồng");
+                        txttop3thin.setText("Liêm Trinh");
 
-                        txttop4thin.setText("Thiên Phủ(B)");
-                        txttop3ty.setText("Thái Âm(H)");
-                        txttop3ngo.setText("Tham Lang(H)");
-                        txttop4mui.setText("Cự Môn(V)");
-                        txttop4than.setText("Thiên Tướng(D)");
-                        txttop4dau.setText("Thiên Lương(V)");
-                        txttop3tuat.setText("Thất Sát(H)");
-                        txttop3dan.setText("Phá Quân(V)");
+                        txttop4thin.setText("Thiên Phủ");
+                        txttop3ty.setText("Thái Âm");
+                        txttop3ngo.setText("Tham Lang");
+                        txttop4mui.setText("Cự Môn");
+                        txttop4than.setText("Thiên Tướng");
+                        txttop4dau.setText("Thiên Lương");
+                        txttop3tuat.setText("Thất Sát");
+                        txttop3dan.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("5") || thongTin.ngayam().equals("15") || thongTin.ngayam().equals("25")){
-                        txttop3suu.setText("Tử Vi(D)");
-                        txttop3tyd.setText("Thiên Cơ(D)");
-                        txttop3tuat.setText("Thái Dương(H)");
-                        txttop3dau.setText("Vũ Khúc(D)");
-                        txttop3than.setText("Thiên Đồng(M)");
-                        txttop3ty.setText("Liêm Trinh(H)");
+                        txttop3suu.setText("Tử Vi");
+                        txttop3tyd.setText("Thiên Cơ");
+                        txttop3tuat.setText("Thái Dương");
+                        txttop3dau.setText("Vũ Khúc");
+                        txttop3than.setText("Thiên Đồng");
+                        txttop3ty.setText("Liêm Trinh");
 
-                        txttop3mao.setText("Thiên Phủ(B)");
-                        txttop3thin.setText("Thái Âm(H)");
-                        txttop4ty.setText("Tham Lang(H)");
-                        txttop3ngo.setText("Cự Môn(V)");
-                        txttop3mui.setText("Thiên Tướng(D)");
-                        txttop4than.setText("Thiên Lương(V)");
-                        txttop4dau.setText("Thất Sát(H)");
-                        txttop4suu.setText("Phá Quân(V)");
+                        txttop3mao.setText("Thiên Phủ");
+                        txttop3thin.setText("Thái Âm");
+                        txttop4ty.setText("Tham Lang");
+                        txttop3ngo.setText("Cự Môn");
+                        txttop3mui.setText("Thiên Tướng");
+                        txttop4than.setText("Thiên Lương");
+                        txttop4dau.setText("Thất Sát");
+                        txttop4suu.setText("Phá Quân");
                     }
                 }
                 else if (giophutsinh.equals("Dần") || giophutsinh.equals("Mẹo") || giophutsinh.equals("Tuất") || giophutsinh.equals("Hợi")){
                     if (thongTin.ngayam().equals("3") || thongTin.ngayam().equals("5")){
-                        txttop3dan.setText("Tử Vi(D)");
-                        txttop3suu.setText("Thiên Cơ(D)");
-                        txttop3hoi.setText("Thái Dương(H)");
-                        txttop3tuat.setText("Vũ Khúc(D)");
-                        txttop3dau.setText("Thiên Đồng(M)");
-                        txttop3ngo.setText("Liêm Trinh(H)");
+                        txttop3dan.setText("Tử Vi");
+                        txttop3suu.setText("Thiên Cơ");
+                        txttop3hoi.setText("Thái Dương");
+                        txttop3tuat.setText("Vũ Khúc");
+                        txttop3dau.setText("Thiên Đồng");
+                        txttop3ngo.setText("Liêm Trinh");
 
-                        txttop4dan.setText("Thiên Phủ(B)");
-                        txttop3mao.setText("Thái Âm(H)");
-                        txttop3thin.setText("Tham Lang(H)");
-                        txttop3ty.setText("Cự Môn(V)");
-                        txttop4ngo.setText("Thiên Tướng(D)");
-                        txttop3mui.setText("Thiên Lương(V)");
-                        txttop3than.setText("Thất Sát(H)");
-                        txttop3tyd.setText("Phá Quân(V)");
+                        txttop4dan.setText("Thiên Phủ");
+                        txttop3mao.setText("Thái Âm");
+                        txttop3thin.setText("Tham Lang");
+                        txttop3ty.setText("Cự Môn");
+                        txttop4ngo.setText("Thiên Tướng");
+                        txttop3mui.setText("Thiên Lương");
+                        txttop3than.setText("Thất Sát");
+                        txttop3tyd.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("6") || thongTin.ngayam().equals("8")){
-                        txttop3mao.setText("Tử Vi(D)");
-                        txttop3dan.setText("Thiên Cơ(D)");
-                        txttop3tyd.setText("Thái Dương(H)");
-                        txttop3hoi.setText("Vũ Khúc(D)");
-                        txttop3tuat.setText("Thiên Đồng(M)");
-                        txttop3mui.setText("Liêm Trinh(H)");
+                        txttop3mao.setText("Tử Vi");
+                        txttop3dan.setText("Thiên Cơ");
+                        txttop3tyd.setText("Thái Dương");
+                        txttop3hoi.setText("Vũ Khúc");
+                        txttop3tuat.setText("Thiên Đồng");
+                        txttop3mui.setText("Liêm Trinh");
 
-                        txttop3suu.setText("Thiên Phủ(B)");
-                        txttop4dan.setText("Thái Âm(H)");
-                        txttop4mao.setText("Tham Lang(H)");
-                        txttop3thin.setText("Cự Môn(V)");
-                        txttop3ty.setText("Thiên Tướng(D)");
-                        txttop3ngo.setText("Thiên Lương(V)");
-                        txttop4mui.setText("Thất Sát(H)");
-                        txttop4hoi.setText("Phá Quân(V)");
+                        txttop3suu.setText("Thiên Phủ");
+                        txttop4dan.setText("Thái Âm");
+                        txttop4mao.setText("Tham Lang");
+                        txttop3thin.setText("Cự Môn");
+                        txttop3ty.setText("Thiên Tướng");
+                        txttop3ngo.setText("Thiên Lương");
+                        txttop4mui.setText("Thất Sát");
+                        txttop4hoi.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("1") || thongTin.ngayam().equals("9") || thongTin.ngayam().equals("11")){
-                        txttop3thin.setText("Tử Vi(D)");
-                        txttop3mao.setText("Thiên Cơ(D)");
-                        txttop3suu.setText("Thái Dương(H)");
-                        txttop3tyd.setText("Vũ Khúc(D)");
-                        txttop3hoi.setText("Thiên Đồng(M)");
-                        txttop3than.setText("Liêm Trinh(H)");
+                        txttop3thin.setText("Tử Vi");
+                        txttop3mao.setText("Thiên Cơ");
+                        txttop3suu.setText("Thái Dương");
+                        txttop3tyd.setText("Vũ Khúc");
+                        txttop3hoi.setText("Thiên Đồng");
+                        txttop3than.setText("Liêm Trinh");
 
-                        txttop4tyd.setText("Thiên Phủ(B)");
-                        txttop4suu.setText("Thái Âm(H)");
-                        txttop4dan.setText("Tham Lang(H)");
-                        txttop4mao.setText("Cự Môn(V)");
-                        txttop4thin.setText("Thiên Tướng(D)");
-                        txttop3ty.setText("Thiên Lương(V)");
-                        txttop3ngo.setText("Thất Sát(H)");
-                        txttop3tuat.setText("Phá Quân(V)");
+                        txttop4tyd.setText("Thiên Phủ");
+                        txttop4suu.setText("Thái Âm");
+                        txttop4dan.setText("Tham Lang");
+                        txttop4mao.setText("Cự Môn");
+                        txttop4thin.setText("Thiên Tướng");
+                        txttop3ty.setText("Thiên Lương");
+                        txttop3ngo.setText("Thất Sát");
+                        txttop3tuat.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("4") || thongTin.ngayam().equals("12") || thongTin.ngayam().equals("14")){
-                        txttop3ty.setText("Tử Vi(D)");
-                        txttop3thin.setText("Thiên Cơ(D)");
-                        txttop3dan.setText("Thái Dương(H)");
-                        txttop3suu.setText("Vũ Khúc(D)");
-                        txttop3tyd.setText("Thiên Đồng(M)");
-                        txttop3dau.setText("Liêm Trinh(H)");
+                        txttop3ty.setText("Tử Vi");
+                        txttop3thin.setText("Thiên Cơ");
+                        txttop3dan.setText("Thái Dương");
+                        txttop3suu.setText("Vũ Khúc");
+                        txttop3tyd.setText("Thiên Đồng");
+                        txttop3dau.setText("Liêm Trinh");
 
-                        txttop3hoi.setText("Thiên Phủ(B)");
-                        txttop4tyd.setText("Thái Âm(H)");
-                        txttop4suu.setText("Tham Lang(H)");
-                        txttop4dan.setText("Cự Môn(V)");
-                        txttop3mao.setText("Thiên Tướng(D)");
-                        txttop4thin.setText("Thiên Lương(V)");
-                        txttop4ty.setText("Thất Sát(H)");
-                        txttop4dau.setText("Phá Quân(V)");
+                        txttop3hoi.setText("Thiên Phủ");
+                        txttop4tyd.setText("Thái Âm");
+                        txttop4suu.setText("Tham Lang");
+                        txttop4dan.setText("Cự Môn");
+                        txttop3mao.setText("Thiên Tướng");
+                        txttop4thin.setText("Thiên Lương");
+                        txttop4ty.setText("Thất Sát");
+                        txttop4dau.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("7") || thongTin.ngayam().equals("15") || thongTin.ngayam().equals("17")){
-                        txttop3ngo.setText("Tử Vi(D)");
-                        txttop3ty.setText("Thiên Cơ(D)");
-                        txttop3dan.setText("Thái Dương(H)");
-                        txttop3suu.setText("Vũ Khúc(D)");
-                        txttop3tyd.setText("Thiên Đồng(M)");
-                        txttop3dau.setText("Liêm Trinh(H)");
+                        txttop3ngo.setText("Tử Vi");
+                        txttop3ty.setText("Thiên Cơ");
+                        txttop3dan.setText("Thái Dương");
+                        txttop3suu.setText("Vũ Khúc");
+                        txttop3tyd.setText("Thiên Đồng");
+                        txttop3dau.setText("Liêm Trinh");
 
-                        txttop3tuat.setText("Thiên Phủ(B)");
-                        txttop3hoi.setText("Thái Âm(H)");
-                        txttop4tyd.setText("Tham Lang(H)");
-                        txttop4suu.setText("Cự Môn(V)");
-                        txttop4dan.setText("Thiên Tướng(D)");
-                        txttop3mao.setText("Thiên Lương(V)");
-                        txttop3thin.setText("Thất Sát(H)");
-                        txttop3than.setText("Phá Quân(V)");
+                        txttop3tuat.setText("Thiên Phủ");
+                        txttop3hoi.setText("Thái Âm");
+                        txttop4tyd.setText("Tham Lang");
+                        txttop4suu.setText("Cự Môn");
+                        txttop4dan.setText("Thiên Tướng");
+                        txttop3mao.setText("Thiên Lương");
+                        txttop3thin.setText("Thất Sát");
+                        txttop3than.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("10") || thongTin.ngayam().equals("18") || thongTin.ngayam().equals("20")){
-                        txttop3mui.setText("Tử Vi(D)");
-                        txttop3ngo.setText("Thiên Cơ(D)");
-                        txttop3thin.setText("Thái Dương(H)");
-                        txttop3mao.setText("Vũ Khúc(D)");
-                        txttop3dan.setText("Thiên Đồng(M)");
-                        txttop3hoi.setText("Liêm Trinh(H)");
+                        txttop3mui.setText("Tử Vi");
+                        txttop3ngo.setText("Thiên Cơ");
+                        txttop3thin.setText("Thái Dương");
+                        txttop3mao.setText("Vũ Khúc");
+                        txttop3dan.setText("Thiên Đồng");
+                        txttop3hoi.setText("Liêm Trinh");
 
-                        txttop3dau.setText("Thiên Phủ(B)");
-                        txttop3tuat.setText("Thái Âm(H)");
-                        txttop4hoi.setText("Tham Lang(H)");
-                        txttop3tyd.setText("Cự Môn(V)");
-                        txttop3suu.setText("Thiên Tướng(D)");
-                        txttop4dan.setText("Thiên Lương(V)");
-                        txttop4mao.setText("Thất Sát(H)");
-                        txttop4mui.setText("Phá Quân(V)");
+                        txttop3dau.setText("Thiên Phủ");
+                        txttop3tuat.setText("Thái Âm");
+                        txttop4hoi.setText("Tham Lang");
+                        txttop3tyd.setText("Cự Môn");
+                        txttop3suu.setText("Thiên Tướng");
+                        txttop4dan.setText("Thiên Lương");
+                        txttop4mao.setText("Thất Sát");
+                        txttop4mui.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("13") || thongTin.ngayam().equals("21") || thongTin.ngayam().equals("23")){
-                        txttop3than.setText("Tử Vi(D)");
-                        txttop3mui.setText("Thiên Cơ(D)");
-                        txttop3ty.setText("Thái Dương(H)");
-                        txttop3thin.setText("Vũ Khúc(D)");
-                        txttop3mao.setText("Thiên Đồng(M)");
-                        txttop3tyd.setText("Liêm Trinh(H)");
+                        txttop3than.setText("Tử Vi");
+                        txttop3mui.setText("Thiên Cơ");
+                        txttop3ty.setText("Thái Dương");
+                        txttop3thin.setText("Vũ Khúc");
+                        txttop3mao.setText("Thiên Đồng");
+                        txttop3tyd.setText("Liêm Trinh");
 
-//                        txttop3dau.setText("Thiên Phủ(B)");
-//                        txttop3tuat.setText("Thái Âm(H)");
-//                        txttop4hoi.setText("Tham Lang(H)");
-//                        txttop3tyd.setText("Cự Môn(V)");
-//                        txttop3suu.setText("Thiên Tướng(D)");
-//                        txttop4dan.setText("Thiên Lương(V)");
-//                        txttop4mao.setText("Thất Sát(H)");
-//                        txttop4mui.setText("Phá Quân(V)");
+//                        txttop3dau.setText("Thiên Phủ");
+//                        txttop3tuat.setText("Thái Âm");
+//                        txttop4hoi.setText("Tham Lang");
+//                        txttop3tyd.setText("Cự Môn");
+//                        txttop3suu.setText("Thiên Tướng");
+//                        txttop4dan.setText("Thiên Lương");
+//                        txttop4mao.setText("Thất Sát");
+//                        txttop4mui.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("16") || thongTin.ngayam().equals("24") || thongTin.ngayam().equals("26")){
-                        txttop3dau.setText("Tử Vi(D)");
-                        txttop3than.setText("Thiên Cơ(D)");
-                        txttop3ngo.setText("Thái Dương(H)");
-                        txttop3ty.setText("Vũ Khúc(D)");
-                        txttop3thin.setText("Thiên Đồng(M)");
-                        txttop3suu.setText("Liêm Trinh(H)");
+                        txttop3dau.setText("Tử Vi");
+                        txttop3than.setText("Thiên Cơ");
+                        txttop3ngo.setText("Thái Dương");
+                        txttop3ty.setText("Vũ Khúc");
+                        txttop3thin.setText("Thiên Đồng");
+                        txttop3suu.setText("Liêm Trinh");
 
-                        txttop3mui.setText("Thiên Phủ(B)");
-                        txttop4than.setText("Thái Âm(H)");
-                        txttop4dau.setText("Tham Lang(H)");
-                        txttop3tuat.setText("Cự Môn(V)");
-                        txttop3hoi.setText("Thiên Tướng(D)");
-                        txttop3tyd.setText("Thiên Lương(V)");
-                        txttop4suu.setText("Thất Sát(H)");
-                        txttop4ty.setText("Phá Quân(V)");
+                        txttop3mui.setText("Thiên Phủ");
+                        txttop4than.setText("Thái Âm");
+                        txttop4dau.setText("Tham Lang");
+                        txttop3tuat.setText("Cự Môn");
+                        txttop3hoi.setText("Thiên Tướng");
+                        txttop3tyd.setText("Thiên Lương");
+                        txttop4suu.setText("Thất Sát");
+                        txttop4ty.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("19") || thongTin.ngayam().equals("27") || thongTin.ngayam().equals("29")){
-                        txttop3tuat.setText("Tử Vi(D)");
-                        txttop3dau.setText("Thiên Cơ(D)");
-                        txttop3mui.setText("Thái Dương(H)");
-                        txttop3ngo.setText("Vũ Khúc(D)");
-                        txttop3ty.setText("Thiên Đồng(M)");
-                        txttop3dan.setText("Liêm Trinh(H)");
+                        txttop3tuat.setText("Tử Vi");
+                        txttop3dau.setText("Thiên Cơ");
+                        txttop3mui.setText("Thái Dương");
+                        txttop3ngo.setText("Vũ Khúc");
+                        txttop3ty.setText("Thiên Đồng");
+                        txttop3dan.setText("Liêm Trinh");
 
-                        txttop4ngo.setText("Thiên Phủ(B)");
-                        txttop4mui.setText("Thái Âm(H)");
-                        txttop3than.setText("Tham Lang(H)");
-                        txttop4dau.setText("Cự Môn(V)");
-                        txttop4tuat.setText("Thiên Tướng(D)");
-                        txttop3hoi.setText("Thiên Lương(V)");
-                        txttop3tyd.setText("Thất Sát(H)");
-                        txttop3thin.setText("Phá Quân(V)");
+                        txttop4ngo.setText("Thiên Phủ");
+                        txttop4mui.setText("Thái Âm");
+                        txttop3than.setText("Tham Lang");
+                        txttop4dau.setText("Cự Môn");
+                        txttop4tuat.setText("Thiên Tướng");
+                        txttop3hoi.setText("Thiên Lương");
+                        txttop3tyd.setText("Thất Sát");
+                        txttop3thin.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("28") || thongTin.ngayam().equals("30")){
-                        txttop3hoi.setText("Tử Vi(D)");
-                        txttop3tuat.setText("Thiên Cơ(D)");
-                        txttop3than.setText("Thái Dương(H)");
-                        txttop3mui.setText("Vũ Khúc(D)");
-                        txttop3ngo.setText("Thiên Đồng(M)");
-                        txttop3mao.setText("Liêm Trinh(H)");
+                        txttop3hoi.setText("Tử Vi");
+                        txttop3tuat.setText("Thiên Cơ");
+                        txttop3than.setText("Thái Dương");
+                        txttop3mui.setText("Vũ Khúc");
+                        txttop3ngo.setText("Thiên Đồng");
+                        txttop3mao.setText("Liêm Trinh");
 
-                        txttop3ty.setText("Thiên Phủ(B)");
-                        txttop4ngo.setText("Thái Âm(H)");
-                        txttop4mui.setText("Tham Lang(H)");
-                        txttop4than.setText("Cự Môn(V)");
-                        txttop3dau.setText("Thiên Tướng(D)");
-                        txttop4tuat.setText("Thiên Lương(V)");
-                        txttop4hoi.setText("Thất Sát(H)");
-                        txttop4mao.setText("Phá Quân(V)");
+                        txttop3ty.setText("Thiên Phủ");
+                        txttop4ngo.setText("Thái Âm");
+                        txttop4mui.setText("Tham Lang");
+                        txttop4than.setText("Cự Môn");
+                        txttop3dau.setText("Thiên Tướng");
+                        txttop4tuat.setText("Thiên Lương");
+                        txttop4hoi.setText("Thất Sát");
+                        txttop4mao.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("25")){
-                        txttop3tyd.setText("Tử Vi(D)");
-                        txttop3hoi.setText("Thiên Cơ(D)");
-                        txttop3dau.setText("Thái Dương(H)");
-                        txttop3than.setText("Vũ Khúc(D)");
-                        txttop3mui.setText("Thiên Đồng(M)");
-                        txttop3thin.setText("Liêm Trinh(H)");
+                        txttop3tyd.setText("Tử Vi");
+                        txttop3hoi.setText("Thiên Cơ");
+                        txttop3dau.setText("Thái Dương");
+                        txttop3than.setText("Vũ Khúc");
+                        txttop3mui.setText("Thiên Đồng");
+                        txttop3thin.setText("Liêm Trinh");
 
-                        txttop4thin.setText("Thiên Phủ(B)");
-                        txttop3ty.setText("Thái Âm(H)");
-                        txttop3ngo.setText("Tham Lang(H)");
-                        txttop4mui.setText("Cự Môn(V)");
-                        txttop4than.setText("Thiên Tướng(D)");
-                        txttop4dau.setText("Thiên Lương(V)");
-                        txttop3tuat.setText("Thất Sát(H)");
-                        txttop3dan.setText("Phá Quân(V)");
+                        txttop4thin.setText("Thiên Phủ");
+                        txttop3ty.setText("Thái Âm");
+                        txttop3ngo.setText("Tham Lang");
+                        txttop4mui.setText("Cự Môn");
+                        txttop4than.setText("Thiên Tướng");
+                        txttop4dau.setText("Thiên Lương");
+                        txttop3tuat.setText("Thất Sát");
+                        txttop3dan.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("2")){
-                        txttop3suu.setText("Tử Vi(D)");
-                        txttop3tyd.setText("Thiên Cơ(D)");
-                        txttop3tuat.setText("Thái Dương(H)");
-                        txttop3dau.setText("Vũ Khúc(D)");
-                        txttop3than.setText("Thiên Đồng(M)");
-                        txttop3ty.setText("Liêm Trinh(H)");
+                        txttop3suu.setText("Tử Vi");
+                        txttop3tyd.setText("Thiên Cơ");
+                        txttop3tuat.setText("Thái Dương");
+                        txttop3dau.setText("Vũ Khúc");
+                        txttop3than.setText("Thiên Đồng");
+                        txttop3ty.setText("Liêm Trinh");
 
-                        txttop3mao.setText("Thiên Phủ(B)");
-                        txttop3thin.setText("Thái Âm(H)");
-                        txttop4ty.setText("Tham Lang(H)");
-                        txttop3ngo.setText("Cự Môn(V)");
-                        txttop3mui.setText("Thiên Tướng(D)");
-                        txttop4than.setText("Thiên Lương(V)");
-                        txttop4dau.setText("Thất Sát(H)");
-                        txttop4suu.setText("Phá Quân(V)");
+                        txttop3mao.setText("Thiên Phủ");
+                        txttop3thin.setText("Thái Âm");
+                        txttop4ty.setText("Tham Lang");
+                        txttop3ngo.setText("Cự Môn");
+                        txttop3mui.setText("Thiên Tướng");
+                        txttop4than.setText("Thiên Lương");
+                        txttop4dau.setText("Thất Sát");
+                        txttop4suu.setText("Phá Quân");
                     }
                 }
                 else if (giophutsinh.equals("Tý") || giophutsinh.equals("Sửu")){
                     if (thongTin.ngayam().equals("5") || thongTin.ngayam().equals("9") || thongTin.ngayam().equals("17")){
-                        txttop3dan.setText("Tử Vi(D)");
-                        txttop3suu.setText("Thiên Cơ(D)");
-                        txttop3hoi.setText("Thái Dương(H)");
-                        txttop3tuat.setText("Vũ Khúc(D)");
-                        txttop3dau.setText("Thiên Đồng(M)");
-                        txttop3ngo.setText("Liêm Trinh(H)");
+                        txttop3dan.setText("Tử Vi");
+                        txttop3suu.setText("Thiên Cơ");
+                        txttop3hoi.setText("Thái Dương");
+                        txttop3tuat.setText("Vũ Khúc");
+                        txttop3dau.setText("Thiên Đồng");
+                        txttop3ngo.setText("Liêm Trinh");
 
-                        txttop4dan.setText("Thiên Phủ(B)");
-                        txttop3mao.setText("Thái Âm(H)");
-                        txttop3thin.setText("Tham Lang(H)");
-                        txttop3ty.setText("Cự Môn(V)");
-                        txttop4ngo.setText("Thiên Tướng(D)");
-                        txttop3mui.setText("Thiên Lương(V)");
-                        txttop3than.setText("Thất Sát(H)");
-                        txttop3tyd.setText("Phá Quân(V)");
+                        txttop4dan.setText("Thiên Phủ");
+                        txttop3mao.setText("Thái Âm");
+                        txttop3thin.setText("Tham Lang");
+                        txttop3ty.setText("Cự Môn");
+                        txttop4ngo.setText("Thiên Tướng");
+                        txttop3mui.setText("Thiên Lương");
+                        txttop3than.setText("Thất Sát");
+                        txttop3tyd.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("10") || thongTin.ngayam().equals("14") || thongTin.ngayam().equals("22")){
-                        txttop3mao.setText("Tử Vi(D)");
-                        txttop3dan.setText("Thiên Cơ(D)");
-                        txttop3tyd.setText("Thái Dương(H)");
-                        txttop3hoi.setText("Vũ Khúc(D)");
-                        txttop3tuat.setText("Thiên Đồng(M)");
-                        txttop3mui.setText("Liêm Trinh(H)");
+                        txttop3mao.setText("Tử Vi");
+                        txttop3dan.setText("Thiên Cơ");
+                        txttop3tyd.setText("Thái Dương");
+                        txttop3hoi.setText("Vũ Khúc");
+                        txttop3tuat.setText("Thiên Đồng");
+                        txttop3mui.setText("Liêm Trinh");
 
-                        txttop3suu.setText("Thiên Phủ(B)");
-                        txttop4dan.setText("Thái Âm(H)");
-                        txttop4mao.setText("Tham Lang(H)");
-                        txttop3thin.setText("Cự Môn(V)");
-                        txttop3ty.setText("Thiên Tướng(D)");
-                        txttop3ngo.setText("Thiên Lương(V)");
-                        txttop4mui.setText("Thất Sát(H)");
-                        txttop4hoi.setText("Phá Quân(V)");
+                        txttop3suu.setText("Thiên Phủ");
+                        txttop4dan.setText("Thái Âm");
+                        txttop4mao.setText("Tham Lang");
+                        txttop3thin.setText("Cự Môn");
+                        txttop3ty.setText("Thiên Tướng");
+                        txttop3ngo.setText("Thiên Lương");
+                        txttop4mui.setText("Thất Sát");
+                        txttop4hoi.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("3") || thongTin.ngayam().equals("15") || thongTin.ngayam().equals("19") || thongTin.ngayam().equals("27")){
-                        txttop3thin.setText("Tử Vi(D)");
-                        txttop3mao.setText("Thiên Cơ(D)");
-                        txttop3suu.setText("Thái Dương(H)");
-                        txttop3tyd.setText("Vũ Khúc(D)");
-                        txttop3hoi.setText("Thiên Đồng(M)");
-                        txttop3than.setText("Liêm Trinh(H)");
+                        txttop3thin.setText("Tử Vi");
+                        txttop3mao.setText("Thiên Cơ");
+                        txttop3suu.setText("Thái Dương");
+                        txttop3tyd.setText("Vũ Khúc");
+                        txttop3hoi.setText("Thiên Đồng");
+                        txttop3than.setText("Liêm Trinh");
 
-                        txttop4tyd.setText("Thiên Phủ(B)");
-                        txttop4suu.setText("Thái Âm(H)");
-                        txttop4dan.setText("Tham Lang(H)");
-                        txttop4mao.setText("Cự Môn(V)");
-                        txttop4thin.setText("Thiên Tướng(D)");
-                        txttop3ty.setText("Thiên Lương(V)");
-                        txttop3ngo.setText("Thất Sát(H)");
-                        txttop3tuat.setText("Phá Quân(V)");
+                        txttop4tyd.setText("Thiên Phủ");
+                        txttop4suu.setText("Thái Âm");
+                        txttop4dan.setText("Tham Lang");
+                        txttop4mao.setText("Cự Môn");
+                        txttop4thin.setText("Thiên Tướng");
+                        txttop3ty.setText("Thiên Lương");
+                        txttop3ngo.setText("Thất Sát");
+                        txttop3tuat.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("8") || thongTin.ngayam().equals("20") || thongTin.ngayam().equals("24")){
-                        txttop3ty.setText("Tử Vi(D)");
-                        txttop3thin.setText("Thiên Cơ(D)");
-                        txttop3dan.setText("Thái Dương(H)");
-                        txttop3suu.setText("Vũ Khúc(D)");
-                        txttop3tyd.setText("Thiên Đồng(M)");
-                        txttop3dau.setText("Liêm Trinh(H)");
+                        txttop3ty.setText("Tử Vi");
+                        txttop3thin.setText("Thiên Cơ");
+                        txttop3dan.setText("Thái Dương");
+                        txttop3suu.setText("Vũ Khúc");
+                        txttop3tyd.setText("Thiên Đồng");
+                        txttop3dau.setText("Liêm Trinh");
 
-                        txttop3hoi.setText("Thiên Phủ(B)");
-                        txttop4tyd.setText("Thái Âm(H)");
-                        txttop4suu.setText("Tham Lang(H)");
-                        txttop4dan.setText("Cự Môn(V)");
-                        txttop3mao.setText("Thiên Tướng(D)");
-                        txttop4thin.setText("Thiên Lương(V)");
-                        txttop4ty.setText("Thất Sát(H)");
-                        txttop4dau.setText("Phá Quân(V)");
+                        txttop3hoi.setText("Thiên Phủ");
+                        txttop4tyd.setText("Thái Âm");
+                        txttop4suu.setText("Tham Lang");
+                        txttop4dan.setText("Cự Môn");
+                        txttop3mao.setText("Thiên Tướng");
+                        txttop4thin.setText("Thiên Lương");
+                        txttop4ty.setText("Thất Sát");
+                        txttop4dau.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("1") || thongTin.ngayam().equals("13") || thongTin.ngayam().equals("25") || thongTin.ngayam().equals("29")){
-                        txttop3ngo.setText("Tử Vi(D)");
-                        txttop3ty.setText("Thiên Cơ(D)");
-                        txttop3dan.setText("Thái Dương(H)");
-                        txttop3suu.setText("Vũ Khúc(D)");
-                        txttop3tyd.setText("Thiên Đồng(M)");
-                        txttop3dau.setText("Liêm Trinh(H)");
+                        txttop3ngo.setText("Tử Vi");
+                        txttop3ty.setText("Thiên Cơ");
+                        txttop3dan.setText("Thái Dương");
+                        txttop3suu.setText("Vũ Khúc");
+                        txttop3tyd.setText("Thiên Đồng");
+                        txttop3dau.setText("Liêm Trinh");
 
-                        txttop3tuat.setText("Thiên Phủ(B)");
-                        txttop3hoi.setText("Thái Âm(H)");
-                        txttop4tyd.setText("Tham Lang(H)");
-                        txttop4suu.setText("Cự Môn(V)");
-                        txttop4dan.setText("Thiên Tướng(D)");
-                        txttop3mao.setText("Thiên Lương(V)");
-                        txttop3thin.setText("Thất Sát(H)");
-                        txttop3than.setText("Phá Quân(V)");
+                        txttop3tuat.setText("Thiên Phủ");
+                        txttop3hoi.setText("Thái Âm");
+                        txttop4tyd.setText("Tham Lang");
+                        txttop4suu.setText("Cự Môn");
+                        txttop4dan.setText("Thiên Tướng");
+                        txttop3mao.setText("Thiên Lương");
+                        txttop3thin.setText("Thất Sát");
+                        txttop3than.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("6") || thongTin.ngayam().equals("18") || thongTin.ngayam().equals("30")){
-                        txttop3mui.setText("Tử Vi(D)");
-                        txttop3ngo.setText("Thiên Cơ(D)");
-                        txttop3thin.setText("Thái Dương(H)");
-                        txttop3mao.setText("Vũ Khúc(D)");
-                        txttop3dan.setText("Thiên Đồng(M)");
-                        txttop3hoi.setText("Liêm Trinh(H)");
+                        txttop3mui.setText("Tử Vi");
+                        txttop3ngo.setText("Thiên Cơ");
+                        txttop3thin.setText("Thái Dương");
+                        txttop3mao.setText("Vũ Khúc");
+                        txttop3dan.setText("Thiên Đồng");
+                        txttop3hoi.setText("Liêm Trinh");
 
-                        txttop3dau.setText("Thiên Phủ(B)");
-                        txttop3tuat.setText("Thái Âm(H)");
-                        txttop4hoi.setText("Tham Lang(H)");
-                        txttop3tyd.setText("Cự Môn(V)");
-                        txttop3suu.setText("Thiên Tướng(D)");
-                        txttop4dan.setText("Thiên Lương(V)");
-                        txttop4mao.setText("Thất Sát(H)");
-                        txttop4mui.setText("Phá Quân(V)");
+                        txttop3dau.setText("Thiên Phủ");
+                        txttop3tuat.setText("Thái Âm");
+                        txttop4hoi.setText("Tham Lang");
+                        txttop3tyd.setText("Cự Môn");
+                        txttop3suu.setText("Thiên Tướng");
+                        txttop4dan.setText("Thiên Lương");
+                        txttop4mao.setText("Thất Sát");
+                        txttop4mui.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("11") || thongTin.ngayam().equals("23")){
-                        txttop3than.setText("Tử Vi(D)");
-                        txttop3mui.setText("Thiên Cơ(D)");
-                        txttop3ty.setText("Thái Dương(H)");
-                        txttop3thin.setText("Vũ Khúc(D)");
-                        txttop3mao.setText("Thiên Đồng(M)");
-                        txttop3tyd.setText("Liêm Trinh(H)");
+                        txttop3than.setText("Tử Vi");
+                        txttop3mui.setText("Thiên Cơ");
+                        txttop3ty.setText("Thái Dương");
+                        txttop3thin.setText("Vũ Khúc");
+                        txttop3mao.setText("Thiên Đồng");
+                        txttop3tyd.setText("Liêm Trinh");
 
-//                        txttop3dau.setText("Thiên Phủ(B)");
-//                        txttop3tuat.setText("Thái Âm(H)");
-//                        txttop4hoi.setText("Tham Lang(H)");
-//                        txttop3tyd.setText("Cự Môn(V)");
-//                        txttop3suu.setText("Thiên Tướng(D)");
-//                        txttop4dan.setText("Thiên Lương(V)");
-//                        txttop4mao.setText("Thất Sát(H)");
-//                        txttop4mui.setText("Phá Quân(V)");
+//                        txttop3dau.setText("Thiên Phủ");
+//                        txttop3tuat.setText("Thái Âm");
+//                        txttop4hoi.setText("Tham Lang");
+//                        txttop3tyd.setText("Cự Môn");
+//                        txttop3suu.setText("Thiên Tướng");
+//                        txttop4dan.setText("Thiên Lương");
+//                        txttop4mao.setText("Thất Sát");
+//                        txttop4mui.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("16") || thongTin.ngayam().equals("28")){
-                        txttop3dau.setText("Tử Vi(D)");
-                        txttop3than.setText("Thiên Cơ(D)");
-                        txttop3ngo.setText("Thái Dương(H)");
-                        txttop3ty.setText("Vũ Khúc(D)");
-                        txttop3thin.setText("Thiên Đồng(M)");
-                        txttop3suu.setText("Liêm Trinh(H)");
+                        txttop3dau.setText("Tử Vi");
+                        txttop3than.setText("Thiên Cơ");
+                        txttop3ngo.setText("Thái Dương");
+                        txttop3ty.setText("Vũ Khúc");
+                        txttop3thin.setText("Thiên Đồng");
+                        txttop3suu.setText("Liêm Trinh");
 
-                        txttop3mui.setText("Thiên Phủ(B)");
-                        txttop4than.setText("Thái Âm(H)");
-                        txttop4dau.setText("Tham Lang(H)");
-                        txttop3tuat.setText("Cự Môn(V)");
-                        txttop3hoi.setText("Thiên Tướng(D)");
-                        txttop3tyd.setText("Thiên Lương(V)");
-                        txttop4suu.setText("Thất Sát(H)");
-                        txttop4ty.setText("Phá Quân(V)");
+                        txttop3mui.setText("Thiên Phủ");
+                        txttop4than.setText("Thái Âm");
+                        txttop4dau.setText("Tham Lang");
+                        txttop3tuat.setText("Cự Môn");
+                        txttop3hoi.setText("Thiên Tướng");
+                        txttop3tyd.setText("Thiên Lương");
+                        txttop4suu.setText("Thất Sát");
+                        txttop4ty.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("21")){
-                        txttop3tuat.setText("Tử Vi(D)");
-                        txttop3dau.setText("Thiên Cơ(D)");
-                        txttop3mui.setText("Thái Dương(H)");
-                        txttop3ngo.setText("Vũ Khúc(D)");
-                        txttop3ty.setText("Thiên Đồng(M)");
-                        txttop3dan.setText("Liêm Trinh(H)");
+                        txttop3tuat.setText("Tử Vi");
+                        txttop3dau.setText("Thiên Cơ");
+                        txttop3mui.setText("Thái Dương");
+                        txttop3ngo.setText("Vũ Khúc");
+                        txttop3ty.setText("Thiên Đồng");
+                        txttop3dan.setText("Liêm Trinh");
 
-                        txttop4ngo.setText("Thiên Phủ(B)");
-                        txttop4mui.setText("Thái Âm(H)");
-                        txttop3than.setText("Tham Lang(H)");
-                        txttop4dau.setText("Cự Môn(V)");
-                        txttop4tuat.setText("Thiên Tướng(D)");
-                        txttop3hoi.setText("Thiên Lương(V)");
-                        txttop3tyd.setText("Thất Sát(H)");
-                        txttop3thin.setText("Phá Quân(V)");
+                        txttop4ngo.setText("Thiên Phủ");
+                        txttop4mui.setText("Thái Âm");
+                        txttop3than.setText("Tham Lang");
+                        txttop4dau.setText("Cự Môn");
+                        txttop4tuat.setText("Thiên Tướng");
+                        txttop3hoi.setText("Thiên Lương");
+                        txttop3tyd.setText("Thất Sát");
+                        txttop3thin.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("2") || thongTin.ngayam().equals("26")){
-                        txttop3hoi.setText("Tử Vi(D)");
-                        txttop3tuat.setText("Thiên Cơ(D)");
-                        txttop3than.setText("Thái Dương(H)");
-                        txttop3mui.setText("Vũ Khúc(D)");
-                        txttop3ngo.setText("Thiên Đồng(M)");
-                        txttop3mao.setText("Liêm Trinh(H)");
+                        txttop3hoi.setText("Tử Vi");
+                        txttop3tuat.setText("Thiên Cơ");
+                        txttop3than.setText("Thái Dương");
+                        txttop3mui.setText("Vũ Khúc");
+                        txttop3ngo.setText("Thiên Đồng");
+                        txttop3mao.setText("Liêm Trinh");
 
-                        txttop3ty.setText("Thiên Phủ(B)");
-                        txttop4ngo.setText("Thái Âm(H)");
-                        txttop4mui.setText("Tham Lang(H)");
-                        txttop4than.setText("Cự Môn(V)");
-                        txttop3dau.setText("Thiên Tướng(D)");
-                        txttop4tuat.setText("Thiên Lương(V)");
-                        txttop4hoi.setText("Thất Sát(H)");
-                        txttop4mao.setText("Phá Quân(V)");
+                        txttop3ty.setText("Thiên Phủ");
+                        txttop4ngo.setText("Thái Âm");
+                        txttop4mui.setText("Tham Lang");
+                        txttop4than.setText("Cự Môn");
+                        txttop3dau.setText("Thiên Tướng");
+                        txttop4tuat.setText("Thiên Lương");
+                        txttop4hoi.setText("Thất Sát");
+                        txttop4mao.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("7")){
-                        txttop3tyd.setText("Tử Vi(D)");
-                        txttop3hoi.setText("Thiên Cơ(D)");
-                        txttop3dau.setText("Thái Dương(H)");
-                        txttop3than.setText("Vũ Khúc(D)");
-                        txttop3mui.setText("Thiên Đồng(M)");
-                        txttop3thin.setText("Liêm Trinh(H)");
+                        txttop3tyd.setText("Tử Vi");
+                        txttop3hoi.setText("Thiên Cơ");
+                        txttop3dau.setText("Thái Dương");
+                        txttop3than.setText("Vũ Khúc");
+                        txttop3mui.setText("Thiên Đồng");
+                        txttop3thin.setText("Liêm Trinh");
 
-                        txttop4thin.setText("Thiên Phủ(B)");
-                        txttop3ty.setText("Thái Âm(H)");
-                        txttop3ngo.setText("Tham Lang(H)");
-                        txttop4mui.setText("Cự Môn(V)");
-                        txttop4than.setText("Thiên Tướng(D)");
-                        txttop4dau.setText("Thiên Lương(V)");
-                        txttop3tuat.setText("Thất Sát(H)");
-                        txttop3dan.setText("Phá Quân(V)");
+                        txttop4thin.setText("Thiên Phủ");
+                        txttop3ty.setText("Thái Âm");
+                        txttop3ngo.setText("Tham Lang");
+                        txttop4mui.setText("Cự Môn");
+                        txttop4than.setText("Thiên Tướng");
+                        txttop4dau.setText("Thiên Lương");
+                        txttop3tuat.setText("Thất Sát");
+                        txttop3dan.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("4") || thongTin.ngayam().equals("12")){
-                        txttop3suu.setText("Tử Vi(D)");
-                        txttop3tyd.setText("Thiên Cơ(D)");
-                        txttop3tuat.setText("Thái Dương(H)");
-                        txttop3dau.setText("Vũ Khúc(D)");
-                        txttop3than.setText("Thiên Đồng(M)");
-                        txttop3ty.setText("Liêm Trinh(H)");
+                        txttop3suu.setText("Tử Vi");
+                        txttop3tyd.setText("Thiên Cơ");
+                        txttop3tuat.setText("Thái Dương");
+                        txttop3dau.setText("Vũ Khúc");
+                        txttop3than.setText("Thiên Đồng");
+                        txttop3ty.setText("Liêm Trinh");
 
-                        txttop3mao.setText("Thiên Phủ(B)");
-                        txttop3thin.setText("Thái Âm(H)");
-                        txttop4ty.setText("Tham Lang(H)");
-                        txttop3ngo.setText("Cự Môn(V)");
-                        txttop3mui.setText("Thiên Tướng(D)");
-                        txttop4than.setText("Thiên Lương(V)");
-                        txttop4dau.setText("Thất Sát(H)");
-                        txttop4suu.setText("Phá Quân(V)");
+                        txttop3mao.setText("Thiên Phủ");
+                        txttop3thin.setText("Thái Âm");
+                        txttop4ty.setText("Tham Lang");
+                        txttop3ngo.setText("Cự Môn");
+                        txttop3mui.setText("Thiên Tướng");
+                        txttop4than.setText("Thiên Lương");
+                        txttop4dau.setText("Thất Sát");
+                        txttop4suu.setText("Phá Quân");
                     }
                 }
                 else if (giophutsinh.equals("Ngọ") || giophutsinh.equals("Mùi")){
                     if (thongTin.ngayam().equals("4") || thongTin.ngayam().equals("7") || thongTin.ngayam().equals("13")){
-                        txttop3dan.setText("Tử Vi(D)");
-                        txttop3suu.setText("Thiên Cơ(D)");
-                        txttop3hoi.setText("Thái Dương(H)");
-                        txttop3tuat.setText("Vũ Khúc(D)");
-                        txttop3dau.setText("Thiên Đồng(M)");
-                        txttop3ngo.setText("Liêm Trinh(H)");
+                        txttop3dan.setText("Tử Vi");
+                        txttop3suu.setText("Thiên Cơ");
+                        txttop3hoi.setText("Thái Dương");
+                        txttop3tuat.setText("Vũ Khúc");
+                        txttop3dau.setText("Thiên Đồng");
+                        txttop3ngo.setText("Liêm Trinh");
 
-                        txttop4dan.setText("Thiên Phủ(B)");
-                        txttop3mao.setText("Thái Âm(H)");
-                        txttop3thin.setText("Tham Lang(H)");
-                        txttop3ty.setText("Cự Môn(V)");
-                        txttop4ngo.setText("Thiên Tướng(D)");
-                        txttop3mui.setText("Thiên Lương(V)");
-                        txttop3than.setText("Thất Sát(H)");
-                        txttop3tyd.setText("Phá Quân(V)");
+                        txttop4dan.setText("Thiên Phủ");
+                        txttop3mao.setText("Thái Âm");
+                        txttop3thin.setText("Tham Lang");
+                        txttop3ty.setText("Cự Môn");
+                        txttop4ngo.setText("Thiên Tướng");
+                        txttop3mui.setText("Thiên Lương");
+                        txttop3than.setText("Thất Sát");
+                        txttop3tyd.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("8") || thongTin.ngayam().equals("11") || thongTin.ngayam().equals("17")){
-                        txttop3mao.setText("Tử Vi(D)");
-                        txttop3dan.setText("Thiên Cơ(D)");
-                        txttop3tyd.setText("Thái Dương(H)");
-                        txttop3hoi.setText("Vũ Khúc(D)");
-                        txttop3tuat.setText("Thiên Đồng(M)");
-                        txttop3mui.setText("Liêm Trinh(H)");
+                        txttop3mao.setText("Tử Vi");
+                        txttop3dan.setText("Thiên Cơ");
+                        txttop3tyd.setText("Thái Dương");
+                        txttop3hoi.setText("Vũ Khúc");
+                        txttop3tuat.setText("Thiên Đồng");
+                        txttop3mui.setText("Liêm Trinh");
 
-                        txttop3suu.setText("Thiên Phủ(B)");
-                        txttop4dan.setText("Thái Âm(H)");
-                        txttop4mao.setText("Tham Lang(H)");
-                        txttop3thin.setText("Cự Môn(V)");
-                        txttop3ty.setText("Thiên Tướng(D)");
-                        txttop3ngo.setText("Thiên Lương(V)");
-                        txttop4mui.setText("Thất Sát(H)");
-                        txttop4hoi.setText("Phá Quân(V)");
+                        txttop3suu.setText("Thiên Phủ");
+                        txttop4dan.setText("Thái Âm");
+                        txttop4mao.setText("Tham Lang");
+                        txttop3thin.setText("Cự Môn");
+                        txttop3ty.setText("Thiên Tướng");
+                        txttop3ngo.setText("Thiên Lương");
+                        txttop4mui.setText("Thất Sát");
+                        txttop4hoi.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("2") || thongTin.ngayam().equals("12") || thongTin.ngayam().equals("15") || thongTin.ngayam().equals("21")){
-                        txttop3thin.setText("Tử Vi(D)");
-                        txttop3mao.setText("Thiên Cơ(D)");
-                        txttop3suu.setText("Thái Dương(H)");
-                        txttop3tyd.setText("Vũ Khúc(D)");
-                        txttop3hoi.setText("Thiên Đồng(M)");
-                        txttop3than.setText("Liêm Trinh(H)");
+                        txttop3thin.setText("Tử Vi");
+                        txttop3mao.setText("Thiên Cơ");
+                        txttop3suu.setText("Thái Dương");
+                        txttop3tyd.setText("Vũ Khúc");
+                        txttop3hoi.setText("Thiên Đồng");
+                        txttop3than.setText("Liêm Trinh");
 
-                        txttop4tyd.setText("Thiên Phủ(B)");
-                        txttop4suu.setText("Thái Âm(H)");
-                        txttop4dan.setText("Tham Lang(H)");
-                        txttop4mao.setText("Cự Môn(V)");
-                        txttop4thin.setText("Thiên Tướng(D)");
-                        txttop3ty.setText("Thiên Lương(V)");
-                        txttop3ngo.setText("Thất Sát(H)");
-                        txttop3tuat.setText("Phá Quân(V)");
+                        txttop4tyd.setText("Thiên Phủ");
+                        txttop4suu.setText("Thái Âm");
+                        txttop4dan.setText("Tham Lang");
+                        txttop4mao.setText("Cự Môn");
+                        txttop4thin.setText("Thiên Tướng");
+                        txttop3ty.setText("Thiên Lương");
+                        txttop3ngo.setText("Thất Sát");
+                        txttop3tuat.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("6") || thongTin.ngayam().equals("16") || thongTin.ngayam().equals("19") || thongTin.ngayam().equals("25")){
-                        txttop3ty.setText("Tử Vi(D)");
-                        txttop3thin.setText("Thiên Cơ(D)");
-                        txttop3dan.setText("Thái Dương(H)");
-                        txttop3suu.setText("Vũ Khúc(D)");
-                        txttop3tyd.setText("Thiên Đồng(M)");
-                        txttop3dau.setText("Liêm Trinh(H)");
+                        txttop3ty.setText("Tử Vi");
+                        txttop3thin.setText("Thiên Cơ");
+                        txttop3dan.setText("Thái Dương");
+                        txttop3suu.setText("Vũ Khúc");
+                        txttop3tyd.setText("Thiên Đồng");
+                        txttop3dau.setText("Liêm Trinh");
 
-                        txttop3hoi.setText("Thiên Phủ(B)");
-                        txttop4tyd.setText("Thái Âm(H)");
-                        txttop4suu.setText("Tham Lang(H)");
-                        txttop4dan.setText("Cự Môn(V)");
-                        txttop3mao.setText("Thiên Tướng(D)");
-                        txttop4thin.setText("Thiên Lương(V)");
-                        txttop4ty.setText("Thất Sát(H)");
-                        txttop4dau.setText("Phá Quân(V)");
+                        txttop3hoi.setText("Thiên Phủ");
+                        txttop4tyd.setText("Thái Âm");
+                        txttop4suu.setText("Tham Lang");
+                        txttop4dan.setText("Cự Môn");
+                        txttop3mao.setText("Thiên Tướng");
+                        txttop4thin.setText("Thiên Lương");
+                        txttop4ty.setText("Thất Sát");
+                        txttop4dau.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("10") || thongTin.ngayam().equals("20") || thongTin.ngayam().equals("23") || thongTin.ngayam().equals("29")){
-                        txttop3ngo.setText("Tử Vi(D)");
-                        txttop3ty.setText("Thiên Cơ(D)");
-                        txttop3dan.setText("Thái Dương(H)");
-                        txttop3suu.setText("Vũ Khúc(D)");
-                        txttop3tyd.setText("Thiên Đồng(M)");
-                        txttop3dau.setText("Liêm Trinh(H)");
+                        txttop3ngo.setText("Tử Vi");
+                        txttop3ty.setText("Thiên Cơ");
+                        txttop3dan.setText("Thái Dương");
+                        txttop3suu.setText("Vũ Khúc");
+                        txttop3tyd.setText("Thiên Đồng");
+                        txttop3dau.setText("Liêm Trinh");
 
-                        txttop3tuat.setText("Thiên Phủ(B)");
-                        txttop3hoi.setText("Thái Âm(H)");
-                        txttop4tyd.setText("Tham Lang(H)");
-                        txttop4suu.setText("Cự Môn(V)");
-                        txttop4dan.setText("Thiên Tướng(D)");
-                        txttop3mao.setText("Thiên Lương(V)");
-                        txttop3thin.setText("Thất Sát(H)");
-                        txttop3than.setText("Phá Quân(V)");
+                        txttop3tuat.setText("Thiên Phủ");
+                        txttop3hoi.setText("Thái Âm");
+                        txttop4tyd.setText("Tham Lang");
+                        txttop4suu.setText("Cự Môn");
+                        txttop4dan.setText("Thiên Tướng");
+                        txttop3mao.setText("Thiên Lương");
+                        txttop3thin.setText("Thất Sát");
+                        txttop3than.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("14") || thongTin.ngayam().equals("24") || thongTin.ngayam().equals("27")){
-                        txttop3mui.setText("Tử Vi(D)");
-                        txttop3ngo.setText("Thiên Cơ(D)");
-                        txttop3thin.setText("Thái Dương(H)");
-                        txttop3mao.setText("Vũ Khúc(D)");
-                        txttop3dan.setText("Thiên Đồng(M)");
-                        txttop3hoi.setText("Liêm Trinh(H)");
+                        txttop3mui.setText("Tử Vi");
+                        txttop3ngo.setText("Thiên Cơ");
+                        txttop3thin.setText("Thái Dương");
+                        txttop3mao.setText("Vũ Khúc");
+                        txttop3dan.setText("Thiên Đồng");
+                        txttop3hoi.setText("Liêm Trinh");
 
-                        txttop3dau.setText("Thiên Phủ(B)");
-                        txttop3tuat.setText("Thái Âm(H)");
-                        txttop4hoi.setText("Tham Lang(H)");
-                        txttop3tyd.setText("Cự Môn(V)");
-                        txttop3suu.setText("Thiên Tướng(D)");
-                        txttop4dan.setText("Thiên Lương(V)");
-                        txttop4mao.setText("Thất Sát(H)");
-                        txttop4mui.setText("Phá Quân(V)");
+                        txttop3dau.setText("Thiên Phủ");
+                        txttop3tuat.setText("Thái Âm");
+                        txttop4hoi.setText("Tham Lang");
+                        txttop3tyd.setText("Cự Môn");
+                        txttop3suu.setText("Thiên Tướng");
+                        txttop4dan.setText("Thiên Lương");
+                        txttop4mao.setText("Thất Sát");
+                        txttop4mui.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("18") || thongTin.ngayam().equals("28")){
-                        txttop3than.setText("Tử Vi(D)");
-                        txttop3mui.setText("Thiên Cơ(D)");
-                        txttop3ty.setText("Thái Dương(H)");
-                        txttop3thin.setText("Vũ Khúc(D)");
-                        txttop3mao.setText("Thiên Đồng(M)");
-                        txttop3tyd.setText("Liêm Trinh(H)");
+                        txttop3than.setText("Tử Vi");
+                        txttop3mui.setText("Thiên Cơ");
+                        txttop3ty.setText("Thái Dương");
+                        txttop3thin.setText("Vũ Khúc");
+                        txttop3mao.setText("Thiên Đồng");
+                        txttop3tyd.setText("Liêm Trinh");
 
-//                        txttop3dau.setText("Thiên Phủ(B)");
-//                        txttop3tuat.setText("Thái Âm(H)");
-//                        txttop4hoi.setText("Tham Lang(H)");
-//                        txttop3tyd.setText("Cự Môn(V)");
-//                        txttop3suu.setText("Thiên Tướng(D)");
-//                        txttop4dan.setText("Thiên Lương(V)");
-//                        txttop4mao.setText("Thất Sát(H)");
-//                        txttop4mui.setText("Phá Quân(V)");
+//                        txttop3dau.setText("Thiên Phủ");
+//                        txttop3tuat.setText("Thái Âm");
+//                        txttop4hoi.setText("Tham Lang");
+//                        txttop3tyd.setText("Cự Môn");
+//                        txttop3suu.setText("Thiên Tướng");
+//                        txttop4dan.setText("Thiên Lương");
+//                        txttop4mao.setText("Thất Sát");
+//                        txttop4mui.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("22")){
-                        txttop3dau.setText("Tử Vi(D)");
-                        txttop3than.setText("Thiên Cơ(D)");
-                        txttop3ngo.setText("Thái Dương(H)");
-                        txttop3ty.setText("Vũ Khúc(D)");
-                        txttop3thin.setText("Thiên Đồng(M)");
-                        txttop3suu.setText("Liêm Trinh(H)");
+                        txttop3dau.setText("Tử Vi");
+                        txttop3than.setText("Thiên Cơ");
+                        txttop3ngo.setText("Thái Dương");
+                        txttop3ty.setText("Vũ Khúc");
+                        txttop3thin.setText("Thiên Đồng");
+                        txttop3suu.setText("Liêm Trinh");
 
-                        txttop3mui.setText("Thiên Phủ(B)");
-                        txttop4than.setText("Thái Âm(H)");
-                        txttop4dau.setText("Tham Lang(H)");
-                        txttop3tuat.setText("Cự Môn(V)");
-                        txttop3hoi.setText("Thiên Tướng(D)");
-                        txttop3tyd.setText("Thiên Lương(V)");
-                        txttop4suu.setText("Thất Sát(H)");
-                        txttop4ty.setText("Phá Quân(V)");
+                        txttop3mui.setText("Thiên Phủ");
+                        txttop4than.setText("Thái Âm");
+                        txttop4dau.setText("Tham Lang");
+                        txttop3tuat.setText("Cự Môn");
+                        txttop3hoi.setText("Thiên Tướng");
+                        txttop3tyd.setText("Thiên Lương");
+                        txttop4suu.setText("Thất Sát");
+                        txttop4ty.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("26")){
-                        txttop3tuat.setText("Tử Vi(D)");
-                        txttop3dau.setText("Thiên Cơ(D)");
-                        txttop3mui.setText("Thái Dương(H)");
-                        txttop3ngo.setText("Vũ Khúc(D)");
-                        txttop3ty.setText("Thiên Đồng(M)");
-                        txttop3dan.setText("Liêm Trinh(H)");
+                        txttop3tuat.setText("Tử Vi");
+                        txttop3dau.setText("Thiên Cơ");
+                        txttop3mui.setText("Thái Dương");
+                        txttop3ngo.setText("Vũ Khúc");
+                        txttop3ty.setText("Thiên Đồng");
+                        txttop3dan.setText("Liêm Trinh");
 
-                        txttop4ngo.setText("Thiên Phủ(B)");
-                        txttop4mui.setText("Thái Âm(H)");
-                        txttop3than.setText("Tham Lang(H)");
-                        txttop4dau.setText("Cự Môn(V)");
-                        txttop4tuat.setText("Thiên Tướng(D)");
-                        txttop3hoi.setText("Thiên Lương(V)");
-                        txttop3tyd.setText("Thất Sát(H)");
-                        txttop3thin.setText("Phá Quân(V)");
+                        txttop4ngo.setText("Thiên Phủ");
+                        txttop4mui.setText("Thái Âm");
+                        txttop3than.setText("Tham Lang");
+                        txttop4dau.setText("Cự Môn");
+                        txttop4tuat.setText("Thiên Tướng");
+                        txttop3hoi.setText("Thiên Lương");
+                        txttop3tyd.setText("Thất Sát");
+                        txttop3thin.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("1") || thongTin.ngayam().equals("30")){
-                        txttop3hoi.setText("Tử Vi(D)");
-                        txttop3tuat.setText("Thiên Cơ(D)");
-                        txttop3than.setText("Thái Dương(H)");
-                        txttop3mui.setText("Vũ Khúc(D)");
-                        txttop3ngo.setText("Thiên Đồng(M)");
-                        txttop3mao.setText("Liêm Trinh(H)");
+                        txttop3hoi.setText("Tử Vi");
+                        txttop3tuat.setText("Thiên Cơ");
+                        txttop3than.setText("Thái Dương");
+                        txttop3mui.setText("Vũ Khúc");
+                        txttop3ngo.setText("Thiên Đồng");
+                        txttop3mao.setText("Liêm Trinh");
 
-                        txttop3ty.setText("Thiên Phủ(B)");
-                        txttop4ngo.setText("Thái Âm(H)");
-                        txttop4mui.setText("Tham Lang(H)");
-                        txttop4than.setText("Cự Môn(V)");
-                        txttop3dau.setText("Thiên Tướng(D)");
-                        txttop4tuat.setText("Thiên Lương(V)");
-                        txttop4hoi.setText("Thất Sát(H)");
-                        txttop4mao.setText("Phá Quân(V)");
+                        txttop3ty.setText("Thiên Phủ");
+                        txttop4ngo.setText("Thái Âm");
+                        txttop4mui.setText("Tham Lang");
+                        txttop4than.setText("Cự Môn");
+                        txttop3dau.setText("Thiên Tướng");
+                        txttop4tuat.setText("Thiên Lương");
+                        txttop4hoi.setText("Thất Sát");
+                        txttop4mao.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("5")){
-                        txttop3tyd.setText("Tử Vi(D)");
-                        txttop3hoi.setText("Thiên Cơ(D)");
-                        txttop3dau.setText("Thái Dương(H)");
-                        txttop3than.setText("Vũ Khúc(D)");
-                        txttop3mui.setText("Thiên Đồng(M)");
-                        txttop3thin.setText("Liêm Trinh(H)");
+                        txttop3tyd.setText("Tử Vi");
+                        txttop3hoi.setText("Thiên Cơ");
+                        txttop3dau.setText("Thái Dương");
+                        txttop3than.setText("Vũ Khúc");
+                        txttop3mui.setText("Thiên Đồng");
+                        txttop3thin.setText("Liêm Trinh");
 
-                        txttop4thin.setText("Thiên Phủ(B)");
-                        txttop3ty.setText("Thái Âm(H)");
-                        txttop3ngo.setText("Tham Lang(H)");
-                        txttop4mui.setText("Cự Môn(V)");
-                        txttop4than.setText("Thiên Tướng(D)");
-                        txttop4dau.setText("Thiên Lương(V)");
-                        txttop3tuat.setText("Thất Sát(H)");
-                        txttop3dan.setText("Phá Quân(V)");
+                        txttop4thin.setText("Thiên Phủ");
+                        txttop3ty.setText("Thái Âm");
+                        txttop3ngo.setText("Tham Lang");
+                        txttop4mui.setText("Cự Môn");
+                        txttop4than.setText("Thiên Tướng");
+                        txttop4dau.setText("Thiên Lương");
+                        txttop3tuat.setText("Thất Sát");
+                        txttop3dan.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("3") || thongTin.ngayam().equals("9")){
-                        txttop3suu.setText("Tử Vi(D)");
-                        txttop3tyd.setText("Thiên Cơ(D)");
-                        txttop3tuat.setText("Thái Dương(H)");
-                        txttop3dau.setText("Vũ Khúc(D)");
-                        txttop3than.setText("Thiên Đồng(M)");
-                        txttop3ty.setText("Liêm Trinh(H)");
+                        txttop3suu.setText("Tử Vi");
+                        txttop3tyd.setText("Thiên Cơ");
+                        txttop3tuat.setText("Thái Dương");
+                        txttop3dau.setText("Vũ Khúc");
+                        txttop3than.setText("Thiên Đồng");
+                        txttop3ty.setText("Liêm Trinh");
 
-                        txttop3mao.setText("Thiên Phủ(B)");
-                        txttop3thin.setText("Thái Âm(H)");
-                        txttop4ty.setText("Tham Lang(H)");
-                        txttop3ngo.setText("Cự Môn(V)");
-                        txttop3mui.setText("Thiên Tướng(D)");
-                        txttop4than.setText("Thiên Lương(V)");
-                        txttop4dau.setText("Thất Sát(H)");
-                        txttop4suu.setText("Phá Quân(V)");
+                        txttop3mao.setText("Thiên Phủ");
+                        txttop3thin.setText("Thái Âm");
+                        txttop4ty.setText("Tham Lang");
+                        txttop3ngo.setText("Cự Môn");
+                        txttop3mui.setText("Thiên Tướng");
+                        txttop4than.setText("Thiên Lương");
+                        txttop4dau.setText("Thất Sát");
+                        txttop4suu.setText("Phá Quân");
                     }
                 }
             }
@@ -6681,1032 +6780,1032 @@ public class AnsaoActivity extends AppCompatActivity {
                 }
                 if (giophutsinh.equals("Ngọ") || giophutsinh.equals("Mùi")){
                     if (thongTin.ngayam().equals("2") || thongTin.ngayam().equals("3") || thongTin.ngayam().equals("26") || thongTin.ngayam().equals("27")){
-                        txttop3dan.setText("Tử Vi(D)");
-                        txttop3suu.setText("Thiên Cơ(D)");
-                        txttop3hoi.setText("Thái Dương(H)");
-                        txttop3tuat.setText("Vũ Khúc(D)");
-                        txttop3dau.setText("Thiên Đồng(M)");
-                        txttop3ngo.setText("Liêm Trinh(H)");
+                        txttop3dan.setText("Tử Vi");
+                        txttop3suu.setText("Thiên Cơ");
+                        txttop3hoi.setText("Thái Dương");
+                        txttop3tuat.setText("Vũ Khúc");
+                        txttop3dau.setText("Thiên Đồng");
+                        txttop3ngo.setText("Liêm Trinh");
 
-                        txttop4dan.setText("Thiên Phủ(B)");
-                        txttop3mao.setText("Thái Âm(H)");
-                        txttop3thin.setText("Tham Lang(H)");
-                        txttop3ty.setText("Cự Môn(V)");
-                        txttop4ngo.setText("Thiên Tướng(D)");
-                        txttop3mui.setText("Thiên Lương(V)");
-                        txttop3than.setText("Thất Sát(H)");
-                        txttop3tyd.setText("Phá Quân(V)");
+                        txttop4dan.setText("Thiên Phủ");
+                        txttop3mao.setText("Thái Âm");
+                        txttop3thin.setText("Tham Lang");
+                        txttop3ty.setText("Cự Môn");
+                        txttop4ngo.setText("Thiên Tướng");
+                        txttop3mui.setText("Thiên Lương");
+                        txttop3than.setText("Thất Sát");
+                        txttop3tyd.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("4") || thongTin.ngayam().equals("5") || thongTin.ngayam().equals("28") || thongTin.ngayam().equals("29")){
-                        txttop3mao.setText("Tử Vi(D)");
-                        txttop3dan.setText("Thiên Cơ(D)");
-                        txttop3tyd.setText("Thái Dương(H)");
-                        txttop3hoi.setText("Vũ Khúc(D)");
-                        txttop3tuat.setText("Thiên Đồng(M)");
-                        txttop3mui.setText("Liêm Trinh(H)");
+                        txttop3mao.setText("Tử Vi");
+                        txttop3dan.setText("Thiên Cơ");
+                        txttop3tyd.setText("Thái Dương");
+                        txttop3hoi.setText("Vũ Khúc");
+                        txttop3tuat.setText("Thiên Đồng");
+                        txttop3mui.setText("Liêm Trinh");
 
-                        txttop3suu.setText("Thiên Phủ(B)");
-                        txttop4dan.setText("Thái Âm(H)");
-                        txttop4mao.setText("Tham Lang(H)");
-                        txttop3thin.setText("Cự Môn(V)");
-                        txttop3ty.setText("Thiên Tướng(D)");
-                        txttop3ngo.setText("Thiên Lương(V)");
-                        txttop4mui.setText("Thất Sát(H)");
-                        txttop4hoi.setText("Phá Quân(V)");
+                        txttop3suu.setText("Thiên Phủ");
+                        txttop4dan.setText("Thái Âm");
+                        txttop4mao.setText("Tham Lang");
+                        txttop3thin.setText("Cự Môn");
+                        txttop3ty.setText("Thiên Tướng");
+                        txttop3ngo.setText("Thiên Lương");
+                        txttop4mui.setText("Thất Sát");
+                        txttop4hoi.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("6") || thongTin.ngayam().equals("7") || thongTin.ngayam().equals("30")){
-                        txttop3thin.setText("Tử Vi(D)");
-                        txttop3mao.setText("Thiên Cơ(D)");
-                        txttop3suu.setText("Thái Dương(H)");
-                        txttop3tyd.setText("Vũ Khúc(D)");
-                        txttop3hoi.setText("Thiên Đồng(M)");
-                        txttop3than.setText("Liêm Trinh(H)");
+                        txttop3thin.setText("Tử Vi");
+                        txttop3mao.setText("Thiên Cơ");
+                        txttop3suu.setText("Thái Dương");
+                        txttop3tyd.setText("Vũ Khúc");
+                        txttop3hoi.setText("Thiên Đồng");
+                        txttop3than.setText("Liêm Trinh");
 
-                        txttop4tyd.setText("Thiên Phủ(B)");
-                        txttop4suu.setText("Thái Âm(H)");
-                        txttop4dan.setText("Tham Lang(H)");
-                        txttop4mao.setText("Cự Môn(V)");
-                        txttop4thin.setText("Thiên Tướng(D)");
-                        txttop3ty.setText("Thiên Lương(V)");
-                        txttop3ngo.setText("Thất Sát(H)");
-                        txttop3tuat.setText("Phá Quân(V)");
+                        txttop4tyd.setText("Thiên Phủ");
+                        txttop4suu.setText("Thái Âm");
+                        txttop4dan.setText("Tham Lang");
+                        txttop4mao.setText("Cự Môn");
+                        txttop4thin.setText("Thiên Tướng");
+                        txttop3ty.setText("Thiên Lương");
+                        txttop3ngo.setText("Thất Sát");
+                        txttop3tuat.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("8") || thongTin.ngayam().equals("9")){
-                        txttop3ty.setText("Tử Vi(D)");
-                        txttop3thin.setText("Thiên Cơ(D)");
-                        txttop3dan.setText("Thái Dương(H)");
-                        txttop3suu.setText("Vũ Khúc(D)");
-                        txttop3tyd.setText("Thiên Đồng(M)");
-                        txttop3dau.setText("Liêm Trinh(H)");
+                        txttop3ty.setText("Tử Vi");
+                        txttop3thin.setText("Thiên Cơ");
+                        txttop3dan.setText("Thái Dương");
+                        txttop3suu.setText("Vũ Khúc");
+                        txttop3tyd.setText("Thiên Đồng");
+                        txttop3dau.setText("Liêm Trinh");
 
-                        txttop3hoi.setText("Thiên Phủ(B)");
-                        txttop4tyd.setText("Thái Âm(H)");
-                        txttop4suu.setText("Tham Lang(H)");
-                        txttop4dan.setText("Cự Môn(V)");
-                        txttop3mao.setText("Thiên Tướng(D)");
-                        txttop4thin.setText("Thiên Lương(V)");
-                        txttop4ty.setText("Thất Sát(H)");
-                        txttop4dau.setText("Phá Quân(V)");
+                        txttop3hoi.setText("Thiên Phủ");
+                        txttop4tyd.setText("Thái Âm");
+                        txttop4suu.setText("Tham Lang");
+                        txttop4dan.setText("Cự Môn");
+                        txttop3mao.setText("Thiên Tướng");
+                        txttop4thin.setText("Thiên Lương");
+                        txttop4ty.setText("Thất Sát");
+                        txttop4dau.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("10") || thongTin.ngayam().equals("11")){
-                        txttop3ngo.setText("Tử Vi(D)");
-                        txttop3ty.setText("Thiên Cơ(D)");
-                        txttop3dan.setText("Thái Dương(H)");
-                        txttop3suu.setText("Vũ Khúc(D)");
-                        txttop3tyd.setText("Thiên Đồng(M)");
-                        txttop3dau.setText("Liêm Trinh(H)");
+                        txttop3ngo.setText("Tử Vi");
+                        txttop3ty.setText("Thiên Cơ");
+                        txttop3dan.setText("Thái Dương");
+                        txttop3suu.setText("Vũ Khúc");
+                        txttop3tyd.setText("Thiên Đồng");
+                        txttop3dau.setText("Liêm Trinh");
 
-                        txttop3tuat.setText("Thiên Phủ(B)");
-                        txttop3hoi.setText("Thái Âm(H)");
-                        txttop4tyd.setText("Tham Lang(H)");
-                        txttop4suu.setText("Cự Môn(V)");
-                        txttop4dan.setText("Thiên Tướng(D)");
-                        txttop3mao.setText("Thiên Lương(V)");
-                        txttop3thin.setText("Thất Sát(H)");
-                        txttop3than.setText("Phá Quân(V)");
+                        txttop3tuat.setText("Thiên Phủ");
+                        txttop3hoi.setText("Thái Âm");
+                        txttop4tyd.setText("Tham Lang");
+                        txttop4suu.setText("Cự Môn");
+                        txttop4dan.setText("Thiên Tướng");
+                        txttop3mao.setText("Thiên Lương");
+                        txttop3thin.setText("Thất Sát");
+                        txttop3than.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("12") || thongTin.ngayam().equals("13")){
-                        txttop3mui.setText("Tử Vi(D)");
-                        txttop3ngo.setText("Thiên Cơ(D)");
-                        txttop3thin.setText("Thái Dương(H)");
-                        txttop3mao.setText("Vũ Khúc(D)");
-                        txttop3dan.setText("Thiên Đồng(M)");
-                        txttop3hoi.setText("Liêm Trinh(H)");
+                        txttop3mui.setText("Tử Vi");
+                        txttop3ngo.setText("Thiên Cơ");
+                        txttop3thin.setText("Thái Dương");
+                        txttop3mao.setText("Vũ Khúc");
+                        txttop3dan.setText("Thiên Đồng");
+                        txttop3hoi.setText("Liêm Trinh");
 
-                        txttop3dau.setText("Thiên Phủ(B)");
-                        txttop3tuat.setText("Thái Âm(H)");
-                        txttop4hoi.setText("Tham Lang(H)");
-                        txttop3tyd.setText("Cự Môn(V)");
-                        txttop3suu.setText("Thiên Tướng(D)");
-                        txttop4dan.setText("Thiên Lương(V)");
-                        txttop4mao.setText("Thất Sát(H)");
-                        txttop4mui.setText("Phá Quân(V)");
+                        txttop3dau.setText("Thiên Phủ");
+                        txttop3tuat.setText("Thái Âm");
+                        txttop4hoi.setText("Tham Lang");
+                        txttop3tyd.setText("Cự Môn");
+                        txttop3suu.setText("Thiên Tướng");
+                        txttop4dan.setText("Thiên Lương");
+                        txttop4mao.setText("Thất Sát");
+                        txttop4mui.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("14") || thongTin.ngayam().equals("15")){
-                        txttop3than.setText("Tử Vi(D)");
-                        txttop3mui.setText("Thiên Cơ(D)");
-                        txttop3ty.setText("Thái Dương(H)");
-                        txttop3thin.setText("Vũ Khúc(D)");
-                        txttop3mao.setText("Thiên Đồng(M)");
-                        txttop3tyd.setText("Liêm Trinh(H)");
+                        txttop3than.setText("Tử Vi");
+                        txttop3mui.setText("Thiên Cơ");
+                        txttop3ty.setText("Thái Dương");
+                        txttop3thin.setText("Vũ Khúc");
+                        txttop3mao.setText("Thiên Đồng");
+                        txttop3tyd.setText("Liêm Trinh");
 
-                        txttop4than.setText("Thiên Phủ(B)");
-                        txttop3dau.setText("Thái Âm(H)");
-                        txttop3tuat.setText("Tham Lang(H)");
-                        txttop3hoi.setText("Cự Môn(V)");
-                        txttop4tyd.setText("Thiên Tướng(D)");
-                        txttop3suu.setText("Thiên Lương(V)");
-                        txttop3dan.setText("Thất Sát(H)");
-                        txttop3ngo.setText("Phá Quân(V)");
+                        txttop4than.setText("Thiên Phủ");
+                        txttop3dau.setText("Thái Âm");
+                        txttop3tuat.setText("Tham Lang");
+                        txttop3hoi.setText("Cự Môn");
+                        txttop4tyd.setText("Thiên Tướng");
+                        txttop3suu.setText("Thiên Lương");
+                        txttop3dan.setText("Thất Sát");
+                        txttop3ngo.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("16") || thongTin.ngayam().equals("17")){
-                        txttop3dau.setText("Tử Vi(D)");
-                        txttop3than.setText("Thiên Cơ(D)");
-                        txttop3ngo.setText("Thái Dương(H)");
-                        txttop3ty.setText("Vũ Khúc(D)");
-                        txttop3thin.setText("Thiên Đồng(M)");
-                        txttop3suu.setText("Liêm Trinh(H)");
+                        txttop3dau.setText("Tử Vi");
+                        txttop3than.setText("Thiên Cơ");
+                        txttop3ngo.setText("Thái Dương");
+                        txttop3ty.setText("Vũ Khúc");
+                        txttop3thin.setText("Thiên Đồng");
+                        txttop3suu.setText("Liêm Trinh");
 
-                        txttop3mui.setText("Thiên Phủ(B)");
-                        txttop4than.setText("Thái Âm(H)");
-                        txttop4dau.setText("Tham Lang(H)");
-                        txttop3tuat.setText("Cự Môn(V)");
-                        txttop3hoi.setText("Thiên Tướng(D)");
-                        txttop3tyd.setText("Thiên Lương(V)");
-                        txttop4suu.setText("Thất Sát(H)");
-                        txttop4ty.setText("Phá Quân(V)");
+                        txttop3mui.setText("Thiên Phủ");
+                        txttop4than.setText("Thái Âm");
+                        txttop4dau.setText("Tham Lang");
+                        txttop3tuat.setText("Cự Môn");
+                        txttop3hoi.setText("Thiên Tướng");
+                        txttop3tyd.setText("Thiên Lương");
+                        txttop4suu.setText("Thất Sát");
+                        txttop4ty.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("18") || thongTin.ngayam().equals("19")){
-                        txttop3tuat.setText("Tử Vi(D)");
-                        txttop3dau.setText("Thiên Cơ(D)");
-                        txttop3mui.setText("Thái Dương(H)");
-                        txttop3ngo.setText("Vũ Khúc(D)");
-                        txttop3ty.setText("Thiên Đồng(M)");
-                        txttop3dan.setText("Liêm Trinh(H)");
+                        txttop3tuat.setText("Tử Vi");
+                        txttop3dau.setText("Thiên Cơ");
+                        txttop3mui.setText("Thái Dương");
+                        txttop3ngo.setText("Vũ Khúc");
+                        txttop3ty.setText("Thiên Đồng");
+                        txttop3dan.setText("Liêm Trinh");
 
-                        txttop4ngo.setText("Thiên Phủ(B)");
-                        txttop4mui.setText("Thái Âm(H)");
-                        txttop3than.setText("Tham Lang(H)");
-                        txttop4dau.setText("Cự Môn(V)");
-                        txttop4tuat.setText("Thiên Tướng(D)");
-                        txttop3hoi.setText("Thiên Lương(V)");
-                        txttop3tyd.setText("Thất Sát(H)");
-                        txttop3thin.setText("Phá Quân(V)");
+                        txttop4ngo.setText("Thiên Phủ");
+                        txttop4mui.setText("Thái Âm");
+                        txttop3than.setText("Tham Lang");
+                        txttop4dau.setText("Cự Môn");
+                        txttop4tuat.setText("Thiên Tướng");
+                        txttop3hoi.setText("Thiên Lương");
+                        txttop3tyd.setText("Thất Sát");
+                        txttop3thin.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("20") || thongTin.ngayam().equals("21")){
-                        txttop3hoi.setText("Tử Vi(D)");
-                        txttop3tuat.setText("Thiên Cơ(D)");
-                        txttop3than.setText("Thái Dương(H)");
-                        txttop3mui.setText("Vũ Khúc(D)");
-                        txttop3ngo.setText("Thiên Đồng(M)");
-                        txttop3mao.setText("Liêm Trinh(H)");
+                        txttop3hoi.setText("Tử Vi");
+                        txttop3tuat.setText("Thiên Cơ");
+                        txttop3than.setText("Thái Dương");
+                        txttop3mui.setText("Vũ Khúc");
+                        txttop3ngo.setText("Thiên Đồng");
+                        txttop3mao.setText("Liêm Trinh");
 
-                        txttop3ty.setText("Thiên Phủ(B)");
-                        txttop4ngo.setText("Thái Âm(H)");
-                        txttop4mui.setText("Tham Lang(H)");
-                        txttop4than.setText("Cự Môn(V)");
-                        txttop3dau.setText("Thiên Tướng(D)");
-                        txttop4tuat.setText("Thiên Lương(V)");
-                        txttop4hoi.setText("Thất Sát(H)");
-                        txttop4mao.setText("Phá Quân(V)");
+                        txttop3ty.setText("Thiên Phủ");
+                        txttop4ngo.setText("Thái Âm");
+                        txttop4mui.setText("Tham Lang");
+                        txttop4than.setText("Cự Môn");
+                        txttop3dau.setText("Thiên Tướng");
+                        txttop4tuat.setText("Thiên Lương");
+                        txttop4hoi.setText("Thất Sát");
+                        txttop4mao.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("22") || thongTin.ngayam().equals("23")){
-                        txttop3tyd.setText("Tử Vi(D)");
-                        txttop3hoi.setText("Thiên Cơ(D)");
-                        txttop3dau.setText("Thái Dương(H)");
-                        txttop3than.setText("Vũ Khúc(D)");
-                        txttop3mui.setText("Thiên Đồng(M)");
-                        txttop3thin.setText("Liêm Trinh(H)");
+                        txttop3tyd.setText("Tử Vi");
+                        txttop3hoi.setText("Thiên Cơ");
+                        txttop3dau.setText("Thái Dương");
+                        txttop3than.setText("Vũ Khúc");
+                        txttop3mui.setText("Thiên Đồng");
+                        txttop3thin.setText("Liêm Trinh");
 
-                        txttop4thin.setText("Thiên Phủ(B)");
-                        txttop3ty.setText("Thái Âm(H)");
-                        txttop3ngo.setText("Tham Lang(H)");
-                        txttop4mui.setText("Cự Môn(V)");
-                        txttop4than.setText("Thiên Tướng(D)");
-                        txttop4dau.setText("Thiên Lương(V)");
-                        txttop3tuat.setText("Thất Sát(H)");
-                        txttop3dan.setText("Phá Quân(V)");
+                        txttop4thin.setText("Thiên Phủ");
+                        txttop3ty.setText("Thái Âm");
+                        txttop3ngo.setText("Tham Lang");
+                        txttop4mui.setText("Cự Môn");
+                        txttop4than.setText("Thiên Tướng");
+                        txttop4dau.setText("Thiên Lương");
+                        txttop3tuat.setText("Thất Sát");
+                        txttop3dan.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("1") || thongTin.ngayam().equals("24") || thongTin.ngayam().equals("25")){
-                        txttop3suu.setText("Tử Vi(D)");
-                        txttop3tyd.setText("Thiên Cơ(D)");
-                        txttop3tuat.setText("Thái Dương(H)");
-                        txttop3dau.setText("Vũ Khúc(D)");
-                        txttop3than.setText("Thiên Đồng(M)");
-                        txttop3ty.setText("Liêm Trinh(H)");
+                        txttop3suu.setText("Tử Vi");
+                        txttop3tyd.setText("Thiên Cơ");
+                        txttop3tuat.setText("Thái Dương");
+                        txttop3dau.setText("Vũ Khúc");
+                        txttop3than.setText("Thiên Đồng");
+                        txttop3ty.setText("Liêm Trinh");
 
-                        txttop3mao.setText("Thiên Phủ(B)");
-                        txttop3thin.setText("Thái Âm(H)");
-                        txttop4ty.setText("Tham Lang(H)");
-                        txttop3ngo.setText("Cự Môn(V)");
-                        txttop3mui.setText("Thiên Tướng(D)");
-                        txttop4than.setText("Thiên Lương(V)");
-                        txttop4dau.setText("Thất Sát(H)");
-                        txttop4suu.setText("Phá Quân(V)");
+                        txttop3mao.setText("Thiên Phủ");
+                        txttop3thin.setText("Thái Âm");
+                        txttop4ty.setText("Tham Lang");
+                        txttop3ngo.setText("Cự Môn");
+                        txttop3mui.setText("Thiên Tướng");
+                        txttop4than.setText("Thiên Lương");
+                        txttop4dau.setText("Thất Sát");
+                        txttop4suu.setText("Phá Quân");
                     }
                 }
                 else if (giophutsinh.equals("Thìn") || giophutsinh.equals("Tỵ")){
                     if (thongTin.ngayam().equals("6") || thongTin.ngayam().equals("11") || thongTin.ngayam().equals("21")){
-                        txttop3dan.setText("Tử Vi(D)");
-                        txttop3suu.setText("Thiên Cơ(D)");
-                        txttop3hoi.setText("Thái Dương(H)");
-                        txttop3tuat.setText("Vũ Khúc(D)");
-                        txttop3dau.setText("Thiên Đồng(M)");
-                        txttop3ngo.setText("Liêm Trinh(H)");
+                        txttop3dan.setText("Tử Vi");
+                        txttop3suu.setText("Thiên Cơ");
+                        txttop3hoi.setText("Thái Dương");
+                        txttop3tuat.setText("Vũ Khúc");
+                        txttop3dau.setText("Thiên Đồng");
+                        txttop3ngo.setText("Liêm Trinh");
 
-                        txttop4dan.setText("Thiên Phủ(B)");
-                        txttop3mao.setText("Thái Âm(H)");
-                        txttop3thin.setText("Tham Lang(H)");
-                        txttop3ty.setText("Cự Môn(V)");
-                        txttop4ngo.setText("Thiên Tướng(D)");
-                        txttop3mui.setText("Thiên Lương(V)");
-                        txttop3than.setText("Thất Sát(H)");
-                        txttop3tyd.setText("Phá Quân(V)");
+                        txttop4dan.setText("Thiên Phủ");
+                        txttop3mao.setText("Thái Âm");
+                        txttop3thin.setText("Tham Lang");
+                        txttop3ty.setText("Cự Môn");
+                        txttop4ngo.setText("Thiên Tướng");
+                        txttop3mui.setText("Thiên Lương");
+                        txttop3than.setText("Thất Sát");
+                        txttop3tyd.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("12") || thongTin.ngayam().equals("17") || thongTin.ngayam().equals("27")){
-                        txttop3mao.setText("Tử Vi(D)");
-                        txttop3dan.setText("Thiên Cơ(D)");
-                        txttop3tyd.setText("Thái Dương(H)");
-                        txttop3hoi.setText("Vũ Khúc(D)");
-                        txttop3tuat.setText("Thiên Đồng(M)");
-                        txttop3mui.setText("Liêm Trinh(H)");
+                        txttop3mao.setText("Tử Vi");
+                        txttop3dan.setText("Thiên Cơ");
+                        txttop3tyd.setText("Thái Dương");
+                        txttop3hoi.setText("Vũ Khúc");
+                        txttop3tuat.setText("Thiên Đồng");
+                        txttop3mui.setText("Liêm Trinh");
 
-                        txttop3suu.setText("Thiên Phủ(B)");
-                        txttop4dan.setText("Thái Âm(H)");
-                        txttop4mao.setText("Tham Lang(H)");
-                        txttop3thin.setText("Cự Môn(V)");
-                        txttop3ty.setText("Thiên Tướng(D)");
-                        txttop3ngo.setText("Thiên Lương(V)");
-                        txttop4mui.setText("Thất Sát(H)");
-                        txttop4hoi.setText("Phá Quân(V)");
+                        txttop3suu.setText("Thiên Phủ");
+                        txttop4dan.setText("Thái Âm");
+                        txttop4mao.setText("Tham Lang");
+                        txttop3thin.setText("Cự Môn");
+                        txttop3ty.setText("Thiên Tướng");
+                        txttop3ngo.setText("Thiên Lương");
+                        txttop4mui.setText("Thất Sát");
+                        txttop4hoi.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("4") || thongTin.ngayam().equals("18") || thongTin.ngayam().equals("23")){
-                        txttop3thin.setText("Tử Vi(D)");
-                        txttop3mao.setText("Thiên Cơ(D)");
-                        txttop3suu.setText("Thái Dương(H)");
-                        txttop3tyd.setText("Vũ Khúc(D)");
-                        txttop3hoi.setText("Thiên Đồng(M)");
-                        txttop3than.setText("Liêm Trinh(H)");
+                        txttop3thin.setText("Tử Vi");
+                        txttop3mao.setText("Thiên Cơ");
+                        txttop3suu.setText("Thái Dương");
+                        txttop3tyd.setText("Vũ Khúc");
+                        txttop3hoi.setText("Thiên Đồng");
+                        txttop3than.setText("Liêm Trinh");
 
-                        txttop4tyd.setText("Thiên Phủ(B)");
-                        txttop4suu.setText("Thái Âm(H)");
-                        txttop4dan.setText("Tham Lang(H)");
-                        txttop4mao.setText("Cự Môn(V)");
-                        txttop4thin.setText("Thiên Tướng(D)");
-                        txttop3ty.setText("Thiên Lương(V)");
-                        txttop3ngo.setText("Thất Sát(H)");
-                        txttop3tuat.setText("Phá Quân(V)");
+                        txttop4tyd.setText("Thiên Phủ");
+                        txttop4suu.setText("Thái Âm");
+                        txttop4dan.setText("Tham Lang");
+                        txttop4mao.setText("Cự Môn");
+                        txttop4thin.setText("Thiên Tướng");
+                        txttop3ty.setText("Thiên Lương");
+                        txttop3ngo.setText("Thất Sát");
+                        txttop3tuat.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("10") || thongTin.ngayam().equals("24") || thongTin.ngayam().equals("29")){
-                        txttop3ty.setText("Tử Vi(D)");
-                        txttop3thin.setText("Thiên Cơ(D)");
-                        txttop3dan.setText("Thái Dương(H)");
-                        txttop3suu.setText("Vũ Khúc(D)");
-                        txttop3tyd.setText("Thiên Đồng(M)");
-                        txttop3dau.setText("Liêm Trinh(H)");
+                        txttop3ty.setText("Tử Vi");
+                        txttop3thin.setText("Thiên Cơ");
+                        txttop3dan.setText("Thái Dương");
+                        txttop3suu.setText("Vũ Khúc");
+                        txttop3tyd.setText("Thiên Đồng");
+                        txttop3dau.setText("Liêm Trinh");
 
-                        txttop3hoi.setText("Thiên Phủ(B)");
-                        txttop4tyd.setText("Thái Âm(H)");
-                        txttop4suu.setText("Tham Lang(H)");
-                        txttop4dan.setText("Cự Môn(V)");
-                        txttop3mao.setText("Thiên Tướng(D)");
-                        txttop4thin.setText("Thiên Lương(V)");
-                        txttop4ty.setText("Thất Sát(H)");
-                        txttop4dau.setText("Phá Quân(V)");
+                        txttop3hoi.setText("Thiên Phủ");
+                        txttop4tyd.setText("Thái Âm");
+                        txttop4suu.setText("Tham Lang");
+                        txttop4dan.setText("Cự Môn");
+                        txttop3mao.setText("Thiên Tướng");
+                        txttop4thin.setText("Thiên Lương");
+                        txttop4ty.setText("Thất Sát");
+                        txttop4dau.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("2") || thongTin.ngayam().equals("16") || thongTin.ngayam().equals("30")){
-                        txttop3ngo.setText("Tử Vi(D)");
-                        txttop3ty.setText("Thiên Cơ(D)");
-                        txttop3dan.setText("Thái Dương(H)");
-                        txttop3suu.setText("Vũ Khúc(D)");
-                        txttop3tyd.setText("Thiên Đồng(M)");
-                        txttop3dau.setText("Liêm Trinh(H)");
+                        txttop3ngo.setText("Tử Vi");
+                        txttop3ty.setText("Thiên Cơ");
+                        txttop3dan.setText("Thái Dương");
+                        txttop3suu.setText("Vũ Khúc");
+                        txttop3tyd.setText("Thiên Đồng");
+                        txttop3dau.setText("Liêm Trinh");
 
-                        txttop3tuat.setText("Thiên Phủ(B)");
-                        txttop3hoi.setText("Thái Âm(H)");
-                        txttop4tyd.setText("Tham Lang(H)");
-                        txttop4suu.setText("Cự Môn(V)");
-                        txttop4dan.setText("Thiên Tướng(D)");
-                        txttop3mao.setText("Thiên Lương(V)");
-                        txttop3thin.setText("Thất Sát(H)");
-                        txttop3than.setText("Phá Quân(V)");
+                        txttop3tuat.setText("Thiên Phủ");
+                        txttop3hoi.setText("Thái Âm");
+                        txttop4tyd.setText("Tham Lang");
+                        txttop4suu.setText("Cự Môn");
+                        txttop4dan.setText("Thiên Tướng");
+                        txttop3mao.setText("Thiên Lương");
+                        txttop3thin.setText("Thất Sát");
+                        txttop3than.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("8") || thongTin.ngayam().equals("22")){
-                        txttop3mui.setText("Tử Vi(D)");
-                        txttop3ngo.setText("Thiên Cơ(D)");
-                        txttop3thin.setText("Thái Dương(H)");
-                        txttop3mao.setText("Vũ Khúc(D)");
-                        txttop3dan.setText("Thiên Đồng(M)");
-                        txttop3hoi.setText("Liêm Trinh(H)");
+                        txttop3mui.setText("Tử Vi");
+                        txttop3ngo.setText("Thiên Cơ");
+                        txttop3thin.setText("Thái Dương");
+                        txttop3mao.setText("Vũ Khúc");
+                        txttop3dan.setText("Thiên Đồng");
+                        txttop3hoi.setText("Liêm Trinh");
 
-                        txttop3dau.setText("Thiên Phủ(B)");
-                        txttop3tuat.setText("Thái Âm(H)");
-                        txttop4hoi.setText("Tham Lang(H)");
-                        txttop3tyd.setText("Cự Môn(V)");
-                        txttop3suu.setText("Thiên Tướng(D)");
-                        txttop4dan.setText("Thiên Lương(V)");
-                        txttop4mao.setText("Thất Sát(H)");
-                        txttop4mui.setText("Phá Quân(V)");
+                        txttop3dau.setText("Thiên Phủ");
+                        txttop3tuat.setText("Thái Âm");
+                        txttop4hoi.setText("Tham Lang");
+                        txttop3tyd.setText("Cự Môn");
+                        txttop3suu.setText("Thiên Tướng");
+                        txttop4dan.setText("Thiên Lương");
+                        txttop4mao.setText("Thất Sát");
+                        txttop4mui.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("14") || thongTin.ngayam().equals("28")){
-                        txttop3than.setText("Tử Vi(D)");
-                        txttop3mui.setText("Thiên Cơ(D)");
-                        txttop3ty.setText("Thái Dương(H)");
-                        txttop3thin.setText("Vũ Khúc(D)");
-                        txttop3mao.setText("Thiên Đồng(M)");
-                        txttop3tyd.setText("Liêm Trinh(H)");
+                        txttop3than.setText("Tử Vi");
+                        txttop3mui.setText("Thiên Cơ");
+                        txttop3ty.setText("Thái Dương");
+                        txttop3thin.setText("Vũ Khúc");
+                        txttop3mao.setText("Thiên Đồng");
+                        txttop3tyd.setText("Liêm Trinh");
 
-                        txttop4than.setText("Thiên Phủ(B)");
-                        txttop3dau.setText("Thái Âm(H)");
-                        txttop3tuat.setText("Tham Lang(H)");
-                        txttop3hoi.setText("Cự Môn(V)");
-                        txttop4tyd.setText("Thiên Tướng(D)");
-                        txttop3suu.setText("Thiên Lương(V)");
-                        txttop3dan.setText("Thất Sát(H)");
-                        txttop3ngo.setText("Phá Quân(V)");
+                        txttop4than.setText("Thiên Phủ");
+                        txttop3dau.setText("Thái Âm");
+                        txttop3tuat.setText("Tham Lang");
+                        txttop3hoi.setText("Cự Môn");
+                        txttop4tyd.setText("Thiên Tướng");
+                        txttop3suu.setText("Thiên Lương");
+                        txttop3dan.setText("Thất Sát");
+                        txttop3ngo.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("1") || thongTin.ngayam().equals("20")){
-                        txttop3dau.setText("Tử Vi(D)");
-                        txttop3than.setText("Thiên Cơ(D)");
-                        txttop3ngo.setText("Thái Dương(H)");
-                        txttop3ty.setText("Vũ Khúc(D)");
-                        txttop3thin.setText("Thiên Đồng(M)");
-                        txttop3suu.setText("Liêm Trinh(H)");
+                        txttop3dau.setText("Tử Vi");
+                        txttop3than.setText("Thiên Cơ");
+                        txttop3ngo.setText("Thái Dương");
+                        txttop3ty.setText("Vũ Khúc");
+                        txttop3thin.setText("Thiên Đồng");
+                        txttop3suu.setText("Liêm Trinh");
 
-                        txttop3mui.setText("Thiên Phủ(B)");
-                        txttop4than.setText("Thái Âm(H)");
-                        txttop4dau.setText("Tham Lang(H)");
-                        txttop3tuat.setText("Cự Môn(V)");
-                        txttop3hoi.setText("Thiên Tướng(D)");
-                        txttop3tyd.setText("Thiên Lương(V)");
-                        txttop4suu.setText("Thất Sát(H)");
-                        txttop4ty.setText("Phá Quân(V)");
+                        txttop3mui.setText("Thiên Phủ");
+                        txttop4than.setText("Thái Âm");
+                        txttop4dau.setText("Tham Lang");
+                        txttop3tuat.setText("Cự Môn");
+                        txttop3hoi.setText("Thiên Tướng");
+                        txttop3tyd.setText("Thiên Lương");
+                        txttop4suu.setText("Thất Sát");
+                        txttop4ty.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("7") || thongTin.ngayam().equals("26")){
-                        txttop3tuat.setText("Tử Vi(D)");
-                        txttop3dau.setText("Thiên Cơ(D)");
-                        txttop3mui.setText("Thái Dương(H)");
-                        txttop3ngo.setText("Vũ Khúc(D)");
-                        txttop3ty.setText("Thiên Đồng(M)");
-                        txttop3dan.setText("Liêm Trinh(H)");
+                        txttop3tuat.setText("Tử Vi");
+                        txttop3dau.setText("Thiên Cơ");
+                        txttop3mui.setText("Thái Dương");
+                        txttop3ngo.setText("Vũ Khúc");
+                        txttop3ty.setText("Thiên Đồng");
+                        txttop3dan.setText("Liêm Trinh");
 
-                        txttop4ngo.setText("Thiên Phủ(B)");
-                        txttop4mui.setText("Thái Âm(H)");
-                        txttop3than.setText("Tham Lang(H)");
-                        txttop4dau.setText("Cự Môn(V)");
-                        txttop4tuat.setText("Thiên Tướng(D)");
-                        txttop3hoi.setText("Thiên Lương(V)");
-                        txttop3tyd.setText("Thất Sát(H)");
-                        txttop3thin.setText("Phá Quân(V)");
+                        txttop4ngo.setText("Thiên Phủ");
+                        txttop4mui.setText("Thái Âm");
+                        txttop3than.setText("Tham Lang");
+                        txttop4dau.setText("Cự Môn");
+                        txttop4tuat.setText("Thiên Tướng");
+                        txttop3hoi.setText("Thiên Lương");
+                        txttop3tyd.setText("Thất Sát");
+                        txttop3thin.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("3") || thongTin.ngayam().equals("13")){
-                        txttop3hoi.setText("Tử Vi(D)");
-                        txttop3tuat.setText("Thiên Cơ(D)");
-                        txttop3than.setText("Thái Dương(H)");
-                        txttop3mui.setText("Vũ Khúc(D)");
-                        txttop3ngo.setText("Thiên Đồng(M)");
-                        txttop3mao.setText("Liêm Trinh(H)");
+                        txttop3hoi.setText("Tử Vi");
+                        txttop3tuat.setText("Thiên Cơ");
+                        txttop3than.setText("Thái Dương");
+                        txttop3mui.setText("Vũ Khúc");
+                        txttop3ngo.setText("Thiên Đồng");
+                        txttop3mao.setText("Liêm Trinh");
 
-                        txttop3ty.setText("Thiên Phủ(B)");
-                        txttop4ngo.setText("Thái Âm(H)");
-                        txttop4mui.setText("Tham Lang(H)");
-                        txttop4than.setText("Cự Môn(V)");
-                        txttop3dau.setText("Thiên Tướng(D)");
-                        txttop4tuat.setText("Thiên Lương(V)");
-                        txttop4hoi.setText("Thất Sát(H)");
-                        txttop4mao.setText("Phá Quân(V)");
+                        txttop3ty.setText("Thiên Phủ");
+                        txttop4ngo.setText("Thái Âm");
+                        txttop4mui.setText("Tham Lang");
+                        txttop4than.setText("Cự Môn");
+                        txttop3dau.setText("Thiên Tướng");
+                        txttop4tuat.setText("Thiên Lương");
+                        txttop4hoi.setText("Thất Sát");
+                        txttop4mao.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("9") || thongTin.ngayam().equals("19")){
-                        txttop3tyd.setText("Tử Vi(D)");
-                        txttop3hoi.setText("Thiên Cơ(D)");
-                        txttop3dau.setText("Thái Dương(H)");
-                        txttop3than.setText("Vũ Khúc(D)");
-                        txttop3mui.setText("Thiên Đồng(M)");
-                        txttop3thin.setText("Liêm Trinh(H)");
+                        txttop3tyd.setText("Tử Vi");
+                        txttop3hoi.setText("Thiên Cơ");
+                        txttop3dau.setText("Thái Dương");
+                        txttop3than.setText("Vũ Khúc");
+                        txttop3mui.setText("Thiên Đồng");
+                        txttop3thin.setText("Liêm Trinh");
 
-                        txttop4thin.setText("Thiên Phủ(B)");
-                        txttop3ty.setText("Thái Âm(H)");
-                        txttop3ngo.setText("Tham Lang(H)");
-                        txttop4mui.setText("Cự Môn(V)");
-                        txttop4than.setText("Thiên Tướng(D)");
-                        txttop4dau.setText("Thiên Lương(V)");
-                        txttop3tuat.setText("Thất Sát(H)");
-                        txttop3dan.setText("Phá Quân(V)");
+                        txttop4thin.setText("Thiên Phủ");
+                        txttop3ty.setText("Thái Âm");
+                        txttop3ngo.setText("Tham Lang");
+                        txttop4mui.setText("Cự Môn");
+                        txttop4than.setText("Thiên Tướng");
+                        txttop4dau.setText("Thiên Lương");
+                        txttop3tuat.setText("Thất Sát");
+                        txttop3dan.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("5") || thongTin.ngayam().equals("15") || thongTin.ngayam().equals("25")){
-                        txttop3suu.setText("Tử Vi(D)");
-                        txttop3tyd.setText("Thiên Cơ(D)");
-                        txttop3tuat.setText("Thái Dương(H)");
-                        txttop3dau.setText("Vũ Khúc(D)");
-                        txttop3than.setText("Thiên Đồng(M)");
-                        txttop3ty.setText("Liêm Trinh(H)");
+                        txttop3suu.setText("Tử Vi");
+                        txttop3tyd.setText("Thiên Cơ");
+                        txttop3tuat.setText("Thái Dương");
+                        txttop3dau.setText("Vũ Khúc");
+                        txttop3than.setText("Thiên Đồng");
+                        txttop3ty.setText("Liêm Trinh");
 
-                        txttop3mao.setText("Thiên Phủ(B)");
-                        txttop3thin.setText("Thái Âm(H)");
-                        txttop4ty.setText("Tham Lang(H)");
-                        txttop3ngo.setText("Cự Môn(V)");
-                        txttop3mui.setText("Thiên Tướng(D)");
-                        txttop4than.setText("Thiên Lương(V)");
-                        txttop4dau.setText("Thất Sát(H)");
-                        txttop4suu.setText("Phá Quân(V)");
+                        txttop3mao.setText("Thiên Phủ");
+                        txttop3thin.setText("Thái Âm");
+                        txttop4ty.setText("Tham Lang");
+                        txttop3ngo.setText("Cự Môn");
+                        txttop3mui.setText("Thiên Tướng");
+                        txttop4than.setText("Thiên Lương");
+                        txttop4dau.setText("Thất Sát");
+                        txttop4suu.setText("Phá Quân");
                     }
                 }
                 else if (giophutsinh.equals("Tý") || giophutsinh.equals("Sửu")){
                     if (thongTin.ngayam().equals("3") || thongTin.ngayam().equals("5")){
-                        txttop3dan.setText("Tử Vi(D)");
-                        txttop3suu.setText("Thiên Cơ(D)");
-                        txttop3hoi.setText("Thái Dương(H)");
-                        txttop3tuat.setText("Vũ Khúc(D)");
-                        txttop3dau.setText("Thiên Đồng(M)");
-                        txttop3ngo.setText("Liêm Trinh(H)");
+                        txttop3dan.setText("Tử Vi");
+                        txttop3suu.setText("Thiên Cơ");
+                        txttop3hoi.setText("Thái Dương");
+                        txttop3tuat.setText("Vũ Khúc");
+                        txttop3dau.setText("Thiên Đồng");
+                        txttop3ngo.setText("Liêm Trinh");
 
-                        txttop4dan.setText("Thiên Phủ(B)");
-                        txttop3mao.setText("Thái Âm(H)");
-                        txttop3thin.setText("Tham Lang(H)");
-                        txttop3ty.setText("Cự Môn(V)");
-                        txttop4ngo.setText("Thiên Tướng(D)");
-                        txttop3mui.setText("Thiên Lương(V)");
-                        txttop3than.setText("Thất Sát(H)");
-                        txttop3tyd.setText("Phá Quân(V)");
+                        txttop4dan.setText("Thiên Phủ");
+                        txttop3mao.setText("Thái Âm");
+                        txttop3thin.setText("Tham Lang");
+                        txttop3ty.setText("Cự Môn");
+                        txttop4ngo.setText("Thiên Tướng");
+                        txttop3mui.setText("Thiên Lương");
+                        txttop3than.setText("Thất Sát");
+                        txttop3tyd.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("6") || thongTin.ngayam().equals("8")){
-                        txttop3mao.setText("Tử Vi(D)");
-                        txttop3dan.setText("Thiên Cơ(D)");
-                        txttop3tyd.setText("Thái Dương(H)");
-                        txttop3hoi.setText("Vũ Khúc(D)");
-                        txttop3tuat.setText("Thiên Đồng(M)");
-                        txttop3mui.setText("Liêm Trinh(H)");
+                        txttop3mao.setText("Tử Vi");
+                        txttop3dan.setText("Thiên Cơ");
+                        txttop3tyd.setText("Thái Dương");
+                        txttop3hoi.setText("Vũ Khúc");
+                        txttop3tuat.setText("Thiên Đồng");
+                        txttop3mui.setText("Liêm Trinh");
 
-                        txttop3suu.setText("Thiên Phủ(B)");
-                        txttop4dan.setText("Thái Âm(H)");
-                        txttop4mao.setText("Tham Lang(H)");
-                        txttop3thin.setText("Cự Môn(V)");
-                        txttop3ty.setText("Thiên Tướng(D)");
-                        txttop3ngo.setText("Thiên Lương(V)");
-                        txttop4mui.setText("Thất Sát(H)");
-                        txttop4hoi.setText("Phá Quân(V)");
+                        txttop3suu.setText("Thiên Phủ");
+                        txttop4dan.setText("Thái Âm");
+                        txttop4mao.setText("Tham Lang");
+                        txttop3thin.setText("Cự Môn");
+                        txttop3ty.setText("Thiên Tướng");
+                        txttop3ngo.setText("Thiên Lương");
+                        txttop4mui.setText("Thất Sát");
+                        txttop4hoi.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("1") || thongTin.ngayam().equals("9") || thongTin.ngayam().equals("11")){
-                        txttop3thin.setText("Tử Vi(D)");
-                        txttop3mao.setText("Thiên Cơ(D)");
-                        txttop3suu.setText("Thái Dương(H)");
-                        txttop3tyd.setText("Vũ Khúc(D)");
-                        txttop3hoi.setText("Thiên Đồng(M)");
-                        txttop3than.setText("Liêm Trinh(H)");
+                        txttop3thin.setText("Tử Vi");
+                        txttop3mao.setText("Thiên Cơ");
+                        txttop3suu.setText("Thái Dương");
+                        txttop3tyd.setText("Vũ Khúc");
+                        txttop3hoi.setText("Thiên Đồng");
+                        txttop3than.setText("Liêm Trinh");
 
-                        txttop4tyd.setText("Thiên Phủ(B)");
-                        txttop4suu.setText("Thái Âm(H)");
-                        txttop4dan.setText("Tham Lang(H)");
-                        txttop4mao.setText("Cự Môn(V)");
-                        txttop4thin.setText("Thiên Tướng(D)");
-                        txttop3ty.setText("Thiên Lương(V)");
-                        txttop3ngo.setText("Thất Sát(H)");
-                        txttop3tuat.setText("Phá Quân(V)");
+                        txttop4tyd.setText("Thiên Phủ");
+                        txttop4suu.setText("Thái Âm");
+                        txttop4dan.setText("Tham Lang");
+                        txttop4mao.setText("Cự Môn");
+                        txttop4thin.setText("Thiên Tướng");
+                        txttop3ty.setText("Thiên Lương");
+                        txttop3ngo.setText("Thất Sát");
+                        txttop3tuat.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("4") || thongTin.ngayam().equals("12") || thongTin.ngayam().equals("14")){
-                        txttop3ty.setText("Tử Vi(D)");
-                        txttop3thin.setText("Thiên Cơ(D)");
-                        txttop3dan.setText("Thái Dương(H)");
-                        txttop3suu.setText("Vũ Khúc(D)");
-                        txttop3tyd.setText("Thiên Đồng(M)");
-                        txttop3dau.setText("Liêm Trinh(H)");
+                        txttop3ty.setText("Tử Vi");
+                        txttop3thin.setText("Thiên Cơ");
+                        txttop3dan.setText("Thái Dương");
+                        txttop3suu.setText("Vũ Khúc");
+                        txttop3tyd.setText("Thiên Đồng");
+                        txttop3dau.setText("Liêm Trinh");
 
-                        txttop3hoi.setText("Thiên Phủ(B)");
-                        txttop4tyd.setText("Thái Âm(H)");
-                        txttop4suu.setText("Tham Lang(H)");
-                        txttop4dan.setText("Cự Môn(V)");
-                        txttop3mao.setText("Thiên Tướng(D)");
-                        txttop4thin.setText("Thiên Lương(V)");
-                        txttop4ty.setText("Thất Sát(H)");
-                        txttop4dau.setText("Phá Quân(V)");
+                        txttop3hoi.setText("Thiên Phủ");
+                        txttop4tyd.setText("Thái Âm");
+                        txttop4suu.setText("Tham Lang");
+                        txttop4dan.setText("Cự Môn");
+                        txttop3mao.setText("Thiên Tướng");
+                        txttop4thin.setText("Thiên Lương");
+                        txttop4ty.setText("Thất Sát");
+                        txttop4dau.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("7") || thongTin.ngayam().equals("15") || thongTin.ngayam().equals("17")){
-                        txttop3ngo.setText("Tử Vi(D)");
-                        txttop3ty.setText("Thiên Cơ(D)");
-                        txttop3dan.setText("Thái Dương(H)");
-                        txttop3suu.setText("Vũ Khúc(D)");
-                        txttop3tyd.setText("Thiên Đồng(M)");
-                        txttop3dau.setText("Liêm Trinh(H)");
+                        txttop3ngo.setText("Tử Vi");
+                        txttop3ty.setText("Thiên Cơ");
+                        txttop3dan.setText("Thái Dương");
+                        txttop3suu.setText("Vũ Khúc");
+                        txttop3tyd.setText("Thiên Đồng");
+                        txttop3dau.setText("Liêm Trinh");
 
-                        txttop3tuat.setText("Thiên Phủ(B)");
-                        txttop3hoi.setText("Thái Âm(H)");
-                        txttop4tyd.setText("Tham Lang(H)");
-                        txttop4suu.setText("Cự Môn(V)");
-                        txttop4dan.setText("Thiên Tướng(D)");
-                        txttop3mao.setText("Thiên Lương(V)");
-                        txttop3thin.setText("Thất Sát(H)");
-                        txttop3than.setText("Phá Quân(V)");
+                        txttop3tuat.setText("Thiên Phủ");
+                        txttop3hoi.setText("Thái Âm");
+                        txttop4tyd.setText("Tham Lang");
+                        txttop4suu.setText("Cự Môn");
+                        txttop4dan.setText("Thiên Tướng");
+                        txttop3mao.setText("Thiên Lương");
+                        txttop3thin.setText("Thất Sát");
+                        txttop3than.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("10") || thongTin.ngayam().equals("18") || thongTin.ngayam().equals("20")){
-                        txttop3mui.setText("Tử Vi(D)");
-                        txttop3ngo.setText("Thiên Cơ(D)");
-                        txttop3thin.setText("Thái Dương(H)");
-                        txttop3mao.setText("Vũ Khúc(D)");
-                        txttop3dan.setText("Thiên Đồng(M)");
-                        txttop3hoi.setText("Liêm Trinh(H)");
+                        txttop3mui.setText("Tử Vi");
+                        txttop3ngo.setText("Thiên Cơ");
+                        txttop3thin.setText("Thái Dương");
+                        txttop3mao.setText("Vũ Khúc");
+                        txttop3dan.setText("Thiên Đồng");
+                        txttop3hoi.setText("Liêm Trinh");
 
-                        txttop3dau.setText("Thiên Phủ(B)");
-                        txttop3tuat.setText("Thái Âm(H)");
-                        txttop4hoi.setText("Tham Lang(H)");
-                        txttop3tyd.setText("Cự Môn(V)");
-                        txttop3suu.setText("Thiên Tướng(D)");
-                        txttop4dan.setText("Thiên Lương(V)");
-                        txttop4mao.setText("Thất Sát(H)");
-                        txttop4mui.setText("Phá Quân(V)");
+                        txttop3dau.setText("Thiên Phủ");
+                        txttop3tuat.setText("Thái Âm");
+                        txttop4hoi.setText("Tham Lang");
+                        txttop3tyd.setText("Cự Môn");
+                        txttop3suu.setText("Thiên Tướng");
+                        txttop4dan.setText("Thiên Lương");
+                        txttop4mao.setText("Thất Sát");
+                        txttop4mui.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("13") || thongTin.ngayam().equals("21") || thongTin.ngayam().equals("23")){
-                        txttop3than.setText("Tử Vi(D)");
-                        txttop3mui.setText("Thiên Cơ(D)");
-                        txttop3ty.setText("Thái Dương(H)");
-                        txttop3thin.setText("Vũ Khúc(D)");
-                        txttop3mao.setText("Thiên Đồng(M)");
-                        txttop3tyd.setText("Liêm Trinh(H)");
+                        txttop3than.setText("Tử Vi");
+                        txttop3mui.setText("Thiên Cơ");
+                        txttop3ty.setText("Thái Dương");
+                        txttop3thin.setText("Vũ Khúc");
+                        txttop3mao.setText("Thiên Đồng");
+                        txttop3tyd.setText("Liêm Trinh");
 
-                        txttop4than.setText("Thiên Phủ(B)");
-                        txttop3dau.setText("Thái Âm(H)");
-                        txttop3tuat.setText("Tham Lang(H)");
-                        txttop3hoi.setText("Cự Môn(V)");
-                        txttop4tyd.setText("Thiên Tướng(D)");
-                        txttop3suu.setText("Thiên Lương(V)");
-                        txttop3dan.setText("Thất Sát(H)");
-                        txttop3ngo.setText("Phá Quân(V)");
+                        txttop4than.setText("Thiên Phủ");
+                        txttop3dau.setText("Thái Âm");
+                        txttop3tuat.setText("Tham Lang");
+                        txttop3hoi.setText("Cự Môn");
+                        txttop4tyd.setText("Thiên Tướng");
+                        txttop3suu.setText("Thiên Lương");
+                        txttop3dan.setText("Thất Sát");
+                        txttop3ngo.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("16") || thongTin.ngayam().equals("24") || thongTin.ngayam().equals("26")){
-                        txttop3dau.setText("Tử Vi(D)");
-                        txttop3than.setText("Thiên Cơ(D)");
-                        txttop3ngo.setText("Thái Dương(H)");
-                        txttop3ty.setText("Vũ Khúc(D)");
-                        txttop3thin.setText("Thiên Đồng(M)");
-                        txttop3suu.setText("Liêm Trinh(H)");
+                        txttop3dau.setText("Tử Vi");
+                        txttop3than.setText("Thiên Cơ");
+                        txttop3ngo.setText("Thái Dương");
+                        txttop3ty.setText("Vũ Khúc");
+                        txttop3thin.setText("Thiên Đồng");
+                        txttop3suu.setText("Liêm Trinh");
 
-                        txttop3mui.setText("Thiên Phủ(B)");
-                        txttop4than.setText("Thái Âm(H)");
-                        txttop4dau.setText("Tham Lang(H)");
-                        txttop3tuat.setText("Cự Môn(V)");
-                        txttop3hoi.setText("Thiên Tướng(D)");
-                        txttop3tyd.setText("Thiên Lương(V)");
-                        txttop4suu.setText("Thất Sát(H)");
-                        txttop4ty.setText("Phá Quân(V)");
+                        txttop3mui.setText("Thiên Phủ");
+                        txttop4than.setText("Thái Âm");
+                        txttop4dau.setText("Tham Lang");
+                        txttop3tuat.setText("Cự Môn");
+                        txttop3hoi.setText("Thiên Tướng");
+                        txttop3tyd.setText("Thiên Lương");
+                        txttop4suu.setText("Thất Sát");
+                        txttop4ty.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("19") || thongTin.ngayam().equals("27") || thongTin.ngayam().equals("29")){
-                        txttop3tuat.setText("Tử Vi(D)");
-                        txttop3dau.setText("Thiên Cơ(D)");
-                        txttop3mui.setText("Thái Dương(H)");
-                        txttop3ngo.setText("Vũ Khúc(D)");
-                        txttop3ty.setText("Thiên Đồng(M)");
-                        txttop3dan.setText("Liêm Trinh(H)");
+                        txttop3tuat.setText("Tử Vi");
+                        txttop3dau.setText("Thiên Cơ");
+                        txttop3mui.setText("Thái Dương");
+                        txttop3ngo.setText("Vũ Khúc");
+                        txttop3ty.setText("Thiên Đồng");
+                        txttop3dan.setText("Liêm Trinh");
 
-                        txttop4ngo.setText("Thiên Phủ(B)");
-                        txttop4mui.setText("Thái Âm(H)");
-                        txttop3than.setText("Tham Lang(H)");
-                        txttop4dau.setText("Cự Môn(V)");
-                        txttop4tuat.setText("Thiên Tướng(D)");
-                        txttop3hoi.setText("Thiên Lương(V)");
-                        txttop3tyd.setText("Thất Sát(H)");
-                        txttop3thin.setText("Phá Quân(V)");
+                        txttop4ngo.setText("Thiên Phủ");
+                        txttop4mui.setText("Thái Âm");
+                        txttop3than.setText("Tham Lang");
+                        txttop4dau.setText("Cự Môn");
+                        txttop4tuat.setText("Thiên Tướng");
+                        txttop3hoi.setText("Thiên Lương");
+                        txttop3tyd.setText("Thất Sát");
+                        txttop3thin.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("28") || thongTin.ngayam().equals("30")){
-                        txttop3hoi.setText("Tử Vi(D)");
-                        txttop3tuat.setText("Thiên Cơ(D)");
-                        txttop3than.setText("Thái Dương(H)");
-                        txttop3mui.setText("Vũ Khúc(D)");
-                        txttop3ngo.setText("Thiên Đồng(M)");
-                        txttop3mao.setText("Liêm Trinh(H)");
+                        txttop3hoi.setText("Tử Vi");
+                        txttop3tuat.setText("Thiên Cơ");
+                        txttop3than.setText("Thái Dương");
+                        txttop3mui.setText("Vũ Khúc");
+                        txttop3ngo.setText("Thiên Đồng");
+                        txttop3mao.setText("Liêm Trinh");
 
-                        txttop3ty.setText("Thiên Phủ(B)");
-                        txttop4ngo.setText("Thái Âm(H)");
-                        txttop4mui.setText("Tham Lang(H)");
-                        txttop4than.setText("Cự Môn(V)");
-                        txttop3dau.setText("Thiên Tướng(D)");
-                        txttop4tuat.setText("Thiên Lương(V)");
-                        txttop4hoi.setText("Thất Sát(H)");
-                        txttop4mao.setText("Phá Quân(V)");
+                        txttop3ty.setText("Thiên Phủ");
+                        txttop4ngo.setText("Thái Âm");
+                        txttop4mui.setText("Tham Lang");
+                        txttop4than.setText("Cự Môn");
+                        txttop3dau.setText("Thiên Tướng");
+                        txttop4tuat.setText("Thiên Lương");
+                        txttop4hoi.setText("Thất Sát");
+                        txttop4mao.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("25")){
-                        txttop3tyd.setText("Tử Vi(D)");
-                        txttop3hoi.setText("Thiên Cơ(D)");
-                        txttop3dau.setText("Thái Dương(H)");
-                        txttop3than.setText("Vũ Khúc(D)");
-                        txttop3mui.setText("Thiên Đồng(M)");
-                        txttop3thin.setText("Liêm Trinh(H)");
+                        txttop3tyd.setText("Tử Vi");
+                        txttop3hoi.setText("Thiên Cơ");
+                        txttop3dau.setText("Thái Dương");
+                        txttop3than.setText("Vũ Khúc");
+                        txttop3mui.setText("Thiên Đồng");
+                        txttop3thin.setText("Liêm Trinh");
 
-                        txttop4thin.setText("Thiên Phủ(B)");
-                        txttop3ty.setText("Thái Âm(H)");
-                        txttop3ngo.setText("Tham Lang(H)");
-                        txttop4mui.setText("Cự Môn(V)");
-                        txttop4than.setText("Thiên Tướng(D)");
-                        txttop4dau.setText("Thiên Lương(V)");
-                        txttop3tuat.setText("Thất Sát(H)");
-                        txttop3dan.setText("Phá Quân(V)");
+                        txttop4thin.setText("Thiên Phủ");
+                        txttop3ty.setText("Thái Âm");
+                        txttop3ngo.setText("Tham Lang");
+                        txttop4mui.setText("Cự Môn");
+                        txttop4than.setText("Thiên Tướng");
+                        txttop4dau.setText("Thiên Lương");
+                        txttop3tuat.setText("Thất Sát");
+                        txttop3dan.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("2")){
-                        txttop3suu.setText("Tử Vi(D)");
-                        txttop3tyd.setText("Thiên Cơ(D)");
-                        txttop3tuat.setText("Thái Dương(H)");
-                        txttop3dau.setText("Vũ Khúc(D)");
-                        txttop3than.setText("Thiên Đồng(M)");
-                        txttop3ty.setText("Liêm Trinh(H)");
+                        txttop3suu.setText("Tử Vi");
+                        txttop3tyd.setText("Thiên Cơ");
+                        txttop3tuat.setText("Thái Dương");
+                        txttop3dau.setText("Vũ Khúc");
+                        txttop3than.setText("Thiên Đồng");
+                        txttop3ty.setText("Liêm Trinh");
 
-                        txttop3mao.setText("Thiên Phủ(B)");
-                        txttop3thin.setText("Thái Âm(H)");
-                        txttop4ty.setText("Tham Lang(H)");
-                        txttop3ngo.setText("Cự Môn(V)");
-                        txttop3mui.setText("Thiên Tướng(D)");
-                        txttop4than.setText("Thiên Lương(V)");
-                        txttop4dau.setText("Thất Sát(H)");
-                        txttop4suu.setText("Phá Quân(V)");
+                        txttop3mao.setText("Thiên Phủ");
+                        txttop3thin.setText("Thái Âm");
+                        txttop4ty.setText("Tham Lang");
+                        txttop3ngo.setText("Cự Môn");
+                        txttop3mui.setText("Thiên Tướng");
+                        txttop4than.setText("Thiên Lương");
+                        txttop4dau.setText("Thất Sát");
+                        txttop4suu.setText("Phá Quân");
                     }
                 }
                 else if (giophutsinh.equals("Thân") || giophutsinh.equals("Dậu")){
                     if (thongTin.ngayam().equals("5") || thongTin.ngayam().equals("9") || thongTin.ngayam().equals("17")){
-                        txttop3dan.setText("Tử Vi(D)");
-                        txttop3suu.setText("Thiên Cơ(D)");
-                        txttop3hoi.setText("Thái Dương(H)");
-                        txttop3tuat.setText("Vũ Khúc(D)");
-                        txttop3dau.setText("Thiên Đồng(M)");
-                        txttop3ngo.setText("Liêm Trinh(H)");
+                        txttop3dan.setText("Tử Vi");
+                        txttop3suu.setText("Thiên Cơ");
+                        txttop3hoi.setText("Thái Dương");
+                        txttop3tuat.setText("Vũ Khúc");
+                        txttop3dau.setText("Thiên Đồng");
+                        txttop3ngo.setText("Liêm Trinh");
 
-                        txttop4dan.setText("Thiên Phủ(B)");
-                        txttop3mao.setText("Thái Âm(H)");
-                        txttop3thin.setText("Tham Lang(H)");
-                        txttop3ty.setText("Cự Môn(V)");
-                        txttop4ngo.setText("Thiên Tướng(D)");
-                        txttop3mui.setText("Thiên Lương(V)");
-                        txttop3than.setText("Thất Sát(H)");
-                        txttop3tyd.setText("Phá Quân(V)");
+                        txttop4dan.setText("Thiên Phủ");
+                        txttop3mao.setText("Thái Âm");
+                        txttop3thin.setText("Tham Lang");
+                        txttop3ty.setText("Cự Môn");
+                        txttop4ngo.setText("Thiên Tướng");
+                        txttop3mui.setText("Thiên Lương");
+                        txttop3than.setText("Thất Sát");
+                        txttop3tyd.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("10") || thongTin.ngayam().equals("14") || thongTin.ngayam().equals("22")){
-                        txttop3mao.setText("Tử Vi(D)");
-                        txttop3dan.setText("Thiên Cơ(D)");
-                        txttop3tyd.setText("Thái Dương(H)");
-                        txttop3hoi.setText("Vũ Khúc(D)");
-                        txttop3tuat.setText("Thiên Đồng(M)");
-                        txttop3mui.setText("Liêm Trinh(H)");
+                        txttop3mao.setText("Tử Vi");
+                        txttop3dan.setText("Thiên Cơ");
+                        txttop3tyd.setText("Thái Dương");
+                        txttop3hoi.setText("Vũ Khúc");
+                        txttop3tuat.setText("Thiên Đồng");
+                        txttop3mui.setText("Liêm Trinh");
 
-                        txttop3suu.setText("Thiên Phủ(B)");
-                        txttop4dan.setText("Thái Âm(H)");
-                        txttop4mao.setText("Tham Lang(H)");
-                        txttop3thin.setText("Cự Môn(V)");
-                        txttop3ty.setText("Thiên Tướng(D)");
-                        txttop3ngo.setText("Thiên Lương(V)");
-                        txttop4mui.setText("Thất Sát(H)");
-                        txttop4hoi.setText("Phá Quân(V)");
+                        txttop3suu.setText("Thiên Phủ");
+                        txttop4dan.setText("Thái Âm");
+                        txttop4mao.setText("Tham Lang");
+                        txttop3thin.setText("Cự Môn");
+                        txttop3ty.setText("Thiên Tướng");
+                        txttop3ngo.setText("Thiên Lương");
+                        txttop4mui.setText("Thất Sát");
+                        txttop4hoi.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("3") || thongTin.ngayam().equals("15") || thongTin.ngayam().equals("19") || thongTin.ngayam().equals("27")){
-                        txttop3thin.setText("Tử Vi(D)");
-                        txttop3mao.setText("Thiên Cơ(D)");
-                        txttop3suu.setText("Thái Dương(H)");
-                        txttop3tyd.setText("Vũ Khúc(D)");
-                        txttop3hoi.setText("Thiên Đồng(M)");
-                        txttop3than.setText("Liêm Trinh(H)");
+                        txttop3thin.setText("Tử Vi");
+                        txttop3mao.setText("Thiên Cơ");
+                        txttop3suu.setText("Thái Dương");
+                        txttop3tyd.setText("Vũ Khúc");
+                        txttop3hoi.setText("Thiên Đồng");
+                        txttop3than.setText("Liêm Trinh");
 
-                        txttop4tyd.setText("Thiên Phủ(B)");
-                        txttop4suu.setText("Thái Âm(H)");
-                        txttop4dan.setText("Tham Lang(H)");
-                        txttop4mao.setText("Cự Môn(V)");
-                        txttop4thin.setText("Thiên Tướng(D)");
-                        txttop3ty.setText("Thiên Lương(V)");
-                        txttop3ngo.setText("Thất Sát(H)");
-                        txttop3tuat.setText("Phá Quân(V)");
+                        txttop4tyd.setText("Thiên Phủ");
+                        txttop4suu.setText("Thái Âm");
+                        txttop4dan.setText("Tham Lang");
+                        txttop4mao.setText("Cự Môn");
+                        txttop4thin.setText("Thiên Tướng");
+                        txttop3ty.setText("Thiên Lương");
+                        txttop3ngo.setText("Thất Sát");
+                        txttop3tuat.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("8") || thongTin.ngayam().equals("20") || thongTin.ngayam().equals("24")){
-                        txttop3ty.setText("Tử Vi(D)");
-                        txttop3thin.setText("Thiên Cơ(D)");
-                        txttop3dan.setText("Thái Dương(H)");
-                        txttop3suu.setText("Vũ Khúc(D)");
-                        txttop3tyd.setText("Thiên Đồng(M)");
-                        txttop3dau.setText("Liêm Trinh(H)");
+                        txttop3ty.setText("Tử Vi");
+                        txttop3thin.setText("Thiên Cơ");
+                        txttop3dan.setText("Thái Dương");
+                        txttop3suu.setText("Vũ Khúc");
+                        txttop3tyd.setText("Thiên Đồng");
+                        txttop3dau.setText("Liêm Trinh");
 
-                        txttop3hoi.setText("Thiên Phủ(B)");
-                        txttop4tyd.setText("Thái Âm(H)");
-                        txttop4suu.setText("Tham Lang(H)");
-                        txttop4dan.setText("Cự Môn(V)");
-                        txttop3mao.setText("Thiên Tướng(D)");
-                        txttop4thin.setText("Thiên Lương(V)");
-                        txttop4ty.setText("Thất Sát(H)");
-                        txttop4dau.setText("Phá Quân(V)");
+                        txttop3hoi.setText("Thiên Phủ");
+                        txttop4tyd.setText("Thái Âm");
+                        txttop4suu.setText("Tham Lang");
+                        txttop4dan.setText("Cự Môn");
+                        txttop3mao.setText("Thiên Tướng");
+                        txttop4thin.setText("Thiên Lương");
+                        txttop4ty.setText("Thất Sát");
+                        txttop4dau.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("1") || thongTin.ngayam().equals("13") || thongTin.ngayam().equals("25") || thongTin.ngayam().equals("29")){
-                        txttop3ngo.setText("Tử Vi(D)");
-                        txttop3ty.setText("Thiên Cơ(D)");
-                        txttop3dan.setText("Thái Dương(H)");
-                        txttop3suu.setText("Vũ Khúc(D)");
-                        txttop3tyd.setText("Thiên Đồng(M)");
-                        txttop3dau.setText("Liêm Trinh(H)");
+                        txttop3ngo.setText("Tử Vi");
+                        txttop3ty.setText("Thiên Cơ");
+                        txttop3dan.setText("Thái Dương");
+                        txttop3suu.setText("Vũ Khúc");
+                        txttop3tyd.setText("Thiên Đồng");
+                        txttop3dau.setText("Liêm Trinh");
 
-                        txttop3tuat.setText("Thiên Phủ(B)");
-                        txttop3hoi.setText("Thái Âm(H)");
-                        txttop4tyd.setText("Tham Lang(H)");
-                        txttop4suu.setText("Cự Môn(V)");
-                        txttop4dan.setText("Thiên Tướng(D)");
-                        txttop3mao.setText("Thiên Lương(V)");
-                        txttop3thin.setText("Thất Sát(H)");
-                        txttop3than.setText("Phá Quân(V)");
+                        txttop3tuat.setText("Thiên Phủ");
+                        txttop3hoi.setText("Thái Âm");
+                        txttop4tyd.setText("Tham Lang");
+                        txttop4suu.setText("Cự Môn");
+                        txttop4dan.setText("Thiên Tướng");
+                        txttop3mao.setText("Thiên Lương");
+                        txttop3thin.setText("Thất Sát");
+                        txttop3than.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("6") || thongTin.ngayam().equals("18") || thongTin.ngayam().equals("30")){
-                        txttop3mui.setText("Tử Vi(D)");
-                        txttop3ngo.setText("Thiên Cơ(D)");
-                        txttop3thin.setText("Thái Dương(H)");
-                        txttop3mao.setText("Vũ Khúc(D)");
-                        txttop3dan.setText("Thiên Đồng(M)");
-                        txttop3hoi.setText("Liêm Trinh(H)");
+                        txttop3mui.setText("Tử Vi");
+                        txttop3ngo.setText("Thiên Cơ");
+                        txttop3thin.setText("Thái Dương");
+                        txttop3mao.setText("Vũ Khúc");
+                        txttop3dan.setText("Thiên Đồng");
+                        txttop3hoi.setText("Liêm Trinh");
 
-                        txttop3dau.setText("Thiên Phủ(B)");
-                        txttop3tuat.setText("Thái Âm(H)");
-                        txttop4hoi.setText("Tham Lang(H)");
-                        txttop3tyd.setText("Cự Môn(V)");
-                        txttop3suu.setText("Thiên Tướng(D)");
-                        txttop4dan.setText("Thiên Lương(V)");
-                        txttop4mao.setText("Thất Sát(H)");
-                        txttop4mui.setText("Phá Quân(V)");
+                        txttop3dau.setText("Thiên Phủ");
+                        txttop3tuat.setText("Thái Âm");
+                        txttop4hoi.setText("Tham Lang");
+                        txttop3tyd.setText("Cự Môn");
+                        txttop3suu.setText("Thiên Tướng");
+                        txttop4dan.setText("Thiên Lương");
+                        txttop4mao.setText("Thất Sát");
+                        txttop4mui.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("11") || thongTin.ngayam().equals("23")){
-                        txttop3than.setText("Tử Vi(D)");
-                        txttop3mui.setText("Thiên Cơ(D)");
-                        txttop3ty.setText("Thái Dương(H)");
-                        txttop3thin.setText("Vũ Khúc(D)");
-                        txttop3mao.setText("Thiên Đồng(M)");
-                        txttop3tyd.setText("Liêm Trinh(H)");
+                        txttop3than.setText("Tử Vi");
+                        txttop3mui.setText("Thiên Cơ");
+                        txttop3ty.setText("Thái Dương");
+                        txttop3thin.setText("Vũ Khúc");
+                        txttop3mao.setText("Thiên Đồng");
+                        txttop3tyd.setText("Liêm Trinh");
 
-                        txttop4than.setText("Thiên Phủ(B)");
-                        txttop3dau.setText("Thái Âm(H)");
-                        txttop3tuat.setText("Tham Lang(H)");
-                        txttop3hoi.setText("Cự Môn(V)");
-                        txttop4tyd.setText("Thiên Tướng(D)");
-                        txttop3suu.setText("Thiên Lương(V)");
-                        txttop3dan.setText("Thất Sát(H)");
-                        txttop3ngo.setText("Phá Quân(V)");
+                        txttop4than.setText("Thiên Phủ");
+                        txttop3dau.setText("Thái Âm");
+                        txttop3tuat.setText("Tham Lang");
+                        txttop3hoi.setText("Cự Môn");
+                        txttop4tyd.setText("Thiên Tướng");
+                        txttop3suu.setText("Thiên Lương");
+                        txttop3dan.setText("Thất Sát");
+                        txttop3ngo.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("16") || thongTin.ngayam().equals("28")){
-                        txttop3dau.setText("Tử Vi(D)");
-                        txttop3than.setText("Thiên Cơ(D)");
-                        txttop3ngo.setText("Thái Dương(H)");
-                        txttop3ty.setText("Vũ Khúc(D)");
-                        txttop3thin.setText("Thiên Đồng(M)");
-                        txttop3suu.setText("Liêm Trinh(H)");
+                        txttop3dau.setText("Tử Vi");
+                        txttop3than.setText("Thiên Cơ");
+                        txttop3ngo.setText("Thái Dương");
+                        txttop3ty.setText("Vũ Khúc");
+                        txttop3thin.setText("Thiên Đồng");
+                        txttop3suu.setText("Liêm Trinh");
 
-                        txttop3mui.setText("Thiên Phủ(B)");
-                        txttop4than.setText("Thái Âm(H)");
-                        txttop4dau.setText("Tham Lang(H)");
-                        txttop3tuat.setText("Cự Môn(V)");
-                        txttop3hoi.setText("Thiên Tướng(D)");
-                        txttop3tyd.setText("Thiên Lương(V)");
-                        txttop4suu.setText("Thất Sát(H)");
-                        txttop4ty.setText("Phá Quân(V)");
+                        txttop3mui.setText("Thiên Phủ");
+                        txttop4than.setText("Thái Âm");
+                        txttop4dau.setText("Tham Lang");
+                        txttop3tuat.setText("Cự Môn");
+                        txttop3hoi.setText("Thiên Tướng");
+                        txttop3tyd.setText("Thiên Lương");
+                        txttop4suu.setText("Thất Sát");
+                        txttop4ty.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("21")){
-                        txttop3tuat.setText("Tử Vi(D)");
-                        txttop3dau.setText("Thiên Cơ(D)");
-                        txttop3mui.setText("Thái Dương(H)");
-                        txttop3ngo.setText("Vũ Khúc(D)");
-                        txttop3ty.setText("Thiên Đồng(M)");
-                        txttop3dan.setText("Liêm Trinh(H)");
+                        txttop3tuat.setText("Tử Vi");
+                        txttop3dau.setText("Thiên Cơ");
+                        txttop3mui.setText("Thái Dương");
+                        txttop3ngo.setText("Vũ Khúc");
+                        txttop3ty.setText("Thiên Đồng");
+                        txttop3dan.setText("Liêm Trinh");
 
-                        txttop4ngo.setText("Thiên Phủ(B)");
-                        txttop4mui.setText("Thái Âm(H)");
-                        txttop3than.setText("Tham Lang(H)");
-                        txttop4dau.setText("Cự Môn(V)");
-                        txttop4tuat.setText("Thiên Tướng(D)");
-                        txttop3hoi.setText("Thiên Lương(V)");
-                        txttop3tyd.setText("Thất Sát(H)");
-                        txttop3thin.setText("Phá Quân(V)");
+                        txttop4ngo.setText("Thiên Phủ");
+                        txttop4mui.setText("Thái Âm");
+                        txttop3than.setText("Tham Lang");
+                        txttop4dau.setText("Cự Môn");
+                        txttop4tuat.setText("Thiên Tướng");
+                        txttop3hoi.setText("Thiên Lương");
+                        txttop3tyd.setText("Thất Sát");
+                        txttop3thin.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("2") || thongTin.ngayam().equals("26")){
-                        txttop3hoi.setText("Tử Vi(D)");
-                        txttop3tuat.setText("Thiên Cơ(D)");
-                        txttop3than.setText("Thái Dương(H)");
-                        txttop3mui.setText("Vũ Khúc(D)");
-                        txttop3ngo.setText("Thiên Đồng(M)");
-                        txttop3mao.setText("Liêm Trinh(H)");
+                        txttop3hoi.setText("Tử Vi");
+                        txttop3tuat.setText("Thiên Cơ");
+                        txttop3than.setText("Thái Dương");
+                        txttop3mui.setText("Vũ Khúc");
+                        txttop3ngo.setText("Thiên Đồng");
+                        txttop3mao.setText("Liêm Trinh");
 
-                        txttop3ty.setText("Thiên Phủ(B)");
-                        txttop4ngo.setText("Thái Âm(H)");
-                        txttop4mui.setText("Tham Lang(H)");
-                        txttop4than.setText("Cự Môn(V)");
-                        txttop3dau.setText("Thiên Tướng(D)");
-                        txttop4tuat.setText("Thiên Lương(V)");
-                        txttop4hoi.setText("Thất Sát(H)");
-                        txttop4mao.setText("Phá Quân(V)");
+                        txttop3ty.setText("Thiên Phủ");
+                        txttop4ngo.setText("Thái Âm");
+                        txttop4mui.setText("Tham Lang");
+                        txttop4than.setText("Cự Môn");
+                        txttop3dau.setText("Thiên Tướng");
+                        txttop4tuat.setText("Thiên Lương");
+                        txttop4hoi.setText("Thất Sát");
+                        txttop4mao.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("7")){
-                        txttop3tyd.setText("Tử Vi(D)");
-                        txttop3hoi.setText("Thiên Cơ(D)");
-                        txttop3dau.setText("Thái Dương(H)");
-                        txttop3than.setText("Vũ Khúc(D)");
-                        txttop3mui.setText("Thiên Đồng(M)");
-                        txttop3thin.setText("Liêm Trinh(H)");
+                        txttop3tyd.setText("Tử Vi");
+                        txttop3hoi.setText("Thiên Cơ");
+                        txttop3dau.setText("Thái Dương");
+                        txttop3than.setText("Vũ Khúc");
+                        txttop3mui.setText("Thiên Đồng");
+                        txttop3thin.setText("Liêm Trinh");
 
-                        txttop4thin.setText("Thiên Phủ(B)");
-                        txttop3ty.setText("Thái Âm(H)");
-                        txttop3ngo.setText("Tham Lang(H)");
-                        txttop4mui.setText("Cự Môn(V)");
-                        txttop4than.setText("Thiên Tướng(D)");
-                        txttop4dau.setText("Thiên Lương(V)");
-                        txttop3tuat.setText("Thất Sát(H)");
-                        txttop3dan.setText("Phá Quân(V)");
+                        txttop4thin.setText("Thiên Phủ");
+                        txttop3ty.setText("Thái Âm");
+                        txttop3ngo.setText("Tham Lang");
+                        txttop4mui.setText("Cự Môn");
+                        txttop4than.setText("Thiên Tướng");
+                        txttop4dau.setText("Thiên Lương");
+                        txttop3tuat.setText("Thất Sát");
+                        txttop3dan.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("4") || thongTin.ngayam().equals("12")){
-                        txttop3suu.setText("Tử Vi(D)");
-                        txttop3tyd.setText("Thiên Cơ(D)");
-                        txttop3tuat.setText("Thái Dương(H)");
-                        txttop3dau.setText("Vũ Khúc(D)");
-                        txttop3than.setText("Thiên Đồng(M)");
-                        txttop3ty.setText("Liêm Trinh(H)");
+                        txttop3suu.setText("Tử Vi");
+                        txttop3tyd.setText("Thiên Cơ");
+                        txttop3tuat.setText("Thái Dương");
+                        txttop3dau.setText("Vũ Khúc");
+                        txttop3than.setText("Thiên Đồng");
+                        txttop3ty.setText("Liêm Trinh");
 
-                        txttop3mao.setText("Thiên Phủ(B)");
-                        txttop3thin.setText("Thái Âm(H)");
-                        txttop4ty.setText("Tham Lang(H)");
-                        txttop3ngo.setText("Cự Môn(V)");
-                        txttop3mui.setText("Thiên Tướng(D)");
-                        txttop4than.setText("Thiên Lương(V)");
-                        txttop4dau.setText("Thất Sát(H)");
-                        txttop4suu.setText("Phá Quân(V)");
+                        txttop3mao.setText("Thiên Phủ");
+                        txttop3thin.setText("Thái Âm");
+                        txttop4ty.setText("Tham Lang");
+                        txttop3ngo.setText("Cự Môn");
+                        txttop3mui.setText("Thiên Tướng");
+                        txttop4than.setText("Thiên Lương");
+                        txttop4dau.setText("Thất Sát");
+                        txttop4suu.setText("Phá Quân");
                     }
                 }
                 else if (giophutsinh.equals("Dần") || giophutsinh.equals("Mẹo") || giophutsinh.equals("Tuất") || giophutsinh.equals("Hợi")){
                     if (thongTin.ngayam().equals("4") || thongTin.ngayam().equals("7") || thongTin.ngayam().equals("13")){
-                        txttop3dan.setText("Tử Vi(D)");
-                        txttop3suu.setText("Thiên Cơ(D)");
-                        txttop3hoi.setText("Thái Dương(H)");
-                        txttop3tuat.setText("Vũ Khúc(D)");
-                        txttop3dau.setText("Thiên Đồng(M)");
-                        txttop3ngo.setText("Liêm Trinh(H)");
+                        txttop3dan.setText("Tử Vi");
+                        txttop3suu.setText("Thiên Cơ");
+                        txttop3hoi.setText("Thái Dương");
+                        txttop3tuat.setText("Vũ Khúc");
+                        txttop3dau.setText("Thiên Đồng");
+                        txttop3ngo.setText("Liêm Trinh");
 
-                        txttop4dan.setText("Thiên Phủ(B)");
-                        txttop3mao.setText("Thái Âm(H)");
-                        txttop3thin.setText("Tham Lang(H)");
-                        txttop3ty.setText("Cự Môn(V)");
-                        txttop4ngo.setText("Thiên Tướng(D)");
-                        txttop3mui.setText("Thiên Lương(V)");
-                        txttop3than.setText("Thất Sát(H)");
-                        txttop3tyd.setText("Phá Quân(V)");
+                        txttop4dan.setText("Thiên Phủ");
+                        txttop3mao.setText("Thái Âm");
+                        txttop3thin.setText("Tham Lang");
+                        txttop3ty.setText("Cự Môn");
+                        txttop4ngo.setText("Thiên Tướng");
+                        txttop3mui.setText("Thiên Lương");
+                        txttop3than.setText("Thất Sát");
+                        txttop3tyd.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("8") || thongTin.ngayam().equals("11") || thongTin.ngayam().equals("17")){
-                        txttop3mao.setText("Tử Vi(D)");
-                        txttop3dan.setText("Thiên Cơ(D)");
-                        txttop3tyd.setText("Thái Dương(H)");
-                        txttop3hoi.setText("Vũ Khúc(D)");
-                        txttop3tuat.setText("Thiên Đồng(M)");
-                        txttop3mui.setText("Liêm Trinh(H)");
+                        txttop3mao.setText("Tử Vi");
+                        txttop3dan.setText("Thiên Cơ");
+                        txttop3tyd.setText("Thái Dương");
+                        txttop3hoi.setText("Vũ Khúc");
+                        txttop3tuat.setText("Thiên Đồng");
+                        txttop3mui.setText("Liêm Trinh");
 
-                        txttop3suu.setText("Thiên Phủ(B)");
-                        txttop4dan.setText("Thái Âm(H)");
-                        txttop4mao.setText("Tham Lang(H)");
-                        txttop3thin.setText("Cự Môn(V)");
-                        txttop3ty.setText("Thiên Tướng(D)");
-                        txttop3ngo.setText("Thiên Lương(V)");
-                        txttop4mui.setText("Thất Sát(H)");
-                        txttop4hoi.setText("Phá Quân(V)");
+                        txttop3suu.setText("Thiên Phủ");
+                        txttop4dan.setText("Thái Âm");
+                        txttop4mao.setText("Tham Lang");
+                        txttop3thin.setText("Cự Môn");
+                        txttop3ty.setText("Thiên Tướng");
+                        txttop3ngo.setText("Thiên Lương");
+                        txttop4mui.setText("Thất Sát");
+                        txttop4hoi.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("2") || thongTin.ngayam().equals("12") || thongTin.ngayam().equals("15") || thongTin.ngayam().equals("21")){
-                        txttop3thin.setText("Tử Vi(D)");
-                        txttop3mao.setText("Thiên Cơ(D)");
-                        txttop3suu.setText("Thái Dương(H)");
-                        txttop3tyd.setText("Vũ Khúc(D)");
-                        txttop3hoi.setText("Thiên Đồng(M)");
-                        txttop3than.setText("Liêm Trinh(H)");
+                        txttop3thin.setText("Tử Vi");
+                        txttop3mao.setText("Thiên Cơ");
+                        txttop3suu.setText("Thái Dương");
+                        txttop3tyd.setText("Vũ Khúc");
+                        txttop3hoi.setText("Thiên Đồng");
+                        txttop3than.setText("Liêm Trinh");
 
-                        txttop4tyd.setText("Thiên Phủ(B)");
-                        txttop4suu.setText("Thái Âm(H)");
-                        txttop4dan.setText("Tham Lang(H)");
-                        txttop4mao.setText("Cự Môn(V)");
-                        txttop4thin.setText("Thiên Tướng(D)");
-                        txttop3ty.setText("Thiên Lương(V)");
-                        txttop3ngo.setText("Thất Sát(H)");
-                        txttop3tuat.setText("Phá Quân(V)");
+                        txttop4tyd.setText("Thiên Phủ");
+                        txttop4suu.setText("Thái Âm");
+                        txttop4dan.setText("Tham Lang");
+                        txttop4mao.setText("Cự Môn");
+                        txttop4thin.setText("Thiên Tướng");
+                        txttop3ty.setText("Thiên Lương");
+                        txttop3ngo.setText("Thất Sát");
+                        txttop3tuat.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("6") || thongTin.ngayam().equals("16") || thongTin.ngayam().equals("19") || thongTin.ngayam().equals("25")){
-                        txttop3ty.setText("Tử Vi(D)");
-                        txttop3thin.setText("Thiên Cơ(D)");
-                        txttop3dan.setText("Thái Dương(H)");
-                        txttop3suu.setText("Vũ Khúc(D)");
-                        txttop3tyd.setText("Thiên Đồng(M)");
-                        txttop3dau.setText("Liêm Trinh(H)");
+                        txttop3ty.setText("Tử Vi");
+                        txttop3thin.setText("Thiên Cơ");
+                        txttop3dan.setText("Thái Dương");
+                        txttop3suu.setText("Vũ Khúc");
+                        txttop3tyd.setText("Thiên Đồng");
+                        txttop3dau.setText("Liêm Trinh");
 
-                        txttop3hoi.setText("Thiên Phủ(B)");
-                        txttop4tyd.setText("Thái Âm(H)");
-                        txttop4suu.setText("Tham Lang(H)");
-                        txttop4dan.setText("Cự Môn(V)");
-                        txttop3mao.setText("Thiên Tướng(D)");
-                        txttop4thin.setText("Thiên Lương(V)");
-                        txttop4ty.setText("Thất Sát(H)");
-                        txttop4dau.setText("Phá Quân(V)");
+                        txttop3hoi.setText("Thiên Phủ");
+                        txttop4tyd.setText("Thái Âm");
+                        txttop4suu.setText("Tham Lang");
+                        txttop4dan.setText("Cự Môn");
+                        txttop3mao.setText("Thiên Tướng");
+                        txttop4thin.setText("Thiên Lương");
+                        txttop4ty.setText("Thất Sát");
+                        txttop4dau.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("10") || thongTin.ngayam().equals("20") || thongTin.ngayam().equals("23") || thongTin.ngayam().equals("29")){
-                        txttop3ngo.setText("Tử Vi(D)");
-                        txttop3ty.setText("Thiên Cơ(D)");
-                        txttop3dan.setText("Thái Dương(H)");
-                        txttop3suu.setText("Vũ Khúc(D)");
-                        txttop3tyd.setText("Thiên Đồng(M)");
-                        txttop3dau.setText("Liêm Trinh(H)");
+                        txttop3ngo.setText("Tử Vi");
+                        txttop3ty.setText("Thiên Cơ");
+                        txttop3dan.setText("Thái Dương");
+                        txttop3suu.setText("Vũ Khúc");
+                        txttop3tyd.setText("Thiên Đồng");
+                        txttop3dau.setText("Liêm Trinh");
 
-                        txttop3tuat.setText("Thiên Phủ(B)");
-                        txttop3hoi.setText("Thái Âm(H)");
-                        txttop4tyd.setText("Tham Lang(H)");
-                        txttop4suu.setText("Cự Môn(V)");
-                        txttop4dan.setText("Thiên Tướng(D)");
-                        txttop3mao.setText("Thiên Lương(V)");
-                        txttop3thin.setText("Thất Sát(H)");
-                        txttop3than.setText("Phá Quân(V)");
+                        txttop3tuat.setText("Thiên Phủ");
+                        txttop3hoi.setText("Thái Âm");
+                        txttop4tyd.setText("Tham Lang");
+                        txttop4suu.setText("Cự Môn");
+                        txttop4dan.setText("Thiên Tướng");
+                        txttop3mao.setText("Thiên Lương");
+                        txttop3thin.setText("Thất Sát");
+                        txttop3than.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("14") || thongTin.ngayam().equals("24") || thongTin.ngayam().equals("27")){
-                        txttop3mui.setText("Tử Vi(D)");
-                        txttop3ngo.setText("Thiên Cơ(D)");
-                        txttop3thin.setText("Thái Dương(H)");
-                        txttop3mao.setText("Vũ Khúc(D)");
-                        txttop3dan.setText("Thiên Đồng(M)");
-                        txttop3hoi.setText("Liêm Trinh(H)");
+                        txttop3mui.setText("Tử Vi");
+                        txttop3ngo.setText("Thiên Cơ");
+                        txttop3thin.setText("Thái Dương");
+                        txttop3mao.setText("Vũ Khúc");
+                        txttop3dan.setText("Thiên Đồng");
+                        txttop3hoi.setText("Liêm Trinh");
 
-                        txttop3dau.setText("Thiên Phủ(B)");
-                        txttop3tuat.setText("Thái Âm(H)");
-                        txttop4hoi.setText("Tham Lang(H)");
-                        txttop3tyd.setText("Cự Môn(V)");
-                        txttop3suu.setText("Thiên Tướng(D)");
-                        txttop4dan.setText("Thiên Lương(V)");
-                        txttop4mao.setText("Thất Sát(H)");
-                        txttop4mui.setText("Phá Quân(V)");
+                        txttop3dau.setText("Thiên Phủ");
+                        txttop3tuat.setText("Thái Âm");
+                        txttop4hoi.setText("Tham Lang");
+                        txttop3tyd.setText("Cự Môn");
+                        txttop3suu.setText("Thiên Tướng");
+                        txttop4dan.setText("Thiên Lương");
+                        txttop4mao.setText("Thất Sát");
+                        txttop4mui.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("18") || thongTin.ngayam().equals("28")){
-                        txttop3than.setText("Tử Vi(D)");
-                        txttop3mui.setText("Thiên Cơ(D)");
-                        txttop3ty.setText("Thái Dương(H)");
-                        txttop3thin.setText("Vũ Khúc(D)");
-                        txttop3mao.setText("Thiên Đồng(M)");
-                        txttop3tyd.setText("Liêm Trinh(H)");
+                        txttop3than.setText("Tử Vi");
+                        txttop3mui.setText("Thiên Cơ");
+                        txttop3ty.setText("Thái Dương");
+                        txttop3thin.setText("Vũ Khúc");
+                        txttop3mao.setText("Thiên Đồng");
+                        txttop3tyd.setText("Liêm Trinh");
 
-                        txttop4than.setText("Thiên Phủ(B)");
-                        txttop3dau.setText("Thái Âm(H)");
-                        txttop3tuat.setText("Tham Lang(H)");
-                        txttop3hoi.setText("Cự Môn(V)");
-                        txttop4tyd.setText("Thiên Tướng(D)");
-                        txttop3suu.setText("Thiên Lương(V)");
-                        txttop3dan.setText("Thất Sát(H)");
-                        txttop3ngo.setText("Phá Quân(V)");
+                        txttop4than.setText("Thiên Phủ");
+                        txttop3dau.setText("Thái Âm");
+                        txttop3tuat.setText("Tham Lang");
+                        txttop3hoi.setText("Cự Môn");
+                        txttop4tyd.setText("Thiên Tướng");
+                        txttop3suu.setText("Thiên Lương");
+                        txttop3dan.setText("Thất Sát");
+                        txttop3ngo.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("22")){
-                        txttop3dau.setText("Tử Vi(D)");
-                        txttop3than.setText("Thiên Cơ(D)");
-                        txttop3ngo.setText("Thái Dương(H)");
-                        txttop3ty.setText("Vũ Khúc(D)");
-                        txttop3thin.setText("Thiên Đồng(M)");
-                        txttop3suu.setText("Liêm Trinh(H)");
+                        txttop3dau.setText("Tử Vi");
+                        txttop3than.setText("Thiên Cơ");
+                        txttop3ngo.setText("Thái Dương");
+                        txttop3ty.setText("Vũ Khúc");
+                        txttop3thin.setText("Thiên Đồng");
+                        txttop3suu.setText("Liêm Trinh");
 
-                        txttop3mui.setText("Thiên Phủ(B)");
-                        txttop4than.setText("Thái Âm(H)");
-                        txttop4dau.setText("Tham Lang(H)");
-                        txttop3tuat.setText("Cự Môn(V)");
-                        txttop3hoi.setText("Thiên Tướng(D)");
-                        txttop3tyd.setText("Thiên Lương(V)");
-                        txttop4suu.setText("Thất Sát(H)");
-                        txttop4ty.setText("Phá Quân(V)");
+                        txttop3mui.setText("Thiên Phủ");
+                        txttop4than.setText("Thái Âm");
+                        txttop4dau.setText("Tham Lang");
+                        txttop3tuat.setText("Cự Môn");
+                        txttop3hoi.setText("Thiên Tướng");
+                        txttop3tyd.setText("Thiên Lương");
+                        txttop4suu.setText("Thất Sát");
+                        txttop4ty.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("26")){
-                        txttop3tuat.setText("Tử Vi(D)");
-                        txttop3dau.setText("Thiên Cơ(D)");
-                        txttop3mui.setText("Thái Dương(H)");
-                        txttop3ngo.setText("Vũ Khúc(D)");
-                        txttop3ty.setText("Thiên Đồng(M)");
-                        txttop3dan.setText("Liêm Trinh(H)");
+                        txttop3tuat.setText("Tử Vi");
+                        txttop3dau.setText("Thiên Cơ");
+                        txttop3mui.setText("Thái Dương");
+                        txttop3ngo.setText("Vũ Khúc");
+                        txttop3ty.setText("Thiên Đồng");
+                        txttop3dan.setText("Liêm Trinh");
 
-                        txttop4ngo.setText("Thiên Phủ(B)");
-                        txttop4mui.setText("Thái Âm(H)");
-                        txttop3than.setText("Tham Lang(H)");
-                        txttop4dau.setText("Cự Môn(V)");
-                        txttop4tuat.setText("Thiên Tướng(D)");
-                        txttop3hoi.setText("Thiên Lương(V)");
-                        txttop3tyd.setText("Thất Sát(H)");
-                        txttop3thin.setText("Phá Quân(V)");
+                        txttop4ngo.setText("Thiên Phủ");
+                        txttop4mui.setText("Thái Âm");
+                        txttop3than.setText("Tham Lang");
+                        txttop4dau.setText("Cự Môn");
+                        txttop4tuat.setText("Thiên Tướng");
+                        txttop3hoi.setText("Thiên Lương");
+                        txttop3tyd.setText("Thất Sát");
+                        txttop3thin.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("1") || thongTin.ngayam().equals("30")){
-                        txttop3hoi.setText("Tử Vi(D)");
-                        txttop3tuat.setText("Thiên Cơ(D)");
-                        txttop3than.setText("Thái Dương(H)");
-                        txttop3mui.setText("Vũ Khúc(D)");
-                        txttop3ngo.setText("Thiên Đồng(M)");
-                        txttop3mao.setText("Liêm Trinh(H)");
+                        txttop3hoi.setText("Tử Vi");
+                        txttop3tuat.setText("Thiên Cơ");
+                        txttop3than.setText("Thái Dương");
+                        txttop3mui.setText("Vũ Khúc");
+                        txttop3ngo.setText("Thiên Đồng");
+                        txttop3mao.setText("Liêm Trinh");
 
-                        txttop3ty.setText("Thiên Phủ(B)");
-                        txttop4ngo.setText("Thái Âm(H)");
-                        txttop4mui.setText("Tham Lang(H)");
-                        txttop4than.setText("Cự Môn(V)");
-                        txttop3dau.setText("Thiên Tướng(D)");
-                        txttop4tuat.setText("Thiên Lương(V)");
-                        txttop4hoi.setText("Thất Sát(H)");
-                        txttop4mao.setText("Phá Quân(V)");
+                        txttop3ty.setText("Thiên Phủ");
+                        txttop4ngo.setText("Thái Âm");
+                        txttop4mui.setText("Tham Lang");
+                        txttop4than.setText("Cự Môn");
+                        txttop3dau.setText("Thiên Tướng");
+                        txttop4tuat.setText("Thiên Lương");
+                        txttop4hoi.setText("Thất Sát");
+                        txttop4mao.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("5")){
-                        txttop3tyd.setText("Tử Vi(D)");
-                        txttop3hoi.setText("Thiên Cơ(D)");
-                        txttop3dau.setText("Thái Dương(H)");
-                        txttop3than.setText("Vũ Khúc(D)");
-                        txttop3mui.setText("Thiên Đồng(M)");
-                        txttop3thin.setText("Liêm Trinh(H)");
+                        txttop3tyd.setText("Tử Vi");
+                        txttop3hoi.setText("Thiên Cơ");
+                        txttop3dau.setText("Thái Dương");
+                        txttop3than.setText("Vũ Khúc");
+                        txttop3mui.setText("Thiên Đồng");
+                        txttop3thin.setText("Liêm Trinh");
 
-                        txttop4thin.setText("Thiên Phủ(B)");
-                        txttop3ty.setText("Thái Âm(H)");
-                        txttop3ngo.setText("Tham Lang(H)");
-                        txttop4mui.setText("Cự Môn(V)");
-                        txttop4than.setText("Thiên Tướng(D)");
-                        txttop4dau.setText("Thiên Lương(V)");
-                        txttop3tuat.setText("Thất Sát(H)");
-                        txttop3dan.setText("Phá Quân(V)");
+                        txttop4thin.setText("Thiên Phủ");
+                        txttop3ty.setText("Thái Âm");
+                        txttop3ngo.setText("Tham Lang");
+                        txttop4mui.setText("Cự Môn");
+                        txttop4than.setText("Thiên Tướng");
+                        txttop4dau.setText("Thiên Lương");
+                        txttop3tuat.setText("Thất Sát");
+                        txttop3dan.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("3") || thongTin.ngayam().equals("9")){
-                        txttop3suu.setText("Tử Vi(D)");
-                        txttop3tyd.setText("Thiên Cơ(D)");
-                        txttop3tuat.setText("Thái Dương(H)");
-                        txttop3dau.setText("Vũ Khúc(D)");
-                        txttop3than.setText("Thiên Đồng(M)");
-                        txttop3ty.setText("Liêm Trinh(H)");
+                        txttop3suu.setText("Tử Vi");
+                        txttop3tyd.setText("Thiên Cơ");
+                        txttop3tuat.setText("Thái Dương");
+                        txttop3dau.setText("Vũ Khúc");
+                        txttop3than.setText("Thiên Đồng");
+                        txttop3ty.setText("Liêm Trinh");
 
-                        txttop3mao.setText("Thiên Phủ(B)");
-                        txttop3thin.setText("Thái Âm(H)");
-                        txttop4ty.setText("Tham Lang(H)");
-                        txttop3ngo.setText("Cự Môn(V)");
-                        txttop3mui.setText("Thiên Tướng(D)");
-                        txttop4than.setText("Thiên Lương(V)");
-                        txttop4dau.setText("Thất Sát(H)");
-                        txttop4suu.setText("Phá Quân(V)");
+                        txttop3mao.setText("Thiên Phủ");
+                        txttop3thin.setText("Thái Âm");
+                        txttop4ty.setText("Tham Lang");
+                        txttop3ngo.setText("Cự Môn");
+                        txttop3mui.setText("Thiên Tướng");
+                        txttop4than.setText("Thiên Lương");
+                        txttop4dau.setText("Thất Sát");
+                        txttop4suu.setText("Phá Quân");
                     }
                 }
             }
@@ -7724,1032 +7823,1032 @@ public class AnsaoActivity extends AppCompatActivity {
                 }
                 if (giophutsinh.equals("Dần") || giophutsinh.equals("Mẹo") || giophutsinh.equals("Tuất") || giophutsinh.equals("Hợi")){
                     if (thongTin.ngayam().equals("2") || thongTin.ngayam().equals("3") || thongTin.ngayam().equals("26") || thongTin.ngayam().equals("27")){
-                        txttop3dan.setText("Tử Vi(D)");
-                        txttop3suu.setText("Thiên Cơ(D)");
-                        txttop3hoi.setText("Thái Dương(H)");
-                        txttop3tuat.setText("Vũ Khúc(D)");
-                        txttop3dau.setText("Thiên Đồng(M)");
-                        txttop3ngo.setText("Liêm Trinh(H)");
+                        txttop3dan.setText("Tử Vi");
+                        txttop3suu.setText("Thiên Cơ");
+                        txttop3hoi.setText("Thái Dương");
+                        txttop3tuat.setText("Vũ Khúc");
+                        txttop3dau.setText("Thiên Đồng");
+                        txttop3ngo.setText("Liêm Trinh");
 
-                        txttop4dan.setText("Thiên Phủ(B)");
-                        txttop3mao.setText("Thái Âm(H)");
-                        txttop3thin.setText("Tham Lang(H)");
-                        txttop3ty.setText("Cự Môn(V)");
-                        txttop4ngo.setText("Thiên Tướng(D)");
-                        txttop3mui.setText("Thiên Lương(V)");
-                        txttop3than.setText("Thất Sát(H)");
-                        txttop3tyd.setText("Phá Quân(V)");
+                        txttop4dan.setText("Thiên Phủ");
+                        txttop3mao.setText("Thái Âm");
+                        txttop3thin.setText("Tham Lang");
+                        txttop3ty.setText("Cự Môn");
+                        txttop4ngo.setText("Thiên Tướng");
+                        txttop3mui.setText("Thiên Lương");
+                        txttop3than.setText("Thất Sát");
+                        txttop3tyd.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("4") || thongTin.ngayam().equals("5") || thongTin.ngayam().equals("28") || thongTin.ngayam().equals("29")){
-                        txttop3mao.setText("Tử Vi(D)");
-                        txttop3dan.setText("Thiên Cơ(D)");
-                        txttop3tyd.setText("Thái Dương(H)");
-                        txttop3hoi.setText("Vũ Khúc(D)");
-                        txttop3tuat.setText("Thiên Đồng(M)");
-                        txttop3mui.setText("Liêm Trinh(H)");
+                        txttop3mao.setText("Tử Vi");
+                        txttop3dan.setText("Thiên Cơ");
+                        txttop3tyd.setText("Thái Dương");
+                        txttop3hoi.setText("Vũ Khúc");
+                        txttop3tuat.setText("Thiên Đồng");
+                        txttop3mui.setText("Liêm Trinh");
 
-                        txttop3suu.setText("Thiên Phủ(B)");
-                        txttop4dan.setText("Thái Âm(H)");
-                        txttop4mao.setText("Tham Lang(H)");
-                        txttop3thin.setText("Cự Môn(V)");
-                        txttop3ty.setText("Thiên Tướng(D)");
-                        txttop3ngo.setText("Thiên Lương(V)");
-                        txttop4mui.setText("Thất Sát(H)");
-                        txttop4hoi.setText("Phá Quân(V)");
+                        txttop3suu.setText("Thiên Phủ");
+                        txttop4dan.setText("Thái Âm");
+                        txttop4mao.setText("Tham Lang");
+                        txttop3thin.setText("Cự Môn");
+                        txttop3ty.setText("Thiên Tướng");
+                        txttop3ngo.setText("Thiên Lương");
+                        txttop4mui.setText("Thất Sát");
+                        txttop4hoi.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("6") || thongTin.ngayam().equals("7") || thongTin.ngayam().equals("30")){
-                        txttop3thin.setText("Tử Vi(D)");
-                        txttop3mao.setText("Thiên Cơ(D)");
-                        txttop3suu.setText("Thái Dương(H)");
-                        txttop3tyd.setText("Vũ Khúc(D)");
-                        txttop3hoi.setText("Thiên Đồng(M)");
-                        txttop3than.setText("Liêm Trinh(H)");
+                        txttop3thin.setText("Tử Vi");
+                        txttop3mao.setText("Thiên Cơ");
+                        txttop3suu.setText("Thái Dương");
+                        txttop3tyd.setText("Vũ Khúc");
+                        txttop3hoi.setText("Thiên Đồng");
+                        txttop3than.setText("Liêm Trinh");
 
-                        txttop4tyd.setText("Thiên Phủ(B)");
-                        txttop4suu.setText("Thái Âm(H)");
-                        txttop4dan.setText("Tham Lang(H)");
-                        txttop4mao.setText("Cự Môn(V)");
-                        txttop4thin.setText("Thiên Tướng(D)");
-                        txttop3ty.setText("Thiên Lương(V)");
-                        txttop3ngo.setText("Thất Sát(H)");
-                        txttop3tuat.setText("Phá Quân(V)");
+                        txttop4tyd.setText("Thiên Phủ");
+                        txttop4suu.setText("Thái Âm");
+                        txttop4dan.setText("Tham Lang");
+                        txttop4mao.setText("Cự Môn");
+                        txttop4thin.setText("Thiên Tướng");
+                        txttop3ty.setText("Thiên Lương");
+                        txttop3ngo.setText("Thất Sát");
+                        txttop3tuat.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("8") || thongTin.ngayam().equals("9")){
-                        txttop3ty.setText("Tử Vi(D)");
-                        txttop3thin.setText("Thiên Cơ(D)");
-                        txttop3dan.setText("Thái Dương(H)");
-                        txttop3suu.setText("Vũ Khúc(D)");
-                        txttop3tyd.setText("Thiên Đồng(M)");
-                        txttop3dau.setText("Liêm Trinh(H)");
+                        txttop3ty.setText("Tử Vi");
+                        txttop3thin.setText("Thiên Cơ");
+                        txttop3dan.setText("Thái Dương");
+                        txttop3suu.setText("Vũ Khúc");
+                        txttop3tyd.setText("Thiên Đồng");
+                        txttop3dau.setText("Liêm Trinh");
 
-                        txttop3hoi.setText("Thiên Phủ(B)");
-                        txttop4tyd.setText("Thái Âm(H)");
-                        txttop4suu.setText("Tham Lang(H)");
-                        txttop4dan.setText("Cự Môn(V)");
-                        txttop3mao.setText("Thiên Tướng(D)");
-                        txttop4thin.setText("Thiên Lương(V)");
-                        txttop4ty.setText("Thất Sát(H)");
-                        txttop4dau.setText("Phá Quân(V)");
+                        txttop3hoi.setText("Thiên Phủ");
+                        txttop4tyd.setText("Thái Âm");
+                        txttop4suu.setText("Tham Lang");
+                        txttop4dan.setText("Cự Môn");
+                        txttop3mao.setText("Thiên Tướng");
+                        txttop4thin.setText("Thiên Lương");
+                        txttop4ty.setText("Thất Sát");
+                        txttop4dau.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("10") || thongTin.ngayam().equals("11")){
-                        txttop3ngo.setText("Tử Vi(D)");
-                        txttop3ty.setText("Thiên Cơ(D)");
-                        txttop3dan.setText("Thái Dương(H)");
-                        txttop3suu.setText("Vũ Khúc(D)");
-                        txttop3tyd.setText("Thiên Đồng(M)");
-                        txttop3dau.setText("Liêm Trinh(H)");
+                        txttop3ngo.setText("Tử Vi");
+                        txttop3ty.setText("Thiên Cơ");
+                        txttop3dan.setText("Thái Dương");
+                        txttop3suu.setText("Vũ Khúc");
+                        txttop3tyd.setText("Thiên Đồng");
+                        txttop3dau.setText("Liêm Trinh");
 
-                        txttop3tuat.setText("Thiên Phủ(B)");
-                        txttop3hoi.setText("Thái Âm(H)");
-                        txttop4tyd.setText("Tham Lang(H)");
-                        txttop4suu.setText("Cự Môn(V)");
-                        txttop4dan.setText("Thiên Tướng(D)");
-                        txttop3mao.setText("Thiên Lương(V)");
-                        txttop3thin.setText("Thất Sát(H)");
-                        txttop3than.setText("Phá Quân(V)");
+                        txttop3tuat.setText("Thiên Phủ");
+                        txttop3hoi.setText("Thái Âm");
+                        txttop4tyd.setText("Tham Lang");
+                        txttop4suu.setText("Cự Môn");
+                        txttop4dan.setText("Thiên Tướng");
+                        txttop3mao.setText("Thiên Lương");
+                        txttop3thin.setText("Thất Sát");
+                        txttop3than.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("12") || thongTin.ngayam().equals("13")){
-                        txttop3mui.setText("Tử Vi(D)");
-                        txttop3ngo.setText("Thiên Cơ(D)");
-                        txttop3thin.setText("Thái Dương(H)");
-                        txttop3mao.setText("Vũ Khúc(D)");
-                        txttop3dan.setText("Thiên Đồng(M)");
-                        txttop3hoi.setText("Liêm Trinh(H)");
+                        txttop3mui.setText("Tử Vi");
+                        txttop3ngo.setText("Thiên Cơ");
+                        txttop3thin.setText("Thái Dương");
+                        txttop3mao.setText("Vũ Khúc");
+                        txttop3dan.setText("Thiên Đồng");
+                        txttop3hoi.setText("Liêm Trinh");
 
-                        txttop3dau.setText("Thiên Phủ(B)");
-                        txttop3tuat.setText("Thái Âm(H)");
-                        txttop4hoi.setText("Tham Lang(H)");
-                        txttop3tyd.setText("Cự Môn(V)");
-                        txttop3suu.setText("Thiên Tướng(D)");
-                        txttop4dan.setText("Thiên Lương(V)");
-                        txttop4mao.setText("Thất Sát(H)");
-                        txttop4mui.setText("Phá Quân(V)");
+                        txttop3dau.setText("Thiên Phủ");
+                        txttop3tuat.setText("Thái Âm");
+                        txttop4hoi.setText("Tham Lang");
+                        txttop3tyd.setText("Cự Môn");
+                        txttop3suu.setText("Thiên Tướng");
+                        txttop4dan.setText("Thiên Lương");
+                        txttop4mao.setText("Thất Sát");
+                        txttop4mui.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("14") || thongTin.ngayam().equals("15")){
-                        txttop3than.setText("Tử Vi(D)");
-                        txttop3mui.setText("Thiên Cơ(D)");
-                        txttop3ty.setText("Thái Dương(H)");
-                        txttop3thin.setText("Vũ Khúc(D)");
-                        txttop3mao.setText("Thiên Đồng(M)");
-                        txttop3tyd.setText("Liêm Trinh(H)");
+                        txttop3than.setText("Tử Vi");
+                        txttop3mui.setText("Thiên Cơ");
+                        txttop3ty.setText("Thái Dương");
+                        txttop3thin.setText("Vũ Khúc");
+                        txttop3mao.setText("Thiên Đồng");
+                        txttop3tyd.setText("Liêm Trinh");
 
-                        txttop4than.setText("Thiên Phủ(B)");
-                        txttop3dau.setText("Thái Âm(H)");
-                        txttop3tuat.setText("Tham Lang(H)");
-                        txttop3hoi.setText("Cự Môn(V)");
-                        txttop4tyd.setText("Thiên Tướng(D)");
-                        txttop3suu.setText("Thiên Lương(V)");
-                        txttop3dan.setText("Thất Sát(H)");
-                        txttop3ngo.setText("Phá Quân(V)");
+                        txttop4than.setText("Thiên Phủ");
+                        txttop3dau.setText("Thái Âm");
+                        txttop3tuat.setText("Tham Lang");
+                        txttop3hoi.setText("Cự Môn");
+                        txttop4tyd.setText("Thiên Tướng");
+                        txttop3suu.setText("Thiên Lương");
+                        txttop3dan.setText("Thất Sát");
+                        txttop3ngo.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("16") || thongTin.ngayam().equals("17")){
-                        txttop3dau.setText("Tử Vi(D)");
-                        txttop3than.setText("Thiên Cơ(D)");
-                        txttop3ngo.setText("Thái Dương(H)");
-                        txttop3ty.setText("Vũ Khúc(D)");
-                        txttop3thin.setText("Thiên Đồng(M)");
-                        txttop3suu.setText("Liêm Trinh(H)");
+                        txttop3dau.setText("Tử Vi");
+                        txttop3than.setText("Thiên Cơ");
+                        txttop3ngo.setText("Thái Dương");
+                        txttop3ty.setText("Vũ Khúc");
+                        txttop3thin.setText("Thiên Đồng");
+                        txttop3suu.setText("Liêm Trinh");
 
-                        txttop3mui.setText("Thiên Phủ(B)");
-                        txttop4than.setText("Thái Âm(H)");
-                        txttop4dau.setText("Tham Lang(H)");
-                        txttop3tuat.setText("Cự Môn(V)");
-                        txttop3hoi.setText("Thiên Tướng(D)");
-                        txttop3tyd.setText("Thiên Lương(V)");
-                        txttop4suu.setText("Thất Sát(H)");
-                        txttop4ty.setText("Phá Quân(V)");
+                        txttop3mui.setText("Thiên Phủ");
+                        txttop4than.setText("Thái Âm");
+                        txttop4dau.setText("Tham Lang");
+                        txttop3tuat.setText("Cự Môn");
+                        txttop3hoi.setText("Thiên Tướng");
+                        txttop3tyd.setText("Thiên Lương");
+                        txttop4suu.setText("Thất Sát");
+                        txttop4ty.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("18") || thongTin.ngayam().equals("19")){
-                        txttop3tuat.setText("Tử Vi(D)");
-                        txttop3dau.setText("Thiên Cơ(D)");
-                        txttop3mui.setText("Thái Dương(H)");
-                        txttop3ngo.setText("Vũ Khúc(D)");
-                        txttop3ty.setText("Thiên Đồng(M)");
-                        txttop3dan.setText("Liêm Trinh(H)");
+                        txttop3tuat.setText("Tử Vi");
+                        txttop3dau.setText("Thiên Cơ");
+                        txttop3mui.setText("Thái Dương");
+                        txttop3ngo.setText("Vũ Khúc");
+                        txttop3ty.setText("Thiên Đồng");
+                        txttop3dan.setText("Liêm Trinh");
 
-                        txttop4ngo.setText("Thiên Phủ(B)");
-                        txttop4mui.setText("Thái Âm(H)");
-                        txttop3than.setText("Tham Lang(H)");
-                        txttop4dau.setText("Cự Môn(V)");
-                        txttop4tuat.setText("Thiên Tướng(D)");
-                        txttop3hoi.setText("Thiên Lương(V)");
-                        txttop3tyd.setText("Thất Sát(H)");
-                        txttop3thin.setText("Phá Quân(V)");
+                        txttop4ngo.setText("Thiên Phủ");
+                        txttop4mui.setText("Thái Âm");
+                        txttop3than.setText("Tham Lang");
+                        txttop4dau.setText("Cự Môn");
+                        txttop4tuat.setText("Thiên Tướng");
+                        txttop3hoi.setText("Thiên Lương");
+                        txttop3tyd.setText("Thất Sát");
+                        txttop3thin.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("20") || thongTin.ngayam().equals("21")){
-                        txttop3hoi.setText("Tử Vi(D)");
-                        txttop3tuat.setText("Thiên Cơ(D)");
-                        txttop3than.setText("Thái Dương(H)");
-                        txttop3mui.setText("Vũ Khúc(D)");
-                        txttop3ngo.setText("Thiên Đồng(M)");
-                        txttop3mao.setText("Liêm Trinh(H)");
+                        txttop3hoi.setText("Tử Vi");
+                        txttop3tuat.setText("Thiên Cơ");
+                        txttop3than.setText("Thái Dương");
+                        txttop3mui.setText("Vũ Khúc");
+                        txttop3ngo.setText("Thiên Đồng");
+                        txttop3mao.setText("Liêm Trinh");
 
-                        txttop3ty.setText("Thiên Phủ(B)");
-                        txttop4ngo.setText("Thái Âm(H)");
-                        txttop4mui.setText("Tham Lang(H)");
-                        txttop4than.setText("Cự Môn(V)");
-                        txttop3dau.setText("Thiên Tướng(D)");
-                        txttop4tuat.setText("Thiên Lương(V)");
-                        txttop4hoi.setText("Thất Sát(H)");
-                        txttop4mao.setText("Phá Quân(V)");
+                        txttop3ty.setText("Thiên Phủ");
+                        txttop4ngo.setText("Thái Âm");
+                        txttop4mui.setText("Tham Lang");
+                        txttop4than.setText("Cự Môn");
+                        txttop3dau.setText("Thiên Tướng");
+                        txttop4tuat.setText("Thiên Lương");
+                        txttop4hoi.setText("Thất Sát");
+                        txttop4mao.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("22") || thongTin.ngayam().equals("23")){
-                        txttop3tyd.setText("Tử Vi(D)");
-                        txttop3hoi.setText("Thiên Cơ(D)");
-                        txttop3dau.setText("Thái Dương(H)");
-                        txttop3than.setText("Vũ Khúc(D)");
-                        txttop3mui.setText("Thiên Đồng(M)");
-                        txttop3thin.setText("Liêm Trinh(H)");
+                        txttop3tyd.setText("Tử Vi");
+                        txttop3hoi.setText("Thiên Cơ");
+                        txttop3dau.setText("Thái Dương");
+                        txttop3than.setText("Vũ Khúc");
+                        txttop3mui.setText("Thiên Đồng");
+                        txttop3thin.setText("Liêm Trinh");
 
-                        txttop4thin.setText("Thiên Phủ(B)");
-                        txttop3ty.setText("Thái Âm(H)");
-                        txttop3ngo.setText("Tham Lang(H)");
-                        txttop4mui.setText("Cự Môn(V)");
-                        txttop4than.setText("Thiên Tướng(D)");
-                        txttop4dau.setText("Thiên Lương(V)");
-                        txttop3tuat.setText("Thất Sát(H)");
-                        txttop3dan.setText("Phá Quân(V)");
+                        txttop4thin.setText("Thiên Phủ");
+                        txttop3ty.setText("Thái Âm");
+                        txttop3ngo.setText("Tham Lang");
+                        txttop4mui.setText("Cự Môn");
+                        txttop4than.setText("Thiên Tướng");
+                        txttop4dau.setText("Thiên Lương");
+                        txttop3tuat.setText("Thất Sát");
+                        txttop3dan.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("1") || thongTin.ngayam().equals("24") || thongTin.ngayam().equals("25")){
-                        txttop3suu.setText("Tử Vi(D)");
-                        txttop3tyd.setText("Thiên Cơ(D)");
-                        txttop3tuat.setText("Thái Dương(H)");
-                        txttop3dau.setText("Vũ Khúc(D)");
-                        txttop3than.setText("Thiên Đồng(M)");
-                        txttop3ty.setText("Liêm Trinh(H)");
+                        txttop3suu.setText("Tử Vi");
+                        txttop3tyd.setText("Thiên Cơ");
+                        txttop3tuat.setText("Thái Dương");
+                        txttop3dau.setText("Vũ Khúc");
+                        txttop3than.setText("Thiên Đồng");
+                        txttop3ty.setText("Liêm Trinh");
 
-                        txttop3mao.setText("Thiên Phủ(B)");
-                        txttop3thin.setText("Thái Âm(H)");
-                        txttop4ty.setText("Tham Lang(H)");
-                        txttop3ngo.setText("Cự Môn(V)");
-                        txttop3mui.setText("Thiên Tướng(D)");
-                        txttop4than.setText("Thiên Lương(V)");
-                        txttop4dau.setText("Thất Sát(H)");
-                        txttop4suu.setText("Phá Quân(V)");
+                        txttop3mao.setText("Thiên Phủ");
+                        txttop3thin.setText("Thái Âm");
+                        txttop4ty.setText("Tham Lang");
+                        txttop3ngo.setText("Cự Môn");
+                        txttop3mui.setText("Thiên Tướng");
+                        txttop4than.setText("Thiên Lương");
+                        txttop4dau.setText("Thất Sát");
+                        txttop4suu.setText("Phá Quân");
                     }
                 }
                 else if (giophutsinh.equals("Ngọ") || giophutsinh.equals("Mùi")){
                     if (thongTin.ngayam().equals("6") || thongTin.ngayam().equals("11") || thongTin.ngayam().equals("21")){
-                        txttop3dan.setText("Tử Vi(D)");
-                        txttop3suu.setText("Thiên Cơ(D)");
-                        txttop3hoi.setText("Thái Dương(H)");
-                        txttop3tuat.setText("Vũ Khúc(D)");
-                        txttop3dau.setText("Thiên Đồng(M)");
-                        txttop3ngo.setText("Liêm Trinh(H)");
+                        txttop3dan.setText("Tử Vi");
+                        txttop3suu.setText("Thiên Cơ");
+                        txttop3hoi.setText("Thái Dương");
+                        txttop3tuat.setText("Vũ Khúc");
+                        txttop3dau.setText("Thiên Đồng");
+                        txttop3ngo.setText("Liêm Trinh");
 
-                        txttop4dan.setText("Thiên Phủ(B)");
-                        txttop3mao.setText("Thái Âm(H)");
-                        txttop3thin.setText("Tham Lang(H)");
-                        txttop3ty.setText("Cự Môn(V)");
-                        txttop4ngo.setText("Thiên Tướng(D)");
-                        txttop3mui.setText("Thiên Lương(V)");
-                        txttop3than.setText("Thất Sát(H)");
-                        txttop3tyd.setText("Phá Quân(V)");
+                        txttop4dan.setText("Thiên Phủ");
+                        txttop3mao.setText("Thái Âm");
+                        txttop3thin.setText("Tham Lang");
+                        txttop3ty.setText("Cự Môn");
+                        txttop4ngo.setText("Thiên Tướng");
+                        txttop3mui.setText("Thiên Lương");
+                        txttop3than.setText("Thất Sát");
+                        txttop3tyd.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("12") || thongTin.ngayam().equals("17") || thongTin.ngayam().equals("27")){
-                        txttop3mao.setText("Tử Vi(D)");
-                        txttop3dan.setText("Thiên Cơ(D)");
-                        txttop3tyd.setText("Thái Dương(H)");
-                        txttop3hoi.setText("Vũ Khúc(D)");
-                        txttop3tuat.setText("Thiên Đồng(M)");
-                        txttop3mui.setText("Liêm Trinh(H)");
+                        txttop3mao.setText("Tử Vi");
+                        txttop3dan.setText("Thiên Cơ");
+                        txttop3tyd.setText("Thái Dương");
+                        txttop3hoi.setText("Vũ Khúc");
+                        txttop3tuat.setText("Thiên Đồng");
+                        txttop3mui.setText("Liêm Trinh");
 
-                        txttop3suu.setText("Thiên Phủ(B)");
-                        txttop4dan.setText("Thái Âm(H)");
-                        txttop4mao.setText("Tham Lang(H)");
-                        txttop3thin.setText("Cự Môn(V)");
-                        txttop3ty.setText("Thiên Tướng(D)");
-                        txttop3ngo.setText("Thiên Lương(V)");
-                        txttop4mui.setText("Thất Sát(H)");
-                        txttop4hoi.setText("Phá Quân(V)");
+                        txttop3suu.setText("Thiên Phủ");
+                        txttop4dan.setText("Thái Âm");
+                        txttop4mao.setText("Tham Lang");
+                        txttop3thin.setText("Cự Môn");
+                        txttop3ty.setText("Thiên Tướng");
+                        txttop3ngo.setText("Thiên Lương");
+                        txttop4mui.setText("Thất Sát");
+                        txttop4hoi.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("4") || thongTin.ngayam().equals("18") || thongTin.ngayam().equals("23")){
-                        txttop3thin.setText("Tử Vi(D)");
-                        txttop3mao.setText("Thiên Cơ(D)");
-                        txttop3suu.setText("Thái Dương(H)");
-                        txttop3tyd.setText("Vũ Khúc(D)");
-                        txttop3hoi.setText("Thiên Đồng(M)");
-                        txttop3than.setText("Liêm Trinh(H)");
+                        txttop3thin.setText("Tử Vi");
+                        txttop3mao.setText("Thiên Cơ");
+                        txttop3suu.setText("Thái Dương");
+                        txttop3tyd.setText("Vũ Khúc");
+                        txttop3hoi.setText("Thiên Đồng");
+                        txttop3than.setText("Liêm Trinh");
 
-                        txttop4tyd.setText("Thiên Phủ(B)");
-                        txttop4suu.setText("Thái Âm(H)");
-                        txttop4dan.setText("Tham Lang(H)");
-                        txttop4mao.setText("Cự Môn(V)");
-                        txttop4thin.setText("Thiên Tướng(D)");
-                        txttop3ty.setText("Thiên Lương(V)");
-                        txttop3ngo.setText("Thất Sát(H)");
-                        txttop3tuat.setText("Phá Quân(V)");
+                        txttop4tyd.setText("Thiên Phủ");
+                        txttop4suu.setText("Thái Âm");
+                        txttop4dan.setText("Tham Lang");
+                        txttop4mao.setText("Cự Môn");
+                        txttop4thin.setText("Thiên Tướng");
+                        txttop3ty.setText("Thiên Lương");
+                        txttop3ngo.setText("Thất Sát");
+                        txttop3tuat.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("10") || thongTin.ngayam().equals("24") || thongTin.ngayam().equals("29")){
-                        txttop3ty.setText("Tử Vi(D)");
-                        txttop3thin.setText("Thiên Cơ(D)");
-                        txttop3dan.setText("Thái Dương(H)");
-                        txttop3suu.setText("Vũ Khúc(D)");
-                        txttop3tyd.setText("Thiên Đồng(M)");
-                        txttop3dau.setText("Liêm Trinh(H)");
+                        txttop3ty.setText("Tử Vi");
+                        txttop3thin.setText("Thiên Cơ");
+                        txttop3dan.setText("Thái Dương");
+                        txttop3suu.setText("Vũ Khúc");
+                        txttop3tyd.setText("Thiên Đồng");
+                        txttop3dau.setText("Liêm Trinh");
 
-                        txttop3hoi.setText("Thiên Phủ(B)");
-                        txttop4tyd.setText("Thái Âm(H)");
-                        txttop4suu.setText("Tham Lang(H)");
-                        txttop4dan.setText("Cự Môn(V)");
-                        txttop3mao.setText("Thiên Tướng(D)");
-                        txttop4thin.setText("Thiên Lương(V)");
-                        txttop4ty.setText("Thất Sát(H)");
-                        txttop4dau.setText("Phá Quân(V)");
+                        txttop3hoi.setText("Thiên Phủ");
+                        txttop4tyd.setText("Thái Âm");
+                        txttop4suu.setText("Tham Lang");
+                        txttop4dan.setText("Cự Môn");
+                        txttop3mao.setText("Thiên Tướng");
+                        txttop4thin.setText("Thiên Lương");
+                        txttop4ty.setText("Thất Sát");
+                        txttop4dau.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("2") || thongTin.ngayam().equals("16") || thongTin.ngayam().equals("30")){
-                        txttop3ngo.setText("Tử Vi(D)");
-                        txttop3ty.setText("Thiên Cơ(D)");
-                        txttop3dan.setText("Thái Dương(H)");
-                        txttop3suu.setText("Vũ Khúc(D)");
-                        txttop3tyd.setText("Thiên Đồng(M)");
-                        txttop3dau.setText("Liêm Trinh(H)");
+                        txttop3ngo.setText("Tử Vi");
+                        txttop3ty.setText("Thiên Cơ");
+                        txttop3dan.setText("Thái Dương");
+                        txttop3suu.setText("Vũ Khúc");
+                        txttop3tyd.setText("Thiên Đồng");
+                        txttop3dau.setText("Liêm Trinh");
 
-                        txttop3tuat.setText("Thiên Phủ(B)");
-                        txttop3hoi.setText("Thái Âm(H)");
-                        txttop4tyd.setText("Tham Lang(H)");
-                        txttop4suu.setText("Cự Môn(V)");
-                        txttop4dan.setText("Thiên Tướng(D)");
-                        txttop3mao.setText("Thiên Lương(V)");
-                        txttop3thin.setText("Thất Sát(H)");
-                        txttop3than.setText("Phá Quân(V)");
+                        txttop3tuat.setText("Thiên Phủ");
+                        txttop3hoi.setText("Thái Âm");
+                        txttop4tyd.setText("Tham Lang");
+                        txttop4suu.setText("Cự Môn");
+                        txttop4dan.setText("Thiên Tướng");
+                        txttop3mao.setText("Thiên Lương");
+                        txttop3thin.setText("Thất Sát");
+                        txttop3than.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("8") || thongTin.ngayam().equals("22")){
-                        txttop3mui.setText("Tử Vi(D)");
-                        txttop3ngo.setText("Thiên Cơ(D)");
-                        txttop3thin.setText("Thái Dương(H)");
-                        txttop3mao.setText("Vũ Khúc(D)");
-                        txttop3dan.setText("Thiên Đồng(M)");
-                        txttop3hoi.setText("Liêm Trinh(H)");
+                        txttop3mui.setText("Tử Vi");
+                        txttop3ngo.setText("Thiên Cơ");
+                        txttop3thin.setText("Thái Dương");
+                        txttop3mao.setText("Vũ Khúc");
+                        txttop3dan.setText("Thiên Đồng");
+                        txttop3hoi.setText("Liêm Trinh");
 
-                        txttop3dau.setText("Thiên Phủ(B)");
-                        txttop3tuat.setText("Thái Âm(H)");
-                        txttop4hoi.setText("Tham Lang(H)");
-                        txttop3tyd.setText("Cự Môn(V)");
-                        txttop3suu.setText("Thiên Tướng(D)");
-                        txttop4dan.setText("Thiên Lương(V)");
-                        txttop4mao.setText("Thất Sát(H)");
-                        txttop4mui.setText("Phá Quân(V)");
+                        txttop3dau.setText("Thiên Phủ");
+                        txttop3tuat.setText("Thái Âm");
+                        txttop4hoi.setText("Tham Lang");
+                        txttop3tyd.setText("Cự Môn");
+                        txttop3suu.setText("Thiên Tướng");
+                        txttop4dan.setText("Thiên Lương");
+                        txttop4mao.setText("Thất Sát");
+                        txttop4mui.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("14") || thongTin.ngayam().equals("28")){
-                        txttop3than.setText("Tử Vi(D)");
-                        txttop3mui.setText("Thiên Cơ(D)");
-                        txttop3ty.setText("Thái Dương(H)");
-                        txttop3thin.setText("Vũ Khúc(D)");
-                        txttop3mao.setText("Thiên Đồng(M)");
-                        txttop3tyd.setText("Liêm Trinh(H)");
+                        txttop3than.setText("Tử Vi");
+                        txttop3mui.setText("Thiên Cơ");
+                        txttop3ty.setText("Thái Dương");
+                        txttop3thin.setText("Vũ Khúc");
+                        txttop3mao.setText("Thiên Đồng");
+                        txttop3tyd.setText("Liêm Trinh");
 
-                        txttop4than.setText("Thiên Phủ(B)");
-                        txttop3dau.setText("Thái Âm(H)");
-                        txttop3tuat.setText("Tham Lang(H)");
-                        txttop3hoi.setText("Cự Môn(V)");
-                        txttop4tyd.setText("Thiên Tướng(D)");
-                        txttop3suu.setText("Thiên Lương(V)");
-                        txttop3dan.setText("Thất Sát(H)");
-                        txttop3ngo.setText("Phá Quân(V)");
+                        txttop4than.setText("Thiên Phủ");
+                        txttop3dau.setText("Thái Âm");
+                        txttop3tuat.setText("Tham Lang");
+                        txttop3hoi.setText("Cự Môn");
+                        txttop4tyd.setText("Thiên Tướng");
+                        txttop3suu.setText("Thiên Lương");
+                        txttop3dan.setText("Thất Sát");
+                        txttop3ngo.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("1") || thongTin.ngayam().equals("20")){
-                        txttop3dau.setText("Tử Vi(D)");
-                        txttop3than.setText("Thiên Cơ(D)");
-                        txttop3ngo.setText("Thái Dương(H)");
-                        txttop3ty.setText("Vũ Khúc(D)");
-                        txttop3thin.setText("Thiên Đồng(M)");
-                        txttop3suu.setText("Liêm Trinh(H)");
+                        txttop3dau.setText("Tử Vi");
+                        txttop3than.setText("Thiên Cơ");
+                        txttop3ngo.setText("Thái Dương");
+                        txttop3ty.setText("Vũ Khúc");
+                        txttop3thin.setText("Thiên Đồng");
+                        txttop3suu.setText("Liêm Trinh");
 
-                        txttop3mui.setText("Thiên Phủ(B)");
-                        txttop4than.setText("Thái Âm(H)");
-                        txttop4dau.setText("Tham Lang(H)");
-                        txttop3tuat.setText("Cự Môn(V)");
-                        txttop3hoi.setText("Thiên Tướng(D)");
-                        txttop3tyd.setText("Thiên Lương(V)");
-                        txttop4suu.setText("Thất Sát(H)");
-                        txttop4ty.setText("Phá Quân(V)");
+                        txttop3mui.setText("Thiên Phủ");
+                        txttop4than.setText("Thái Âm");
+                        txttop4dau.setText("Tham Lang");
+                        txttop3tuat.setText("Cự Môn");
+                        txttop3hoi.setText("Thiên Tướng");
+                        txttop3tyd.setText("Thiên Lương");
+                        txttop4suu.setText("Thất Sát");
+                        txttop4ty.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("7") || thongTin.ngayam().equals("26")){
-                        txttop3tuat.setText("Tử Vi(D)");
-                        txttop3dau.setText("Thiên Cơ(D)");
-                        txttop3mui.setText("Thái Dương(H)");
-                        txttop3ngo.setText("Vũ Khúc(D)");
-                        txttop3ty.setText("Thiên Đồng(M)");
-                        txttop3dan.setText("Liêm Trinh(H)");
+                        txttop3tuat.setText("Tử Vi");
+                        txttop3dau.setText("Thiên Cơ");
+                        txttop3mui.setText("Thái Dương");
+                        txttop3ngo.setText("Vũ Khúc");
+                        txttop3ty.setText("Thiên Đồng");
+                        txttop3dan.setText("Liêm Trinh");
 
-                        txttop4ngo.setText("Thiên Phủ(B)");
-                        txttop4mui.setText("Thái Âm(H)");
-                        txttop3than.setText("Tham Lang(H)");
-                        txttop4dau.setText("Cự Môn(V)");
-                        txttop4tuat.setText("Thiên Tướng(D)");
-                        txttop3hoi.setText("Thiên Lương(V)");
-                        txttop3tyd.setText("Thất Sát(H)");
-                        txttop3thin.setText("Phá Quân(V)");
+                        txttop4ngo.setText("Thiên Phủ");
+                        txttop4mui.setText("Thái Âm");
+                        txttop3than.setText("Tham Lang");
+                        txttop4dau.setText("Cự Môn");
+                        txttop4tuat.setText("Thiên Tướng");
+                        txttop3hoi.setText("Thiên Lương");
+                        txttop3tyd.setText("Thất Sát");
+                        txttop3thin.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("3") || thongTin.ngayam().equals("13")){
-                        txttop3hoi.setText("Tử Vi(D)");
-                        txttop3tuat.setText("Thiên Cơ(D)");
-                        txttop3than.setText("Thái Dương(H)");
-                        txttop3mui.setText("Vũ Khúc(D)");
-                        txttop3ngo.setText("Thiên Đồng(M)");
-                        txttop3mao.setText("Liêm Trinh(H)");
+                        txttop3hoi.setText("Tử Vi");
+                        txttop3tuat.setText("Thiên Cơ");
+                        txttop3than.setText("Thái Dương");
+                        txttop3mui.setText("Vũ Khúc");
+                        txttop3ngo.setText("Thiên Đồng");
+                        txttop3mao.setText("Liêm Trinh");
 
-                        txttop3ty.setText("Thiên Phủ(B)");
-                        txttop4ngo.setText("Thái Âm(H)");
-                        txttop4mui.setText("Tham Lang(H)");
-                        txttop4than.setText("Cự Môn(V)");
-                        txttop3dau.setText("Thiên Tướng(D)");
-                        txttop4tuat.setText("Thiên Lương(V)");
-                        txttop4hoi.setText("Thất Sát(H)");
-                        txttop4mao.setText("Phá Quân(V)");
+                        txttop3ty.setText("Thiên Phủ");
+                        txttop4ngo.setText("Thái Âm");
+                        txttop4mui.setText("Tham Lang");
+                        txttop4than.setText("Cự Môn");
+                        txttop3dau.setText("Thiên Tướng");
+                        txttop4tuat.setText("Thiên Lương");
+                        txttop4hoi.setText("Thất Sát");
+                        txttop4mao.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("9") || thongTin.ngayam().equals("19")){
-                        txttop3tyd.setText("Tử Vi(D)");
-                        txttop3hoi.setText("Thiên Cơ(D)");
-                        txttop3dau.setText("Thái Dương(H)");
-                        txttop3than.setText("Vũ Khúc(D)");
-                        txttop3mui.setText("Thiên Đồng(M)");
-                        txttop3thin.setText("Liêm Trinh(H)");
+                        txttop3tyd.setText("Tử Vi");
+                        txttop3hoi.setText("Thiên Cơ");
+                        txttop3dau.setText("Thái Dương");
+                        txttop3than.setText("Vũ Khúc");
+                        txttop3mui.setText("Thiên Đồng");
+                        txttop3thin.setText("Liêm Trinh");
 
-                        txttop4thin.setText("Thiên Phủ(B)");
-                        txttop3ty.setText("Thái Âm(H)");
-                        txttop3ngo.setText("Tham Lang(H)");
-                        txttop4mui.setText("Cự Môn(V)");
-                        txttop4than.setText("Thiên Tướng(D)");
-                        txttop4dau.setText("Thiên Lương(V)");
-                        txttop3tuat.setText("Thất Sát(H)");
-                        txttop3dan.setText("Phá Quân(V)");
+                        txttop4thin.setText("Thiên Phủ");
+                        txttop3ty.setText("Thái Âm");
+                        txttop3ngo.setText("Tham Lang");
+                        txttop4mui.setText("Cự Môn");
+                        txttop4than.setText("Thiên Tướng");
+                        txttop4dau.setText("Thiên Lương");
+                        txttop3tuat.setText("Thất Sát");
+                        txttop3dan.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("5") || thongTin.ngayam().equals("15") || thongTin.ngayam().equals("25")){
-                        txttop3suu.setText("Tử Vi(D)");
-                        txttop3tyd.setText("Thiên Cơ(D)");
-                        txttop3tuat.setText("Thái Dương(H)");
-                        txttop3dau.setText("Vũ Khúc(D)");
-                        txttop3than.setText("Thiên Đồng(M)");
-                        txttop3ty.setText("Liêm Trinh(H)");
+                        txttop3suu.setText("Tử Vi");
+                        txttop3tyd.setText("Thiên Cơ");
+                        txttop3tuat.setText("Thái Dương");
+                        txttop3dau.setText("Vũ Khúc");
+                        txttop3than.setText("Thiên Đồng");
+                        txttop3ty.setText("Liêm Trinh");
 
-                        txttop3mao.setText("Thiên Phủ(B)");
-                        txttop3thin.setText("Thái Âm(H)");
-                        txttop4ty.setText("Tham Lang(H)");
-                        txttop3ngo.setText("Cự Môn(V)");
-                        txttop3mui.setText("Thiên Tướng(D)");
-                        txttop4than.setText("Thiên Lương(V)");
-                        txttop4dau.setText("Thất Sát(H)");
-                        txttop4suu.setText("Phá Quân(V)");
+                        txttop3mao.setText("Thiên Phủ");
+                        txttop3thin.setText("Thái Âm");
+                        txttop4ty.setText("Tham Lang");
+                        txttop3ngo.setText("Cự Môn");
+                        txttop3mui.setText("Thiên Tướng");
+                        txttop4than.setText("Thiên Lương");
+                        txttop4dau.setText("Thất Sát");
+                        txttop4suu.setText("Phá Quân");
                     }
                 }
                 else if (giophutsinh.equals("Thân") || giophutsinh.equals("Dậu")){
                     if (thongTin.ngayam().equals("3") || thongTin.ngayam().equals("5")){
-                        txttop3dan.setText("Tử Vi(D)");
-                        txttop3suu.setText("Thiên Cơ(D)");
-                        txttop3hoi.setText("Thái Dương(H)");
-                        txttop3tuat.setText("Vũ Khúc(D)");
-                        txttop3dau.setText("Thiên Đồng(M)");
-                        txttop3ngo.setText("Liêm Trinh(H)");
+                        txttop3dan.setText("Tử Vi");
+                        txttop3suu.setText("Thiên Cơ");
+                        txttop3hoi.setText("Thái Dương");
+                        txttop3tuat.setText("Vũ Khúc");
+                        txttop3dau.setText("Thiên Đồng");
+                        txttop3ngo.setText("Liêm Trinh");
 
-                        txttop4dan.setText("Thiên Phủ(B)");
-                        txttop3mao.setText("Thái Âm(H)");
-                        txttop3thin.setText("Tham Lang(H)");
-                        txttop3ty.setText("Cự Môn(V)");
-                        txttop4ngo.setText("Thiên Tướng(D)");
-                        txttop3mui.setText("Thiên Lương(V)");
-                        txttop3than.setText("Thất Sát(H)");
-                        txttop3tyd.setText("Phá Quân(V)");
+                        txttop4dan.setText("Thiên Phủ");
+                        txttop3mao.setText("Thái Âm");
+                        txttop3thin.setText("Tham Lang");
+                        txttop3ty.setText("Cự Môn");
+                        txttop4ngo.setText("Thiên Tướng");
+                        txttop3mui.setText("Thiên Lương");
+                        txttop3than.setText("Thất Sát");
+                        txttop3tyd.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("6") || thongTin.ngayam().equals("8")){
-                        txttop3mao.setText("Tử Vi(D)");
-                        txttop3dan.setText("Thiên Cơ(D)");
-                        txttop3tyd.setText("Thái Dương(H)");
-                        txttop3hoi.setText("Vũ Khúc(D)");
-                        txttop3tuat.setText("Thiên Đồng(M)");
-                        txttop3mui.setText("Liêm Trinh(H)");
+                        txttop3mao.setText("Tử Vi");
+                        txttop3dan.setText("Thiên Cơ");
+                        txttop3tyd.setText("Thái Dương");
+                        txttop3hoi.setText("Vũ Khúc");
+                        txttop3tuat.setText("Thiên Đồng");
+                        txttop3mui.setText("Liêm Trinh");
 
-                        txttop3suu.setText("Thiên Phủ(B)");
-                        txttop4dan.setText("Thái Âm(H)");
-                        txttop4mao.setText("Tham Lang(H)");
-                        txttop3thin.setText("Cự Môn(V)");
-                        txttop3ty.setText("Thiên Tướng(D)");
-                        txttop3ngo.setText("Thiên Lương(V)");
-                        txttop4mui.setText("Thất Sát(H)");
-                        txttop4hoi.setText("Phá Quân(V)");
+                        txttop3suu.setText("Thiên Phủ");
+                        txttop4dan.setText("Thái Âm");
+                        txttop4mao.setText("Tham Lang");
+                        txttop3thin.setText("Cự Môn");
+                        txttop3ty.setText("Thiên Tướng");
+                        txttop3ngo.setText("Thiên Lương");
+                        txttop4mui.setText("Thất Sát");
+                        txttop4hoi.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("1") || thongTin.ngayam().equals("9") || thongTin.ngayam().equals("11")){
-                        txttop3thin.setText("Tử Vi(D)");
-                        txttop3mao.setText("Thiên Cơ(D)");
-                        txttop3suu.setText("Thái Dương(H)");
-                        txttop3tyd.setText("Vũ Khúc(D)");
-                        txttop3hoi.setText("Thiên Đồng(M)");
-                        txttop3than.setText("Liêm Trinh(H)");
+                        txttop3thin.setText("Tử Vi");
+                        txttop3mao.setText("Thiên Cơ");
+                        txttop3suu.setText("Thái Dương");
+                        txttop3tyd.setText("Vũ Khúc");
+                        txttop3hoi.setText("Thiên Đồng");
+                        txttop3than.setText("Liêm Trinh");
 
-                        txttop4tyd.setText("Thiên Phủ(B)");
-                        txttop4suu.setText("Thái Âm(H)");
-                        txttop4dan.setText("Tham Lang(H)");
-                        txttop4mao.setText("Cự Môn(V)");
-                        txttop4thin.setText("Thiên Tướng(D)");
-                        txttop3ty.setText("Thiên Lương(V)");
-                        txttop3ngo.setText("Thất Sát(H)");
-                        txttop3tuat.setText("Phá Quân(V)");
+                        txttop4tyd.setText("Thiên Phủ");
+                        txttop4suu.setText("Thái Âm");
+                        txttop4dan.setText("Tham Lang");
+                        txttop4mao.setText("Cự Môn");
+                        txttop4thin.setText("Thiên Tướng");
+                        txttop3ty.setText("Thiên Lương");
+                        txttop3ngo.setText("Thất Sát");
+                        txttop3tuat.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("4") || thongTin.ngayam().equals("12") || thongTin.ngayam().equals("14")){
-                        txttop3ty.setText("Tử Vi(D)");
-                        txttop3thin.setText("Thiên Cơ(D)");
-                        txttop3dan.setText("Thái Dương(H)");
-                        txttop3suu.setText("Vũ Khúc(D)");
-                        txttop3tyd.setText("Thiên Đồng(M)");
-                        txttop3dau.setText("Liêm Trinh(H)");
+                        txttop3ty.setText("Tử Vi");
+                        txttop3thin.setText("Thiên Cơ");
+                        txttop3dan.setText("Thái Dương");
+                        txttop3suu.setText("Vũ Khúc");
+                        txttop3tyd.setText("Thiên Đồng");
+                        txttop3dau.setText("Liêm Trinh");
 
-                        txttop3hoi.setText("Thiên Phủ(B)");
-                        txttop4tyd.setText("Thái Âm(H)");
-                        txttop4suu.setText("Tham Lang(H)");
-                        txttop4dan.setText("Cự Môn(V)");
-                        txttop3mao.setText("Thiên Tướng(D)");
-                        txttop4thin.setText("Thiên Lương(V)");
-                        txttop4ty.setText("Thất Sát(H)");
-                        txttop4dau.setText("Phá Quân(V)");
+                        txttop3hoi.setText("Thiên Phủ");
+                        txttop4tyd.setText("Thái Âm");
+                        txttop4suu.setText("Tham Lang");
+                        txttop4dan.setText("Cự Môn");
+                        txttop3mao.setText("Thiên Tướng");
+                        txttop4thin.setText("Thiên Lương");
+                        txttop4ty.setText("Thất Sát");
+                        txttop4dau.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("7") || thongTin.ngayam().equals("15") || thongTin.ngayam().equals("17")){
-                        txttop3ngo.setText("Tử Vi(D)");
-                        txttop3ty.setText("Thiên Cơ(D)");
-                        txttop3dan.setText("Thái Dương(H)");
-                        txttop3suu.setText("Vũ Khúc(D)");
-                        txttop3tyd.setText("Thiên Đồng(M)");
-                        txttop3dau.setText("Liêm Trinh(H)");
+                        txttop3ngo.setText("Tử Vi");
+                        txttop3ty.setText("Thiên Cơ");
+                        txttop3dan.setText("Thái Dương");
+                        txttop3suu.setText("Vũ Khúc");
+                        txttop3tyd.setText("Thiên Đồng");
+                        txttop3dau.setText("Liêm Trinh");
 
-                        txttop3tuat.setText("Thiên Phủ(B)");
-                        txttop3hoi.setText("Thái Âm(H)");
-                        txttop4tyd.setText("Tham Lang(H)");
-                        txttop4suu.setText("Cự Môn(V)");
-                        txttop4dan.setText("Thiên Tướng(D)");
-                        txttop3mao.setText("Thiên Lương(V)");
-                        txttop3thin.setText("Thất Sát(H)");
-                        txttop3than.setText("Phá Quân(V)");
+                        txttop3tuat.setText("Thiên Phủ");
+                        txttop3hoi.setText("Thái Âm");
+                        txttop4tyd.setText("Tham Lang");
+                        txttop4suu.setText("Cự Môn");
+                        txttop4dan.setText("Thiên Tướng");
+                        txttop3mao.setText("Thiên Lương");
+                        txttop3thin.setText("Thất Sát");
+                        txttop3than.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("10") || thongTin.ngayam().equals("18") || thongTin.ngayam().equals("20")){
-                        txttop3mui.setText("Tử Vi(D)");
-                        txttop3ngo.setText("Thiên Cơ(D)");
-                        txttop3thin.setText("Thái Dương(H)");
-                        txttop3mao.setText("Vũ Khúc(D)");
-                        txttop3dan.setText("Thiên Đồng(M)");
-                        txttop3hoi.setText("Liêm Trinh(H)");
+                        txttop3mui.setText("Tử Vi");
+                        txttop3ngo.setText("Thiên Cơ");
+                        txttop3thin.setText("Thái Dương");
+                        txttop3mao.setText("Vũ Khúc");
+                        txttop3dan.setText("Thiên Đồng");
+                        txttop3hoi.setText("Liêm Trinh");
 
-                        txttop3dau.setText("Thiên Phủ(B)");
-                        txttop3tuat.setText("Thái Âm(H)");
-                        txttop4hoi.setText("Tham Lang(H)");
-                        txttop3tyd.setText("Cự Môn(V)");
-                        txttop3suu.setText("Thiên Tướng(D)");
-                        txttop4dan.setText("Thiên Lương(V)");
-                        txttop4mao.setText("Thất Sát(H)");
-                        txttop4mui.setText("Phá Quân(V)");
+                        txttop3dau.setText("Thiên Phủ");
+                        txttop3tuat.setText("Thái Âm");
+                        txttop4hoi.setText("Tham Lang");
+                        txttop3tyd.setText("Cự Môn");
+                        txttop3suu.setText("Thiên Tướng");
+                        txttop4dan.setText("Thiên Lương");
+                        txttop4mao.setText("Thất Sát");
+                        txttop4mui.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("13") || thongTin.ngayam().equals("21") || thongTin.ngayam().equals("23")){
-                        txttop3than.setText("Tử Vi(D)");
-                        txttop3mui.setText("Thiên Cơ(D)");
-                        txttop3ty.setText("Thái Dương(H)");
-                        txttop3thin.setText("Vũ Khúc(D)");
-                        txttop3mao.setText("Thiên Đồng(M)");
-                        txttop3tyd.setText("Liêm Trinh(H)");
+                        txttop3than.setText("Tử Vi");
+                        txttop3mui.setText("Thiên Cơ");
+                        txttop3ty.setText("Thái Dương");
+                        txttop3thin.setText("Vũ Khúc");
+                        txttop3mao.setText("Thiên Đồng");
+                        txttop3tyd.setText("Liêm Trinh");
 
-                        txttop4than.setText("Thiên Phủ(B)");
-                        txttop3dau.setText("Thái Âm(H)");
-                        txttop3tuat.setText("Tham Lang(H)");
-                        txttop3hoi.setText("Cự Môn(V)");
-                        txttop4tyd.setText("Thiên Tướng(D)");
-                        txttop3suu.setText("Thiên Lương(V)");
-                        txttop3dan.setText("Thất Sát(H)");
-                        txttop3ngo.setText("Phá Quân(V)");
+                        txttop4than.setText("Thiên Phủ");
+                        txttop3dau.setText("Thái Âm");
+                        txttop3tuat.setText("Tham Lang");
+                        txttop3hoi.setText("Cự Môn");
+                        txttop4tyd.setText("Thiên Tướng");
+                        txttop3suu.setText("Thiên Lương");
+                        txttop3dan.setText("Thất Sát");
+                        txttop3ngo.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("16") || thongTin.ngayam().equals("24") || thongTin.ngayam().equals("26")){
-                        txttop3dau.setText("Tử Vi(D)");
-                        txttop3than.setText("Thiên Cơ(D)");
-                        txttop3ngo.setText("Thái Dương(H)");
-                        txttop3ty.setText("Vũ Khúc(D)");
-                        txttop3thin.setText("Thiên Đồng(M)");
-                        txttop3suu.setText("Liêm Trinh(H)");
+                        txttop3dau.setText("Tử Vi");
+                        txttop3than.setText("Thiên Cơ");
+                        txttop3ngo.setText("Thái Dương");
+                        txttop3ty.setText("Vũ Khúc");
+                        txttop3thin.setText("Thiên Đồng");
+                        txttop3suu.setText("Liêm Trinh");
 
-                        txttop3mui.setText("Thiên Phủ(B)");
-                        txttop4than.setText("Thái Âm(H)");
-                        txttop4dau.setText("Tham Lang(H)");
-                        txttop3tuat.setText("Cự Môn(V)");
-                        txttop3hoi.setText("Thiên Tướng(D)");
-                        txttop3tyd.setText("Thiên Lương(V)");
-                        txttop4suu.setText("Thất Sát(H)");
-                        txttop4ty.setText("Phá Quân(V)");
+                        txttop3mui.setText("Thiên Phủ");
+                        txttop4than.setText("Thái Âm");
+                        txttop4dau.setText("Tham Lang");
+                        txttop3tuat.setText("Cự Môn");
+                        txttop3hoi.setText("Thiên Tướng");
+                        txttop3tyd.setText("Thiên Lương");
+                        txttop4suu.setText("Thất Sát");
+                        txttop4ty.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("19") || thongTin.ngayam().equals("27") || thongTin.ngayam().equals("29")){
-                        txttop3tuat.setText("Tử Vi(D)");
-                        txttop3dau.setText("Thiên Cơ(D)");
-                        txttop3mui.setText("Thái Dương(H)");
-                        txttop3ngo.setText("Vũ Khúc(D)");
-                        txttop3ty.setText("Thiên Đồng(M)");
-                        txttop3dan.setText("Liêm Trinh(H)");
+                        txttop3tuat.setText("Tử Vi");
+                        txttop3dau.setText("Thiên Cơ");
+                        txttop3mui.setText("Thái Dương");
+                        txttop3ngo.setText("Vũ Khúc");
+                        txttop3ty.setText("Thiên Đồng");
+                        txttop3dan.setText("Liêm Trinh");
 
-                        txttop4ngo.setText("Thiên Phủ(B)");
-                        txttop4mui.setText("Thái Âm(H)");
-                        txttop3than.setText("Tham Lang(H)");
-                        txttop4dau.setText("Cự Môn(V)");
-                        txttop4tuat.setText("Thiên Tướng(D)");
-                        txttop3hoi.setText("Thiên Lương(V)");
-                        txttop3tyd.setText("Thất Sát(H)");
-                        txttop3thin.setText("Phá Quân(V)");
+                        txttop4ngo.setText("Thiên Phủ");
+                        txttop4mui.setText("Thái Âm");
+                        txttop3than.setText("Tham Lang");
+                        txttop4dau.setText("Cự Môn");
+                        txttop4tuat.setText("Thiên Tướng");
+                        txttop3hoi.setText("Thiên Lương");
+                        txttop3tyd.setText("Thất Sát");
+                        txttop3thin.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("28") || thongTin.ngayam().equals("30")){
-                        txttop3hoi.setText("Tử Vi(D)");
-                        txttop3tuat.setText("Thiên Cơ(D)");
-                        txttop3than.setText("Thái Dương(H)");
-                        txttop3mui.setText("Vũ Khúc(D)");
-                        txttop3ngo.setText("Thiên Đồng(M)");
-                        txttop3mao.setText("Liêm Trinh(H)");
+                        txttop3hoi.setText("Tử Vi");
+                        txttop3tuat.setText("Thiên Cơ");
+                        txttop3than.setText("Thái Dương");
+                        txttop3mui.setText("Vũ Khúc");
+                        txttop3ngo.setText("Thiên Đồng");
+                        txttop3mao.setText("Liêm Trinh");
 
-                        txttop3ty.setText("Thiên Phủ(B)");
-                        txttop4ngo.setText("Thái Âm(H)");
-                        txttop4mui.setText("Tham Lang(H)");
-                        txttop4than.setText("Cự Môn(V)");
-                        txttop3dau.setText("Thiên Tướng(D)");
-                        txttop4tuat.setText("Thiên Lương(V)");
-                        txttop4hoi.setText("Thất Sát(H)");
-                        txttop4mao.setText("Phá Quân(V)");
+                        txttop3ty.setText("Thiên Phủ");
+                        txttop4ngo.setText("Thái Âm");
+                        txttop4mui.setText("Tham Lang");
+                        txttop4than.setText("Cự Môn");
+                        txttop3dau.setText("Thiên Tướng");
+                        txttop4tuat.setText("Thiên Lương");
+                        txttop4hoi.setText("Thất Sát");
+                        txttop4mao.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("25")){
-                        txttop3tyd.setText("Tử Vi(D)");
-                        txttop3hoi.setText("Thiên Cơ(D)");
-                        txttop3dau.setText("Thái Dương(H)");
-                        txttop3than.setText("Vũ Khúc(D)");
-                        txttop3mui.setText("Thiên Đồng(M)");
-                        txttop3thin.setText("Liêm Trinh(H)");
+                        txttop3tyd.setText("Tử Vi");
+                        txttop3hoi.setText("Thiên Cơ");
+                        txttop3dau.setText("Thái Dương");
+                        txttop3than.setText("Vũ Khúc");
+                        txttop3mui.setText("Thiên Đồng");
+                        txttop3thin.setText("Liêm Trinh");
 
-                        txttop4thin.setText("Thiên Phủ(B)");
-                        txttop3ty.setText("Thái Âm(H)");
-                        txttop3ngo.setText("Tham Lang(H)");
-                        txttop4mui.setText("Cự Môn(V)");
-                        txttop4than.setText("Thiên Tướng(D)");
-                        txttop4dau.setText("Thiên Lương(V)");
-                        txttop3tuat.setText("Thất Sát(H)");
-                        txttop3dan.setText("Phá Quân(V)");
+                        txttop4thin.setText("Thiên Phủ");
+                        txttop3ty.setText("Thái Âm");
+                        txttop3ngo.setText("Tham Lang");
+                        txttop4mui.setText("Cự Môn");
+                        txttop4than.setText("Thiên Tướng");
+                        txttop4dau.setText("Thiên Lương");
+                        txttop3tuat.setText("Thất Sát");
+                        txttop3dan.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("2")){
-                        txttop3suu.setText("Tử Vi(D)");
-                        txttop3tyd.setText("Thiên Cơ(D)");
-                        txttop3tuat.setText("Thái Dương(H)");
-                        txttop3dau.setText("Vũ Khúc(D)");
-                        txttop3than.setText("Thiên Đồng(M)");
-                        txttop3ty.setText("Liêm Trinh(H)");
+                        txttop3suu.setText("Tử Vi");
+                        txttop3tyd.setText("Thiên Cơ");
+                        txttop3tuat.setText("Thái Dương");
+                        txttop3dau.setText("Vũ Khúc");
+                        txttop3than.setText("Thiên Đồng");
+                        txttop3ty.setText("Liêm Trinh");
 
-                        txttop3mao.setText("Thiên Phủ(B)");
-                        txttop3thin.setText("Thái Âm(H)");
-                        txttop4ty.setText("Tham Lang(H)");
-                        txttop3ngo.setText("Cự Môn(V)");
-                        txttop3mui.setText("Thiên Tướng(D)");
-                        txttop4than.setText("Thiên Lương(V)");
-                        txttop4dau.setText("Thất Sát(H)");
-                        txttop4suu.setText("Phá Quân(V)");
+                        txttop3mao.setText("Thiên Phủ");
+                        txttop3thin.setText("Thái Âm");
+                        txttop4ty.setText("Tham Lang");
+                        txttop3ngo.setText("Cự Môn");
+                        txttop3mui.setText("Thiên Tướng");
+                        txttop4than.setText("Thiên Lương");
+                        txttop4dau.setText("Thất Sát");
+                        txttop4suu.setText("Phá Quân");
                     }
                 }
                 else if (giophutsinh.equals("Thìn") || giophutsinh.equals("Tỵ")){
                     if (thongTin.ngayam().equals("5") || thongTin.ngayam().equals("9") || thongTin.ngayam().equals("17")){
-                        txttop3dan.setText("Tử Vi(D)");
-                        txttop3suu.setText("Thiên Cơ(D)");
-                        txttop3hoi.setText("Thái Dương(H)");
-                        txttop3tuat.setText("Vũ Khúc(D)");
-                        txttop3dau.setText("Thiên Đồng(M)");
-                        txttop3ngo.setText("Liêm Trinh(H)");
+                        txttop3dan.setText("Tử Vi");
+                        txttop3suu.setText("Thiên Cơ");
+                        txttop3hoi.setText("Thái Dương");
+                        txttop3tuat.setText("Vũ Khúc");
+                        txttop3dau.setText("Thiên Đồng");
+                        txttop3ngo.setText("Liêm Trinh");
 
-                        txttop4dan.setText("Thiên Phủ(B)");
-                        txttop3mao.setText("Thái Âm(H)");
-                        txttop3thin.setText("Tham Lang(H)");
-                        txttop3ty.setText("Cự Môn(V)");
-                        txttop4ngo.setText("Thiên Tướng(D)");
-                        txttop3mui.setText("Thiên Lương(V)");
-                        txttop3than.setText("Thất Sát(H)");
-                        txttop3tyd.setText("Phá Quân(V)");
+                        txttop4dan.setText("Thiên Phủ");
+                        txttop3mao.setText("Thái Âm");
+                        txttop3thin.setText("Tham Lang");
+                        txttop3ty.setText("Cự Môn");
+                        txttop4ngo.setText("Thiên Tướng");
+                        txttop3mui.setText("Thiên Lương");
+                        txttop3than.setText("Thất Sát");
+                        txttop3tyd.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("10") || thongTin.ngayam().equals("14") || thongTin.ngayam().equals("22")){
-                        txttop3mao.setText("Tử Vi(D)");
-                        txttop3dan.setText("Thiên Cơ(D)");
-                        txttop3tyd.setText("Thái Dương(H)");
-                        txttop3hoi.setText("Vũ Khúc(D)");
-                        txttop3tuat.setText("Thiên Đồng(M)");
-                        txttop3mui.setText("Liêm Trinh(H)");
+                        txttop3mao.setText("Tử Vi");
+                        txttop3dan.setText("Thiên Cơ");
+                        txttop3tyd.setText("Thái Dương");
+                        txttop3hoi.setText("Vũ Khúc");
+                        txttop3tuat.setText("Thiên Đồng");
+                        txttop3mui.setText("Liêm Trinh");
 
-                        txttop3suu.setText("Thiên Phủ(B)");
-                        txttop4dan.setText("Thái Âm(H)");
-                        txttop4mao.setText("Tham Lang(H)");
-                        txttop3thin.setText("Cự Môn(V)");
-                        txttop3ty.setText("Thiên Tướng(D)");
-                        txttop3ngo.setText("Thiên Lương(V)");
-                        txttop4mui.setText("Thất Sát(H)");
-                        txttop4hoi.setText("Phá Quân(V)");
+                        txttop3suu.setText("Thiên Phủ");
+                        txttop4dan.setText("Thái Âm");
+                        txttop4mao.setText("Tham Lang");
+                        txttop3thin.setText("Cự Môn");
+                        txttop3ty.setText("Thiên Tướng");
+                        txttop3ngo.setText("Thiên Lương");
+                        txttop4mui.setText("Thất Sát");
+                        txttop4hoi.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("3") || thongTin.ngayam().equals("15") || thongTin.ngayam().equals("19") || thongTin.ngayam().equals("27")){
-                        txttop3thin.setText("Tử Vi(D)");
-                        txttop3mao.setText("Thiên Cơ(D)");
-                        txttop3suu.setText("Thái Dương(H)");
-                        txttop3tyd.setText("Vũ Khúc(D)");
-                        txttop3hoi.setText("Thiên Đồng(M)");
-                        txttop3than.setText("Liêm Trinh(H)");
+                        txttop3thin.setText("Tử Vi");
+                        txttop3mao.setText("Thiên Cơ");
+                        txttop3suu.setText("Thái Dương");
+                        txttop3tyd.setText("Vũ Khúc");
+                        txttop3hoi.setText("Thiên Đồng");
+                        txttop3than.setText("Liêm Trinh");
 
-                        txttop4tyd.setText("Thiên Phủ(B)");
-                        txttop4suu.setText("Thái Âm(H)");
-                        txttop4dan.setText("Tham Lang(H)");
-                        txttop4mao.setText("Cự Môn(V)");
-                        txttop4thin.setText("Thiên Tướng(D)");
-                        txttop3ty.setText("Thiên Lương(V)");
-                        txttop3ngo.setText("Thất Sát(H)");
-                        txttop3tuat.setText("Phá Quân(V)");
+                        txttop4tyd.setText("Thiên Phủ");
+                        txttop4suu.setText("Thái Âm");
+                        txttop4dan.setText("Tham Lang");
+                        txttop4mao.setText("Cự Môn");
+                        txttop4thin.setText("Thiên Tướng");
+                        txttop3ty.setText("Thiên Lương");
+                        txttop3ngo.setText("Thất Sát");
+                        txttop3tuat.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("8") || thongTin.ngayam().equals("20") || thongTin.ngayam().equals("24")){
-                        txttop3ty.setText("Tử Vi(D)");
-                        txttop3thin.setText("Thiên Cơ(D)");
-                        txttop3dan.setText("Thái Dương(H)");
-                        txttop3suu.setText("Vũ Khúc(D)");
-                        txttop3tyd.setText("Thiên Đồng(M)");
-                        txttop3dau.setText("Liêm Trinh(H)");
+                        txttop3ty.setText("Tử Vi");
+                        txttop3thin.setText("Thiên Cơ");
+                        txttop3dan.setText("Thái Dương");
+                        txttop3suu.setText("Vũ Khúc");
+                        txttop3tyd.setText("Thiên Đồng");
+                        txttop3dau.setText("Liêm Trinh");
 
-                        txttop3hoi.setText("Thiên Phủ(B)");
-                        txttop4tyd.setText("Thái Âm(H)");
-                        txttop4suu.setText("Tham Lang(H)");
-                        txttop4dan.setText("Cự Môn(V)");
-                        txttop3mao.setText("Thiên Tướng(D)");
-                        txttop4thin.setText("Thiên Lương(V)");
-                        txttop4ty.setText("Thất Sát(H)");
-                        txttop4dau.setText("Phá Quân(V)");
+                        txttop3hoi.setText("Thiên Phủ");
+                        txttop4tyd.setText("Thái Âm");
+                        txttop4suu.setText("Tham Lang");
+                        txttop4dan.setText("Cự Môn");
+                        txttop3mao.setText("Thiên Tướng");
+                        txttop4thin.setText("Thiên Lương");
+                        txttop4ty.setText("Thất Sát");
+                        txttop4dau.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("1") || thongTin.ngayam().equals("13") || thongTin.ngayam().equals("25") || thongTin.ngayam().equals("29")){
-                        txttop3ngo.setText("Tử Vi(D)");
-                        txttop3ty.setText("Thiên Cơ(D)");
-                        txttop3dan.setText("Thái Dương(H)");
-                        txttop3suu.setText("Vũ Khúc(D)");
-                        txttop3tyd.setText("Thiên Đồng(M)");
-                        txttop3dau.setText("Liêm Trinh(H)");
+                        txttop3ngo.setText("Tử Vi");
+                        txttop3ty.setText("Thiên Cơ");
+                        txttop3dan.setText("Thái Dương");
+                        txttop3suu.setText("Vũ Khúc");
+                        txttop3tyd.setText("Thiên Đồng");
+                        txttop3dau.setText("Liêm Trinh");
 
-                        txttop3tuat.setText("Thiên Phủ(B)");
-                        txttop3hoi.setText("Thái Âm(H)");
-                        txttop4tyd.setText("Tham Lang(H)");
-                        txttop4suu.setText("Cự Môn(V)");
-                        txttop4dan.setText("Thiên Tướng(D)");
-                        txttop3mao.setText("Thiên Lương(V)");
-                        txttop3thin.setText("Thất Sát(H)");
-                        txttop3than.setText("Phá Quân(V)");
+                        txttop3tuat.setText("Thiên Phủ");
+                        txttop3hoi.setText("Thái Âm");
+                        txttop4tyd.setText("Tham Lang");
+                        txttop4suu.setText("Cự Môn");
+                        txttop4dan.setText("Thiên Tướng");
+                        txttop3mao.setText("Thiên Lương");
+                        txttop3thin.setText("Thất Sát");
+                        txttop3than.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("6") || thongTin.ngayam().equals("18") || thongTin.ngayam().equals("30")){
-                        txttop3mui.setText("Tử Vi(D)");
-                        txttop3ngo.setText("Thiên Cơ(D)");
-                        txttop3thin.setText("Thái Dương(H)");
-                        txttop3mao.setText("Vũ Khúc(D)");
-                        txttop3dan.setText("Thiên Đồng(M)");
-                        txttop3hoi.setText("Liêm Trinh(H)");
+                        txttop3mui.setText("Tử Vi");
+                        txttop3ngo.setText("Thiên Cơ");
+                        txttop3thin.setText("Thái Dương");
+                        txttop3mao.setText("Vũ Khúc");
+                        txttop3dan.setText("Thiên Đồng");
+                        txttop3hoi.setText("Liêm Trinh");
 
-                        txttop3dau.setText("Thiên Phủ(B)");
-                        txttop3tuat.setText("Thái Âm(H)");
-                        txttop4hoi.setText("Tham Lang(H)");
-                        txttop3tyd.setText("Cự Môn(V)");
-                        txttop3suu.setText("Thiên Tướng(D)");
-                        txttop4dan.setText("Thiên Lương(V)");
-                        txttop4mao.setText("Thất Sát(H)");
-                        txttop4mui.setText("Phá Quân(V)");
+                        txttop3dau.setText("Thiên Phủ");
+                        txttop3tuat.setText("Thái Âm");
+                        txttop4hoi.setText("Tham Lang");
+                        txttop3tyd.setText("Cự Môn");
+                        txttop3suu.setText("Thiên Tướng");
+                        txttop4dan.setText("Thiên Lương");
+                        txttop4mao.setText("Thất Sát");
+                        txttop4mui.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("11") || thongTin.ngayam().equals("23")){
-                        txttop3than.setText("Tử Vi(D)");
-                        txttop3mui.setText("Thiên Cơ(D)");
-                        txttop3ty.setText("Thái Dương(H)");
-                        txttop3thin.setText("Vũ Khúc(D)");
-                        txttop3mao.setText("Thiên Đồng(M)");
-                        txttop3tyd.setText("Liêm Trinh(H)");
+                        txttop3than.setText("Tử Vi");
+                        txttop3mui.setText("Thiên Cơ");
+                        txttop3ty.setText("Thái Dương");
+                        txttop3thin.setText("Vũ Khúc");
+                        txttop3mao.setText("Thiên Đồng");
+                        txttop3tyd.setText("Liêm Trinh");
 
-                        txttop4than.setText("Thiên Phủ(B)");
-                        txttop3dau.setText("Thái Âm(H)");
-                        txttop3tuat.setText("Tham Lang(H)");
-                        txttop3hoi.setText("Cự Môn(V)");
-                        txttop4tyd.setText("Thiên Tướng(D)");
-                        txttop3suu.setText("Thiên Lương(V)");
-                        txttop3dan.setText("Thất Sát(H)");
-                        txttop3ngo.setText("Phá Quân(V)");
+                        txttop4than.setText("Thiên Phủ");
+                        txttop3dau.setText("Thái Âm");
+                        txttop3tuat.setText("Tham Lang");
+                        txttop3hoi.setText("Cự Môn");
+                        txttop4tyd.setText("Thiên Tướng");
+                        txttop3suu.setText("Thiên Lương");
+                        txttop3dan.setText("Thất Sát");
+                        txttop3ngo.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("16") || thongTin.ngayam().equals("28")){
-                        txttop3dau.setText("Tử Vi(D)");
-                        txttop3than.setText("Thiên Cơ(D)");
-                        txttop3ngo.setText("Thái Dương(H)");
-                        txttop3ty.setText("Vũ Khúc(D)");
-                        txttop3thin.setText("Thiên Đồng(M)");
-                        txttop3suu.setText("Liêm Trinh(H)");
+                        txttop3dau.setText("Tử Vi");
+                        txttop3than.setText("Thiên Cơ");
+                        txttop3ngo.setText("Thái Dương");
+                        txttop3ty.setText("Vũ Khúc");
+                        txttop3thin.setText("Thiên Đồng");
+                        txttop3suu.setText("Liêm Trinh");
 
-                        txttop3mui.setText("Thiên Phủ(B)");
-                        txttop4than.setText("Thái Âm(H)");
-                        txttop4dau.setText("Tham Lang(H)");
-                        txttop3tuat.setText("Cự Môn(V)");
-                        txttop3hoi.setText("Thiên Tướng(D)");
-                        txttop3tyd.setText("Thiên Lương(V)");
-                        txttop4suu.setText("Thất Sát(H)");
-                        txttop4ty.setText("Phá Quân(V)");
+                        txttop3mui.setText("Thiên Phủ");
+                        txttop4than.setText("Thái Âm");
+                        txttop4dau.setText("Tham Lang");
+                        txttop3tuat.setText("Cự Môn");
+                        txttop3hoi.setText("Thiên Tướng");
+                        txttop3tyd.setText("Thiên Lương");
+                        txttop4suu.setText("Thất Sát");
+                        txttop4ty.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("21")){
-                        txttop3tuat.setText("Tử Vi(D)");
-                        txttop3dau.setText("Thiên Cơ(D)");
-                        txttop3mui.setText("Thái Dương(H)");
-                        txttop3ngo.setText("Vũ Khúc(D)");
-                        txttop3ty.setText("Thiên Đồng(M)");
-                        txttop3dan.setText("Liêm Trinh(H)");
+                        txttop3tuat.setText("Tử Vi");
+                        txttop3dau.setText("Thiên Cơ");
+                        txttop3mui.setText("Thái Dương");
+                        txttop3ngo.setText("Vũ Khúc");
+                        txttop3ty.setText("Thiên Đồng");
+                        txttop3dan.setText("Liêm Trinh");
 
-                        txttop4ngo.setText("Thiên Phủ(B)");
-                        txttop4mui.setText("Thái Âm(H)");
-                        txttop3than.setText("Tham Lang(H)");
-                        txttop4dau.setText("Cự Môn(V)");
-                        txttop4tuat.setText("Thiên Tướng(D)");
-                        txttop3hoi.setText("Thiên Lương(V)");
-                        txttop3tyd.setText("Thất Sát(H)");
-                        txttop3thin.setText("Phá Quân(V)");
+                        txttop4ngo.setText("Thiên Phủ");
+                        txttop4mui.setText("Thái Âm");
+                        txttop3than.setText("Tham Lang");
+                        txttop4dau.setText("Cự Môn");
+                        txttop4tuat.setText("Thiên Tướng");
+                        txttop3hoi.setText("Thiên Lương");
+                        txttop3tyd.setText("Thất Sát");
+                        txttop3thin.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("2") || thongTin.ngayam().equals("26")){
-                        txttop3hoi.setText("Tử Vi(D)");
-                        txttop3tuat.setText("Thiên Cơ(D)");
-                        txttop3than.setText("Thái Dương(H)");
-                        txttop3mui.setText("Vũ Khúc(D)");
-                        txttop3ngo.setText("Thiên Đồng(M)");
-                        txttop3mao.setText("Liêm Trinh(H)");
+                        txttop3hoi.setText("Tử Vi");
+                        txttop3tuat.setText("Thiên Cơ");
+                        txttop3than.setText("Thái Dương");
+                        txttop3mui.setText("Vũ Khúc");
+                        txttop3ngo.setText("Thiên Đồng");
+                        txttop3mao.setText("Liêm Trinh");
 
-                        txttop3ty.setText("Thiên Phủ(B)");
-                        txttop4ngo.setText("Thái Âm(H)");
-                        txttop4mui.setText("Tham Lang(H)");
-                        txttop4than.setText("Cự Môn(V)");
-                        txttop3dau.setText("Thiên Tướng(D)");
-                        txttop4tuat.setText("Thiên Lương(V)");
-                        txttop4hoi.setText("Thất Sát(H)");
-                        txttop4mao.setText("Phá Quân(V)");
+                        txttop3ty.setText("Thiên Phủ");
+                        txttop4ngo.setText("Thái Âm");
+                        txttop4mui.setText("Tham Lang");
+                        txttop4than.setText("Cự Môn");
+                        txttop3dau.setText("Thiên Tướng");
+                        txttop4tuat.setText("Thiên Lương");
+                        txttop4hoi.setText("Thất Sát");
+                        txttop4mao.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("7")){
-                        txttop3tyd.setText("Tử Vi(D)");
-                        txttop3hoi.setText("Thiên Cơ(D)");
-                        txttop3dau.setText("Thái Dương(H)");
-                        txttop3than.setText("Vũ Khúc(D)");
-                        txttop3mui.setText("Thiên Đồng(M)");
-                        txttop3thin.setText("Liêm Trinh(H)");
+                        txttop3tyd.setText("Tử Vi");
+                        txttop3hoi.setText("Thiên Cơ");
+                        txttop3dau.setText("Thái Dương");
+                        txttop3than.setText("Vũ Khúc");
+                        txttop3mui.setText("Thiên Đồng");
+                        txttop3thin.setText("Liêm Trinh");
 
-                        txttop4thin.setText("Thiên Phủ(B)");
-                        txttop3ty.setText("Thái Âm(H)");
-                        txttop3ngo.setText("Tham Lang(H)");
-                        txttop4mui.setText("Cự Môn(V)");
-                        txttop4than.setText("Thiên Tướng(D)");
-                        txttop4dau.setText("Thiên Lương(V)");
-                        txttop3tuat.setText("Thất Sát(H)");
-                        txttop3dan.setText("Phá Quân(V)");
+                        txttop4thin.setText("Thiên Phủ");
+                        txttop3ty.setText("Thái Âm");
+                        txttop3ngo.setText("Tham Lang");
+                        txttop4mui.setText("Cự Môn");
+                        txttop4than.setText("Thiên Tướng");
+                        txttop4dau.setText("Thiên Lương");
+                        txttop3tuat.setText("Thất Sát");
+                        txttop3dan.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("4") || thongTin.ngayam().equals("12")){
-                        txttop3suu.setText("Tử Vi(D)");
-                        txttop3tyd.setText("Thiên Cơ(D)");
-                        txttop3tuat.setText("Thái Dương(H)");
-                        txttop3dau.setText("Vũ Khúc(D)");
-                        txttop3than.setText("Thiên Đồng(M)");
-                        txttop3ty.setText("Liêm Trinh(H)");
+                        txttop3suu.setText("Tử Vi");
+                        txttop3tyd.setText("Thiên Cơ");
+                        txttop3tuat.setText("Thái Dương");
+                        txttop3dau.setText("Vũ Khúc");
+                        txttop3than.setText("Thiên Đồng");
+                        txttop3ty.setText("Liêm Trinh");
 
-                        txttop3mao.setText("Thiên Phủ(B)");
-                        txttop3thin.setText("Thái Âm(H)");
-                        txttop4ty.setText("Tham Lang(H)");
-                        txttop3ngo.setText("Cự Môn(V)");
-                        txttop3mui.setText("Thiên Tướng(D)");
-                        txttop4than.setText("Thiên Lương(V)");
-                        txttop4dau.setText("Thất Sát(H)");
-                        txttop4suu.setText("Phá Quân(V)");
+                        txttop3mao.setText("Thiên Phủ");
+                        txttop3thin.setText("Thái Âm");
+                        txttop4ty.setText("Tham Lang");
+                        txttop3ngo.setText("Cự Môn");
+                        txttop3mui.setText("Thiên Tướng");
+                        txttop4than.setText("Thiên Lương");
+                        txttop4dau.setText("Thất Sát");
+                        txttop4suu.setText("Phá Quân");
                     }
                 }
                 else if (giophutsinh.equals("Tý") || giophutsinh.equals("Sửu")){
                     if (thongTin.ngayam().equals("4") || thongTin.ngayam().equals("7") || thongTin.ngayam().equals("13")){
-                        txttop3dan.setText("Tử Vi(D)");
-                        txttop3suu.setText("Thiên Cơ(D)");
-                        txttop3hoi.setText("Thái Dương(H)");
-                        txttop3tuat.setText("Vũ Khúc(D)");
-                        txttop3dau.setText("Thiên Đồng(M)");
-                        txttop3ngo.setText("Liêm Trinh(H)");
+                        txttop3dan.setText("Tử Vi");
+                        txttop3suu.setText("Thiên Cơ");
+                        txttop3hoi.setText("Thái Dương");
+                        txttop3tuat.setText("Vũ Khúc");
+                        txttop3dau.setText("Thiên Đồng");
+                        txttop3ngo.setText("Liêm Trinh");
 
-                        txttop4dan.setText("Thiên Phủ(B)");
-                        txttop3mao.setText("Thái Âm(H)");
-                        txttop3thin.setText("Tham Lang(H)");
-                        txttop3ty.setText("Cự Môn(V)");
-                        txttop4ngo.setText("Thiên Tướng(D)");
-                        txttop3mui.setText("Thiên Lương(V)");
-                        txttop3than.setText("Thất Sát(H)");
-                        txttop3tyd.setText("Phá Quân(V)");
+                        txttop4dan.setText("Thiên Phủ");
+                        txttop3mao.setText("Thái Âm");
+                        txttop3thin.setText("Tham Lang");
+                        txttop3ty.setText("Cự Môn");
+                        txttop4ngo.setText("Thiên Tướng");
+                        txttop3mui.setText("Thiên Lương");
+                        txttop3than.setText("Thất Sát");
+                        txttop3tyd.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("8") || thongTin.ngayam().equals("11") || thongTin.ngayam().equals("17")){
-                        txttop3mao.setText("Tử Vi(D)");
-                        txttop3dan.setText("Thiên Cơ(D)");
-                        txttop3tyd.setText("Thái Dương(H)");
-                        txttop3hoi.setText("Vũ Khúc(D)");
-                        txttop3tuat.setText("Thiên Đồng(M)");
-                        txttop3mui.setText("Liêm Trinh(H)");
+                        txttop3mao.setText("Tử Vi");
+                        txttop3dan.setText("Thiên Cơ");
+                        txttop3tyd.setText("Thái Dương");
+                        txttop3hoi.setText("Vũ Khúc");
+                        txttop3tuat.setText("Thiên Đồng");
+                        txttop3mui.setText("Liêm Trinh");
 
-                        txttop3suu.setText("Thiên Phủ(B)");
-                        txttop4dan.setText("Thái Âm(H)");
-                        txttop4mao.setText("Tham Lang(H)");
-                        txttop3thin.setText("Cự Môn(V)");
-                        txttop3ty.setText("Thiên Tướng(D)");
-                        txttop3ngo.setText("Thiên Lương(V)");
-                        txttop4mui.setText("Thất Sát(H)");
-                        txttop4hoi.setText("Phá Quân(V)");
+                        txttop3suu.setText("Thiên Phủ");
+                        txttop4dan.setText("Thái Âm");
+                        txttop4mao.setText("Tham Lang");
+                        txttop3thin.setText("Cự Môn");
+                        txttop3ty.setText("Thiên Tướng");
+                        txttop3ngo.setText("Thiên Lương");
+                        txttop4mui.setText("Thất Sát");
+                        txttop4hoi.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("2") || thongTin.ngayam().equals("12") || thongTin.ngayam().equals("15") || thongTin.ngayam().equals("21")){
-                        txttop3thin.setText("Tử Vi(D)");
-                        txttop3mao.setText("Thiên Cơ(D)");
-                        txttop3suu.setText("Thái Dương(H)");
-                        txttop3tyd.setText("Vũ Khúc(D)");
-                        txttop3hoi.setText("Thiên Đồng(M)");
-                        txttop3than.setText("Liêm Trinh(H)");
+                        txttop3thin.setText("Tử Vi");
+                        txttop3mao.setText("Thiên Cơ");
+                        txttop3suu.setText("Thái Dương");
+                        txttop3tyd.setText("Vũ Khúc");
+                        txttop3hoi.setText("Thiên Đồng");
+                        txttop3than.setText("Liêm Trinh");
 
-                        txttop4tyd.setText("Thiên Phủ(B)");
-                        txttop4suu.setText("Thái Âm(H)");
-                        txttop4dan.setText("Tham Lang(H)");
-                        txttop4mao.setText("Cự Môn(V)");
-                        txttop4thin.setText("Thiên Tướng(D)");
-                        txttop3ty.setText("Thiên Lương(V)");
-                        txttop3ngo.setText("Thất Sát(H)");
-                        txttop3tuat.setText("Phá Quân(V)");
+                        txttop4tyd.setText("Thiên Phủ");
+                        txttop4suu.setText("Thái Âm");
+                        txttop4dan.setText("Tham Lang");
+                        txttop4mao.setText("Cự Môn");
+                        txttop4thin.setText("Thiên Tướng");
+                        txttop3ty.setText("Thiên Lương");
+                        txttop3ngo.setText("Thất Sát");
+                        txttop3tuat.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("6") || thongTin.ngayam().equals("16") || thongTin.ngayam().equals("19") || thongTin.ngayam().equals("25")){
-                        txttop3ty.setText("Tử Vi(D)");
-                        txttop3thin.setText("Thiên Cơ(D)");
-                        txttop3dan.setText("Thái Dương(H)");
-                        txttop3suu.setText("Vũ Khúc(D)");
-                        txttop3tyd.setText("Thiên Đồng(M)");
-                        txttop3dau.setText("Liêm Trinh(H)");
+                        txttop3ty.setText("Tử Vi");
+                        txttop3thin.setText("Thiên Cơ");
+                        txttop3dan.setText("Thái Dương");
+                        txttop3suu.setText("Vũ Khúc");
+                        txttop3tyd.setText("Thiên Đồng");
+                        txttop3dau.setText("Liêm Trinh");
 
-                        txttop3hoi.setText("Thiên Phủ(B)");
-                        txttop4tyd.setText("Thái Âm(H)");
-                        txttop4suu.setText("Tham Lang(H)");
-                        txttop4dan.setText("Cự Môn(V)");
-                        txttop3mao.setText("Thiên Tướng(D)");
-                        txttop4thin.setText("Thiên Lương(V)");
-                        txttop4ty.setText("Thất Sát(H)");
-                        txttop4dau.setText("Phá Quân(V)");
+                        txttop3hoi.setText("Thiên Phủ");
+                        txttop4tyd.setText("Thái Âm");
+                        txttop4suu.setText("Tham Lang");
+                        txttop4dan.setText("Cự Môn");
+                        txttop3mao.setText("Thiên Tướng");
+                        txttop4thin.setText("Thiên Lương");
+                        txttop4ty.setText("Thất Sát");
+                        txttop4dau.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("10") || thongTin.ngayam().equals("20") || thongTin.ngayam().equals("23") || thongTin.ngayam().equals("29")){
-                        txttop3ngo.setText("Tử Vi(D)");
-                        txttop3ty.setText("Thiên Cơ(D)");
-                        txttop3dan.setText("Thái Dương(H)");
-                        txttop3suu.setText("Vũ Khúc(D)");
-                        txttop3tyd.setText("Thiên Đồng(M)");
-                        txttop3dau.setText("Liêm Trinh(H)");
+                        txttop3ngo.setText("Tử Vi");
+                        txttop3ty.setText("Thiên Cơ");
+                        txttop3dan.setText("Thái Dương");
+                        txttop3suu.setText("Vũ Khúc");
+                        txttop3tyd.setText("Thiên Đồng");
+                        txttop3dau.setText("Liêm Trinh");
 
-                        txttop3tuat.setText("Thiên Phủ(B)");
-                        txttop3hoi.setText("Thái Âm(H)");
-                        txttop4tyd.setText("Tham Lang(H)");
-                        txttop4suu.setText("Cự Môn(V)");
-                        txttop4dan.setText("Thiên Tướng(D)");
-                        txttop3mao.setText("Thiên Lương(V)");
-                        txttop3thin.setText("Thất Sát(H)");
-                        txttop3than.setText("Phá Quân(V)");
+                        txttop3tuat.setText("Thiên Phủ");
+                        txttop3hoi.setText("Thái Âm");
+                        txttop4tyd.setText("Tham Lang");
+                        txttop4suu.setText("Cự Môn");
+                        txttop4dan.setText("Thiên Tướng");
+                        txttop3mao.setText("Thiên Lương");
+                        txttop3thin.setText("Thất Sát");
+                        txttop3than.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("14") || thongTin.ngayam().equals("24") || thongTin.ngayam().equals("27")){
-                        txttop3mui.setText("Tử Vi(D)");
-                        txttop3ngo.setText("Thiên Cơ(D)");
-                        txttop3thin.setText("Thái Dương(H)");
-                        txttop3mao.setText("Vũ Khúc(D)");
-                        txttop3dan.setText("Thiên Đồng(M)");
-                        txttop3hoi.setText("Liêm Trinh(H)");
+                        txttop3mui.setText("Tử Vi");
+                        txttop3ngo.setText("Thiên Cơ");
+                        txttop3thin.setText("Thái Dương");
+                        txttop3mao.setText("Vũ Khúc");
+                        txttop3dan.setText("Thiên Đồng");
+                        txttop3hoi.setText("Liêm Trinh");
 
-                        txttop3dau.setText("Thiên Phủ(B)");
-                        txttop3tuat.setText("Thái Âm(H)");
-                        txttop4hoi.setText("Tham Lang(H)");
-                        txttop3tyd.setText("Cự Môn(V)");
-                        txttop3suu.setText("Thiên Tướng(D)");
-                        txttop4dan.setText("Thiên Lương(V)");
-                        txttop4mao.setText("Thất Sát(H)");
-                        txttop4mui.setText("Phá Quân(V)");
+                        txttop3dau.setText("Thiên Phủ");
+                        txttop3tuat.setText("Thái Âm");
+                        txttop4hoi.setText("Tham Lang");
+                        txttop3tyd.setText("Cự Môn");
+                        txttop3suu.setText("Thiên Tướng");
+                        txttop4dan.setText("Thiên Lương");
+                        txttop4mao.setText("Thất Sát");
+                        txttop4mui.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("18") || thongTin.ngayam().equals("28")){
-                        txttop3than.setText("Tử Vi(D)");
-                        txttop3mui.setText("Thiên Cơ(D)");
-                        txttop3ty.setText("Thái Dương(H)");
-                        txttop3thin.setText("Vũ Khúc(D)");
-                        txttop3mao.setText("Thiên Đồng(M)");
-                        txttop3tyd.setText("Liêm Trinh(H)");
+                        txttop3than.setText("Tử Vi");
+                        txttop3mui.setText("Thiên Cơ");
+                        txttop3ty.setText("Thái Dương");
+                        txttop3thin.setText("Vũ Khúc");
+                        txttop3mao.setText("Thiên Đồng");
+                        txttop3tyd.setText("Liêm Trinh");
 
-                        txttop4than.setText("Thiên Phủ(B)");
-                        txttop3dau.setText("Thái Âm(H)");
-                        txttop3tuat.setText("Tham Lang(H)");
-                        txttop3hoi.setText("Cự Môn(V)");
-                        txttop4tyd.setText("Thiên Tướng(D)");
-                        txttop3suu.setText("Thiên Lương(V)");
-                        txttop3dan.setText("Thất Sát(H)");
-                        txttop3ngo.setText("Phá Quân(V)");
+                        txttop4than.setText("Thiên Phủ");
+                        txttop3dau.setText("Thái Âm");
+                        txttop3tuat.setText("Tham Lang");
+                        txttop3hoi.setText("Cự Môn");
+                        txttop4tyd.setText("Thiên Tướng");
+                        txttop3suu.setText("Thiên Lương");
+                        txttop3dan.setText("Thất Sát");
+                        txttop3ngo.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("22")){
-                        txttop3dau.setText("Tử Vi(D)");
-                        txttop3than.setText("Thiên Cơ(D)");
-                        txttop3ngo.setText("Thái Dương(H)");
-                        txttop3ty.setText("Vũ Khúc(D)");
-                        txttop3thin.setText("Thiên Đồng(M)");
-                        txttop3suu.setText("Liêm Trinh(H)");
+                        txttop3dau.setText("Tử Vi");
+                        txttop3than.setText("Thiên Cơ");
+                        txttop3ngo.setText("Thái Dương");
+                        txttop3ty.setText("Vũ Khúc");
+                        txttop3thin.setText("Thiên Đồng");
+                        txttop3suu.setText("Liêm Trinh");
 
-                        txttop3mui.setText("Thiên Phủ(B)");
-                        txttop4than.setText("Thái Âm(H)");
-                        txttop4dau.setText("Tham Lang(H)");
-                        txttop3tuat.setText("Cự Môn(V)");
-                        txttop3hoi.setText("Thiên Tướng(D)");
-                        txttop3tyd.setText("Thiên Lương(V)");
-                        txttop4suu.setText("Thất Sát(H)");
-                        txttop4ty.setText("Phá Quân(V)");
+                        txttop3mui.setText("Thiên Phủ");
+                        txttop4than.setText("Thái Âm");
+                        txttop4dau.setText("Tham Lang");
+                        txttop3tuat.setText("Cự Môn");
+                        txttop3hoi.setText("Thiên Tướng");
+                        txttop3tyd.setText("Thiên Lương");
+                        txttop4suu.setText("Thất Sát");
+                        txttop4ty.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("26")){
-                        txttop3tuat.setText("Tử Vi(D)");
-                        txttop3dau.setText("Thiên Cơ(D)");
-                        txttop3mui.setText("Thái Dương(H)");
-                        txttop3ngo.setText("Vũ Khúc(D)");
-                        txttop3ty.setText("Thiên Đồng(M)");
-                        txttop3dan.setText("Liêm Trinh(H)");
+                        txttop3tuat.setText("Tử Vi");
+                        txttop3dau.setText("Thiên Cơ");
+                        txttop3mui.setText("Thái Dương");
+                        txttop3ngo.setText("Vũ Khúc");
+                        txttop3ty.setText("Thiên Đồng");
+                        txttop3dan.setText("Liêm Trinh");
 
-                        txttop4ngo.setText("Thiên Phủ(B)");
-                        txttop4mui.setText("Thái Âm(H)");
-                        txttop3than.setText("Tham Lang(H)");
-                        txttop4dau.setText("Cự Môn(V)");
-                        txttop4tuat.setText("Thiên Tướng(D)");
-                        txttop3hoi.setText("Thiên Lương(V)");
-                        txttop3tyd.setText("Thất Sát(H)");
-                        txttop3thin.setText("Phá Quân(V)");
+                        txttop4ngo.setText("Thiên Phủ");
+                        txttop4mui.setText("Thái Âm");
+                        txttop3than.setText("Tham Lang");
+                        txttop4dau.setText("Cự Môn");
+                        txttop4tuat.setText("Thiên Tướng");
+                        txttop3hoi.setText("Thiên Lương");
+                        txttop3tyd.setText("Thất Sát");
+                        txttop3thin.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("1") || thongTin.ngayam().equals("30")){
-                        txttop3hoi.setText("Tử Vi(D)");
-                        txttop3tuat.setText("Thiên Cơ(D)");
-                        txttop3than.setText("Thái Dương(H)");
-                        txttop3mui.setText("Vũ Khúc(D)");
-                        txttop3ngo.setText("Thiên Đồng(M)");
-                        txttop3mao.setText("Liêm Trinh(H)");
+                        txttop3hoi.setText("Tử Vi");
+                        txttop3tuat.setText("Thiên Cơ");
+                        txttop3than.setText("Thái Dương");
+                        txttop3mui.setText("Vũ Khúc");
+                        txttop3ngo.setText("Thiên Đồng");
+                        txttop3mao.setText("Liêm Trinh");
 
-                        txttop3ty.setText("Thiên Phủ(B)");
-                        txttop4ngo.setText("Thái Âm(H)");
-                        txttop4mui.setText("Tham Lang(H)");
-                        txttop4than.setText("Cự Môn(V)");
-                        txttop3dau.setText("Thiên Tướng(D)");
-                        txttop4tuat.setText("Thiên Lương(V)");
-                        txttop4hoi.setText("Thất Sát(H)");
-                        txttop4mao.setText("Phá Quân(V)");
+                        txttop3ty.setText("Thiên Phủ");
+                        txttop4ngo.setText("Thái Âm");
+                        txttop4mui.setText("Tham Lang");
+                        txttop4than.setText("Cự Môn");
+                        txttop3dau.setText("Thiên Tướng");
+                        txttop4tuat.setText("Thiên Lương");
+                        txttop4hoi.setText("Thất Sát");
+                        txttop4mao.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("5")){
-                        txttop3tyd.setText("Tử Vi(D)");
-                        txttop3hoi.setText("Thiên Cơ(D)");
-                        txttop3dau.setText("Thái Dương(H)");
-                        txttop3than.setText("Vũ Khúc(D)");
-                        txttop3mui.setText("Thiên Đồng(M)");
-                        txttop3thin.setText("Liêm Trinh(H)");
+                        txttop3tyd.setText("Tử Vi");
+                        txttop3hoi.setText("Thiên Cơ");
+                        txttop3dau.setText("Thái Dương");
+                        txttop3than.setText("Vũ Khúc");
+                        txttop3mui.setText("Thiên Đồng");
+                        txttop3thin.setText("Liêm Trinh");
 
-                        txttop4thin.setText("Thiên Phủ(B)");
-                        txttop3ty.setText("Thái Âm(H)");
-                        txttop3ngo.setText("Tham Lang(H)");
-                        txttop4mui.setText("Cự Môn(V)");
-                        txttop4than.setText("Thiên Tướng(D)");
-                        txttop4dau.setText("Thiên Lương(V)");
-                        txttop3tuat.setText("Thất Sát(H)");
-                        txttop3dan.setText("Phá Quân(V)");
+                        txttop4thin.setText("Thiên Phủ");
+                        txttop3ty.setText("Thái Âm");
+                        txttop3ngo.setText("Tham Lang");
+                        txttop4mui.setText("Cự Môn");
+                        txttop4than.setText("Thiên Tướng");
+                        txttop4dau.setText("Thiên Lương");
+                        txttop3tuat.setText("Thất Sát");
+                        txttop3dan.setText("Phá Quân");
                     }
                     else if (thongTin.ngayam().equals("3") || thongTin.ngayam().equals("9")){
-                        txttop3suu.setText("Tử Vi(D)");
-                        txttop3tyd.setText("Thiên Cơ(D)");
-                        txttop3tuat.setText("Thái Dương(H)");
-                        txttop3dau.setText("Vũ Khúc(D)");
-                        txttop3than.setText("Thiên Đồng(M)");
-                        txttop3ty.setText("Liêm Trinh(H)");
+                        txttop3suu.setText("Tử Vi");
+                        txttop3tyd.setText("Thiên Cơ");
+                        txttop3tuat.setText("Thái Dương");
+                        txttop3dau.setText("Vũ Khúc");
+                        txttop3than.setText("Thiên Đồng");
+                        txttop3ty.setText("Liêm Trinh");
 
-                        txttop3mao.setText("Thiên Phủ(B)");
-                        txttop3thin.setText("Thái Âm(H)");
-                        txttop4ty.setText("Tham Lang(H)");
-                        txttop3ngo.setText("Cự Môn(V)");
-                        txttop3mui.setText("Thiên Tướng(D)");
-                        txttop4than.setText("Thiên Lương(V)");
-                        txttop4dau.setText("Thất Sát(H)");
-                        txttop4suu.setText("Phá Quân(V)");
+                        txttop3mao.setText("Thiên Phủ");
+                        txttop3thin.setText("Thái Âm");
+                        txttop4ty.setText("Tham Lang");
+                        txttop3ngo.setText("Cự Môn");
+                        txttop3mui.setText("Thiên Tướng");
+                        txttop4than.setText("Thiên Lương");
+                        txttop4dau.setText("Thất Sát");
+                        txttop4suu.setText("Phá Quân");
                     }
                 }
             }
@@ -8890,6 +8989,18 @@ public class AnsaoActivity extends AppCompatActivity {
         txtvannien = findViewById(R.id.txtvannien);
         txtthaitue = findViewById(R.id.txtthaitue);
         txthovaten = findViewById(R.id.txthovaten);
+
         lnlt1 = findViewById(R.id.lnlt1);
+        lnlt2 = findViewById(R.id.lnlt2);
+        lnlt3 = findViewById(R.id.lnlt3);
+        lnlt4 = findViewById(R.id.lnlt4);
+        lnlt5 = findViewById(R.id.lnlt5);
+        lnlt6 = findViewById(R.id.lnlt6);
+        lnlt7 = findViewById(R.id.lnlt7);
+        lnlt8 = findViewById(R.id.lnlt8);
+        lnlt9 = findViewById(R.id.lnlt9);
+        lnlt10 = findViewById(R.id.lnlt10);
+        lnlt11 = findViewById(R.id.lnlt11);
+        lnlt12 = findViewById(R.id.lnlt12);
     }
 }

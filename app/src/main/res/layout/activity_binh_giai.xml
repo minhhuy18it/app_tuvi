@@ -5,21 +5,144 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:layout_gravity="center"
-    android:gravity="center"
     tools:context=".activity.BinhGiaiActivity">
 
+    <LinearLayout
+        android:background="@drawable/binhgiai"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtthan_binhgiai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#C30202"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/txtbinhgiai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#2196F3"
+                android:text="PHỤ MẪU"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txttop2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#009688"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/txttop3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="#673AB7"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_binhgiai"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtnam_binhgiai"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="#115991"
+                android:layout_margin="5dp"
+                android:textStyle="bold"
+                android:text="Mão"/>
+
+            <TextView
+                android:id="@+id/txtthang_binhgiai"
+                android:layout_weight="1"
+                android:textSize="18dp"
+                android:textColor="#115991"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tháng 1"/>
+
+            <TextView
+                android:id="@+id/txtngay_binhgiai"
+                android:layout_weight="1"
+                android:textSize="18dp"
+                android:layout_margin="5dp"
+                android:textColor="#115991"
+                android:textStyle="bold"
+                android:gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="113"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
     <TextView
-        android:id="@+id/txtbinhgiai"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="đâsdsadas"/>
+        android:text="Luận Giải Chi Tiết"
+        android:textStyle="bold"
+        android:textSize="23dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:textColor="#B10707"
+        />
 
     <Button
         android:id="@+id/btnnhapcode"
+        android:layout_gravity="center"
+        android:gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Nhập code" />
+        android:text="Nhập Code VIP" />
 
     <TextView
         android:id="@+id/txtbinhgiaicode"
